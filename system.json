@@ -12,7 +12,9 @@
   "download": "https://github.com/Ellyjah/a-fistful-of-darkness/releases/download/v0.1.0/a-fistful-of-darkness.zip",
   "authors": [
     { "name": "John Harper", "url": "", "roles": ["Original: Blades in the Dark"] },
-    { "name": "Stefan Struck", "url": "", "roles": ["Original: A Fistful of Darkness"] }
+    { "name": "Stefan Struck", "url": "", "roles": ["Original: A Fistful of Darkness"] },
+    { "name": "Dez384", "url": "https://github.com/Dez384/foundryvtt-blades-in-the-dark", "roles": ["System Foundry VTT: Blades in the Dark"] },
+    { "name": "Ellyjah", "url": "", "roles": ["System Foundry VTT: A Fistful of Darkness"] }
   ],
   "esmodules": [
     "module/afod.js"
