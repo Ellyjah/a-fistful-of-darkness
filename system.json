@@ -104,5 +104,6 @@
       "system": "a-fistful-of-darkness"
     }
   ],
-  "packFolders": []
+  "packFolders": [],
+  "background": "systems/a-fistful-of-darkness/styles/assets/fondo.png"
 }
