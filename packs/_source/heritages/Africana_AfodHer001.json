@@ -1,0 +1,24 @@
+{
+  "_id": "avWPaxADkL6VMte9",
+  "name": "Africana",
+  "type": "heritage",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>Tu familia tiene raíces en el continente africano, ya sea a través de esclavos liberados, inmigrantes o comunidades establecidas. Tu herencia te conecta con tradiciones de resistencia, música y espiritualidad.</p><p><em>Pista de XP: Expresaste tu herencia o trasfondo africano durante la sesión.</em></p>"
+  },
+  "folder": "obsxk7MVOBexe5Kv",
+  "sort": 0,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774931069946,
+    "modifiedTime": 1774931069946,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!avWPaxADkL6VMte9",
+  "effects": []
+}

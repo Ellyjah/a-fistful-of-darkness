@@ -1,0 +1,41 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet item {{itemType}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+      <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'AFOD.Name'}}" /></h1>
+      <span class="item-type-label">{{localize "TYPES.Item.artifact"}}</span>
+    </div>
+  </header>
+  <section class="sheet-body">
+    <div class="form-group">
+      <label>{{localize "AFOD.Description"}}</label>
+      {{#if isEditable}}
+          <textarea name="system.description" class="notes-textarea">{{system.description}}</textarea>
+        {{else}}
+          <div class="notes-view">{{{enrichedDescription}}}</div>
+        {{/if}}
+    </div>
+    <div class="form-group">
+      <label>{{localize "AFOD.Origin"}}</label>
+      <textarea name="system.origin" rows="2">{{system.origin}}</textarea>
+    </div>
+    <div class="form-group">
+      <label>{{localize "AFOD.Drawbacks"}}</label>
+      <textarea name="system.drawbacks" rows="2">{{system.drawbacks}}</textarea>
+    </div>
+    <div class="form-fields">
+      <div class="form-group">
+        <label>{{localize "AFOD.Quality"}}</label>
+        <input type="number" name="system.quality" value="{{system.quality}}" min="0" />
+      </div>
+      <div class="form-group">
+        <label>{{localize "AFOD.Load"}}</label>
+        <input type="number" name="system.load" value="{{system.load}}" min="0" />
+      </div>
+      <div class="form-group">
+        <label>{{localize "AFOD.Equipped"}}</label>
+        <input type="checkbox" name="system.equipped" {{checked system.equipped}} />
+      </div>
+    </div>
+  </section>
+</form>

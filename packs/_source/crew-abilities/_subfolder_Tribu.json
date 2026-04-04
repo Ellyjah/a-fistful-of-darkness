@@ -1,0 +1,22 @@
+{
+  "_id": "Vo7mP8xe5q32ZkJC",
+  "name": "Tribu",
+  "type": "Item",
+  "description": "",
+  "folder": "cvy9IzGJMTuv8D0z",
+  "sorting": "a",
+  "sort": 300,
+  "color": "#3d1c5c",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774929356053,
+    "modifiedTime": 1774929356053,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!Vo7mP8xe5q32ZkJC"
+}

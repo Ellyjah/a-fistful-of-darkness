@@ -1,0 +1,23 @@
+{
+  "_id": "AfodFldRoot00001",
+  "_key": "!folders!AfodFldRoot00001",
+  "name": "Tablas de Tirada",
+  "type": "RollTable",
+  "description": "",
+  "folder": null,
+  "sort": 0,
+  "sorting": "a",
+  "color": "#5c3c1c",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774957688762,
+    "modifiedTime": 1774957688762,
+    "lastModifiedBy": null
+  }
+}

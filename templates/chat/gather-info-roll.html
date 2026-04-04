@@ -1,0 +1,59 @@
+<div class="dice-tooltip afod-die-tooltip">
+
+  {{!-- Etiqueta de tirada de buscar información --}}
+  {{#if attribute_label}}
+    <div class="chat-label label-stripe-chat">{{localize attribute_label}}</div>
+  {{/if}}
+  {{#if zeromode}}
+    <div class="chat-label-small label-stripe-chat-small">0d</div>
+  {{/if}}
+
+  {{!-- Crítico y Éxito se tratan igual: obtienes la información --}}
+  {{#if (or (eq roll_status "success") (eq roll_status "critical-success"))}}
+    <div class="die success">{{localize "AFOD.RollSuccess"}}</div>
+    <div class="description">
+      <p>{{{localize "AFOD.RollGatherInformationSuccess"}}}</p>
+    </div>
+  {{/if}}
+
+  {{!-- Resultado: Éxito Parcial --}}
+  {{#if (eq roll_status "partial-success")}}
+    <div class="die partial-success">{{localize "AFOD.RollPartialSuccess"}}</div>
+    <div class="description">
+      <p>{{{localize "AFOD.RollGatherInformationPartialSuccess"}}}</p>
+    </div>
+  {{/if}}
+
+  {{!-- Resultado: Fracaso --}}
+  {{#if (eq roll_status "failure")}}
+    <div class="die failure">{{localize "AFOD.RollFailure"}}</div>
+    <div class="description">
+      <p>{{{localize "AFOD.RollGatherInformationFailure"}}}</p>
+    </div>
+  {{/if}}
+
+  {{#if note}}
+    <em class="roll-note">{{note}}</em>
+  {{/if}}
+
+  <ol class="dice-rolls">
+    {{#each this.rolls}}
+      {{#if this.result}}
+        <li class="roll die d6"
+          {{#if (eq this.result 6)}} style="color: #5a7a4a; font-weight:bold;"
+          {{else if (lteq this.result 3)}} style="color: #8b2c1a;"
+          {{/if}}>
+          {{this.result}}
+        </li>
+      {{else}}
+        <li class="roll die d6">{{this.roll}}</li>
+      {{/if}}
+    {{/each}}
+    {{#if @root.method}}
+      {{#unless (eq @root.method.type "mersenne")}}
+        <li class="roll method" data-tooltip="{{localize @root.method.label}}">{{{@root.method.icon}}}</li>
+      {{/unless}}
+    {{/if}}
+  </ol>
+
+</div>

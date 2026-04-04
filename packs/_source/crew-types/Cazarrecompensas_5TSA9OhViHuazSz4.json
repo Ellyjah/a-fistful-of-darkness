@@ -1,0 +1,114 @@
+{
+  "name": "Cazarrecompensas",
+  "type": "crew_type",
+  "img": "icons/sundries/survival/cuffs-shackles-steel.webp",
+  "system": {
+    "activation": {
+      "type": "",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": 0,
+      "per": null
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "description": "<p>Rastreadores, capturadores y ejecutores que cobran por sus servicios. Los Cazarrecompensas trabajan en los límites de la ley persiguiendo a criminales, forajidos y criaturas sobrenaturales por encargo.</p><h3>Habilidades Especiales de Cuadrilla</h3><ul><li><strong>SABUESOS</strong> Cada PJ puede añadir +1 en una acción de Comandar, Disparar o Rastrear (máximo 3).</li><li><strong>GALERÍA DE FORAJIDOS ANDANTE</strong> Cuando vuestra cuadrilla tiene ocasión de hablar, reconoceréis a cualquier forajido o lawman que veáis en persona o en un retrato. Sabéis si hay recompensa por su cabeza y su valor.</li><li><strong>LÍNEA DE VIDA</strong> Los traéis vivos. Podéis elegir que vuestro objetivo quede incapacitado en lugar de muerto. Siempre queda un hálito de vida en ellos.</li><li><strong>OJO EXPERTO</strong> Podéis leer artefactos y armas de Hellstone para descubrir qué hacen y cómo son peligrosos. Siempre obtenéis buenos detalles.</li><li><strong>REALMENTE ÚTILES</strong> A veces los amigos valen tanto como el territorio. Podéis contar hasta tres estados de facción +3 como si fueran Concesiones.</li><li><strong>TIPOS AFORTUNADOS</strong> Cuando tiráis Eventos, tiráis dos veces y os quedáis con el que queráis. Cuando reducís la Perdición en la cuadrilla, tomáis +1d.</li><li><strong>PATRÓN</strong> Cuando avanzáis vuestro Rango, cuesta la mitad de Monedas. ¿Quién es vuestro patrón? ¿Por qué os ayuda?</li><li><strong>VETERANO</strong> Elegid una habilidad especial de otra cuadrilla.</li></ul><h3>Contactos</h3><ul><li>Horatio Freeman, un Sheriff que paga bien</li><li>Levi Boyle, un Ranger que comparte información</li><li>Una carcelera que acepta presos sin hacer preguntas</li><li>Un abogado que gestiona los contratos</li><li>Un herrero que fabrica equipo de captura</li></ul>",
+    "experience_clues": "Al final de cada sesión marca 1 px de cuadrilla por:\n- Capturasteis o eliminasteis un objetivo por encargo.\n- Recopilasteis información crucial sobre un fugitivo o amenaza activa.\n- Pusisteis la ley o el orden por delante de vuestro beneficio personal.",
+    "modus_options": [
+      "Violencia (eliminación directa de objetivos)",
+      "Negociación (captura y trato con facciones)",
+      "Contactos (red de información y colaboración)",
+      "Trampa (emboscadas y captura táctica)"
+    ],
+    "contacts": "<ul>\n    <li><strong>Bill 'Scar' Morgan</strong>, juez</li>\n    <li><strong>'Railroad' Gilliam</strong>, alguacil</li>\n    <li><strong>'Silent' Bob</strong>, herrero</li>\n    <li><strong>Moe</strong>, dueño del saloon</li>\n    <li><strong>Madam Zona</strong>, vidente</li>\n    <li><strong>Xiang</strong>, ocultista</li>\n  </ul>",
+    "achievements": [
+      {
+        "name": "LA RED ENREDADA"
+      },
+      {
+        "name": "LA CACERÍA SALVAJE"
+      },
+      {
+        "name": "SOPLONES DEL BARRO"
+      },
+      {
+        "name": "PASO SEGURO"
+      },
+      {
+        "name": "ENTERRADOR"
+      },
+      {
+        "name": "SOMBRAS MORDEDORAS"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "EQUILIBRIO"
+      },
+      {
+        "name": "ARMA SAGRADA"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "SIERVO DE LA MUERTE"
+      },
+      {
+        "name": "ARMA PROFANA"
+      },
+      {
+        "name": "ALIJO SECRETO"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "BALA PERDIDA"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "fqnmpYNEZM7GFKpA",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.a-fistful-of-darkness.crew-types.Item.AfodCrewCazarr01",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774615631899,
+    "modifiedTime": 1774615631899,
+    "lastModifiedBy": "ejITwgjzWo4BaC5z"
+  },
+  "ownership": {
+    "default": 0,
+    "ejITwgjzWo4BaC5z": 3
+  },
+  "_id": "5TSA9OhViHuazSz4",
+  "sort": 0,
+  "_key": "!items!5TSA9OhViHuazSz4"
+}

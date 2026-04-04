@@ -1,0 +1,73 @@
+{
+  "_id": "AfodLlaveSierra1",
+  "name": "La Llave y la Sierra",
+  "type": "class",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Científico loco, otaku de la Hellstone. La Llave y la Sierra es un inventor y alquimista que domina la ciencia y la magia de la piedra infernal.</p><h3>Habilidades Especiales</h3><ul><li><strong>MOTIVADO</strong> Durante el descanso, obtienes dos marcas para distribuir entre cualquier reloj de proyecto a largo plazo que involucre investigación o aprender una nueva fórmula o diseño. Al leer, esfuérzate por 1 Aguante en lugar de 2.</li><li><strong>HÁBIL</strong> Puedes gastar tu armadura especial para resistir una consecuencia por romper máquinas o Hellstone, o para esforzarte cuando trabajas en ciencia extraña o manejas Hellstone.</li><li><strong>CIENTÍFICO LOCO</strong> Cuando inventas o fabricas una creación con características steampunk o de Hellstone, toma +1 nivel de resultado. Comienzas con un diseño especial ya conocido.</li><li><strong>ESPIRITUMANTE</strong> Cuando inventas o fabricas una creación con características arcanas, espirituales o demoníacas, toma +1 nivel de resultado. Comienzas con una fórmula especial ya conocida.</li><li><strong>ESCUCHAR SUS VOCES</strong> Cuando las tocas puedes Alternar con máquinas para Recopilar Información con +1 nivel de resultado. Después, puedes esforzarte para darle una característica o tarea para la que no fue construida.</li><li><strong>HABLAR SU LENGUA</strong> Puedes sintonizarte con cualquier máquina para activarla o desactivarla.</li><li><strong>SANGRE, SUDOR Y ENGRANAJES</strong> Si lograste un avance en un invento significativo o problema científico, marca px. Si tu proyecto causó problemas a tu cuadrilla, también marca px de cuadrilla.</li><li><strong>MOMENTO JUSTO, HERRAMIENTA JUSTA</strong> Puedes usar uno de tus objetos para un propósito para el que no fue diseñado. Los objetos refinados siguen siendo refinados.</li><li><strong>VETERANO</strong> Elige una habilidad especial de otra fuente.</li></ul><h3>Contactos</h3><ul><li>Ignaz Toodlebrock, un inventor</li><li>Una voz en tu cabeza</li><li>Una herramienta favorita sin nombre</li><li>Virex, un experimento fallido</li><li>Mathilda, tu prometida</li></ul>",
+    "subtitle": "Científico loco, otaku de la Hellstone",
+    "experience_clues": [
+      "Afrontaste un desafío con habilidad técnica o ingenio.",
+      "Expresaste tus creencias, impulsos, herencia o trasfondo.",
+      "Luchaste con problemas de tu vicio, mutación o estigma durante la sesión."
+    ],
+    "base_skills": {
+      "hunt": [
+        0
+      ],
+      "read": [
+        1
+      ],
+      "survey": [
+        0
+      ],
+      "craft": [
+        2
+      ],
+      "sling": [
+        0
+      ],
+      "prowl": [
+        0
+      ],
+      "brawl": [
+        0
+      ],
+      "disable": [
+        1
+      ],
+      "attune": [
+        0
+      ],
+      "command": [
+        0
+      ],
+      "consort": [
+        0
+      ],
+      "sway": [
+        0
+      ]
+    },
+    "contacts": "<ul><li><strong>Ignaz Toodlebrock</strong> — Inventor</li><li><strong>Una voz en tu cabeza</strong> — Entidad desconocida</li><li><strong>Una herramienta favorita llamada ___</strong> — Compañera de trabajo</li><li><strong>Virex</strong> — Experimento fallido</li><li><strong>Mathilda</strong> — Tu prometida</li></ul>"
+  },
+  "effects": [],
+  "folder": "mdKzmXUhAbEnUzo1",
+  "sort": 1100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodLlaveSierra1"
+}

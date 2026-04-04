@@ -1,0 +1,10 @@
+# LevelDB — archivos temporales y de proceso
+packs/**/*.dbtmp
+packs/**/LOCK
+packs/**/LOG
+packs/**/LOG.old
+
+# Node / herramientas
+node_modules/
+.DS_Store
+Thumbs.db

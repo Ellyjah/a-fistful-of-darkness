@@ -1,0 +1,24 @@
+{
+  "_id": "AfodFldViaj00001",
+  "name": "Peligros de Viaje",
+  "type": "RollTable",
+  "description": "",
+  "folder": "AfodFldRoot00001",
+  "sort": 0,
+  "sorting": "a",
+  "color": "#1c4c3c",
+  "flags": {},
+  "img": "icons/svg/trap.svg",
+  "_key": "!folders!AfodFldViaj00001",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774957688762,
+    "modifiedTime": 1774957688762,
+    "lastModifiedBy": null
+  }
+}

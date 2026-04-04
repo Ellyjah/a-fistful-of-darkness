@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacMinersUnio",
+  "name": "Miner's Union",
+  "type": "faction",
+  "img": "icons/weapons/daggers/dagger-blue.webp",
+  "system": {
+    "description": "<p>Algunas almas desesperadas intentando dar a los hombres y mujeres trabajadores y arriesgados de las minas lo que merecen. Quizá lo bastante desesperados para tomar acciones poco convencionales.</p><p>Liderados por Gus Cochran, intentando decidirse sobre su Señoría. Esperando apoyo de la Capital.</p>",
+    "type": "",
+    "tier": 1,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        5
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Subir de Rango",
+    "goal_1_clock_max": 8,
+    "goal_2": "Reclutar miembros (Repetir)",
+    "goal_2_clock_max": 6,
+    "goal_clock": 0,
+    "assets": "Mineros como base de miembros. Potencial apoyo de la Capital. Conocimiento de las minas.",
+    "quirks": "Divididos sobre métodos. Gus Cochran indeciso. Actos desesperados posibles.",
+    "notables": "Gus Cochran (líder, indeciso)",
+    "allies": "Southern Refugees (simpatizantes). Trabajadores de Northern Rail & East-West.",
+    "enemies": "Ironware & Metal Goods. Fine Energy Enterprise. Compañías mineras en general.",
+    "situation": "Unión naciente intentando organizarse frente al poder corporativo. La indecisión de Cochran puede llevar a acciones radicales.",
+    "notes": "Reloj 1: -1 Perdición al completarse. Reloj 2 (Repetir): +/- Perdición al completarse (depende del tipo de miembros reclutados)."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacMinersUnio",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

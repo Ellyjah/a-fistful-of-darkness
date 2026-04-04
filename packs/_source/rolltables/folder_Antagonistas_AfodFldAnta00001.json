@@ -1,0 +1,24 @@
+{
+  "_id": "AfodFldAnta00001",
+  "name": "Antagonistas",
+  "type": "RollTable",
+  "description": "",
+  "folder": "AfodFldRoot00001",
+  "sort": 0,
+  "sorting": "a",
+  "color": "#5c1c1c",
+  "flags": {},
+  "img": "icons/svg/skull.svg",
+  "_key": "!folders!AfodFldAnta00001",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774957688762,
+    "modifiedTime": 1774957688762,
+    "lastModifiedBy": null
+  }
+}

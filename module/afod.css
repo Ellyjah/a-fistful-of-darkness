@@ -1,0 +1,4197 @@
+/* afod.css — A Fistful of Darkness · Tema Weird West */
+
+/* ---------------------------------------- */
+/*  FUENTES PERSONALIZADAS                   */
+/* ---------------------------------------- */
+@font-face {
+  font-family: "Docktrin";
+  src: url("fonts/docktrin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Saloon";
+  src: url("fonts/saloon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ---------------------------------------- */
+/*  RESET Y BASE                             */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet {
+  font-family: "Saloon", serif;
+  font-size: 15px;
+  background: none;
+  color: #2a1408;
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.a-fistful-of-darkness.sheet .sheet-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-bottom: 2px solid #6a3a14;
+  background: transparent;
+  color: #2a1408;
+}
+
+.a-fistful-of-darkness.sheet .portrait {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #8b4a10;
+}
+
+.a-fistful-of-darkness.sheet .charname input,
+.a-fistful-of-darkness.sheet .sheet-header input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #6a3a14;
+  color: #2a1408;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+.a-fistful-of-darkness.sheet .header-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 0.85em;
+}
+
+.a-fistful-of-darkness.sheet .tag {
+  background: rgba(106, 58, 20, 0.12);
+  border: 1px solid #6a3a14;
+  padding: 2px 6px;
+  color: #2a1408;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet .trait-slot {
+  display: flex;
+  flex-direction: column;
+}
+
+.a-fistful-of-darkness.sheet .trait-label {
+  font-size: 0.68em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6a3a14;
+  margin-bottom: 1px;
+}
+
+.a-fistful-of-darkness.sheet .trait-value {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px dashed rgba(106, 58, 20, 0.5);
+  border-radius: 2px;
+  padding: 2px 6px;
+  min-height: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.a-fistful-of-darkness.sheet .trait-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.a-fistful-of-darkness.sheet .trait-name {
+  flex: 1;
+  color: #2a1408;
+  font-size: 0.85em;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.a-fistful-of-darkness.sheet .trait-name:hover {
+  color: #8b4a10;
+  text-decoration: underline;
+}
+
+.a-fistful-of-darkness.sheet .trait-item .item-delete {
+  color: rgba(139, 44, 26, 0.5);
+  font-size: 0.75em;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet .trait-item .item-delete:hover {
+  color: #8b2c1a;
+}
+
+.a-fistful-of-darkness.sheet .drop-placeholder {
+  color: rgba(196, 149, 90, 0.45);
+  font-size: 0.78em;
+  font-style: italic;
+}
+
+.a-fistful-of-darkness.sheet .drop-placeholder i {
+  margin-right: 3px;
+}
+
+.a-fistful-of-darkness.sheet .trait-icon {
+  color: rgba(196, 149, 90, 0.6);
+  font-size: 0.78em;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet .trait-value-text {
+  height: 22px !important;
+  max-height: 22px !important;
+  min-height: 0 !important;
+  color: #8b4a10;
+  overflow: hidden;
+  align-items: center;
+}
+
+.window-app.a-fistful-of-darkness.sheet .trait-text-input,
+.a-fistful-of-darkness.sheet .trait-text-input {
+  flex: 1;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 18px !important;
+  min-height: 0 !important;
+  max-height: 18px !important;
+  line-height: 18px !important;
+  color: #2a1408 !important;
+  font-size: 0.85em !important;
+  font-family: "Saloon", serif !important;
+  min-width: 0;
+  box-sizing: border-box !important;
+}
+
+.a-fistful-of-darkness.sheet .block-label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6a3a14;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.a-fistful-of-darkness.sheet .xp-counter,
+.a-fistful-of-darkness.sheet .load-counter {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #8b4a10;
+  letter-spacing: 0.05em;
+}
+
+.a-fistful-of-darkness.sheet .xp-value-input {
+  width: 36px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #8b4a10;
+  color: #8b4a10;
+  font-size: inherit;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 2px;
+  -moz-appearance: textfield;
+}
+
+.a-fistful-of-darkness.sheet .xp-value-input::-webkit-outer-spin-button,
+.a-fistful-of-darkness.sheet .xp-value-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* ---------------------------------------- */
+/*  TABS                                     */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet .tab-content {
+  padding: 8px;
+  overflow-y: auto;
+  font-size: 13px;
+}
+
+.a-fistful-of-darkness.sheet .tab-content .tab {
+  display: none;
+}
+
+.a-fistful-of-darkness.sheet .tab-content .tab.active {
+  display: block;
+}
+
+/* ---------------------------------------- */
+/*  FORMULARIO                               */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.a-fistful-of-darkness.sheet .form-group label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8b2c1a;
+  margin-bottom: 2px;
+}
+
+.a-fistful-of-darkness.sheet .form-group input[type="text"],
+.a-fistful-of-darkness.sheet .form-group input[type="number"],
+.a-fistful-of-darkness.sheet .form-group select {
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(106, 58, 20, 0.4);
+  border-radius: 3px;
+  padding: 4px 6px;
+  color: #2a1408;
+  font-family: "Saloon", serif;
+  font-size: 13px;
+}
+
+.a-fistful-of-darkness.sheet .form-group textarea {
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(106, 58, 20, 0.4);
+  border-radius: 3px;
+  padding: 6px 8px;
+  color: #2a1408;
+  resize: vertical;
+  font-family: "Saloon", serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ---------------------------------------- */
+/*  NOTICE (placeholder de contenido)        */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet .notice {
+  background: rgba(180, 145, 46, 0.1);
+  border: 1px dashed #b4912e;
+  padding: 12px;
+  color: #4a2e1a;
+  font-style: italic;
+  text-align: center;
+  margin: 12px 0;
+}
+
+/* ---------------------------------------- */
+/*  MONEDA DUAL + INDULGENCIA                */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.character .currency-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 12px;
+  background: transparent;
+  border-bottom: 2px solid rgba(106, 58, 20, 0.4);
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-block .block-label {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .coin-total {
+  color: #8b4a10;
+  font-size: 0.8em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .hellstone-total {
+  color: #7a3a8a;
+  font-size: 0.8em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slots {
+  display: flex;
+  gap: 5px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slot {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(106, 58, 20, 0.35);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85em;
+  transition: border-color 0.1s, background 0.1s, transform 0.08s;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slot:hover {
+  border-color: rgba(106, 58, 20, 0.4);
+  transform: scale(1.08);
+}
+
+.a-fistful-of-darkness.sheet.character .slot-empty {
+  width: 10px;
+  height: 10px;
+  border: 1px dashed rgba(196, 149, 90, 0.2);
+  border-radius: 50%;
+  display: block;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slot.type-coin {
+  border-color: #8b4a10;
+  background: rgba(180, 145, 46, 0.12);
+}
+
+.a-fistful-of-darkness.sheet.character .coin-icon {
+  color: #8b4a10;
+  font-size: 1em;
+  text-shadow: 0 0 4px rgba(180, 145, 46, 0.5);
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slot.type-hellstone {
+  border-color: #7a3a8a;
+  background: rgba(122, 58, 138, 0.15);
+}
+
+.a-fistful-of-darkness.sheet.character .hellstone-icon {
+  color: #9a4aaa;
+  font-size: 0.9em;
+  text-shadow: 0 0 5px rgba(122, 58, 138, 0.7);
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slot:nth-child(4) {
+  margin-right: 4px;
+  border-right-width: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-block {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-btn {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(106, 58, 20, 0.35);
+  border-radius: 2px;
+  cursor: pointer;
+  color: #6a3a14;
+  font-size: 0.65em;
+  flex-shrink: 0;
+  transition: color 0.1s, border-color 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-btn:hover {
+  color: #6a3a14;
+  border-color: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-bar-wrap {
+  flex: 1;
+  min-width: 0;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(106, 58, 20, 0.35);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #8b2c1a, #c4553a);
+  border-radius: 1px;
+  transition: width 0.2s;
+  opacity: 0.7;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-counter {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72em;
+  color: #2a1408;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+}
+
+/* ---------------------------------------- */
+/*  ATRIBUTOS Y ACCIONES                     */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.character .attributes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 6px 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .attribute-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .attribute-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 6px;
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .attribute-header.attr-roll {
+  cursor: pointer;
+  background-image: url("assets/boton-2.png");
+  background-size: 100% 25%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  transition: filter 0.12s;
+  filter: brightness(0.92);
+}
+
+.a-fistful-of-darkness.sheet.character .attribute-header.attr-roll:hover {
+  filter: brightness(1.15);
+}
+
+.a-fistful-of-darkness.sheet.character .attribute-label {
+  font-size: 0.82em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.a-fistful-of-darkness.sheet.character .attribute-dice {
+  font-size: 0.79em;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  opacity: 0.75;
+}
+
+.a-fistful-of-darkness.sheet.character .attr-wits .attribute-header {
+  background: rgba(106, 58, 20, 0.14);
+  border-left: 3px solid #8b5a20;
+  color: #8b4a10;
+}
+
+.a-fistful-of-darkness.sheet.character .attr-prowess .attribute-header {
+  background: rgba(139, 44, 26, 0.15);
+  border-left: 3px solid #8b2c1a;
+  color: #7a3010;
+}
+
+.a-fistful-of-darkness.sheet.character .attr-guts .attribute-header {
+  background: rgba(90, 122, 74, 0.15);
+  border-left: 3px solid #5a7a4a;
+  color: #6a4820;
+}
+
+.a-fistful-of-darkness.sheet.character .skill-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 4px;
+  border-radius: 2px;
+  transition: background 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.character .skill-row:hover {
+  background: rgba(196, 149, 90, 0.07);
+}
+
+.a-fistful-of-darkness.sheet.character .skill-dots {
+  display: flex;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .skill-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.08s, background 0.1s, border-color 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.character .skill-dot:hover {
+  border-color: #6a3a14;
+  transform: scale(1.2);
+}
+
+.a-fistful-of-darkness.sheet.character .attr-wits .skill-dot.filled {
+  background: #b4912e;
+  border-color: #8b5a20;
+}
+
+.a-fistful-of-darkness.sheet.character .attr-prowess .skill-dot.filled {
+  background: #8b2c1a;
+  border-color: #b03520;
+}
+
+.a-fistful-of-darkness.sheet.character .attr-guts .skill-dot.filled {
+  background: #5a7a4a;
+  border-color: #6a4820;
+}
+
+.a-fistful-of-darkness.sheet.character .skill-name {
+  font-size: 0.89em;
+  color: #452810;
+  cursor: pointer;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+
+.a-fistful-of-darkness.sheet.character .skill-name:hover {
+  color: #2a1408;
+  text-decoration: none;
+}
+
+.a-fistful-of-darkness.sheet.character .attr-wits .skill-row:hover .skill-name {
+  color: #7a1050;
+}
+
+.a-fistful-of-darkness.sheet.character .attr-prowess .skill-row:hover .skill-name {
+  color: #7a1050;
+}
+
+.a-fistful-of-darkness.sheet.character .attr-guts .skill-row:hover .skill-name {
+  color: #7a1050;
+}
+
+/* ---------------------------------------- */
+/*  ITEM SHEET                               */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.item .sheet-header {
+  min-height: 60px;
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.item .item-img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border: 2px solid #8b4a10;
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.item .item-type-label {
+  font-size: 0.7em;
+  color: #6a3a14;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.a-fistful-of-darkness.sheet.item .sheet-header h1,
+.a-fistful-of-darkness.sheet.item .sheet-header .item-name-h1 {
+  font-size: 1em !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+  flex: 1;
+  min-width: 0;
+}
+
+.a-fistful-of-darkness.sheet.item .sheet-header h1 input,
+.a-fistful-of-darkness.sheet.item .sheet-header .item-name-h1 input {
+  font-size: 1.1em !important;
+  padding: 1px 0 !important;
+  height: auto !important;
+  width: 100% !important;
+}
+
+form.a-fistful-of-darkness.sheet.item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.a-fistful-of-darkness.sheet.item .sheet-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+  padding: 8px;
+}
+
+.a-fistful-of-darkness.sheet.item .tab-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+  padding: 8px;
+}
+
+.a-fistful-of-darkness.sheet.item .crew-ability-entry {
+  margin-bottom: 10px;
+  padding: 6px 8px;
+  border: 1px solid rgba(106, 58, 20, 0.2);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.a-fistful-of-darkness.sheet.item .crew-ability-entry.is-default {
+  border-color: rgba(106, 58, 20, 0.45);
+  background: rgba(196, 149, 90, 0.06);
+}
+
+.a-fistful-of-darkness.sheet.item .ability-name {
+  font-weight: bold;
+  font-size: 12px;
+  color: #2a1408;
+  margin-bottom: 3px;
+}
+
+.a-fistful-of-darkness.sheet.item .ability-desc {
+  font-size: 12px;
+  color: #2a1408;
+  line-height: 1.4;
+}
+
+/* ---------------------------------------- */
+/*  RELOJ ACTOR (clock-sheet)                */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.clock .clock-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* ---------------------------------------- */
+/*  CHARACTER SHEET — layout flex columna   */
+/* ---------------------------------------- */
+
+form.a-fistful-of-darkness.sheet.character {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.a-fistful-of-darkness.sheet.character .tab-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+/* ---------------------------------------- */
+/*  CHARACTER HEADER — sección superior      */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.character .character-header {
+  align-items: stretch;
+  padding: 6px 10px;
+  flex-wrap: wrap;
+}
+
+.a-fistful-of-darkness.sheet.character .portrait {
+  align-self: stretch;
+  width: auto;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  min-width: 64px;
+  max-width: 120px;
+  object-fit: cover;
+}
+
+.a-fistful-of-darkness.sheet.character .header-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .charname {
+  margin: 0;
+  padding: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .charname input {
+  font-size: 1.37em;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  color: #2a1408;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #6a3a14;
+  width: 100%;
+  padding: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .alias-look {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.a-fistful-of-darkness.sheet.character .char-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 120px;
+}
+
+.a-fistful-of-darkness.sheet.character .char-field label {
+  font-size: 0.68em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6a3a14;
+  margin-bottom: 1px;
+}
+
+.a-fistful-of-darkness.sheet.character .char-field input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(106, 58, 20, 0.6);
+  color: #2a1408;
+  font-size: 0.9em;
+  padding: 1px 0;
+}
+
+.a-fistful-of-darkness.sheet.character .character-traits {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-slot {
+  flex: 1;
+  min-width: 100px;
+}
+
+.a-fistful-of-darkness.sheet.character .posse-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.a-fistful-of-darkness.sheet.character .posse-linked {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(106, 58, 20, 0.4);
+  border-radius: 2px;
+  padding: 3px 6px;
+}
+
+.a-fistful-of-darkness.sheet.character .posse-portrait {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  border: 1px solid #8b4a10;
+  border-radius: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .posse-name {
+  flex: 1;
+  color: #2a1408;
+  font-size: 0.85em;
+  cursor: pointer;
+}
+
+.a-fistful-of-darkness.sheet.character .posse-name:hover {
+  color: #8b4a10;
+}
+
+.a-fistful-of-darkness.sheet.character .posse-unlink {
+  color: rgba(139, 44, 26, 0.5);
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+.a-fistful-of-darkness.sheet.character .posse-unlink:hover {
+  color: #8b2c1a;
+}
+
+/* ---------------------------------------- */
+/*  AGUANTE + ESTIGMAS                       */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.character .grit-stigma-section {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 8px 12px;
+  background: transparent;
+  border-bottom: 1px solid rgba(106, 58, 20, 0.35);
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-block {
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-counter,
+.a-fistful-of-darkness.sheet.character .stigma-counter,
+.a-fistful-of-darkness.sheet.character .mutation-counter {
+  font-size: 0.9em;
+  color: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-counter.at-max {
+  color: #8b2c1a;
+  font-weight: bold;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-bar {
+  display: flex;
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-segment {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6a3a14;
+  background: rgba(196, 149, 90, 0.08);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.1s, transform 0.05s;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-segment.filled {
+  background: #8b2c1a;
+  border-color: #b03520;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.a-fistful-of-darkness.sheet.character .grit-segment:hover {
+  border-color: #2a1408;
+  transform: scale(1.1);
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3px 8px;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 1px 0;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-item input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  border: 1px solid rgba(106, 58, 20, 0.35);
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 1px;
+  transition: background 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-item input[type="checkbox"]:checked {
+  background: #8b2c1a;
+  border-color: #8b2c1a;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-name {
+  font-size: 0.75em;
+  color: #6a3a14;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-item.active .stigma-name {
+  color: #2a1408;
+  font-weight: 600;
+}
+
+/* ---------------------------------------- */
+/*  RELOJ DE MUTACIÓN + DAÑO                */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.character .mutation-harm-section {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 8px 12px;
+  background: transparent;
+  border-bottom: 2px solid rgba(106, 58, 20, 0.4);
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .mutation-block {
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .mutation-bar {
+  display: flex;
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .mutation-segment {
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgba(106, 58, 20, 0.35);
+  background: rgba(90, 122, 74, 0.06);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.1s, transform 0.05s;
+}
+
+.a-fistful-of-darkness.sheet.character .mutation-segment.filled {
+  background: #5a7a4a;
+  border-color: #6a4820;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5), 0 0 3px rgba(90, 122, 74, 0.4);
+}
+
+.a-fistful-of-darkness.sheet.character .mutation-segment:hover {
+  border-color: #2a1408;
+  transform: scale(1.15);
+}
+
+.a-fistful-of-darkness.sheet.character .harm-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-table {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-level {
+  font-size: 0.65em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  width: 60px;
+  min-width: 60px;
+  flex-shrink: 0;
+  text-align: left;
+  padding-right: 4px;
+  word-break: keep-all;
+  overflow: hidden;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-level.leve {
+  color: #8b4a10;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-level.medio {
+  color: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-level.grave {
+  color: #8b2c1a;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-slots {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-slots input[type="text"] {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.04);
+  border: none;
+  border-bottom: 1px solid rgba(106, 58, 20, 0.35);
+  color: #2a1408;
+  font-size: 0.82em;
+  padding: 8px 4px;
+  min-width: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-slots input[type="text"]:not([value=""]),
+.a-fistful-of-darkness.sheet.character .harm-slots input[type="text"]:focus {
+  border-bottom-color: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-armor {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .armor-check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(106, 58, 20, 0.35);
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.75em;
+  transition: color 0.1s, border-color 0.1s, background 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.character .armor-check .armor-used-x {
+  display: none;
+}
+
+.a-fistful-of-darkness.sheet.character .armor-check:hover {
+  border-color: rgba(106, 58, 20, 0.7);
+}
+
+.a-fistful-of-darkness.sheet.character .armor-check.armor-state-none {
+  color: rgba(106, 58, 20, 0.6);
+  border: 1px solid rgba(106, 58, 20, 0.5);
+  border-style: dashed;
+}
+
+.a-fistful-of-darkness.sheet.character .armor-check.armor-state-equipped {
+  color: #8b4a10;
+  border: 3px solid #8b4a10;
+  background: rgba(106, 58, 20, 0.12);
+}
+
+.a-fistful-of-darkness.sheet.character .armor-check.armor-state-used {
+  color: #8b2c1a;
+  border: 3px solid #8b2c1a;
+  background: rgba(139, 44, 26, 0.12);
+}
+
+.a-fistful-of-darkness.sheet.character .armor-check.armor-state-used .armor-used-x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  font-size: 1.6em;
+  color: #000;
+  pointer-events: none;
+}
+
+/* ---------------------------------------- */
+/*  POSSE SHEET — layout                     */
+/* ---------------------------------------- */
+
+form.a-fistful-of-darkness.sheet.posse {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.a-fistful-of-darkness.sheet.posse .tab-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.a-fistful-of-darkness.sheet.posse .posse-header {
+  align-items: flex-start;
+  padding: 10px 12px;
+}
+
+.a-fistful-of-darkness.sheet.posse .header-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.a-fistful-of-darkness.sheet.posse .charname input {
+  font-size: 1.37em;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #6a3a14;
+  color: #2a1408;
+  width: 100%;
+  padding: 2px 0;
+}
+
+.a-fistful-of-darkness.sheet.posse .posse-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.a-fistful-of-darkness.sheet.posse .char-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 100px;
+}
+
+.a-fistful-of-darkness.sheet.posse .char-field-wide {
+  flex: 2;
+}
+
+.a-fistful-of-darkness.sheet.posse .char-field label {
+  font-size: 0.68em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6a3a14;
+  margin-bottom: 2px;
+}
+
+.a-fistful-of-darkness.sheet.posse .char-field input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(106, 58, 20, 0.6);
+  color: #2a1408;
+  font-size: 0.9em;
+  padding: 2px 0;
+}
+
+.a-fistful-of-darkness.sheet.posse .trait-slot {
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.posse .posse-stats-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 12px;
+  background: transparent;
+  border-bottom: 1px solid rgba(106, 58, 20, 0.35);
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.posse .stat-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.posse .stat-value-label {
+  font-size: 0.75em;
+  color: #6a3a14;
+  text-align: center;
+}
+
+.a-fistful-of-darkness.sheet.posse .tier-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.posse .tier-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(106, 58, 20, 0.4);
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.08s, background 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.posse .tier-dot:hover {
+  border-color: #6a3a14;
+  transform: scale(1.2);
+}
+
+.a-fistful-of-darkness.sheet.posse .tier-dot.filled {
+  background: #c4955a;
+  border-color: #e4b57a;
+}
+
+.a-fistful-of-darkness.sheet.posse .rep-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.a-fistful-of-darkness.sheet.posse .rep-bar {
+  display: flex;
+  gap: 2px;
+}
+
+.a-fistful-of-darkness.sheet.posse .rep-segment {
+  flex: 1;
+  height: 14px;
+  border: 1px solid rgba(196, 149, 90, 0.25);
+  background: rgba(255, 255, 255, 0.03);
+  cursor: pointer;
+  border-radius: 1px;
+  transition: background 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.posse .rep-segment:hover {
+  border-color: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet.posse .rep-segment.filled {
+  background: #b4912e;
+  border-color: #8b5a20;
+}
+
+.a-fistful-of-darkness.sheet.posse .hold-toggle {
+  display: flex;
+  gap: 0;
+}
+
+.a-fistful-of-darkness.sheet.posse .hold-btn {
+  padding: 3px 10px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(106, 58, 20, 0.35);
+  color: rgba(196, 149, 90, 0.5);
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.posse .hold-btn:first-child {
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+}
+
+.a-fistful-of-darkness.sheet.posse .hold-btn:last-child {
+  border-radius: 0 2px 2px 0;
+}
+
+.a-fistful-of-darkness.sheet.posse .hold-btn.active {
+  background: rgba(180, 145, 46, 0.2);
+  border-color: #8b4a10;
+  color: #2a1408;
+  font-weight: 600;
+}
+
+.a-fistful-of-darkness.sheet.posse .hold-btn:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.06);
+  color: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet.posse .vault-block {
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.posse .vault-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.posse .vault-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.a-fistful-of-darkness.sheet.posse .vault-row input[type="number"] {
+  width: 36px;
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  border-bottom: 1px solid rgba(196, 149, 90, 0.3);
+  color: #2a1408;
+  font-size: 0.85em;
+  text-align: center;
+  padding: 1px 2px;
+}
+
+.a-fistful-of-darkness.sheet.posse .vault-divider {
+  color: #4a2e1a;
+  font-size: 0.8em;
+}
+
+.a-fistful-of-darkness.sheet.posse .vault-labels {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.6em;
+  color: rgba(196, 149, 90, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-section {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 8px 12px;
+  background: transparent;
+  border-bottom: 2px solid rgba(106, 58, 20, 0.4);
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-counter {
+  font-size: 0.9em;
+  color: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-counter.at-max {
+  color: #cc0000;
+  font-weight: bold;
+  text-shadow: 0 0 6px rgba(200, 0, 0, 0.5);
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-bar {
+  display: flex;
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-segment {
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(106, 58, 20, 0.35);
+  background: rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.1s, background 0.1s, transform 0.08s;
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-num {
+  font-size: 0.6em;
+  color: rgba(196, 149, 90, 0.25);
+  pointer-events: none;
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-segment:hover {
+  border-color: #8b2c1a;
+  transform: scale(1.08);
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-segment.filled {
+  background: #7a1a0a;
+  border-color: #a02c1a;
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-segment.filled .doom-num {
+  color: rgba(232, 220, 200, 0.4);
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-segment.filled.danger {
+  background: #9a0000;
+  border-color: #cc2200;
+  box-shadow: 0 0 6px rgba(180, 0, 0, 0.5);
+}
+
+.a-fistful-of-darkness.sheet.posse .riders-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.a-fistful-of-darkness.sheet.posse .riders-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 12px;
+  margin-top: 2px;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-item input[type="checkbox"] {
+  display: none;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-icon {
+  font-size: 1em;
+  opacity: 0.7;
+  transition: opacity 0.15s, text-shadow 0.15s;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-name {
+  font-size: 0.8em;
+  color: rgba(148, 106, 54, 0.45);
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-item.active {
+  border-color: currentColor;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-item.active .rider-icon {
+  opacity: 1;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-item.active .rider-name {
+  font-weight: 600;
+  color: currentColor;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-white {
+  color: #b0b8c0;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-white.active {
+  background: rgba(176, 184, 192, 0.08);
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-red {
+  color: #cc2222;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-red.active {
+  background: rgba(200, 34, 34, 0.08);
+  text-shadow: 0 0 6px rgba(200, 34, 34, 0.4);
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-black {
+  color: #6a5a4a;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-black.active {
+  background: rgba(106, 90, 74, 0.12);
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-pale {
+  color: #8a9e6a;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-pale.active {
+  background: rgba(138, 158, 106, 0.08);
+  text-shadow: 0 0 6px rgba(138, 158, 106, 0.3);
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-item:hover .rider-icon {
+  opacity: 0.7;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-item:hover .rider-name {
+  color: #6a3a14;
+}
+
+/* ---------------------------------------- */
+/*  POSSE — botón genérico                   */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.posse .afod-btn {
+  padding: 3px 10px;
+  font-size: 0.75em;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(106, 58, 20, 0.35);
+  color: #6a3a14;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.1s, border-color 0.1s;
+  white-space: nowrap;
+}
+
+.a-fistful-of-darkness.sheet.posse .afod-btn:hover {
+  background: rgba(106, 58, 20, 0.08);
+  border-color: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet.posse .claims-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 4px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #2a1e10;
+}
+
+.a-fistful-of-darkness.sheet.posse .claims-production {
+  font-size: 0.82em;
+  color: #6a3a14;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.a-fistful-of-darkness.sheet.posse .claims-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.posse .claims-header-row,
+.a-fistful-of-darkness.sheet.posse .claim-row {
+  display: grid;
+  grid-template-columns: 1fr 50px 160px 44px 28px;
+  gap: 6px;
+  align-items: center;
+}
+
+.a-fistful-of-darkness.sheet.posse .claims-header-row {
+  font-size: 0.65em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(196, 149, 90, 0.5);
+  padding: 0 4px;
+  margin-bottom: 2px;
+}
+
+.a-fistful-of-darkness.sheet.posse .claim-row {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 3px 4px;
+  transition: border-color 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.posse .claim-row:hover {
+  border-color: rgba(106, 58, 20, 0.4);
+}
+
+.a-fistful-of-darkness.sheet.posse .claim-row input[type="text"],
+.a-fistful-of-darkness.sheet.posse .claim-row input[type="number"] {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(196, 149, 90, 0.2);
+  color: #2a1408;
+  font-size: 0.82em;
+  padding: 2px 4px;
+}
+
+.a-fistful-of-darkness.sheet.posse .claim-col-level {
+  text-align: center;
+}
+
+.a-fistful-of-darkness.sheet.posse .claim-col-equip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.a-fistful-of-darkness.sheet.posse .claim-col-equip input[type="checkbox"] {
+  display: none;
+}
+
+.a-fistful-of-darkness.sheet.posse .claim-col-equip .fa-check-circle {
+  color: rgba(196, 149, 90, 0.3);
+  font-size: 1em;
+}
+
+.a-fistful-of-darkness.sheet.posse .claim-col-equip .fa-check-circle.active {
+  color: #5a7a4a;
+}
+
+.a-fistful-of-darkness.sheet.posse .claim-delete {
+  color: rgba(139, 44, 26, 0.4);
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.85em;
+  transition: color 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.posse .claim-delete:hover {
+  color: #8b2c1a;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-grid {
+  display: grid;
+  grid-template-columns: 248fr 73fr 248fr 73fr 248fr 73fr 248fr 73fr 248fr;
+  grid-template-rows: 7fr 180fr 36fr 180fr 36fr 179fr 39fr;
+  gap: 0;
+  padding: 0;
+  align-items: stretch;
+  justify-items: stretch;
+  background-image: url("assets/logros.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 260px;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 6px;
+  border: none;
+  /* la imagen provee el borde visual */
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.15s;
+  opacity: 1 !important;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.dark {
+  background: rgba(70, 30, 90, 0.20);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.neutral {
+  background: rgba(90, 55, 10, 0.20);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.light {
+  background: rgba(110, 90, 0, 0.20);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.dark.claimed {
+  background: rgba(122, 74, 138, 0.55);
+  box-shadow: 0 0 0 3px rgba(200, 140, 255, 1), 0 0 14px 6px rgba(180, 100, 255, 0.9), 0 0 28px 10px rgba(160, 80, 240, 0.55), inset 0 0 12px rgba(200, 140, 255, 0.5);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.neutral.claimed {
+  background: rgba(139, 90, 32, 0.55);
+  box-shadow: 0 0 0 3px rgba(255, 180, 60, 1), 0 0 14px 6px rgba(230, 150, 40, 0.9), 0 0 28px 10px rgba(210, 130, 20, 0.55), inset 0 0 12px rgba(255, 180, 60, 0.5);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.light.claimed {
+  background: rgba(160, 140, 20, 0.55);
+  box-shadow: 0 0 0 3px rgba(255, 240, 80, 1), 0 0 14px 6px rgba(240, 220, 60, 0.9), 0 0 28px 10px rgba(220, 200, 40, 0.55), inset 0 0 12px rgba(255, 240, 80, 0.5);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.fixed {
+  cursor: default;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-label {
+  font-family: "Docktrin", sans-serif;
+  font-size: calc(0.6em + 4px);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.75;
+  line-height: 1;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.dark .ach-map-label {
+  color: #c09ad0;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.neutral .ach-map-label {
+  color: #c03030;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.light .ach-map-label {
+  color: #d4c060;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-name {
+  font-family: "Docktrin", sans-serif;
+  font-size: calc(0.75em + 4px);
+  color: #c03030;
+  line-height: 1.2;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.claimed .ach-map-name {
+  font-weight: bold;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.dark.claimed .ach-map-name {
+  color: #e8c8ff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95), 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.neutral.claimed .ach-map-name {
+  color: #1a0800;
+  text-shadow: 0 1px 2px rgba(255, 220, 140, 0.8);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.light.claimed .ach-map-name {
+  color: #fff8a0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95), 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.claimed .ach-map-label {
+  opacity: 1;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.dark.claimed .ach-map-label {
+  color: #e8c8ff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.neutral.claimed .ach-map-label {
+  color: #1a0800;
+  text-shadow: 0 1px 1px rgba(255, 220, 140, 0.6);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell.light.claimed .ach-map-label {
+  color: #fff8a0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-edit-input {
+  width: 90%;
+  font-size: 0.75em;
+  font-family: inherit;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #c4955a;
+  border-radius: 2px;
+  color: #f0d8a0;
+  padding: 2px 4px;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cross {
+  display: none;
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-cross {
+  display: none;
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-grid {
+  display: grid;
+  grid-template-columns: 248fr 73fr 248fr 73fr 248fr 73fr 248fr 73fr 248fr;
+  grid-template-rows: 7fr 180fr 36fr 180fr 36fr 179fr 39fr;
+  gap: 0;
+  padding: 0;
+  align-items: stretch;
+  justify-items: stretch;
+  background-image: url("assets/logros.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 260px;
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 8px 6px;
+  border: none;
+  /* la imagen provee el borde visual */
+  border-radius: 3px;
+  background: transparent;
+  text-align: center;
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-cell.dark {
+  background: rgba(70, 30, 90, 0.20);
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-cell.neutral {
+  background: rgba(90, 55, 10, 0.20);
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-cell.light {
+  background: rgba(110, 90, 0, 0.20);
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-cell.fixed {
+  cursor: default;
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-label {
+  font-family: "Docktrin", sans-serif;
+  font-size: calc(0.58em + 4px);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  opacity: 0.75;
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-cell.dark .ach-map-label {
+  color: #c09ad0;
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-cell.neutral .ach-map-label {
+  color: #c49560;
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-cell.light .ach-map-label {
+  color: #d4c060;
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-name {
+  font-family: "Docktrin", sans-serif;
+  font-size: calc(0.72em + 4px);
+  color: #c4955a;
+  line-height: 1.2;
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(196, 149, 90, 0.45);
+  color: #e0c080;
+  font-size: 0.68em;
+  text-align: center;
+  font-family: "Docktrin", sans-serif;
+  padding: 2px 1px;
+  line-height: 1.2;
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-input:focus {
+  outline: none;
+  border-bottom-color: #d4a060;
+  color: #f0d8a0;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-input::placeholder {
+  color: rgba(196, 149, 90, 0.4);
+}
+
+.a-fistful-of-darkness.sheet.item .ach-map-cross {
+  display: none;
+}
+
+/* ---------------------------------------- */
+/*  LOCATION SHEET                           */
+/* ---------------------------------------- */
+
+/* ---------------------------------------- */
+/*  CLASS ITEM SHEET — Base Skills 3-col     */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.item.class .base-skills-grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px 10px;
+  margin-top: 4px;
+}
+
+.a-fistful-of-darkness.sheet.item.class .skill-entry {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.item.class .skill-entry-label {
+  flex: 1;
+  font-family: "Docktrin", serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #db1010;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 4px rgba(219, 16, 16, 0.35);
+  white-space: nowrap;
+}
+
+.a-fistful-of-darkness.sheet.item.class .skill-entry input[type="number"] {
+  width: 38px;
+  text-align: center;
+  font-size: 17px;
+  padding: 1px 2px;
+}
+
+/* ---------------------------------------- */
+/*  CLASS ITEM SHEET — Playbook Items List   */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.item.class .playbook-items-list {
+  list-style: none;
+  margin: 2px 0 0 0;
+  padding: 0;
+}
+
+.a-fistful-of-darkness.sheet.item.class .playbook-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 4px;
+  border-bottom: 1px solid rgba(74, 55, 40, 0.12);
+  font-size: 0.88em;
+}
+
+.a-fistful-of-darkness.sheet.item.class .playbook-item-row:last-child {
+  border-bottom: none;
+}
+
+.a-fistful-of-darkness.sheet.item.class .playbook-item-name {
+  color: #4a3728;
+  flex: 1;
+}
+
+.a-fistful-of-darkness.sheet.item.class .playbook-item-load {
+  background: rgba(74, 55, 40, 0.15);
+  color: #4a3728;
+  border-radius: 3px;
+  padding: 0 5px;
+  font-size: 0.82em;
+  font-weight: bold;
+  margin-left: 6px;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* ============================================ */
+/*  GROUP SHEET                                  */
+/* ============================================ */
+
+.a-fistful-of-darkness.sheet.actor.group {
+  padding: 0;
+  color: #db1010;
+  font-family: inherit;
+  font-size: 19px;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-header {
+  background: transparent;
+  border-bottom: 2px solid #6a3a14;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  min-height: 34px;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-posse-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  font-size: 17px;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-link {
+  color: #db1010;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 4px rgba(219, 16, 16, 0.35);
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-link:hover {
+  text-decoration: underline;
+  color: #e04545;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-sep {
+  color: #db1010;
+  margin: 0 2px;
+  font-size: 17px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 4px rgba(219, 16, 16, 0.35);
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-unlink {
+  color: #db1010;
+  cursor: pointer;
+  font-size: 0.75em;
+  margin-left: 6px;
+  opacity: 0.6;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-unlink:hover {
+  opacity: 1;
+  color: #c05540;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-drop-hint {
+  color: #db1010;
+  font-size: 17px;
+  font-style: italic;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-hint-sub {
+  color: #db1010;
+  font-size: 15px;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82em;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-table thead tr {
+  background: transparent;
+  border-bottom: 1px solid rgba(106, 58, 20, 0.45);
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-table th {
+  color: #db1010;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.82em;
+  font-weight: 600;
+  padding: 5px 6px;
+  text-align: center;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-table th.col-name,
+.a-fistful-of-darkness.sheet.actor.group .group-table td.col-name {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-table th.col-abilities,
+.a-fistful-of-darkness.sheet.actor.group .group-table td.col-abilities {
+  text-align: left;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-member-row {
+  border-bottom: 1px solid #2e2010;
+  transition: background 0.15s;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-member-row:hover {
+  background: transparent;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-table td {
+  padding: 5px 6px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .col-name {
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-remove {
+  color: #7a4430;
+  cursor: pointer;
+  font-size: 0.7em;
+  opacity: 0;
+  transition: opacity 0.15s;
+  margin-left: auto;
+  padding-right: 6px;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-member-row:hover .group-remove {
+  opacity: 0.7;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-remove:hover {
+  opacity: 1 !important;
+  color: #c05540;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .col-attr {
+  width: 36px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #db1010;
+  cursor: default;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .col-load {
+  width: 50px;
+  font-weight: bold;
+  color: #db1010;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .col-abilities {
+  min-width: 200px;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .ability-link {
+  display: inline-block;
+  background: rgba(106, 58, 20, 0.14);
+  border: 1px solid #5a3e20;
+  border-radius: 3px;
+  color: #db1010;
+  font-size: 0.78em;
+  padding: 1px 5px;
+  margin: 1px 2px 1px 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .ability-link:hover {
+  background: rgba(180, 145, 46, 0.3);
+  color: #e04545;
+}
+
+.a-fistful-of-darkness.sheet.actor.group .group-empty-row td {
+  text-align: center;
+  color: #db1010;
+  font-style: italic;
+  padding: 16px;
+}
+
+/* ---------------------------------------- */
+/*  LOCATION SHEET                           */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.actor.location .loc-header {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 8px 10px;
+  background: transparent;
+  border-bottom: 2px solid #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .loc-portrait {
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  border: 2px solid #8b4a10;
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .loc-header-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .loc-name {
+  margin: 0;
+  padding: 0;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .loc-name input {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #2a1408;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #6a3a14;
+  width: 100%;
+  padding: 0;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .loc-subtitle-row input {
+  font-size: 0.82em;
+  color: #6a3a14;
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed rgba(196, 149, 90, 0.4);
+  width: 100%;
+  padding: 1px 0;
+  font-style: italic;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .loc-section-title {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #6a3a14;
+  border-bottom: 1px solid rgba(196, 149, 90, 0.35);
+  padding-bottom: 3px;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .loc-qualities,
+.a-fistful-of-darkness.sheet.actor.location .loc-description,
+.a-fistful-of-darkness.sheet.actor.location .loc-clocks {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(196, 149, 90, 0.2);
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-label {
+  width: 110px;
+  flex-shrink: 0;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: #3a2a18;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-segments {
+  display: flex;
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-seg {
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  border: 2px solid;
+  cursor: pointer;
+  transition: filter 0.12s;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-seg:hover {
+  filter: brightness(1.3);
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-seg.max-seg {
+  border-style: dashed;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-wealth .quality-seg {
+  border-color: #8b4a10;
+  background: transparent;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-wealth .quality-seg.filled {
+  background: #b4912e;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-law_order .quality-seg {
+  border-color: #4a7aae;
+  background: transparent;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-law_order .quality-seg.filled {
+  background: #4a7aae;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-outlaw_chaos .quality-seg {
+  border-color: #8b2c1a;
+  background: transparent;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-outlaw_chaos .quality-seg.filled {
+  background: #8b2c1a;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-supernatural .quality-seg {
+  border-color: #7a3a9e;
+  background: transparent;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-supernatural .quality-seg.filled {
+  background: #7a3a9e;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .quality-number {
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #6a4a2a;
+  min-width: 16px;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-add {
+  cursor: pointer;
+  color: #6a3a14;
+  margin-left: auto;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-add:hover {
+  color: #8b4a10;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-entry {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 2px;
+  border-bottom: 1px solid rgba(196, 149, 90, 0.15);
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-name {
+  flex: 1;
+  font-size: 0.88em;
+  font-weight: 600;
+  color: #2a1a0a;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-pips {
+  display: flex;
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-pip {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid #8b2c1a;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-pip.filled {
+  background: #8b2c1a;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-pip:hover {
+  border-color: #7a3010;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-fraction {
+  font-size: 0.75em;
+  color: #6a4a2a;
+  min-width: 28px;
+  text-align: right;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-delete {
+  color: rgba(139, 44, 26, 0.4);
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-delete:hover {
+  color: #8b2c1a;
+}
+
+.a-fistful-of-darkness.sheet.actor.location .clock-drop-hint {
+  font-size: 0.82em;
+  color: #9a7a5a;
+  font-style: italic;
+  text-align: center;
+  padding: 8px 0;
+}
+
+/* TEMA WEIRD WEST — FUENTES, CHAT Y AJUSTES FINALES */
+
+.a-fistful-of-darkness.sheet h1,
+.a-fistful-of-darkness.sheet h2,
+.a-fistful-of-darkness.sheet h3,
+.a-fistful-of-darkness.sheet h4,
+.a-fistful-of-darkness.sheet .block-label,
+.a-fistful-of-darkness.sheet .loc-section-title,
+.a-fistful-of-darkness.sheet .attribute-label,
+.a-fistful-of-darkness.sheet .section-title,
+.a-fistful-of-darkness.sheet .charname input,
+.a-fistful-of-darkness.sheet .loc-name input,
+.a-fistful-of-darkness.sheet .group-header-title,
+.a-fistful-of-darkness.sheet .group-table th {
+  font-family: "Docktrin", serif;
+  letter-spacing: 0.04em;
+}
+
+.a-fistful-of-darkness.sheet input,
+.a-fistful-of-darkness.sheet textarea,
+.a-fistful-of-darkness.sheet select,
+.a-fistful-of-darkness.sheet label,
+.a-fistful-of-darkness.sheet span,
+.a-fistful-of-darkness.sheet a,
+.a-fistful-of-darkness.sheet p {
+  font-family: "Saloon", serif;
+}
+
+.a-fistful-of-darkness.sheet .sheet-header,
+.a-fistful-of-darkness.sheet .character-header,
+.a-fistful-of-darkness.sheet .loc-header,
+.a-fistful-of-darkness.sheet .group-header {
+  background: transparent;
+}
+
+.a-fistful-of-darkness.sheet .sheet-header input,
+.a-fistful-of-darkness.sheet .charname input,
+.a-fistful-of-darkness.sheet .loc-name input {
+  color: #2a1408;
+  border-bottom-color: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet .trait-label,
+.a-fistful-of-darkness.sheet .char-field label {
+  color: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet .trait-value {
+  border-color: rgba(106, 58, 20, 0.45);
+}
+
+.a-fistful-of-darkness.sheet .skill-dot {
+  border-color: #452810;
+  background: transparent;
+}
+
+.a-fistful-of-darkness.sheet .skill-dot.filled {
+  background: #452810 !important;
+}
+
+.a-fistful-of-darkness.sheet .grit-segment,
+.a-fistful-of-darkness.sheet .mutation-segment {
+  border-color: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet .grit-segment.filled,
+.a-fistful-of-darkness.sheet .mutation-segment.filled {
+  background: #6a3a14;
+}
+
+.a-fistful-of-darkness.sheet .xp-counter,
+.a-fistful-of-darkness.sheet .load-counter {
+  color: #8b4a10;
+  font-family: "Docktrin", serif;
+}
+
+.a-fistful-of-darkness.sheet.character .attr-wits .attribute-header,
+.a-fistful-of-darkness.sheet.character .attr-prowess .attribute-header,
+.a-fistful-of-darkness.sheet.character .attr-guts .attribute-header {
+  background-image: url(assets/boton-2.png);
+  background-size: cover;
+  color: #2a1408;
+}
+
+.roll-result h2,
+.roll-result h3,
+.roll-result .roll-title,
+.afod-roll-result h2,
+.afod-roll-result .action-title {
+  font-family: "Docktrin", serif;
+  font-size: 16px !important;
+  color: #2a1408;
+}
+
+.a-fistful-of-darkness.sheet .drop-placeholder {
+  color: #8b5a20;
+  font-style: italic;
+}
+
+.a-fistful-of-darkness.sheet.posse .posse-header,
+.a-fistful-of-darkness.sheet.posse .stats-row,
+.a-fistful-of-darkness.sheet.posse .doom-section,
+.a-fistful-of-darkness.sheet.posse .riders-section,
+.a-fistful-of-darkness.sheet.posse .claims-section {
+  background: transparent;
+}
+
+/* VENTANA, FONDO Y CHAT */
+
+.window-app.a-fistful-of-darkness.sheet {
+  border: none !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  background-color: #1a0a04 !important;
+}
+
+.window-app.a-fistful-of-darkness.sheet>.window-content {
+  background: transparent;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.a-fistful-of-darkness.sheet [data-application-part] {
+  flex: 1 1 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url("assets/background-afod.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.a-fistful-of-darkness.sheet .grit-stigma-section,
+.a-fistful-of-darkness.sheet .mutation-harm-section,
+.a-fistful-of-darkness.sheet .currency-section,
+.a-fistful-of-darkness.sheet .indulgence-section,
+.a-fistful-of-darkness.sheet .notes-section,
+.a-fistful-of-darkness.sheet .tab-content,
+.a-fistful-of-darkness.sheet .sheet-body,
+.a-fistful-of-darkness.sheet section {
+  background: transparent;
+}
+
+.window-app.a-fistful-of-darkness.sheet .window-header {
+  background: #0e0804;
+  border-bottom: 1px solid #6a3a14;
+  color: #c4955a;
+}
+
+.window-app.a-fistful-of-darkness.sheet .window-header .window-title {
+  color: #c4955a;
+  font-family: "Docktrin", serif;
+  font-size: 12px;
+}
+
+.window-app.a-fistful-of-darkness.sheet .window-header a {
+  color: #a07840;
+}
+
+.window-app.a-fistful-of-darkness.sheet .window-header a:hover {
+  color: #c4955a;
+}
+
+/* NOMBRE, PESTAÑAS, CHAT, CHECKBOXES, JOURNALS */
+
+.a-fistful-of-darkness.sheet .charname,
+.a-fistful-of-darkness.sheet.posse .charname {
+  overflow: visible;
+  line-height: 1.4;
+}
+
+.a-fistful-of-darkness.sheet .charname input,
+.a-fistful-of-darkness.sheet.posse .charname input,
+.a-fistful-of-darkness.sheet .loc-name input {
+  line-height: 1.5 !important;
+  height: auto !important;
+  min-height: 1.8em !important;
+  padding: 3px 0 !important;
+  overflow: visible !important;
+}
+
+.chat-log .chat-message,
+#chat-log .chat-message {
+  --chat-message-background: url("assets/fondo-chat.png") center / cover no-repeat;
+  background: url("assets/fondo-chat.png") center / cover no-repeat !important;
+  color: #2a1408 !important;
+  font-family: "Saloon", serif !important;
+  border: 1px solid rgba(106, 58, 20, 0.5) !important;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.chat-log .chat-message .message-header,
+.chat-log .chat-message .message-content,
+.chat-log .chat-message .message-footer,
+#chat-log .chat-message .message-header,
+#chat-log .chat-message .message-content {
+  background: transparent !important;
+  color: #2a1408 !important;
+  font-family: "Saloon", serif;
+  font-size: 12px !important;
+}
+
+.chat-log .chat-message .message-header h4,
+.chat-log .chat-message .message-sender,
+#chat-log .chat-message .message-header h4,
+#chat-log .chat-message .message-sender {
+  font-family: "Docktrin", serif;
+  color: #2a1408 !important;
+  font-size: 16px !important;
+}
+
+.chat-log .chat-message *,
+#chat-log .chat-message * {
+  color: #2a1408;
+}
+
+#chat-log .chat-message strong,
+#chat-log .chat-message .roll-status,
+#chat-log .chat-message .result-label {
+  color: #2a1408 !important;
+}
+
+.a-fistful-of-darkness.sheet input[type="checkbox"]::before {
+  content: "" !important;
+  font-family: none !important;
+  background-image: url("assets/bala-texto.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: transparent !important;
+  color: transparent !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  opacity: 0.28;
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.a-fistful-of-darkness.sheet input[type="checkbox"]::after {
+  content: none !important;
+  display: none !important;
+}
+
+.a-fistful-of-darkness.sheet input[type="checkbox"]:checked::before {
+  content: "" !important;
+  font-family: none !important;
+  background-image: url("assets/bala-texto.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: transparent !important;
+  color: transparent !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+}
+
+.a-fistful-of-darkness.sheet input[type="checkbox"] {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  width: 16px !important;
+  height: 16px !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet .ability-check i,
+.a-fistful-of-darkness.sheet .equip-check i {
+  font-size: 0 !important;
+  display: inline-block !important;
+  width: 14px !important;
+  height: 14px !important;
+  background-image: url("assets/bala-texto.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  opacity: 0.28;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.a-fistful-of-darkness.sheet .ability-check i.fa-check-circle,
+.a-fistful-of-darkness.sheet .equip-check i.fa-check-square {
+  opacity: 1;
+}
+
+.journal-sheet {
+  font-family: "Saloon", serif !important;
+  color: #2a1408 !important;
+}
+
+.journal-sheet .window-content {
+  background-image: url("assets/background-afod.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: transparent !important;
+}
+
+.journal-sheet .window-header {
+  background: #0e0804 !important;
+  border-bottom: 1px solid #6a3a14 !important;
+  color: #c4955a !important;
+  font-family: "Docktrin", serif !important;
+}
+
+.journal-sheet .window-header .window-title {
+  color: #c4955a !important;
+  font-family: "Docktrin", serif !important;
+}
+
+.journal-sheet h1,
+.journal-sheet h2,
+.journal-sheet h3,
+.journal-sheet h4 {
+  font-family: "Docktrin", serif !important;
+  color: #2a1408 !important;
+}
+
+.journal-sheet .editor-content,
+.journal-sheet .journal-entry-content,
+.journal-sheet .page-content {
+  font-family: "Saloon", serif !important;
+  color: #2a1408 !important;
+  background: transparent !important;
+}
+
+.dialog.a-fistful-of-darkness,
+.app.window-app.a-fistful-of-darkness {
+  font-family: "Saloon", serif;
+  color: #2a1408;
+}
+
+.window-app .window-content.a-fistful-of-darkness {
+  background-image: url("assets/background-afod.png") !important;
+  background-size: cover !important;
+}
+
+/* TABS, CLOCK, STIGMA */
+
+.a-fistful-of-darkness.sheet .tabs {
+  flex: 0 0 24px !important;
+  height: 24px !important;
+  overflow: visible !important;
+  align-items: center !important;
+  position: relative;
+  z-index: 2;
+}
+
+.a-fistful-of-darkness.sheet .tabs .item {
+  height: 28px !important;
+  min-height: 28px !important;
+  max-height: 28px !important;
+  padding: 0 10px 1px !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  z-index: 3 !important;
+  font-family: "Docktrin", serif !important;
+  font-size: 0.90em !important;
+  letter-spacing: 0.04em !important;
+  cursor: pointer !important;
+  background-image: url("assets/boton-1.png") !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  filter: brightness(0.82) !important;
+  color: #2a1408 !important;
+  text-shadow: none !important;
+}
+
+.a-fistful-of-darkness.sheet .tabs .item.active {
+  filter:
+    brightness(1.1) drop-shadow(0 0 3px rgba(179, 0, 0, 0.95)) drop-shadow(0 0 4px rgba(179, 0, 0, 0.75)) drop-shadow(0 0 5px rgba(179, 0, 0, 0.55)) !important;
+  font-weight: bold !important;
+  color: #1a0a04 !important;
+}
+
+.a-fistful-of-darkness.sheet .tabs .item:hover:not(.active) {
+  filter: brightness(1.0) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock {
+  display: block !important;
+  position: relative !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  background-size: cover !important;
+  width: 225px !important;
+  height: 225px !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock input[type="radio"] {
+  position: absolute !important;
+  display: none !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock input[type="radio"]::before,
+.a-fistful-of-darkness.sheet .afod-clock input[type="radio"]::after {
+  display: none !important;
+  content: none !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock .radio-toggle {
+  overflow: hidden !important;
+  position: absolute !important;
+  top: -50% !important;
+  right: -50% !important;
+  width: 100% !important;
+  height: 100% !important;
+  transform-origin: 0% 100% !important;
+  transition: filter 0.1s !important;
+  cursor: pointer !important;
+  opacity: 1 !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock .radio-toggle:hover {
+  filter: brightness(0.8) !important;
+  opacity: 0.9 !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-4 *:nth-child(3) {
+  transform: rotate(0deg) skewY(180deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-4 *:nth-child(5) {
+  transform: rotate(90deg) skewY(180deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-4 *:nth-child(7) {
+  transform: rotate(180deg) skewY(180deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-4 *:nth-child(9) {
+  transform: rotate(270deg) skewY(180deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-6 *:nth-child(3) {
+  transform: rotate(0deg) skewY(150deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-6 *:nth-child(5) {
+  transform: rotate(60deg) skewY(150deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-6 *:nth-child(7) {
+  transform: rotate(120deg) skewY(150deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-6 *:nth-child(9) {
+  transform: rotate(180deg) skewY(150deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-6 *:nth-child(11) {
+  transform: rotate(240deg) skewY(150deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-6 *:nth-child(13) {
+  transform: rotate(300deg) skewY(150deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-8 *:nth-child(3) {
+  transform: rotate(0deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-8 *:nth-child(5) {
+  transform: rotate(45deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-8 *:nth-child(7) {
+  transform: rotate(90deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-8 *:nth-child(9) {
+  transform: rotate(135deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-8 *:nth-child(11) {
+  transform: rotate(180deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-8 *:nth-child(13) {
+  transform: rotate(225deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-8 *:nth-child(15) {
+  transform: rotate(270deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-8 *:nth-child(17) {
+  transform: rotate(315deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-10 *:nth-child(3) {
+  transform: rotate(0deg) skewY(135deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-10 *:nth-child(5) {
+  transform: rotate(36deg) skewY(135deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-10 *:nth-child(7) {
+  transform: rotate(72deg) skewY(135deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-10 *:nth-child(9) {
+  transform: rotate(108deg) skewY(135deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-10 *:nth-child(11) {
+  transform: rotate(144deg) skewY(135deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-10 *:nth-child(13) {
+  transform: rotate(180deg) skewY(135deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-10 *:nth-child(15) {
+  transform: rotate(216deg) skewY(135deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-10 *:nth-child(17) {
+  transform: rotate(252deg) skewY(135deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-10 *:nth-child(19) {
+  transform: rotate(288deg) skewY(135deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-10 *:nth-child(21) {
+  transform: rotate(324deg) skewY(135deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(3) {
+  transform: rotate(0deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(5) {
+  transform: rotate(30deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(7) {
+  transform: rotate(60deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(9) {
+  transform: rotate(90deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(11) {
+  transform: rotate(120deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(13) {
+  transform: rotate(150deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(15) {
+  transform: rotate(180deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(17) {
+  transform: rotate(210deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(19) {
+  transform: rotate(240deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(21) {
+  transform: rotate(270deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(23) {
+  transform: rotate(300deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .afod-clock.clock-12 *:nth-child(25) {
+  transform: rotate(330deg) skewY(120deg) !important;
+}
+
+.a-fistful-of-darkness.sheet .clock-zero-label {
+  cursor: pointer;
+  color: #6a3a14;
+  opacity: 0.7;
+  font-size: 1.1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.a-fistful-of-darkness.sheet .clock-zero-label:hover {
+  opacity: 1;
+  color: #2a1408;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-list {
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 3px 4px !important;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-item {
+  gap: 2px !important;
+  padding: 0 !important;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-name {
+  font-size: 0.72em !important;
+}
+
+.a-fistful-of-darkness.sheet.clock .sheet-header h1,
+.a-fistful-of-darkness.sheet.npc .sheet-header h1 {
+  font-size: 1em !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
+
+.a-fistful-of-darkness.sheet.clock .sheet-header h1 input,
+.a-fistful-of-darkness.sheet.npc .sheet-header h1 input {
+  font-size: 1.14em !important;
+  padding: 1px 0 !important;
+  height: auto !important;
+  min-height: auto !important;
+}
+
+.a-fistful-of-darkness.sheet h1.charname,
+.a-fistful-of-darkness.sheet h1.loc-name {
+  font-size: 1em !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.a-fistful-of-darkness.sheet .charname input,
+.a-fistful-of-darkness.sheet .loc-name input {
+  font-size: 1.22em !important;
+  line-height: 1.3 !important;
+  height: auto !important;
+  min-height: 1.3em !important;
+  padding: 2px 0 !important;
+  overflow: visible !important;
+}
+
+/* ---------------------------------------- */
+/*  FUENTE 12px EN PESTAÑAS Y BODY DE ITEMS  */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"],
+.a-fistful-of-darkness.sheet.character .tab[data-tab="items"],
+.a-fistful-of-darkness.sheet.posse .tab[data-tab="abilities"] {
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .block-label,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="items"] .block-label,
+.a-fistful-of-darkness.sheet.posse .tab[data-tab="abilities"] .block-label,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .section-header,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="items"] .section-header,
+.a-fistful-of-darkness.sheet.posse .tab[data-tab="abilities"] .section-header {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.a-fistful-of-darkness.sheet.item .sheet-body {
+  font-size: 12px;
+}
+
+form.a-fistful-of-darkness.sheet.actor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+form.a-fistful-of-darkness.sheet.actor .sheet-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+form.a-fistful-of-darkness.sheet.actor .tab-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+form.a-fistful-of-darkness.sheet.item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.a-fistful-of-darkness.sheet.faction .sheet-body,
+.a-fistful-of-darkness.sheet.npc .sheet-body {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.a-fistful-of-darkness.sheet.character .load-level-selector {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .load-level-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  line-height: 1.2;
+  border: 1px solid rgba(106, 58, 20, 0.45);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #4a2e1a;
+  cursor: pointer;
+  user-select: none;
+}
+
+.a-fistful-of-darkness.sheet.character .load-level-option input[type="radio"] {
+  display: none;
+}
+
+.a-fistful-of-darkness.sheet.character .load-level-option.active {
+  background: rgba(160, 30, 20, 0.18);
+  border-color: #c03030;
+  color: #8b1a1a;
+  font-weight: bold;
+}
+
+.a-fistful-of-darkness.sheet .equip-check input[type="checkbox"] {
+  display: none !important;
+}
+
+.a-fistful-of-darkness.sheet .ability-check input[type="checkbox"] {
+  display: none !important;
+}
+
+.a-fistful-of-darkness.sheet .equip-check i {
+  width: 23px !important;
+  height: 23px !important;
+}
+
+/* ---------------------------------------- */
+/*  CHARACTER ABILITIES TAB                  */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet .tab-content .block-label,
+.a-fistful-of-darkness.sheet .tab-content .section-header,
+.a-fistful-of-darkness.sheet .tab-content .section-title,
+.a-fistful-of-darkness.sheet .tab-content .loc-section-title,
+.a-fistful-of-darkness.sheet .tab-content .form-group > label,
+.a-fistful-of-darkness.sheet .sheet-body .block-label,
+.a-fistful-of-darkness.sheet .sheet-body .section-header,
+.a-fistful-of-darkness.sheet .sheet-body .section-title,
+.a-fistful-of-darkness.sheet .sheet-body .loc-section-title,
+.a-fistful-of-darkness.sheet .sheet-body .form-group > label,
+.a-fistful-of-darkness.sheet .sheet-body .skill-entry-label {
+  font-family: "Docktrin", serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #db1010;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 4px rgba(219, 16, 16, 0.35);
+}
+
+.a-fistful-of-darkness.sheet .tab-content .xp-counter,
+.a-fistful-of-darkness.sheet .tab-content .load-counter,
+.a-fistful-of-darkness.sheet .tab-content .stat-counter,
+.a-fistful-of-darkness.sheet .tab-content .upgrade-price,
+.a-fistful-of-darkness.sheet .tab-content .claims-production strong {
+  font-family: "Docktrin", serif;
+  font-size: 19px;
+  line-height: 1;
+  color: #db1010;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 4px rgba(219, 16, 16, 0.35);
+}
+
+.a-fistful-of-darkness.sheet .tab-content input[type="number"] {
+  font-family: "Docktrin", serif;
+  font-size: 17px;
+  line-height: 1;
+  color: #db1010;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 4px rgba(219, 16, 16, 0.35);
+  border-bottom-color: #db1010;
+}
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .xp-block,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .abilities-section,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .contacts-section {
+  margin-bottom: 14px;
+}
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .section-header,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .xp-clues-label {
+  margin-bottom: 8px;
+}
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .xp-bar {
+  margin-bottom: 10px;
+}
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .xp-clues {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .ability-item {
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+}
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .ability-header {
+  margin-bottom: 6px;
+  gap: 8px;
+}
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .contacts-html {
+  margin-top: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .xp-clue,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .ability-name,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .ability-desc,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .contacts-html,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .notice,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="items"] .equip-row,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="items"] .equip-name,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="items"] .equip-info,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="items"] .cohort-type,
+.a-fistful-of-darkness.sheet.character .tab[data-tab="items"] .notice,
+.a-fistful-of-darkness.sheet.posse .tab[data-tab="abilities"] .notice {
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .xp-counter {
+  font-size: calc(1.6em - 7px);
+  line-height: 1;
+  color: #db1010;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 4px rgba(219, 16, 16, 0.35);
+}
+
+.a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"] .xp-value-input {
+  width: 24px;
+  font-size: calc(100% - 2px);
+  line-height: 1;
+  padding: 0;
+  color: inherit;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 4px rgba(219, 16, 16, 0.35);
+  border-bottom-color: #db1010;
+}
+
+.a-fistful-of-darkness.sheet .equip-check i.fa-square {
+  outline: 2px solid #000;
+  outline-offset: -1px;
+  border-radius: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .notes-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 100%;
+}
+
+.a-fistful-of-darkness.sheet .notes-textarea {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(106, 58, 20, 0.4);
+  border-radius: 3px;
+  color: #2a1408;
+  font-family: "Saloon", serif;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 6px 8px;
+  box-sizing: border-box;
+}
+
+.a-fistful-of-darkness.sheet.character .notes-textarea {
+  flex: 1;
+  min-height: 200px;
+}
+
+.a-fistful-of-darkness.sheet .tab-content textarea:not(.notes-textarea),
+.a-fistful-of-darkness.sheet .item-sheet textarea:not(.notes-textarea) {
+  width: 100%;
+  min-height: 80px;
+  resize: vertical;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(106, 58, 20, 0.4);
+  border-radius: 3px;
+  color: #2a1408;
+  font-family: "Saloon", serif;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 6px 8px;
+  box-sizing: border-box;
+}
+
+.a-fistful-of-darkness.sheet .loc-description .notes-textarea {
+  width: calc(100% - 30px);
+  margin: 0 15px;
+}
+
+.a-fistful-of-darkness.sheet .notes-view {
+  width: 100%;
+  min-height: 60px;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(106, 58, 20, 0.4);
+  border-radius: 3px;
+  color: #2a1408;
+  font-family: "Saloon", serif;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 6px 8px;
+  box-sizing: border-box;
+}
+
+.a-fistful-of-darkness.sheet .notes-view :is(p, li, span, div) {
+  color: #2a1408;
+  font-family: "Saloon", serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.a-fistful-of-darkness.sheet .notes-view :is(h1, h2, h3, h4, h5, h6) {
+  color: #db1010;
+  font-family: "Docktrin", serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 4px rgba(219, 16, 16, 0.35);
+  margin: 0 0 6px;
+}
+
+.a-fistful-of-darkness.sheet .notes-view :is(strong, b) {
+  color: #db1010;
+}
+
+.a-fistful-of-darkness.sheet .loc-description .notes-view {
+  width: calc(100% - 30px);
+  margin: 0 15px;
+}
+
+/* ---------------------------------------- */
+/*  POSSE ACHIEVEMENTS & ROLL DIALOG TWEAKS  */
+/* ---------------------------------------- */
+
+/* 1. Halo para logros no reclamados (Restaurado text-shadow oscuro para contraste bajo la clase aislada .posse) */
+.a-fistful-of-darkness.sheet.posse .ach-map-cell .ach-map-label {
+  font-size: calc(0.58em + 6px) !important;
+}
+
+.a-fistful-of-darkness.sheet.posse .ach-map-cell:not(.claimed) .ach-map-label {
+  color: #fff !important;
+  text-shadow: 0 0 4px red, 0 0 8px black, 0 0 12px black !important;
+}
+
+/* 2. Diálogo de Tiradas - Fuentes y Colores */
+.afod-roll-dialog-title {
+  font-family: 'Docktrin', sans-serif !important;
+  color: #6a3a14 !important;
+}
+
+.afod-roll-dialog,
+.afod-simple-roll-dialog {
+  font-family: 'Saloon', serif !important;
+}
+
+/* 3. Diseño de Botones de Dados (izq y der) */
+.dice-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+}
+
+.dice-row input[type="number"] {
+  width: 50px !important;
+  text-align: center !important;
+  height: 28px !important;
+}
+
+/* Customización de Tiradas en el Chat (Tipos y Tamaños) */
+.dice-tooltip.afod-die-tooltip .chat-label.label-stripe-chat {
+  font-family: 'Docktrin', sans-serif;
+  font-size: 16px;
+}
+
+.dice-tooltip.afod-die-tooltip .chat-label-small.label-stripe-chat-small {
+  font-family: 'Saloon', serif;
+  font-size: 14px;
+}
+
+.dice-tooltip.afod-die-tooltip .die.success,
+.dice-tooltip.afod-die-tooltip .die.partial-success,
+.dice-tooltip.afod-die-tooltip .die.failure,
+.dice-tooltip.afod-die-tooltip .die.critical-success {
+  font-family: 'Saloon', serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dice-tooltip.afod-die-tooltip .description p,
+.dice-tooltip.afod-die-tooltip .description {
+  font-family: 'Saloon', serif;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.dice-tooltip.afod-die-tooltip .dice-rolls .roll.die.d6 {
+  background-color: #dbd7b8;
+  background-image: none;
+  border-radius: 3px;
+}
+
+/* ---------------------------------------- */
+/*  COMPACT HEADER TWEAKS                   */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.character .character-header,
+.a-fistful-of-darkness.sheet.posse .posse-header {
+  gap: 8px;
+}
+
+.a-fistful-of-darkness.sheet.character .character-header {
+  padding: 5px 9px;
+}
+
+.a-fistful-of-darkness.sheet.posse .posse-header {
+  padding: 8px 10px;
+}
+
+.a-fistful-of-darkness.sheet.character .header-main {
+  gap: 2px;
+}
+
+.a-fistful-of-darkness.sheet.posse .header-main {
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .alias-look {
+  gap: 10px;
+}
+
+.a-fistful-of-darkness.sheet.character .character-traits {
+  gap: 6px;
+}
+
+.a-fistful-of-darkness.sheet.posse .posse-meta {
+  gap: 8px;
+}
+
+.a-fistful-of-darkness.sheet.character .char-field {
+  min-width: 112px;
+}
+
+.a-fistful-of-darkness.sheet.posse .char-field {
+  min-width: 96px;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-slot {
+  min-width: 96px;
+}
+
+.a-fistful-of-darkness.sheet.posse .trait-slot {
+  min-width: 112px;
+}
+
+.a-fistful-of-darkness.sheet.character .charname,
+.a-fistful-of-darkness.sheet.posse .charname {
+  line-height: 1.1 !important;
+}
+
+.a-fistful-of-darkness.sheet.character .charname input,
+.a-fistful-of-darkness.sheet.posse .charname input {
+  font-size: calc(1.22em - 1px) !important;
+  line-height: 1.1 !important;
+  min-height: 1.12em !important;
+  padding: 1px 0 !important;
+}
+
+.a-fistful-of-darkness.sheet.character .char-field label,
+.a-fistful-of-darkness.sheet.posse .char-field label,
+.a-fistful-of-darkness.sheet.character .trait-label,
+.a-fistful-of-darkness.sheet.posse .trait-label {
+  line-height: 1 !important;
+  margin-bottom: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .char-field input,
+.a-fistful-of-darkness.sheet.posse .char-field input {
+  font-size: calc(0.9em - 1px);
+  line-height: 1.1;
+  padding: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-value,
+.a-fistful-of-darkness.sheet.posse .trait-value {
+  min-height: 20px;
+  padding: 1px 5px;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-value-text,
+.a-fistful-of-darkness.sheet.posse .trait-value-text {
+  height: 20px !important;
+  max-height: 20px !important;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-text-input,
+.a-fistful-of-darkness.sheet.posse .trait-text-input {
+  height: 16px !important;
+  max-height: 16px !important;
+  line-height: 16px !important;
+  font-size: calc(0.85em - 1px) !important;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-name,
+.a-fistful-of-darkness.sheet.posse .trait-name,
+.a-fistful-of-darkness.sheet.character .drop-placeholder,
+.a-fistful-of-darkness.sheet.posse .drop-placeholder,
+.a-fistful-of-darkness.sheet.character .posse-name {
+  line-height: 1.1;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-name,
+.a-fistful-of-darkness.sheet.posse .trait-name,
+.a-fistful-of-darkness.sheet.character .posse-name {
+  font-size: calc(0.85em - 1px);
+}
+
+.a-fistful-of-darkness.sheet.character .drop-placeholder,
+.a-fistful-of-darkness.sheet.posse .drop-placeholder {
+  font-size: calc(0.78em - 1px);
+}
+
+.a-fistful-of-darkness.sheet.character .posse-linked {
+  gap: 5px;
+  padding: 2px 5px;
+}
+
+.a-fistful-of-darkness.sheet.character .posse-portrait {
+  width: 20px;
+  height: 20px;
+}
+
+.a-fistful-of-darkness.sheet.character .vinculo-input {
+  min-height: 30px;
+  padding: 2px 4px;
+  font-size: calc(0.85em - 1px);
+  line-height: 1.15;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-stigma-section,
+.a-fistful-of-darkness.sheet.character .mutation-harm-section,
+.a-fistful-of-darkness.sheet.character .currency-section,
+.a-fistful-of-darkness.sheet.posse .posse-stats-section,
+.a-fistful-of-darkness.sheet.posse .doom-section {
+  gap: 10px;
+  padding: 6px 10px;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-stigma-section .block-label,
+.a-fistful-of-darkness.sheet.character .mutation-harm-section .block-label,
+.a-fistful-of-darkness.sheet.character .currency-section .block-label,
+.a-fistful-of-darkness.sheet.posse .posse-stats-section .block-label,
+.a-fistful-of-darkness.sheet.posse .doom-section .block-label {
+  line-height: 1;
+  gap: 5px;
+  margin-bottom: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-counter,
+.a-fistful-of-darkness.sheet.character .stigma-counter,
+.a-fistful-of-darkness.sheet.character .mutation-counter,
+.a-fistful-of-darkness.sheet.posse .doom-counter,
+.a-fistful-of-darkness.sheet.posse .stat-value-label,
+.a-fistful-of-darkness.sheet.character .coin-total,
+.a-fistful-of-darkness.sheet.character .hellstone-total,
+.a-fistful-of-darkness.sheet.character .indulgence-counter,
+.a-fistful-of-darkness.sheet.posse .rider-name,
+.a-fistful-of-darkness.sheet.posse .hold-btn,
+.a-fistful-of-darkness.sheet.posse .vault-row input[type="number"] {
+  line-height: 1.1;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-counter,
+.a-fistful-of-darkness.sheet.character .stigma-counter,
+.a-fistful-of-darkness.sheet.character .mutation-counter,
+.a-fistful-of-darkness.sheet.posse .doom-counter {
+  font-size: calc(0.9em - 1px);
+}
+
+.a-fistful-of-darkness.sheet.character .grit-bar,
+.a-fistful-of-darkness.sheet.character .mutation-bar {
+  gap: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-segment {
+  width: 18px;
+  height: 18px;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-list {
+  gap: 2px 6px !important;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-item {
+  gap: 3px;
+  padding: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-name {
+  line-height: 1;
+}
+
+.a-fistful-of-darkness.sheet.character .mutation-segment {
+  width: 17px;
+  height: 17px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-table {
+  gap: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-row {
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-slots {
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-slots input[type="text"] {
+  font-size: calc(0.82em - 1px);
+  line-height: 1.1;
+  padding: 5px 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-armor {
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .armor-check {
+  width: 20px;
+  height: 20px;
+  font-size: calc(0.75em - 1px);
+}
+
+.a-fistful-of-darkness.sheet.character .currency-section {
+  gap: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-block,
+.a-fistful-of-darkness.sheet.character .indulgence-block,
+.a-fistful-of-darkness.sheet.posse .stat-block,
+.a-fistful-of-darkness.sheet.posse .doom-block {
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-block .block-label {
+  gap: 8px;
+}
+
+.a-fistful-of-darkness.sheet.character .coin-total,
+.a-fistful-of-darkness.sheet.character .hellstone-total {
+  font-size: calc(0.8em - 1px);
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slots {
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slot {
+  width: 28px;
+  height: 28px;
+  font-size: calc(0.85em - 1px);
+}
+
+.a-fistful-of-darkness.sheet.character .slot-empty {
+  width: 8px;
+  height: 8px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-row {
+  gap: 5px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-btn {
+  width: 16px;
+  height: 16px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-bar-wrap {
+  height: 16px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-counter {
+  font-size: calc(0.72em - 1px);
+}
+
+.a-fistful-of-darkness.sheet.posse .posse-stats-section,
+.a-fistful-of-darkness.sheet.posse .doom-section {
+  gap: 12px;
+}
+
+.a-fistful-of-darkness.sheet.posse .stat-value-label {
+  font-size: calc(0.75em - 1px);
+}
+
+.a-fistful-of-darkness.sheet.posse .tier-dots {
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.posse .tier-dot {
+  width: 13px;
+  height: 13px;
+}
+
+.a-fistful-of-darkness.sheet.posse .rep-segment {
+  height: 13px;
+}
+
+.a-fistful-of-darkness.sheet.posse .hold-btn {
+  padding: 2px 8px;
+  font-size: calc(0.75em - 1px);
+}
+
+.a-fistful-of-darkness.sheet.posse .vault-grid {
+  gap: 2px;
+}
+
+.a-fistful-of-darkness.sheet.posse .vault-row {
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.posse .vault-row input[type="number"] {
+  width: 34px;
+  font-size: calc(0.85em - 1px);
+  padding: 0 2px;
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-bar {
+  gap: 2px;
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-segment {
+  width: 26px;
+  height: 26px;
+}
+
+.a-fistful-of-darkness.sheet.posse .doom-num {
+  line-height: 1;
+}
+
+.a-fistful-of-darkness.sheet.posse .riders-list {
+  gap: 4px 10px;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-item {
+  gap: 5px;
+  padding: 3px 5px;
+}
+
+.a-fistful-of-darkness.sheet.posse .rider-name {
+  font-size: calc(0.8em - 1px);
+}
+
+/* ---------------------------------------- */
+/*  CHARACTER PRE-TABS EXTRA COMPACT        */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.character .character-header,
+.a-fistful-of-darkness.sheet.character .grit-stigma-section,
+.a-fistful-of-darkness.sheet.character .mutation-harm-section,
+.a-fistful-of-darkness.sheet.character .currency-section {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.a-fistful-of-darkness.sheet.character .character-header {
+  gap: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .portrait {
+  min-width: 58px;
+  max-width: 104px;
+}
+
+.a-fistful-of-darkness.sheet.character .header-main {
+  gap: 1px;
+}
+
+.a-fistful-of-darkness.sheet.character .charname input {
+  font-size: calc(1.22em - 2px) !important;
+  min-height: 1.05em !important;
+  padding: 0 !important;
+}
+
+.a-fistful-of-darkness.sheet.character .alias-look,
+.a-fistful-of-darkness.sheet.character .character-traits {
+  gap: 5px;
+}
+
+.a-fistful-of-darkness.sheet.character .char-field {
+  min-width: 104px;
+}
+
+.a-fistful-of-darkness.sheet.character .char-field input {
+  font-size: calc(0.9em - 2px);
+}
+
+.a-fistful-of-darkness.sheet.character .trait-slot {
+  min-width: 90px;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-value {
+  min-height: 18px;
+  padding: 0 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-value-text {
+  height: 18px !important;
+  max-height: 18px !important;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-text-input {
+  height: 15px !important;
+  max-height: 15px !important;
+  line-height: 15px !important;
+  font-size: calc(0.85em - 2px) !important;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-name,
+.a-fistful-of-darkness.sheet.character .posse-name {
+  font-size: calc(0.85em - 2px);
+}
+
+.a-fistful-of-darkness.sheet.character .drop-placeholder {
+  font-size: calc(0.78em - 2px);
+}
+
+.a-fistful-of-darkness.sheet.character .posse-linked {
+  padding: 1px 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .posse-portrait {
+  width: 18px;
+  height: 18px;
+}
+
+.a-fistful-of-darkness.sheet.character .vinculo-input {
+  min-height: 26px;
+  font-size: calc(0.85em - 2px);
+  line-height: 1.05;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-stigma-section,
+.a-fistful-of-darkness.sheet.character .mutation-harm-section {
+  gap: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-stigma-section .block-label,
+.a-fistful-of-darkness.sheet.character .mutation-harm-section .block-label,
+.a-fistful-of-darkness.sheet.character .currency-section .block-label {
+  margin-bottom: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-counter,
+.a-fistful-of-darkness.sheet.character .stigma-counter,
+.a-fistful-of-darkness.sheet.character .mutation-counter,
+.a-fistful-of-darkness.sheet.character .coin-total,
+.a-fistful-of-darkness.sheet.character .hellstone-total,
+.a-fistful-of-darkness.sheet.character .indulgence-counter {
+  font-size: calc(0.9em - 2px);
+}
+
+.a-fistful-of-darkness.sheet.character .coin-total,
+.a-fistful-of-darkness.sheet.character .hellstone-total {
+  font-size: calc(0.8em - 2px);
+}
+
+.a-fistful-of-darkness.sheet.character .grit-segment {
+  width: 16px;
+  height: 16px;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-list {
+  gap: 1px 5px !important;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-item {
+  gap: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-item input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
+}
+
+.a-fistful-of-darkness.sheet.character .mutation-segment {
+  width: 15px;
+  height: 15px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-table {
+  gap: 1px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-level {
+  width: 56px;
+  min-width: 56px;
+  padding-right: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-slots input[type="text"] {
+  font-size: calc(0.82em - 2px);
+  padding: 4px 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .armor-check {
+  width: 18px;
+  height: 18px;
+  font-size: calc(0.75em - 2px);
+}
+
+.a-fistful-of-darkness.sheet.character .currency-section {
+  gap: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-block,
+.a-fistful-of-darkness.sheet.character .indulgence-block {
+  gap: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-block .block-label {
+  gap: 6px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slot {
+  width: 26px;
+  height: 26px;
+  font-size: calc(0.85em - 2px);
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slot:nth-child(4) {
+  margin-right: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .slot-empty {
+  width: 7px;
+  height: 7px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-row {
+  gap: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-btn {
+  width: 14px;
+  height: 14px;
+  font-size: calc(0.65em - 1px);
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-bar-wrap {
+  height: 14px;
+}
+
+/* ---------------------------------------- */
+/*  CHARACTER NAME / ALIAS LINE BALANCE     */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.character .charname input {
+  font-size: calc(1.22em + 2px) !important;
+  line-height: calc(1em + 4px) !important;
+  min-height: calc(1em + 6px) !important;
+  padding: 2px 0 0 !important;
+}
+
+.a-fistful-of-darkness.sheet.character .alias-look .char-field input {
+  font-size: 0.9em;
+  line-height: 1;
+  height: 1em;
+  min-height: 1em;
+  padding: 0 !important;
+}
+
+/* ---------------------------------------- */
+/*  CHARACTER HEADER / PANELS REBALANCE     */
+/* ---------------------------------------- */
+
+.a-fistful-of-darkness.sheet.character .character-header {
+  gap: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.a-fistful-of-darkness.sheet.character .portrait {
+  min-width: 62px;
+  max-width: 110px;
+}
+
+.a-fistful-of-darkness.sheet.character .header-main {
+  gap: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .alias-look,
+.a-fistful-of-darkness.sheet.character .character-traits {
+  gap: 6px;
+}
+
+.a-fistful-of-darkness.sheet.character .char-field {
+  min-width: 108px;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-slot {
+  min-width: 94px;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-value {
+  min-height: 19px;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-value-text {
+  height: 19px !important;
+  max-height: 19px !important;
+}
+
+.a-fistful-of-darkness.sheet.character .trait-text-input {
+  height: 16px !important;
+  max-height: 16px !important;
+  line-height: 16px !important;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-stigma-section,
+.a-fistful-of-darkness.sheet.character .mutation-harm-section {
+  gap: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-section {
+  gap: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-stigma-section .block-label,
+.a-fistful-of-darkness.sheet.character .mutation-harm-section .block-label,
+.a-fistful-of-darkness.sheet.character .currency-section .block-label {
+  margin-bottom: 1px;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-bar,
+.a-fistful-of-darkness.sheet.character .mutation-bar,
+.a-fistful-of-darkness.sheet.character .currency-slots {
+  gap: 1px;
+}
+
+.a-fistful-of-darkness.sheet.character .grit-segment {
+  width: 15px;
+  height: 15px;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-list {
+  gap: 0 4px !important;
+}
+
+.a-fistful-of-darkness.sheet.character .stigma-item input[type="checkbox"] {
+  width: 11px;
+  height: 11px;
+}
+
+.a-fistful-of-darkness.sheet.character .mutation-segment {
+  width: 14px;
+  height: 14px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-table {
+  gap: 0;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-row {
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-level {
+  width: 52px;
+  min-width: 52px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-slots {
+  gap: 2px;
+}
+
+.a-fistful-of-darkness.sheet.character .harm-slots input[type="text"] {
+  padding: 3px 2px;
+  line-height: 1;
+}
+
+.a-fistful-of-darkness.sheet.character .armor-check {
+  width: 17px;
+  height: 17px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-block,
+.a-fistful-of-darkness.sheet.character .indulgence-block {
+  gap: 1px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-block .block-label {
+  gap: 5px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slot {
+  width: 24px;
+  height: 24px;
+}
+
+.a-fistful-of-darkness.sheet.character .currency-slot:nth-child(4) {
+  margin-right: 1px;
+}
+
+.a-fistful-of-darkness.sheet.character .slot-empty {
+  width: 6px;
+  height: 6px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-row {
+  gap: 3px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-btn {
+  width: 12px;
+  height: 12px;
+}
+
+.a-fistful-of-darkness.sheet.character .indulgence-bar-wrap {
+  height: 12px;
+}
+

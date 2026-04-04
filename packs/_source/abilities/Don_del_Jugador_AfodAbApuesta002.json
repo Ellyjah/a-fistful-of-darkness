@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbApuesta002",
+  "name": "Don del Jugador",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Cuando te engañan o sorprenden, obtienes un flashback de 1 Aguante gratis. +1 efecto cuando reúnes información en fiestas o partidas de juego.</p>",
+    "class": "La Apuesta",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbApuesta002",
+  "effects": [],
+  "folder": "ba5EPytcNujEnqf6"
+}

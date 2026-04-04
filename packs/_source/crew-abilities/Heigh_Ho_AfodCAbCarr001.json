@@ -1,0 +1,26 @@
+{
+  "_id": "AfodCAbCarr001",
+  "name": "Heigh-Ho",
+  "type": "crew_ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Cada PJ puede añadir +1 en una acción de Sintonizar, Sabotear o Acechar (máximo 3).</p>",
+    "class": "Carroñeros de Hellstone",
+    "price": 1,
+    "purchased": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodCAbCarr001",
+  "effects": [],
+  "folder": "LAFSZcT03Y9wBYV8"
+}

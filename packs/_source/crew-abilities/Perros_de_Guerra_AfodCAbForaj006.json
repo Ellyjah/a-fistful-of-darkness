@@ -1,0 +1,26 @@
+{
+  "_id": "AfodCAbForaj006",
+  "name": "Perros de Guerra",
+  "type": "crew_ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>La cuadrilla puede reclutar un cohorte adicional de tipo Matones sin coste de mejora. Este cohorte empieza con daño \"Debilitado\" pero no cuesta acción de tiempo libre.</p>",
+    "class": "Cuadrilla de Forajidos",
+    "price": 1,
+    "purchased": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodCAbForaj006",
+  "effects": [],
+  "folder": "0J0b4TadCRCxGRUh"
+}

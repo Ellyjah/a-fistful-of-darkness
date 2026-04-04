@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbPuno004",
+  "name": "Ira Sagrada",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Cuando abres cuerpo y alma al Más Allá Ardiente puedes imbuir tus manos, armas cuerpo a cuerpo o herramientas con energía espiritual. Ganas potencia en combate contra lo sobrenatural. Puedes aferrar y capturar espíritus con las manos desnudas.</p>",
+    "class": "El Puño",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbPuno004",
+  "effects": [],
+  "folder": "9KLelUVYFW7WN6vi"
+}

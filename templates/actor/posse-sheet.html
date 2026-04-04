@@ -1,0 +1,369 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet actor posse" autocomplete="off">
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   CABECERA: nombre, tipo, guarida, modus               --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <section class="sheet-header posse-header">
+
+    <img class="portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+
+    <div class="header-main">
+      <h1 class="charname">
+        <input name="name" type="text" value="{{actor.name}}"
+               placeholder="Nombre de la Cuadrilla" />
+      </h1>
+
+      <div class="posse-meta">
+
+        <div class="trait-slot" data-item-type="crew_type">
+          <label class="trait-label">{{localize "TYPES.Item.crew_type"}}</label>
+          <div class="trait-value">
+            {{#each crewTypes}}
+              <div class="trait-item" data-item-id="{{id}}">
+                <a class="item-sheet-open trait-name">{{name}}</a>
+                <a class="item-delete"><i class="fas fa-times"></i></a>
+              </div>
+            {{else}}
+              <span class="drop-placeholder">
+                <i class="fas fa-users-cog"></i> {{localize "TYPES.Item.crew_type"}}
+              </span>
+            {{/each}}
+          </div>
+        </div>
+
+        <div class="char-field">
+          <label>{{localize "AFOD.Lair"}}</label>
+          <input type="text" name="system.lair" value="{{system.lair}}" placeholder="—" />
+        </div>
+
+        <div class="char-field char-field-wide">
+          <label>{{localize "AFOD.Modus"}}</label>
+          <input type="text" name="system.modus" value="{{system.modus}}" placeholder="—" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   ESTADÍSTICAS: Rango · REP · Hold · Bóveda            --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <section class="posse-stats-section">
+
+    <div class="stat-block tier-block">
+      <div class="block-label">{{localize "AFOD.Tier"}}</div>
+      <div class="tier-dots">
+        {{#times_from_1 4}}
+          <div class="tier-dot {{#if (lteq this ../tierValue)}}filled{{/if}}"
+               data-value="{{this}}"></div>
+        {{/times_from_1}}
+      </div>
+      <span class="stat-value-label">{{tierValue}}</span>
+    </div>
+
+    <div class="stat-block rep-block">
+      <div class="block-label">
+        {{localize "AFOD.Rep"}}
+        <span class="stat-counter">{{repValue}} / {{system.max.rep}}</span>
+      </div>
+      <div class="rep-bar">
+        {{#times_from_1 12}}
+          <div class="rep-segment {{#if (lteq this ../repValue)}}filled{{/if}}"
+               data-value="{{this}}"></div>
+        {{/times_from_1}}
+      </div>
+    </div>
+
+    <div class="stat-block hold-block">
+      <div class="block-label">{{localize "AFOD.Hold"}}</div>
+      <div class="hold-toggle">
+        <button type="button" class="hold-btn {{#if (eq system.hold 'strong')}}active{{/if}}"
+                data-hold="strong">{{localize "AFOD.HoldStrong"}}</button>
+        <button type="button" class="hold-btn {{#if (eq system.hold 'weak')}}active{{/if}}"
+                data-hold="weak">{{localize "AFOD.HoldWeak"}}</button>
+      </div>
+    </div>
+
+    {{!-- Bóveda: Mano | Bóveda --}}
+    <div class="stat-block vault-block">
+      <div class="block-label">{{localize "AFOD.Vault"}}</div>
+      <div class="vault-grid">
+        <div class="vault-row">
+          <i class="fas fa-circle coin-icon" title="{{localize 'AFOD.Coin'}}"></i>
+          <input type="number" name="system.coin.value"
+                 value="{{system.coin.value}}" min="0" max="{{system.coin.max}}"
+                 title="En mano" />
+          <span class="vault-divider">|</span>
+          <input type="number" name="system.vault.coin"
+                 value="{{system.vault.coin}}" min="0"
+                 title="{{localize 'AFOD.Vault'}}" />
+        </div>
+        <div class="vault-row">
+          <i class="fas fa-gem hellstone-icon" title="{{localize 'AFOD.Hellstone'}}"></i>
+          <input type="number" name="system.hellstone.value"
+                 value="{{system.hellstone.value}}" min="0" max="{{system.hellstone.max}}"
+                 title="En mano" />
+          <span class="vault-divider">|</span>
+          <input type="number" name="system.vault.hellstone"
+                 value="{{system.vault.hellstone}}" min="0"
+                 title="{{localize 'AFOD.Vault'}}" />
+        </div>
+      </div>
+      <div class="vault-labels">
+        <span></span><span>Mano</span><span></span><span>Bóveda</span>
+      </div>
+    </div>
+
+  </section>
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   PERDICIÓN + JINETES                                   --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <section class="doom-section">
+
+    <div class="doom-block">
+      <div class="block-label">
+        {{localize "AFOD.Doom"}}
+        <span class="doom-counter {{#if (gteq doomValue 10)}}at-max{{/if}}">{{doomValue}} / 10</span>
+      </div>
+      <div class="doom-bar">
+        {{#times_from_1 10}}
+          <div class="doom-segment
+                       {{#if (lteq this ../doomValue)}}filled{{/if}}
+                       {{#if (gteq this 8)}}danger{{/if}}"
+               data-value="{{this}}">
+            <span class="doom-num">{{this}}</span>
+          </div>
+        {{/times_from_1}}
+      </div>
+    </div>
+
+    <div class="riders-block">
+      <div class="block-label">{{localize "AFOD.Riders"}}</div>
+      <div class="riders-list">
+        <label class="rider-item rider-white {{#if system.riders.white}}active{{/if}}">
+          <input type="checkbox" name="system.riders.white" {{#if system.riders.white}}checked{{/if}} />
+          <i class="fas fa-horse rider-icon"></i>
+          <span class="rider-name">{{localize "AFOD.RiderWhite"}}</span>
+        </label>
+        <label class="rider-item rider-red {{#if system.riders.red}}active{{/if}}">
+          <input type="checkbox" name="system.riders.red" {{#if system.riders.red}}checked{{/if}} />
+          <i class="fas fa-horse rider-icon"></i>
+          <span class="rider-name">{{localize "AFOD.RiderRed"}}</span>
+        </label>
+        <label class="rider-item rider-black {{#if system.riders.black}}active{{/if}}">
+          <input type="checkbox" name="system.riders.black" {{#if system.riders.black}}checked{{/if}} />
+          <i class="fas fa-horse rider-icon"></i>
+          <span class="rider-name">{{localize "AFOD.RiderBlack"}}</span>
+        </label>
+        <label class="rider-item rider-pale {{#if system.riders.pale}}active{{/if}}">
+          <input type="checkbox" name="system.riders.pale" {{#if system.riders.pale}}checked{{/if}} />
+          <i class="fas fa-horse rider-icon"></i>
+          <span class="rider-name">{{localize "AFOD.RiderPale"}}</span>
+        </label>
+      </div>
+    </div>
+
+  </section>
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   TABS                                                  --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <nav class="tabs" data-group="primary">
+    <a class="item active" data-tab="abilities">{{localize "AFOD.Abilities"}}</a>
+    <a class="item" data-tab="claims">{{localize "AFOD.HellstoneClaims"}}</a>
+    <a class="item" data-tab="achievements">{{localize "AFOD.Achievements"}}</a>
+    <a class="item" data-tab="notes">{{localize "AFOD.Notes"}}</a>
+  </nav>
+
+  <section class="tab-content">
+
+    {{!-- ══════════════════════════════════════════════════════════════ --}}
+    {{!--   TAB: HABILIDADES — XP + Habilidades + Mejoras + Cohortes   --}}
+    {{!-- ══════════════════════════════════════════════════════════════ --}}
+    <div class="tab active" data-tab="abilities">
+
+      {{!-- XP de Cuadrilla --}}
+      <div class="xp-block">
+        <div class="block-label">
+          {{localize "AFOD.Experience"}}
+          <span class="xp-counter">{{expValue}} / {{system.max.exp}}</span>
+        </div>
+        <div class="xp-bar">
+          {{#times_from_1 system.max.exp}}
+            <div class="xp-segment {{#if (lteq this ../expValue)}}filled{{/if}}"
+                 data-value="{{this}}"></div>
+          {{/times_from_1}}
+        </div>
+        {{!-- Disparadores XP desde el tipo de cuadrilla --}}
+        {{#each crewTypes}}
+          {{#if system.experience_clues}}
+            <div class="xp-clues">
+              {{{system.experience_clues_html}}}
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+
+      {{!-- Habilidades especiales de cuadrilla --}}
+      <div class="abilities-section">
+        <div class="section-header">{{localize "AFOD.CrewAbilities"}}</div>
+        {{#each crewAbilities}}
+          <div class="ability-item {{#if system.purchased}}purchased{{/if}}"
+               data-item-id="{{id}}">
+            <div class="ability-header">
+              <label class="ability-check">
+                <input type="checkbox" class="ability-purchased"
+                       {{#if system.purchased}}checked{{/if}} />
+                <i class="fas {{#if system.purchased}}fa-check-circle{{else}}fa-circle{{/if}}"></i>
+              </label>
+              <a class="item-sheet-open ability-name"><strong>{{name}}</strong></a>
+              <a class="item-delete ability-delete"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="ability-desc">{{{system.description}}}</div>
+          </div>
+        {{else}}
+          <p class="notice">{{localize "AFOD.NoCrewAbilities"}}</p>
+        {{/each}}
+      </div>
+
+      {{!-- Mejoras de cuadrilla --}}
+      <div class="upgrades-section">
+        <div class="section-header">{{localize "AFOD.CrewUpgrades"}}</div>
+        {{#each crewUpgrades}}
+          <div class="upgrade-item {{#if system.purchased}}purchased{{/if}}"
+               data-item-id="{{id}}">
+            <label class="ability-check">
+              <input type="checkbox" class="ability-purchased"
+                     {{#if system.purchased}}checked{{/if}} />
+              <i class="fas {{#if system.purchased}}fa-check-circle{{else}}fa-circle{{/if}}"></i>
+            </label>
+            <a class="item-sheet-open upgrade-name"><strong>{{name}}</strong></a>
+            {{#if system.price}}
+              <span class="upgrade-price">×{{system.price}}</span>
+            {{/if}}
+            <a class="item-delete upgrade-delete"><i class="fas fa-times"></i></a>
+          </div>
+        {{else}}
+          <p class="notice">{{localize "AFOD.NoCrewUpgrades"}}</p>
+        {{/each}}
+      </div>
+
+      {{!-- Cohortes --}}
+      {{#if cohorts.length}}
+        <div class="cohorts-section">
+          <div class="section-header">{{localize "TYPES.Item.cohort"}}</div>
+          {{#each cohorts}}
+            <div class="equip-row cohort-row" data-item-id="{{id}}">
+              <a class="item-sheet-open equip-name">
+                <i class="fas fa-users"></i> {{name}}
+                <span class="cohort-type">({{system.cohort.[0]}})</span>
+              </a>
+              <a class="item-delete equip-delete"><i class="fas fa-times"></i></a>
+            </div>
+          {{/each}}
+        </div>
+      {{/if}}
+
+      {{!-- Contactos (sólo lectura: provienen del tipo de cuadrilla equipado) --}}
+      <div class="contacts-section">
+        <div class="section-header">{{localize "AFOD.Contacts"}}</div>
+        {{#each crewTypes}}
+          {{#if system.contacts}}
+            <div class="contacts-html">{{{system.contacts}}}</div>
+          {{else}}
+            <p class="notice">{{localize "AFOD.NoContacts"}}</p>
+          {{/if}}
+        {{else}}
+          <p class="notice">{{localize "AFOD.NoContacts"}}</p>
+        {{/each}}
+      </div>
+
+    </div>
+
+    {{!-- ── Concesiones de Hellstone ── --}}
+    <div class="tab" data-tab="claims">
+
+      <div class="claims-toolbar">
+        <span class="claims-production">
+          <i class="fas fa-gem hellstone-icon"></i>
+          {{localize "AFOD.HellstoneClaims"}}: <strong>{{totalHellstoneProduction}}</strong>
+        </span>
+        <button type="button" class="afod-btn claim-add">
+          <i class="fas fa-plus"></i> Añadir Concesión
+        </button>
+      </div>
+
+      {{#if system.hellstone_claims.length}}
+        <div class="claims-list">
+          <div class="claims-header-row">
+            <span class="claim-col-name">Nombre</span>
+            <span class="claim-col-level">{{localize "AFOD.HellstoneClaimLevel"}}</span>
+            <span class="claim-col-crew">{{localize "AFOD.HellstoneClaimCrew"}}</span>
+            <span class="claim-col-equip">{{localize "AFOD.HellstoneClaimEquipment"}}</span>
+            <span class="claim-col-del"></span>
+          </div>
+          {{#each system.hellstone_claims}}
+            <div class="claim-row" data-claim-index="{{@index}}">
+              <input class="claim-name claim-col-name" type="text"
+                     value="{{name}}" placeholder="Nombre de la concesión" />
+              <input class="claim-level claim-col-level" type="number"
+                     value="{{level}}" min="0" max="4" />
+              <input class="claim-crew claim-col-crew" type="text"
+                     value="{{crew}}" placeholder="Tripulación asignada" />
+              <label class="claim-col-equip">
+                <input type="checkbox" class="claim-equipment"
+                       {{#if equipment}}checked{{/if}} />
+                <i class="fas fa-check-circle {{#if equipment}}active{{/if}}"></i>
+              </label>
+              <a class="claim-delete claim-col-del">
+                <i class="fas fa-times"></i>
+              </a>
+            </div>
+          {{/each}}
+        </div>
+      {{else}}
+        <p class="notice">
+          Sin concesiones de Hellstone aún. Usa el botón para añadir una.
+        </p>
+      {{/if}}
+
+    </div>
+
+    {{!-- ── Logros (mapa de cuadrícula 3×5) ── --}}
+    <div class="tab" data-tab="achievements">
+
+      <div class="ach-map-grid">
+
+        {{!-- Celdas de logros --}}
+        {{#each achievementCells}}
+          <div class="ach-map-cell {{achType}}{{#if claimed}} claimed{{/if}}{{#if fixed}} fixed{{/if}}"
+               data-ach-index="{{index}}"
+               style="grid-column:{{gridCol}};grid-row:{{gridRow}}"
+               title="{{typeLabel}}">
+            <span class="ach-map-label">{{typeLabel}}</span>
+            <span class="ach-map-name">{{displayName}}</span>
+          </div>
+        {{/each}}
+
+        {{!-- Conectores en cruz --}}
+        {{#each achievementCrosses}}
+          <div class="ach-map-cross {{dir}}"
+               style="grid-column:{{gridCol}};grid-row:{{gridRow}}"></div>
+        {{/each}}
+
+      </div>{{!-- /ach-map-grid --}}
+
+    </div>
+
+    {{!-- Notas --}}
+    <div class="tab" data-tab="notes">
+      <div class="form-group notes-group">
+        <label>{{localize "AFOD.Notes"}}</label>
+        <textarea name="system.description" class="notes-textarea" rows="14">{{system.description}}</textarea>
+      </div>
+    </div>
+
+  </section>
+
+</form>

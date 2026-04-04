@@ -1,0 +1,22 @@
+{
+  "_id": "1eFc5CvghmDiH8h4",
+  "name": "El Toque Sutil",
+  "type": "Item",
+  "description": "",
+  "folder": "wN8FuxwzAPoX2byx",
+  "sorting": "a",
+  "sort": 800,
+  "color": "#3d5c2d",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774929356053,
+    "modifiedTime": 1774929356053,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!1eFc5CvghmDiH8h4"
+}

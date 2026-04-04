@@ -1,0 +1,24 @@
+{
+  "_id": "R43yj8vILOPWvMj0",
+  "name": "Misteriosa",
+  "type": "heritage",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>Tus orígenes son inciertos, mezclados o deliberadamente ocultos. Quizás no conoces tu propio pasado, o quizás prefieres que nadie lo conozca. Tu herencia es un misterio incluso para ti.</p><p><em>Pista de XP: Expresaste tu herencia o trasfondo misterioso durante la sesión.</em></p>"
+  },
+  "folder": "obsxk7MVOBexe5Kv",
+  "sort": 500,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774931069946,
+    "modifiedTime": 1774931069946,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!R43yj8vILOPWvMj0",
+  "effects": []
+}

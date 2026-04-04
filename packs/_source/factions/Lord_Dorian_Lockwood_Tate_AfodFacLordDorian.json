@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacLordDorian",
+  "name": "Lord Dorian Lockwood-Tate",
+  "type": "faction",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Un Conde inglés — o eso se dice — en el país por riqueza y para llevar las bellas artes al pueblo. Los rumores dicen que tuvo que dejar Inglaterra con su mayordomo Alfred a toda prisa después de clavar una estaca en el corazón de un supuesto vampiro / compatriota inglés.</p><p>Tuvo un enfrentamiento recientemente con la Good Health Association sobre una representación de Shakespeare en la House of Roses.</p>",
+    "type": "",
+    "tier": 1,
+    "hold": {
+      "value": [
+        1
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Educar al pueblo llano (Repetir)",
+    "goal_1_clock_max": 6,
+    "goal_2": "Encontrar la Guarida de los No-muertos",
+    "goal_2_clock_max": 8,
+    "goal_clock": 0,
+    "assets": "Riqueza (posible). Conocimiento de lo sobrenatural. Mayordomo Alfred. Excéntrico pero inofensivo en apariencia.",
+    "quirks": "Cazador de vampiros aficionado. Exiliado de Inglaterra por sus métodos. Pasión por las artes.",
+    "notables": "Lord Dorian Lockwood-Tate (el Conde). Alfred (mayordomo).",
+    "allies": "House of Roses (eventos artísticos)",
+    "enemies": "Good Health Association (rivalidad reciente). No-muertos de todo tipo.",
+    "situation": "Aristócrata excéntrico con agenda de caza sobrenatural oculta bajo fachada cultural.",
+    "notes": "Reloj 1 (Repetir): -1 Perdición al completarse. Reloj 2: -1 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacLordDorian",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

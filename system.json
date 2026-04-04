@@ -1,0 +1,106 @@
+{
+  "id": "a-fistful-of-darkness",
+  "title": "A Fistful of Darkness",
+  "description": "Sistema para A Fistful of Darkness, un hack de Blades in the Dark ambientado en el Weird West.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": 13,
+    "verified": "13.351"
+  },
+  "url": "https://github.com/Ellyjah/a-fistful-of-darkness",
+  "manifest": "https://raw.githubusercontent.com/Ellyjah/a-fistful-of-darkness/main/system.json",
+  "download": "https://github.com/Ellyjah/a-fistful-of-darkness/releases/download/v0.1.0/a-fistful-of-darkness.zip",
+  "authors": [
+    { "name": "John Harper", "url": "", "roles": ["Original: Blades in the Dark"] },
+    { "name": "Stefan Struck", "url": "", "roles": ["Original: A Fistful of Darkness"] }
+  ],
+  "esmodules": [
+    "module/afod.js"
+  ],
+  "styles": [
+    "styles/afod.css"
+  ],
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ca",
+      "name": "Català",
+      "path": "lang/cat.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "playbooks",
+      "label": "Libretos",
+      "path": "packs/playbooks",
+      "type": "Item",
+      "system": "a-fistful-of-darkness"
+    },
+    {
+      "name": "crew-types",
+      "label": "Tipos de Cuadrilla",
+      "path": "packs/crew-types",
+      "type": "Item",
+      "system": "a-fistful-of-darkness"
+    },
+    {
+      "name": "items",
+      "label": "Objetos Estándar",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "a-fistful-of-darkness"
+    },
+    {
+      "name": "vices",
+      "label": "Vicios",
+      "path": "packs/vices",
+      "type": "Item",
+      "system": "a-fistful-of-darkness"
+    },
+    {
+      "name": "factions",
+      "label": "Facciones",
+      "path": "packs/factions",
+      "type": "Actor",
+      "system": "a-fistful-of-darkness"
+    },
+    {
+      "name": "abilities",
+      "label": "Habilidades",
+      "path": "packs/abilities",
+      "type": "Item",
+      "system": "a-fistful-of-darkness"
+    },
+    {
+      "name": "crew-abilities",
+      "label": "Habilidades de Cuadrilla",
+      "path": "packs/crew-abilities",
+      "type": "Item",
+      "system": "a-fistful-of-darkness"
+    },
+    {
+      "name": "heritages",
+      "label": "Herencias",
+      "path": "packs/heritages",
+      "type": "Item",
+      "system": "a-fistful-of-darkness"
+    },
+    {
+      "name": "rolltables",
+      "label": "Tablas de Tirada",
+      "path": "packs/rolltables",
+      "type": "RollTable",
+      "system": "a-fistful-of-darkness"
+    }
+  ],
+  "packFolders": []
+}

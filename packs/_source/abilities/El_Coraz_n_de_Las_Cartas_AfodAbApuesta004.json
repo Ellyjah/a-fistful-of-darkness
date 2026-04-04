@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbApuesta004",
+  "name": "El Corazón de Las Cartas",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Acepta la posición/efecto del DJ tal como la marca, sin esforzarte ni gastar Aguante. Recupera 1 Aguante.</p>",
+    "class": "La Apuesta",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbApuesta004",
+  "effects": [],
+  "folder": "ba5EPytcNujEnqf6"
+}

@@ -1,0 +1,78 @@
+/**
+ * crew-achievements.js — Logros predeterminados por tipo de cuadrilla
+ * 15 casillas por cuadrilla (índices 0-14). Índice 7 = EQUILIBRIO (casilla fija).
+ * Distribución de tipos:
+ *   Oscuro:  0, 5, 6, 10, 11
+ *   Neutral: 1, 2, 7(fijo), 12, 13
+ *   Luz:     3, 4, 8, 9, 14
+ */
+export const CREW_DEFAULT_ACHIEVEMENTS = {
+  "Carroñeros de Hellstone": [
+    { name: "LA RED ENREDADA",        claimed: false },
+    { name: "LA CACERÍA SALVAJE",     claimed: false },
+    { name: "SOPLONES DEL BARRO",     claimed: false },
+    { name: "PASO SEGURO",            claimed: false },
+    { name: "ENTERRADOR",             claimed: false },
+    { name: "SOMBRAS MORDEDORAS",     claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE", claimed: false },
+    { name: "EQUILIBRIO",             claimed: false },
+    { name: "ARMA SAGRADA",           claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE", claimed: false },
+    { name: "SIERVO DE LA MUERTE",    claimed: false },
+    { name: "ARMA PROFANA",           claimed: false },
+    { name: "ALIJO SECRETO",          claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE", claimed: false },
+    { name: "BALA PERDIDA",           claimed: false },
+  ],
+  "Cuadrilla de Forajidos": [
+    { name: "LA MORGUE",                         claimed: false },
+    { name: "FUNERAL DE HOMBRE LIBRE",           claimed: false },
+    { name: "UNA GOTA DEL INFIERNO",             claimed: false },
+    { name: "DADOS CARGADOS",                    claimed: false },
+    { name: "EL TRONO DE CALAVERAS",             claimed: false },
+    { name: "LA BESTIA",                         claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE",            claimed: false },
+    { name: "EQUILIBRIO",                        claimed: false },
+    { name: "ÚLTIMOS TRATOS DE HOMBRES MUERTOS", claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE",            claimed: false },
+    { name: "FANTASMAS VENGATIVOS",              claimed: false },
+    { name: "PORTADOR DEL DOLOR",                claimed: false },
+    { name: "CONEXIÓN FERROVIARIA",              claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE",            claimed: false },
+    { name: "ÁRBOL DE LOS AHORCADOS",            claimed: false },
+  ],
+  "Cazarrecompensas": [
+    { name: "LA RED ENREDADA",        claimed: false },
+    { name: "LA CACERÍA SALVAJE",     claimed: false },
+    { name: "SOPLONES DEL BARRO",     claimed: false },
+    { name: "PASO SEGURO",            claimed: false },
+    { name: "ENTERRADOR",             claimed: false },
+    { name: "SOMBRAS MORDEDORAS",     claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE", claimed: false },
+    { name: "EQUILIBRIO",             claimed: false },
+    { name: "ARMA SAGRADA",           claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE", claimed: false },
+    { name: "SIERVO DE LA MUERTE",    claimed: false },
+    { name: "ARMA PROFANA",           claimed: false },
+    { name: "ALIJO SECRETO",          claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE", claimed: false },
+    { name: "BALA PERDIDA",           claimed: false },
+  ],
+  "Tribu": [
+    { name: "LA TORMENTA ROTA",                claimed: false },
+    { name: "EL ORÁCULO",                      claimed: false },
+    { name: "EL GUARDIÁN",                     claimed: false },
+    { name: "ESPÍRITUS ANCESTRALES",           claimed: false },
+    { name: "SOMBRA DE LA LUNA",               claimed: false },
+    { name: "EL VÍNCULO",                      claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE",          claimed: false },
+    { name: "EQUILIBRIO",                      claimed: false },
+    { name: "EL CANTO DEL BÚFALO",             claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE",          claimed: false },
+    { name: "VISIONES DEL FIN DE LOS TIEMPOS", claimed: false },
+    { name: "EL MAR DE HUESOS",                claimed: false },
+    { name: "LA DANZA DEL COYOTE",             claimed: false },
+    { name: "CONCESIÓN DE HELLSTONE",          claimed: false },
+    { name: "DOMANDO AL PÁJARO TRUENO",        claimed: false },
+  ],
+};

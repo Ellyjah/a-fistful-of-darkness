@@ -1,0 +1,73 @@
+{
+  "_id": "AfodOrador00001",
+  "name": "El Orador",
+  "type": "class",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Un guía espiritual y protector. El Orador camina entre los mundos, sirve a su fe y guía a otros a través de las sombras.</p><h3>Habilidades Especiales</h3><ul><li><strong>CAMINAR POR EL VALLE</strong> Puedes gastar tu armadura especial para resistir una consecuencia sobrenatural, o para esforzarte cuando tratas con las fuerzas del Infierno.</li><li><strong>PASTOR</strong> Puedes esforzarte para: realizar una hazaña de gracia social, influir en una multitud o captar la atención de lo Divino.</li><li><strong>OLFATO DE SABUESO</strong> Siempre percibes lo incorrecto. Toma +1d cuando recopilas información para descubrir corrupción o encontrar al corrompido.</li><li><strong>CONSAGRAR</strong> Puedes esforzarte para imbuir un objeto o lugar con poder divino. Ganas potencia cuando se enfrenta a lo sobrenatural.</li><li><strong>CURANDERO</strong> Cuando recibes un juramento sincero de alguien para seguir uno de los preceptos de tu Fe, pueden limpiar cualquier nivel de gravedad de daño. Si alguna vez rompen el precepto, reciben daño de nivel 2: Condenado.</li><li><strong>ELÍ</strong> Uno de tus sentidos está tan sintonizado con el mundo que puede sustituir a cualquiera de los otros. Obtén +1d a cualquier acción que puedas montar como sorpresa de esta habilidad inesperada.</li><li><strong>PREMONICIÓN</strong> Ten un flashback por sesión a una visión, sueño, oración o meditación que ahora cobra sentido y te ha preparado para este mismo momento. El primer Aguante gastado de esta forma es gratuito.</li><li><strong>VETERANO</strong> Elige una habilidad especial de otra fuente.</li></ul><h3>Contactos</h3><ul><li>Nathaniel, un Pecador Redimido</li><li>Patience, una Abogada</li><li>Cyrus, un Pistolero</li><li>Mistress Bethia, una Artista</li><li>Speaks-with-the-Wind</li></ul>",
+    "subtitle": "Un guía espiritual y protector",
+    "experience_clues": [
+      "Afrontaste un desafío con convicción o sacrificio.",
+      "Expresaste tus creencias, impulsos, herencia o trasfondo.",
+      "Luchaste con problemas de tu vicio, mutación o estigma durante la sesión."
+    ],
+    "base_skills": {
+      "hunt": [
+        0
+      ],
+      "read": [
+        1
+      ],
+      "survey": [
+        0
+      ],
+      "craft": [
+        0
+      ],
+      "sling": [
+        0
+      ],
+      "prowl": [
+        0
+      ],
+      "brawl": [
+        0
+      ],
+      "disable": [
+        0
+      ],
+      "attune": [
+        2
+      ],
+      "command": [
+        1
+      ],
+      "consort": [
+        0
+      ],
+      "sway": [
+        1
+      ]
+    },
+    "contacts": "<ul><li><strong>Nathaniel</strong> — Pecador redimido</li><li><strong>Patience</strong> — Abogada</li><li><strong>Cyrus</strong> — Pistolero</li><li><strong>Mistress Bethia</strong> — Artista</li><li><strong>Habla-con-el-Viento</strong> — Chamán</li></ul>"
+  },
+  "effects": [],
+  "folder": "mdKzmXUhAbEnUzo1",
+  "sort": 800000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodOrador00001"
+}

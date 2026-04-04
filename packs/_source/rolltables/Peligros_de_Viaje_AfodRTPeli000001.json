@@ -1,0 +1,107 @@
+{
+  "_id": "AfodRTPeli000001",
+  "name": "Peligros de Viaje",
+  "img": "icons/svg/trap.svg",
+  "description": "",
+  "results": [
+    {
+      "_id": "AfodRRPeli000001",
+      "type": 0,
+      "text": "Naturaleza Salvaje — Tira en subtabla Peligros: Naturaleza Salvaje",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRPeli000002",
+      "type": 0,
+      "text": "Monstruos y Animales — Tira en subtabla Peligros: Monstruos y Animales",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRPeli000003",
+      "type": 0,
+      "text": "Sobrenatural — Tira en subtabla Peligros: Sobrenatural",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRPeli000004",
+      "type": 0,
+      "text": "Lugares — Tira en subtabla Peligros: Lugares",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRPeli000005",
+      "type": 0,
+      "text": "Gente — Tira en subtabla Peligros: Gente",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRPeli000006",
+      "type": 0,
+      "text": "Varios — Tira en subtabla Peligros: Varios",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "flags": {}
+    }
+  ],
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "AfodFldViaj00001",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!tables!AfodRTPeli000001",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774957688762,
+    "modifiedTime": 1774957688762,
+    "lastModifiedBy": null
+  }
+}

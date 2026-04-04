@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacNewHorizon",
+  "name": "New Horizon Credit Union",
+  "type": "faction",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>El banco más grande de Mudwater con beneficios asombrosos al financiar minas de Hellstone y otras empresas atrevidas y de alto riesgo. El director Barnabas P. Standish es suegro del Alcalde Walter Smith y marido de Philomena Standish.</p><p>A Standish se le ve a menudo en la House of Roses por actividades de negocios.</p>",
+    "type": "",
+    "tier": 4,
+    "hold": {
+      "value": [
+        1
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Proteger a la Rosa de daño",
+    "goal_1_clock_max": 6,
+    "goal_2": "Iniciar expedición por el Libro",
+    "goal_2_clock_max": 8,
+    "goal_clock": 0,
+    "assets": "Mayor banco de Mudwater. Red financiera que penetra todas las facciones. Influencia política directa.",
+    "quirks": "Vínculos familiares con el alcalde y con I&MG. Secretos comprometedores con Aunt Polly.",
+    "notables": "Barnabas P. Standish (director), Alcalde Walter Smith (yerno)",
+    "allies": "Ironware & Metal Goods. House of Roses. Gobierno local.",
+    "enemies": "First Diamond Trust (competencia bancaria)",
+    "situation": "Poder financiero dominante con intereses en casi todas las operaciones de Mudwater.",
+    "notes": "Reloj 1: -1 Perdición al completarse. Reloj 2: +1 Perdición al completarse. El Libro es un artefacto de importancia desconocida."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacNewHorizon",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

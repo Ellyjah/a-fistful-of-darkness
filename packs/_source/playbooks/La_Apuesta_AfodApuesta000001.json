@@ -1,0 +1,73 @@
+{
+  "_id": "AfodApuesta000001",
+  "name": "La Apuesta",
+  "type": "class",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Un manipulador sutil y tramposo astuto. La Apuesta vive por el engaño, el encanto y la audacia.</p><h3>Habilidades Especiales</h3><ul><li><strong>¡TODAS LAS MIRADAS EN… MÍ!</strong> Puedes gastar tu armadura especial para resistir la consecuencia de detección de un aliado o para esforzarte para impresionar a otros. Siempre puedes hacer una entrada triunfal.</li><li><strong>DON DEL JUGADOR</strong> Cuando alguien te engaña o te pilla por sorpresa, ganas un Flashback gratuito de 1 Aguante. Cuando recopilas información durante una fiesta o jugando, ganas +1 Efecto.</li><li><strong>CORTAR CARTAS</strong> Tu habilidad con las cartas es hipnótica. Mientras realizas un truco de cartas, puedes alterar un recuerdo, implantar una sugestión o sembrar una duda. Puedes usar tus cartas como armas arrojadizas peligrosas.</li><li><strong>EL CORAZÓN DE LAS CARTAS</strong> Cuando aceptas la Posición y Efecto dados por el DJ tal cual, sin gastar Aguante ni forzar la situación, y simplemente dejas que los dados decidan, recuperas un Aguante.</li><li><strong>LUCHAR CON SOLTURA</strong> Cuando luchas en un duelo, los espectadores no interferirán. Si usas Lanzar estando en un combate cuerpo a cuerpo, ganas +1 Efecto.</li><li><strong>GALANTERÍA DE SALÓN</strong> Ganas +1d en situaciones donde tu apariencia sería ventajosa. Si intentas persuadir a alguien con una propuesta rentable o desafiar a otros a un duelo, ganas potencia.</li><li><strong>SEÑORITA FORTUNA</strong> Puedes ganar cualquier juego de azar. Gasta 1 Aguante para causar un accidente menor, 2 para uno mayor, o 3 para una catástrofe.</li><li><strong>VETERANO</strong> Elige una habilidad especial de otra fuente.</li></ul><h3>Contactos</h3><ul><li>Zane Cooper, un crupier</li><li>Mrs. Millie, una madama</li><li>Dandy Jim Buckley, un estafador</li><li>Sly Eddison, un tahur</li><li>Owen O'Neill, un destilador clandestino</li></ul>",
+    "subtitle": "Un manipulador sutil y tramposo astuto",
+    "experience_clues": [
+      "Afrontaste un desafío con engaño o audacia.",
+      "Expresaste tus creencias, impulsos, herencia o trasfondo.",
+      "Luchaste con problemas de tu vicio, mutación o estigma durante la sesión."
+    ],
+    "base_skills": {
+      "hunt": [
+        0
+      ],
+      "read": [
+        0
+      ],
+      "survey": [
+        1
+      ],
+      "craft": [
+        0
+      ],
+      "sling": [
+        1
+      ],
+      "prowl": [
+        0
+      ],
+      "brawl": [
+        0
+      ],
+      "disable": [
+        0
+      ],
+      "attune": [
+        0
+      ],
+      "command": [
+        0
+      ],
+      "consort": [
+        1
+      ],
+      "sway": [
+        2
+      ]
+    },
+    "contacts": "<ul><li><strong>Zane Cooper</strong> — Croupier</li><li><strong>La Señora Millie</strong> — Madame</li><li><strong>\"Dandy Jim\" Buckley</strong> — Estafador</li><li><strong>Sly Eddison</strong> — Jugador profesional</li><li><strong>Owen O'Neill</strong> — Contrabandista</li></ul>"
+  },
+  "effects": [],
+  "folder": "mdKzmXUhAbEnUzo1",
+  "sort": 400000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodApuesta000001"
+}

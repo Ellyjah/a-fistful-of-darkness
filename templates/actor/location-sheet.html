@@ -1,0 +1,91 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet actor location" autocomplete="off">
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   CABECERA                                              --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <section class="loc-header">
+    <img class="loc-portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    <div class="loc-header-main">
+      <h1 class="loc-name">
+        <input name="name" type="text" value="{{actor.name}}"
+               placeholder="{{localize 'AFOD.LocationName'}}" />
+      </h1>
+      <div class="loc-subtitle-row">
+        <input type="text" name="system.location_type"
+               value="{{system.location_type}}"
+               placeholder="{{localize 'AFOD.LocationTypePlaceholder'}}" />
+      </div>
+    </div>
+  </section>
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   CUALIDADES                                            --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <section class="loc-qualities">
+    <div class="loc-section-title">{{localize "AFOD.Qualities"}}</div>
+
+    {{#each qualities}}
+    <div class="quality-row quality-{{key}}">
+      <span class="quality-label">{{localize label}}</span>
+      <div class="quality-segments">
+        {{#times_from_1 4}}
+          <div class="quality-seg {{#if (lteq this ../value)}}filled{{/if}}{{#if (eq this 4)}} max-seg{{/if}}"
+               data-quality="{{../key}}" data-value="{{this}}"></div>
+        {{/times_from_1}}
+      </div>
+      <span class="quality-number">{{value}}</span>
+    </div>
+    {{/each}}
+  </section>
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   DESCRIPCIÓN                                           --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <section class="loc-description">
+    <div class="loc-section-title">{{localize "AFOD.Description"}}</div>
+    {{#if isEditable}}
+      <textarea name="system.description" class="notes-textarea">{{system.description}}</textarea>
+    {{else}}
+      <div class="notes-view">{{{enrichedDescription}}}</div>
+    {{/if}}
+  </section>
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   RELOJES ASOCIADOS                                     --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <section class="loc-clocks" data-drop-target="clock">
+    <div class="loc-section-title">
+      {{localize "AFOD.AssociatedClocks"}}
+      {{#if isEditable}}
+        <a class="clock-add" title="{{localize 'AFOD.AddClock'}}"><i class="fas fa-plus-circle"></i></a>
+      {{/if}}
+    </div>
+
+    {{#if clocks.length}}
+    <div class="clock-list">
+      {{#each clocks}}
+      <div class="clock-entry" data-clock-id="{{id}}">
+        <span class="clock-name">{{name}}</span>
+        <div class="clock-pips">
+          {{#times_from_1 segments}}
+            <div class="clock-pip {{#if (lteq this ../value)}}filled{{/if}}"
+                 data-clock-id="{{../id}}" data-pip="{{this}}"></div>
+          {{/times_from_1}}
+        </div>
+        <span class="clock-fraction">{{value}}/{{segments}}</span>
+        {{#if ../isEditable}}
+          <a class="clock-delete" data-clock-id="{{id}}" title="{{localize 'AFOD.RemoveClock'}}">
+            <i class="fas fa-times"></i>
+          </a>
+        {{/if}}
+      </div>
+      {{/each}}
+    </div>
+    {{else}}
+    <div class="clock-drop-hint">
+      <i class="fas fa-clock"></i> {{localize "AFOD.ClocksDropHint"}}
+    </div>
+    {{/if}}
+  </section>
+
+</form>

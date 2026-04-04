@@ -1,0 +1,22 @@
+{
+  "_id": "4V6FoxI5G1g10DMV",
+  "name": "La Ley",
+  "type": "Item",
+  "description": "",
+  "folder": "AlStyhIvW3yp81WH",
+  "sorting": "a",
+  "sort": 900,
+  "color": "#2d3d6e",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774929356053,
+    "modifiedTime": 1774929356053,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!4V6FoxI5G1g10DMV"
+}

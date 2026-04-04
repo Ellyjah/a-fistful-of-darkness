@@ -1,0 +1,22 @@
+{
+  "_id": "fqnmpYNEZM7GFKpA",
+  "name": "Tipos de Cuadrilla",
+  "type": "Item",
+  "description": "",
+  "folder": null,
+  "sorting": "a",
+  "sort": 0,
+  "color": "#2d6040",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774664163071,
+    "modifiedTime": 1774664163071,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!fqnmpYNEZM7GFKpA"
+}

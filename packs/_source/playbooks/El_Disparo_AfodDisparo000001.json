@@ -1,0 +1,73 @@
+{
+  "_id": "AfodDisparo000001",
+  "name": "El Disparo",
+  "type": "class",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Un pistolero mortífero y showman. El Disparo es un maestro de las armas de fuego que combina destreza letal con espectáculo.</p><h3>Habilidades Especiales</h3><ul><li><strong>HUMO Y ESPEJOS</strong> Puedes gastar tu armadura especial para resistir daño del combate o aparentar morir solo para reaparecer en una ubicación a tu elección con +1d a tu siguiente acción.</li><li><strong>OJO DE HALCÓN</strong> Puedes esforzarte para: hacer un ataque a distancia extrema — realizar un disparo imposible (rebote, a través de un grupo) — tener una última bala que nadie contó.</li><li><strong>EASTWOOD</strong> Antes de que se desenfunden las armas, puedes mirar fijamente a alguien forzándolo a dudar o encogerse. Toma +1d para tu siguiente acción contra ellos.</li><li><strong>NERVIOS DE ACERO Y VELOCIDAD DEL RAYO</strong> Siempre puedes disparar primero y puedes esperar hasta el último momento posible y aún ser el primero en (re)actuar.</li><li><strong>BALAS DE PLATA</strong> Puedes enriquecer tus disparos con energía espiritual. Tus disparos ganan potencia en combate contra lo sobrenatural.</li><li><strong>LLENAR EL AIRE DE PLOMO</strong> Gasta tu Munición Especial para: desatar una ráfaga de fuego rápido para suprimir al enemigo — atacar a un grupo/+1 escala.</li><li><strong>ACTUACIÓN DESLUMBRANTE</strong> Puedes realizar un espectáculo llamativo con tus armas o caballo que deja a tu audiencia atónita. Toma +1 efecto para actuar sobre los impresionados o para escapar.</li><li><strong>VETERANO</strong> Elige una habilidad especial de otra fuente.</li></ul><h3>Contactos</h3><ul><li>Arthur Fog, un falso Nativo / Showman</li><li>Ralph 'Bad Egg' Horn, un Armero</li><li>Sam 'Lucky Eye' Freeman, un Vaquero</li><li>Black Hoof, un Jefe Nativo / Cazador</li><li>The Great Lo Scalzo</li></ul>",
+    "subtitle": "Un pistolero mortífero y showman",
+    "experience_clues": [
+      "Afrontaste un desafío con velocidad o estilo.",
+      "Expresaste tus creencias, impulsos, herencia o trasfondo.",
+      "Luchaste con problemas de tu vicio, mutación o estigma durante la sesión."
+    ],
+    "base_skills": {
+      "hunt": [
+        1
+      ],
+      "read": [
+        0
+      ],
+      "survey": [
+        0
+      ],
+      "craft": [
+        0
+      ],
+      "sling": [
+        2
+      ],
+      "prowl": [
+        1
+      ],
+      "brawl": [
+        0
+      ],
+      "disable": [
+        0
+      ],
+      "attune": [
+        0
+      ],
+      "command": [
+        0
+      ],
+      "consort": [
+        0
+      ],
+      "sway": [
+        0
+      ]
+    },
+    "contacts": "<ul><li><strong>Arthur Fog</strong> — Nativo falso / Showman</li><li><strong>Ralph 'Huevo Malo' Horn</strong> — Armero</li><li><strong>Sam 'Ojo Afortunado' Freeman</strong> — Vaquero</li><li><strong>Pezuña Negra</strong> — Jefe nativo / Cazador</li><li><strong>El Gran Lo Scalzo</strong> — Espectáculo itinerante</li></ul>"
+  },
+  "effects": [],
+  "folder": "mdKzmXUhAbEnUzo1",
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodDisparo000001"
+}

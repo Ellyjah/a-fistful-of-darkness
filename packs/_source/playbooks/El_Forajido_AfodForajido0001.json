@@ -1,0 +1,73 @@
+{
+  "_id": "AfodForajido0001",
+  "name": "El Forajido",
+  "type": "class",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Un inconformista y desperado más allá de las reglas. El Forajido vive al margen de la ley, impredecible y peligroso.</p><h3>Habilidades Especiales</h3><ul><li><strong>OTRO DE ESOS DÍAS</strong> Puedes gastar tu armadura especial para resistir una consecuencia de una tirada desesperada, o para escapar de donde/lo que quieras.</li><li><strong>¡AHORA! ¡AHORA! ¡AHORA!</strong> Cuando te esfuerzas, puedes gastar +1 Aguante (3 Aguante en total) para ganar tanto +1 efecto como +1d en lugar de uno u otro.</li><li><strong>NO VEÍAS ESO VENIR</strong> Cuando haces un movimiento sorprendente más allá de las convenciones civilizadas, obtienes +1d o +1 efecto (a tu elección).</li><li><strong>TEMERARIO</strong> Cuando haces una acción desesperada, obtienes +1d a tu tirada si también tomas -1d a cualquier tirada de resistencia contra consecuencias de tu acción.</li><li><strong>VENGATIVO</strong> Ganas un disparador de px adicional: Conseguiste venganza contra alguien que te hizo daño a ti o a alguien que te importa. Si tu cuadrilla te ayudó, también marca px de cuadrilla.</li><li><strong>MENUDA REPUTACIÓN</strong> Al entrar en una localización puedes contarnos qué ha oído la gente sobre ti. Cuando revelas tu nombre y explotas tu reputación ganas posición mejorada o +1 efecto.</li><li><strong>ESTALLIDO DE GLORIA</strong> Cuando marcas un estigma y dices unas últimas palabras memorables, puedes tomar represalias contra todos los enemigos a tu alcance.</li><li><strong>VETERANO</strong> Elige una habilidad especial de otra fuente.</li></ul><h3>Contactos</h3><ul><li>Polly Gains, una Tratante</li><li>Father Mathew, un Sacerdote</li><li>The Kid, un Cazarrecompensas</li><li>Un amigo al que aún debes dinero</li><li>Adolphus Vasquez, un Trabajador del Ferrocarril</li><li>Rufus Johnson, un Cochero</li></ul>",
+    "subtitle": "Un inconformista y desperado más allá de las reglas",
+    "experience_clues": [
+      "Afrontaste un desafío rompiendo las reglas o con osadía.",
+      "Expresaste tus creencias, impulsos, herencia o trasfondo.",
+      "Luchaste con problemas de tu vicio, mutación o estigma durante la sesión."
+    ],
+    "base_skills": {
+      "hunt": [
+        1
+      ],
+      "read": [
+        0
+      ],
+      "survey": [
+        0
+      ],
+      "craft": [
+        0
+      ],
+      "sling": [
+        1
+      ],
+      "prowl": [
+        1
+      ],
+      "brawl": [
+        1
+      ],
+      "disable": [
+        0
+      ],
+      "attune": [
+        0
+      ],
+      "command": [
+        0
+      ],
+      "consort": [
+        0
+      ],
+      "sway": [
+        1
+      ]
+    },
+    "contacts": "<ul><li><strong>Polly Gains</strong> — Comerciante</li><li><strong>Padre Mathew</strong> — Cura</li><li><strong>\"El Chaval\"</strong> — Cazarrecompensas</li><li><strong>Un amigo al que le debes dinero</strong> — Acreedor</li><li><strong>Adolphus Vásquez</strong> — Trabajador ferroviario</li><li><strong>Rufus Johnson</strong> — Carretero</li></ul>"
+  },
+  "effects": [],
+  "folder": "mdKzmXUhAbEnUzo1",
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodForajido0001"
+}

@@ -1,0 +1,34 @@
+{
+  "_id": "ElForajidoRepele",
+  "name": "Repelente de espíritus refinado",
+  "type": "item",
+  "img": "icons/magic/defensive/shield-barrier-blue.webp",
+  "system": {
+    "description": "<p>Sal bendita, polvo de plata, hierbas específicas. Te has cruzado con cosas en la carretera.</p>",
+    "class": "El Forajido",
+    "load": 0,
+    "uses": 1,
+    "additional_info": "",
+    "equipped": false,
+    "num_available": 1
+  },
+  "effects": [],
+  "folder": "CxYLi7eN0XaHShGT",
+  "sort": 5100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!ElForajidoRepele"
+}

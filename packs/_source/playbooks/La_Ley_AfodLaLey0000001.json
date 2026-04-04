@@ -1,0 +1,73 @@
+{
+  "_id": "AfodLaLey0000001",
+  "name": "La Ley",
+  "type": "class",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Un representante de la ley y ejecutor. La Ley hace cumplir el orden con autoridad y determinación.</p><h3>Habilidades Especiales</h3><ul><li><strong>YO SOY LA LEY</strong> Puedes gastar tu armadura especial para mostrar tu placa de autoridad y forzar obediencia, o para esforzarte durante una pelea.</li><li><strong>UNA HISTORIA QUE CONTAR</strong> Una vez por misión puedes esforzarte para contar una historia sobre un lío terrible que sobreviviste para: motivar a una cohorte/turba a luchar o huir — dar a una cohorte luchadora +1 efecto — restaurar 1 Aguante para todos en la cuadrilla.</li><li><strong>ESTO NO ES CAZA DE MAPACHES</strong> Cuando Comandas a una cohorte en combate, continúan luchando cuando normalmente romperían filas. Ganan +1 efecto y 1 armadura.</li><li><strong>PREGUNTA QUÉ PUEDE HACER TU PAÍS POR TI</strong> Tienes acceso a recursos de las fuerzas del orden. Obtén +1d cuando adquieras recursos durante el descanso. Todos los recursos tienen calidad mínima de 1.</li><li><strong>SOLO ES UN RASGUÑO</strong> Las penalizaciones por daño son un nivel menos severas. Cuando aceptas daño en lugar de resistir, limpia 1 Aguante.</li><li><strong>BRÚJULA MORAL</strong> Ganas un disparador de px adicional: Hiciste lo correcto a costa de ti mismo. Si tu cuadrilla tiene problemas por esto, también marca px de cuadrilla.</li><li><strong>GENIO TÁCTICO</strong> Siempre conoces la mejor posición durante una pelea o caza. Si puedes ocupar esta posición, ganas +1 Efecto para ti y todos los que estén contigo.</li><li><strong>VETERANO</strong> Elige una habilidad especial de otra fuente.</li></ul><h3>Contactos</h3><ul><li>Levi Boyle, un Ranger (Ambush)</li><li>Gladis Wells, una Cazarrecompensas (Blood)</li><li>Karl McCann, un asesino frío (No Teeth)</li><li>Carlos Vasquez, un Jefe Forajido</li><li>Hunter, un espíritu vengativo</li></ul>",
+    "subtitle": "Un representante de la ley y ejecutor",
+    "experience_clues": [
+      "Afrontaste un desafío con autoridad o resistencia.",
+      "Expresaste tus creencias, impulsos, herencia o trasfondo.",
+      "Luchaste con problemas de tu vicio, mutación o estigma durante la sesión."
+    ],
+    "base_skills": {
+      "hunt": [
+        1
+      ],
+      "read": [
+        0
+      ],
+      "survey": [
+        1
+      ],
+      "craft": [
+        0
+      ],
+      "sling": [
+        0
+      ],
+      "prowl": [
+        0
+      ],
+      "brawl": [
+        1
+      ],
+      "disable": [
+        0
+      ],
+      "attune": [
+        0
+      ],
+      "command": [
+        2
+      ],
+      "consort": [
+        0
+      ],
+      "sway": [
+        0
+      ]
+    },
+    "contacts": "<ul><li><strong>Levi \"Emboscada\" Boyle</strong> — Ranger</li><li><strong>Gladis \"Sangre\" Wells</strong> — Cazarrecompensas</li><li><strong>Karl \"Sin Dientes\" McCann</strong> — Asesino a sangre fría</li><li><strong>Carlos Vásquez</strong> — Jefe forajido</li><li><strong>El Cazador</strong> — Espíritu vengativo</li></ul>"
+  },
+  "effects": [],
+  "folder": "mdKzmXUhAbEnUzo1",
+  "sort": 300000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodLaLey0000001"
+}

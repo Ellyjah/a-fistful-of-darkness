@@ -1,0 +1,28 @@
+{
+  "_id": "AfodViceEstupor01",
+  "name": "Estupor",
+  "type": "vice",
+  "img": "icons/consumables/potions/bottle-corked-empty.webp",
+  "system": {
+    "description": "<p>Buscas el olvido en el abuso de drogas, beber en exceso, recibir palizas en peleas de salón, etc.</p><p>Detalla tu vicio específico e indica el nombre y ubicación de tu proveedor de vicio (cantinero, traficante, salón de boxeo, etc.).</p>"
+  },
+  "effects": [],
+  "folder": "E5e5a30VY1ilC3gD",
+  "sort": 600000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodViceEstupor01"
+}

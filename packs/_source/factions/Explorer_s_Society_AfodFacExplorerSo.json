@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacExplorerSo",
+  "name": "Explorer's Society",
+  "type": "faction",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>Mezcla salvaje de profesores/eruditos de la costa este y aventureros que afirman explorar las minas y cuevas para descubrir más sobre la Hellstone y el evento que la causó. También conocidos por vender artefactos encontrados en el mercado negro.</p><p>Comprando y acumulando Hellstone para un propósito desconocido.</p>",
+    "type": "",
+    "tier": 2,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Construir el reloj del Día del Juicio",
+    "goal_1_clock_max": 10,
+    "goal_2": "Descubrir Artefacto (Repetir)",
+    "goal_2_clock_max": 6,
+    "goal_clock": 0,
+    "assets": "Conocimiento académico. Red de artefactos. Acumulación de Hellstone. Exploración activa.",
+    "quirks": "Propósito de acumulación de Hellstone desconocido. Venta de artefactos en mercado negro.",
+    "notables": "Eruditos de la costa este (varios)",
+    "allies": "Desconocidos",
+    "enemies": "Ironware & Metal Goods (competencia por minas y Hellstone). Cualquiera que investigue sus actividades.",
+    "situation": "Fachada académica ocultando agenda más oscura. El reloj del Día del Juicio es especialmente inquietante.",
+    "notes": "Reloj 1: +/- Perdición al completarse (su naturaleza no está clara). Reloj 2 (Repetir): +/- Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacExplorerSo",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

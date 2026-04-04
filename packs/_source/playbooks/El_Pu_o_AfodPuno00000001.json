@@ -1,0 +1,73 @@
+{
+  "_id": "AfodPuno00000001",
+  "name": "El Puño",
+  "type": "class",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Como una cobra, lista para golpear. El Puño es un guerrero formidable que resuelve los problemas con fuerza bruta y expresión física.</p><h3>Habilidades Especiales</h3><ul><li><strong>¿ESO ES TODO LO QUE TIENES?</strong> Puedes gastar tu armadura especial para evitar daño de un ataque en combate, o para esforzarte durante una pelea.</li><li><strong>TODOS HACEN KUNG FU</strong> Puedes esforzarte para realizar una hazaña de control corporal o fuerza física que roza lo sobrehumano, o enfrentarte a una pequeña banda en igualdad de condiciones en combate cuerpo a cuerpo.</li><li><strong>¿DE DÓNDE SALE ESO?</strong> Siempre tienes un objeto de 1 Carga restante sin importar la carga ya usada. Si puedes usar la sorpresa a tu favor, ganas la iniciativa incluso contra expertos.</li><li><strong>IRA SAGRADA</strong> Cuando abres cuerpo y alma al Más Allá Ardiente puedes imbuir tus manos, armas cuerpo a cuerpo o herramientas con energía espiritual. Ganas potencia en combate contra lo sobrenatural.</li><li><strong>MÁS VALE MAÑA QUE FUERZA</strong> Te recuperas del daño más rápido. Rellena permanentemente un segmento de tu reloj de curación. Toma +1d a tiradas de tratamiento de curación.</li><li><strong>HOMBRE DE HONOR</strong> Ganas un disparador de px adicional: Luchaste por tu honor o el de otro a costa de ti mismo.</li><li><strong>KATA IMPRESIONANTE</strong> Describe cómo presumes e impresionas con tus habilidades físicas. Si puedes explotar esta actuación para tu siguiente movimiento, toma posición mejorada o +1 efecto.</li><li><strong>VETERANO</strong> Elige una habilidad especial de otra fuente.</li></ul><h3>Contactos</h3><ul><li>Jim-Bob Thornton, un Ranchero</li><li>Jane, una Chica de Salón</li><li>Octavius Slone, un Doctor</li><li>Master Lee</li><li>Sargento Meyers, Fort Hubert</li></ul>",
+    "subtitle": "Como una cobra, listo para golpear",
+    "experience_clues": [
+      "Afrontaste un desafío con fuerza o expresión física.",
+      "Expresaste tus creencias, impulsos, herencia o trasfondo.",
+      "Luchaste con problemas de tu vicio, mutación o estigma durante la sesión."
+    ],
+    "base_skills": {
+      "hunt": [
+        0
+      ],
+      "read": [
+        0
+      ],
+      "survey": [
+        0
+      ],
+      "craft": [
+        0
+      ],
+      "sling": [
+        1
+      ],
+      "prowl": [
+        1
+      ],
+      "brawl": [
+        2
+      ],
+      "disable": [
+        0
+      ],
+      "attune": [
+        0
+      ],
+      "command": [
+        0
+      ],
+      "consort": [
+        0
+      ],
+      "sway": [
+        0
+      ]
+    },
+    "contacts": "<ul><li><strong>Jim-Bob Thornton</strong> — Ranchero</li><li><strong>Jane</strong> — Chica de Salón</li><li><strong>Octavius Slone</strong> — Doctor</li><li><strong>Master Lee</strong> — Maestro de artes marciales</li><li><strong>Sargento Meyers</strong> — Fort Hubert</li></ul>"
+  },
+  "effects": [],
+  "folder": "mdKzmXUhAbEnUzo1",
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodPuno00000001"
+}

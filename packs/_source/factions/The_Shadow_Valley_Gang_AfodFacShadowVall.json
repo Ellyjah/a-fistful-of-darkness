@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacShadowVall",
+  "name": "The Shadow Valley Gang",
+  "type": "faction",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Cuadrilla de forajidos con escondite en algún lugar de Shadow Valley. Se rumorea que está liderada por un grupo de hermanas de origen desconocido. La cuadrilla es una banda muy unida comprometida con el secreto absoluto.</p><p>El hecho de que un miembro capturado que intentó presumir murió por combustión espontánea fortaleció el rumor de que la banda también es un culto oscuro. Buscando artefactos últimamente.</p>",
+    "type": "",
+    "tier": 2,
+    "hold": {
+      "value": [
+        1
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        3
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Encontrar el cráneo tallado",
+    "goal_1_clock_max": 8,
+    "goal_2": "Renovar el vínculo (Repetir)",
+    "goal_2_clock_max": 6,
+    "goal_clock": 0,
+    "assets": "Secretismo absoluto. Poderes sobrenaturales (combustión espontánea). Base en Shadow Valley. Búsqueda de artefactos.",
+    "quirks": "Lideradas por hermanas de origen misterioso. Lealtad sellada sobrenaturalmente. Doble naturaleza: banda + culto.",
+    "notables": "Las hermanas (identidad desconocida)",
+    "allies": "Desconocidos",
+    "enemies": "Cualquiera que sepa demasiado",
+    "situation": "Culto oscuro disfrazado de banda de forajidos. El cráneo tallado y el vínculo que renuevan apuntan a una agenda sobrenatural mayor.",
+    "notes": "Reloj 1: +1 Perdición al completarse. Reloj 2 (Repetir): +1 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacShadowVall",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

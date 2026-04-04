@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbDisp001",
+  "name": "Humo y Espejos",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Puedes gastar tu armadura especial para resistir la consecuencia de un ataque en combate o para fingir tu muerte. Reapareces en la escena con +1d a tu siguiente acción.</p>",
+    "class": "El Disparo",
+    "price": 1,
+    "purchased": false,
+    "class_default": true
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbDisp001",
+  "effects": [],
+  "folder": "eJ87QxC9eF8JolgP"
+}

@@ -1,0 +1,107 @@
+{
+  "_id": "AfodRTTema000001",
+  "name": "Temas de Misiones Subterráneas",
+  "img": "icons/environment/wilderness/mine-exterior-entrance.webp",
+  "description": "",
+  "results": [
+    {
+      "_id": "AfodRRTema000001",
+      "type": 0,
+      "text": "Naturaleza — Rocas que bloquean, acantilados, cascadas resbaladizas, túneles que se derrumban, etc.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRTema000002",
+      "type": 0,
+      "text": "Demonios — Demonios y criaturas del Infierno",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRTema000003",
+      "type": 0,
+      "text": "Fantasmas — Fantasmas y criaturas no-muertas",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRTema000004",
+      "type": 0,
+      "text": "Espíritus — Espíritus y animales",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRTema000005",
+      "type": 0,
+      "text": "Fisura Dimensional — Cosas alienígenas de la Dimensión Desconocida",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRTema000006",
+      "type": 0,
+      "text": "Mixto — Cosas variadas, posiblemente con humanos como bandidos, etc.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "flags": {}
+    }
+  ],
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "AfodFldEncu00001",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!tables!AfodRTTema000001",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774957688762,
+    "modifiedTime": 1774957688762,
+    "lastModifiedBy": null
+  }
+}

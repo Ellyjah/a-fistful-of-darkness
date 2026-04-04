@@ -1,0 +1,114 @@
+{
+  "name": "Cuadrilla de Forajidos",
+  "type": "crew_type",
+  "img": "icons/equipment/head/hat-belted-simple-brown.webp",
+  "system": {
+    "activation": {
+      "type": "",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": 0,
+      "per": null
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "description": "<p>Forajidos, pistoleros y fugitivos que viven más allá de la ley. La Cuadrilla de Forajidos actúa rápido, golpea fuerte y desaparece antes de que lleguen los refuerzos.</p><h3>Habilidades Especiales de Cuadrilla</h3><ul><li><strong>MORTALMENTE EN SERIO</strong> Cada PJ puede añadir +1 en una acción de Comandar, Disparar o Pelear (máximo 3).</li><li><strong>HERMANOS DE SANGRE</strong> Cuando combatís junto a vuestras cohortes, estas obtienen +1d en tiradas de trabajo en equipo (preparación y acciones en grupo). Todas vuestras cohortes consiguen el tipo Matones de forma gratuita (si ya son Matones, añadid otro tipo).</li><li><strong>SIN RODEOS</strong> Cuando ejecutáis un plan de Asalto, tomáis +1d a la tirada de Entrada en Escena.</li><li><strong>DEMONIOS</strong> El miedo vale tanto como el respeto. Podéis contar cada Jinete como si fuera una Concesión.</li><li><strong>FORJADOS EN EL FUEGO</strong> Cada PJ ha sido endurecido por experiencias crueles. Obtenéis +1d a las tiradas de Resistencia.</li><li><strong>PATRÓN</strong> Cuando avanzáis vuestro Rango, cuesta la mitad de Monedas. ¿Quién es vuestro patrón? ¿Por qué os ayuda?</li><li><strong>PERROS DE GUERRA</strong> Cuando estáis en feudo (estado de facción -3), vuestra cuadrilla no sufre -1 Dominio y los PJ siguen teniendo dos actividades de Descanso en lugar de solo una.</li><li><strong>VETERANO</strong> Elegid una habilidad especial de otra cuadrilla.</li></ul><h3>Contactos</h3><ul><li>Polly Gains, una Tratante de información</li><li>Un alcalde corrupto en deuda con la cuadrilla</li><li>Adolphus Vasquez, un Trabajador del Ferrocarril con acceso a horarios</li><li>Una cantinera que sirve como buzón de mensajes</li><li>Un nativo que conoce los pasos ocultos</li></ul>",
+    "experience_clues": "Al final de cada sesión marca 1 px de cuadrilla por:\n- Robasteis o asaltasteis un objetivo de mayor Rango.\n- Evitasteis o escapasteis de un intento de captura.\n- Vuestra reputación o actos causaron impacto notable en Mudwater o la región.",
+    "modus_options": [
+      "Intimidación (dominio por miedo y reputación)",
+      "Superioridad (combate y asaltos directos)",
+      "Rapidez (golpes rápidos y escapes)",
+      "Espectáculo (actos llamativos que generan fama)"
+    ],
+    "contacts": "<ul>\n    <li><strong>Bill 'Scar' Morgan</strong>, juez</li>\n    <li><strong>'the Cheat' Murray</strong>, traficante de armas</li>\n    <li><strong>'Silent' Bob</strong>, herrero</li>\n    <li><strong>Moe</strong>, dueño del saloon</li>\n    <li><strong>Sam Malone</strong>, contrabandista</li>\n    <li><strong>Old Man Bruford</strong>, dueño de la tasca</li>\n  </ul>",
+    "achievements": [
+      {
+        "name": "LA MORGUE"
+      },
+      {
+        "name": "FUNERAL DE HOMBRE LIBRE"
+      },
+      {
+        "name": "UNA GOTA DEL INFIERNO"
+      },
+      {
+        "name": "DADOS CARGADOS"
+      },
+      {
+        "name": "EL TRONO DE CALAVERAS"
+      },
+      {
+        "name": "LA BESTIA"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "EQUILIBRIO"
+      },
+      {
+        "name": "ÚLTIMOS TRATOS DE HOMBRES MUERTOS"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "FANTASMAS VENGATIVOS"
+      },
+      {
+        "name": "PORTADOR DEL DOLOR"
+      },
+      {
+        "name": "CONEXIÓN FERROVIARIA"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "ÁRBOL DE LOS AHORCADOS"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "fqnmpYNEZM7GFKpA",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.a-fistful-of-darkness.crew-types.Item.AfodCrewForajid1",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774615631899,
+    "modifiedTime": 1774615631899,
+    "lastModifiedBy": "ejITwgjzWo4BaC5z"
+  },
+  "ownership": {
+    "default": 0,
+    "ejITwgjzWo4BaC5z": 3
+  },
+  "_id": "tyFP1LDns1RAAKI6",
+  "sort": 0,
+  "_key": "!items!tyFP1LDns1RAAKI6"
+}

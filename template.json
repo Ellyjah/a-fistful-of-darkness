@@ -1,0 +1,736 @@
+{
+  "Actor": {
+    "types": ["character", "revenant", "posse", "faction", "location", "npc", "\uD83D\uDD5B clock", "group"],
+
+    "character": {
+      "alias": "",
+      "look": "",
+      "heritage": "",
+      "background": "",
+      "vice": "",
+      "vice_purveyor": "",
+      "playbook": "",
+      "posse_id": "",
+      "acquaintances": [],
+      "acquaintances_label": "AFOD.Contacts",
+      "grit": {
+        "value": "0",
+        "max": 9,
+        "max_default": 9
+      },
+      "stigma": {
+        "max": 4,
+        "max_default": 4,
+        "value": "0",
+        "options": [
+          "AFOD.StigmaLoco",
+          "AFOD.StigmaMarcado",
+          "AFOD.StigmaCorrupto",
+          "AFOD.StigmaVisiones",
+          "AFOD.StigmaBuscaGloria",
+          "AFOD.StigmaVoces",
+          "AFOD.StigmaMaldito",
+          "AFOD.StigmaPerseguido",
+          "AFOD.StigmaAvergonzado",
+          "AFOD.StigmaInsensible"
+        ],
+        "list": {
+          "loco": false,
+          "marcado": false,
+          "corrupto": false,
+          "visiones": false,
+          "busca_gloria": false,
+          "voces": false,
+          "maldito": false,
+          "perseguido": false,
+          "avergonzado": false,
+          "insensible": false
+        }
+      },
+      "experience": "0",
+      "experience_max": 8,
+      "experience_clues": [],
+      "coin": "0",
+      "coin_max": {
+        "hand": 4
+      },
+      "hellstone": "0",
+      "hellstone_max": {
+        "hand": 2
+      },
+      "currency_slots": [],
+      "indulgence": "0",
+      "indulgence_max": 40,
+      "mutation_clock": {
+        "value": "0",
+        "max": 8
+      },
+      "mutations": [],
+      "exploited_hellstone": false,
+      "special_abilities": [],
+      "loadout": 0,
+      "selected_load_level": "AFOD.LoadLight",
+      "base_max_load": 0,
+      "harm": {
+        "light": {
+          "one": "",
+          "two": ""
+        },
+        "medium": {
+          "one": "",
+          "two": ""
+        },
+        "heavy": {
+          "one": ""
+        }
+      },
+      "armor_uses": {
+        "armor": "none",
+        "special": "none"
+      },
+      "attributes": {
+        "wits": {
+          "exp": "0",
+          "exp_max": 6,
+          "bonus": 0,
+          "label": "AFOD.SkillsWits",
+          "skills": {
+            "hunt": {
+              "label": "AFOD.SkillsHunt",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "read": {
+              "label": "AFOD.SkillsRead",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "survey": {
+              "label": "AFOD.SkillsSurvey",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "craft": {
+              "label": "AFOD.SkillsCraft",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            }
+          }
+        },
+        "prowess": {
+          "exp": "0",
+          "exp_max": 6,
+          "bonus": 0,
+          "label": "AFOD.SkillsProwess",
+          "skills": {
+            "sling": {
+              "label": "AFOD.SkillsSling",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "prowl": {
+              "label": "AFOD.SkillsProwl",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "brawl": {
+              "label": "AFOD.SkillsBrawl",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "disable": {
+              "label": "AFOD.SkillsDisable",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            }
+          }
+        },
+        "guts": {
+          "exp": "0",
+          "exp_max": 6,
+          "bonus": 0,
+          "label": "AFOD.SkillsGuts",
+          "skills": {
+            "attune": {
+              "label": "AFOD.SkillsAttune",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "command": {
+              "label": "AFOD.SkillsCommand",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "consort": {
+              "label": "AFOD.SkillsConsort",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "sway": {
+              "label": "AFOD.SkillsSway",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            }
+          }
+        }
+      },
+      "description": ""
+    },
+
+    "revenant": {
+      "alias": "",
+      "look": "",
+      "heritage": "",
+      "background": "",
+      "link_to_living": "",
+      "playbook": "",
+      "posse_id": "",
+      "acquaintances": [],
+      "acquaintances_label": "AFOD.Contacts",
+      "passion": {
+        "value": "0",
+        "max": 9,
+        "max_default": 9
+      },
+      "decay": {
+        "max": 4,
+        "max_default": 4,
+        "value": "0",
+        "options": [
+          "AFOD.DecayFrio",
+          "AFOD.DecayObsesionado",
+          "AFOD.DecayDecapitado",
+          "AFOD.DecayCaotico",
+          "AFOD.DecayInestable",
+          "AFOD.DecayVicioso",
+          "AFOD.DecayApestoso"
+        ],
+        "list": {
+          "frio": false,
+          "obsesionado": false,
+          "decapitado": false,
+          "caotico": false,
+          "inestable": false,
+          "vicioso": false,
+          "apestoso": false
+        }
+      },
+      "experience": "0",
+      "experience_max": 8,
+      "experience_clues": [],
+      "coin": "0",
+      "coin_max": {
+        "hand": 4
+      },
+      "hellstone": "0",
+      "hellstone_max": {
+        "hand": 2
+      },
+      "currency_slots": [],
+      "special_abilities": [],
+      "loadout": 0,
+      "selected_load_level": "AFOD.LoadLight",
+      "base_max_load": 0,
+      "harm": {
+        "light": {
+          "one": "",
+          "two": ""
+        },
+        "medium": {
+          "one": "",
+          "two": ""
+        },
+        "heavy": {
+          "one": ""
+        }
+      },
+      "armor_uses": {
+        "armor": "none",
+        "special": "none"
+      },
+      "attributes": {
+        "wits": {
+          "exp": "0",
+          "exp_max": 6,
+          "bonus": 0,
+          "label": "AFOD.SkillsWits",
+          "skills": {
+            "hunt": {
+              "label": "AFOD.SkillsHunt",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "read": {
+              "label": "AFOD.SkillsRead",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "survey": {
+              "label": "AFOD.SkillsSurvey",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "craft": {
+              "label": "AFOD.SkillsCraft",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            }
+          }
+        },
+        "prowess": {
+          "exp": "0",
+          "exp_max": 6,
+          "bonus": 0,
+          "label": "AFOD.SkillsProwess",
+          "skills": {
+            "sling": {
+              "label": "AFOD.SkillsSling",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "prowl": {
+              "label": "AFOD.SkillsProwl",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "brawl": {
+              "label": "AFOD.SkillsBrawl",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "disable": {
+              "label": "AFOD.SkillsDisable",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            }
+          }
+        },
+        "guts": {
+          "exp": "0",
+          "exp_max": 6,
+          "bonus": 0,
+          "label": "AFOD.SkillsGuts",
+          "skills": {
+            "attune": {
+              "label": "AFOD.SkillsAttune",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "command": {
+              "label": "AFOD.SkillsCommand",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "consort": {
+              "label": "AFOD.SkillsConsort",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            },
+            "sway": {
+              "label": "AFOD.SkillsSway",
+              "value": 0,
+              "max": 4,
+              "min": 0
+            }
+          }
+        }
+      },
+      "description": ""
+    },
+
+    "posse": {
+      "name": "",
+      "rep": "0",
+      "lair": "",
+      "tier": "0",
+      "hold": "strong",
+      "hold_types": ["weak", "strong"],
+      "modus": "",
+      "experience": "0",
+      "exp_clock": {
+        "value": 0,
+        "number": 0,
+        "size": 6,
+        "color": "black"
+      },
+      "coin": {
+        "max": 4,
+        "value": "0"
+      },
+      "hellstone": {
+        "max": 2,
+        "value": "0"
+      },
+      "vault": {
+        "coin": "0",
+        "hellstone": "0"
+      },
+      "doom": {
+        "value": "0",
+        "max": 10
+      },
+      "riders": {
+        "white": false,
+        "red": false,
+        "black": false,
+        "pale": false
+      },
+      "achievements": [],
+      "hellstone_claims": [],
+      "feuds": [],
+      "exploited_hellstone": false,
+      "acquaintances": [],
+      "acquaintances_label": "AFOD.Contacts",
+      "max": {
+        "tier": 4,
+        "rep": 12,
+        "exp": 10,
+        "doom": 10
+      },
+      "description": ""
+    },
+
+    "faction": {
+      "name": "",
+      "type": "",
+      "tier": 0,
+      "hold": {
+        "value": [1],
+        "max": 2,
+        "max_default": 2
+      },
+      "status": {
+        "value": [4],
+        "max": 7,
+        "max_default": 7
+      },
+      "goal_1": "",
+      "goal_1_clock_max": 0,
+      "goal_2": "",
+      "goal_2_clock_max": 0,
+      "goal_clock": 0,
+      "assets": "",
+      "quirks": "",
+      "notables": "",
+      "allies": "",
+      "enemies": "",
+      "situation": "",
+      "notes": "",
+      "description": ""
+    },
+
+    "group": {
+      "members": [],
+      "posse_id": ""
+    },
+
+    "location": {
+      "description": "",
+      "location_type": "",
+      "qualities": {
+        "wealth": 0,
+        "law_order": 0,
+        "outlaw_chaos": 0,
+        "supernatural": 0
+      },
+      "clocks": []
+    },
+
+    "npc": {
+      "description_short": "",
+      "description": "",
+      "associated_class": "",
+      "associated_faction": "",
+      "associated_posse_type": "",
+      "notes": ""
+    },
+
+    "\uD83D\uDD5B clock": {
+      "name": "",
+      "type": 4,
+      "value": "0",
+      "owner": ""
+    }
+  },
+
+  "Item": {
+    "types": [
+      "item", "class", "ability",
+        "crew_type", "crew_upgrade", "crew_ability",
+        "cohort", "vice", "heritage", "background",
+        "achievement", "artifact"
+    ],
+    "templates": {
+      "default": {
+        "description": ""
+      },
+      "ability": {
+        "description": "",
+        "class": "",
+        "price": 1,
+        "purchased": false,
+        "class_default": false
+      },
+      "logic": {
+        "logic": ""
+      },
+      "activatedEffect": {
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        }
+      }
+    },
+
+    "item": {
+      "templates": ["default", "logic", "activatedEffect"],
+      "class": "",
+      "load": 0,
+      "uses": 1,
+      "additional_info": "",
+      "equipped": false,
+      "num_available": 1
+    },
+
+    "class": {
+      "templates": ["default", "logic", "activatedEffect"],
+      "experience_clues": [],
+      "contacts": "",
+      "base_skills": {
+        "hunt":    [0],
+        "read":    [0],
+        "survey":  [0],
+        "craft":   [0],
+        "sling":   [0],
+        "prowl":   [0],
+        "brawl":   [0],
+        "disable": [0],
+        "attune":  [0],
+        "command": [0],
+        "consort": [0],
+        "sway":    [0]
+      }
+    },
+
+    "ability": {
+      "templates": ["ability", "logic", "activatedEffect"]
+    },
+
+    "heritage": {
+      "templates": ["default", "activatedEffect"]
+    },
+
+      "background": {
+        "templates": ["default", "activatedEffect"]
+      },
+
+      "vice": {
+        "templates": ["default", "activatedEffect"]
+      },
+
+    "cohort": {
+      "templates": ["default"],
+      "cohort": ["Gang"],
+      "scale": 0,
+      "quality": 0,
+      "cohort_list": {
+        "Gang": { "label": "AFOD.Gang" },
+        "Expert": { "label": "AFOD.Expert" }
+      },
+      "gang_type": ["Matones"],
+      "gang_type_list": {
+        "RatonesLibreria": {
+          "label": "AFOD.GangTypeRatonesLibreria",
+          "description": "AFOD.GangTypeRatonesLibreriaDescription"
+        },
+        "Timadores": {
+          "label": "AFOD.GangTypeTimadores",
+          "description": "AFOD.GangTypeTimadoresDescription"
+        },
+        "Transportistas": {
+          "label": "AFOD.GangTypeTransportistas",
+          "description": "AFOD.GangTypeTransportistasDescription"
+        },
+        "Exploradores": {
+          "label": "AFOD.GangTypeExploradores",
+          "description": "AFOD.GangTypeExploradoresDescription"
+        },
+        "Matones": {
+          "label": "AFOD.GangTypeMatones",
+          "description": "AFOD.GangTypeMatonesDescription"
+        },
+        "Mineros": {
+          "label": "AFOD.GangTypeMineros",
+          "description": "AFOD.GangTypeMinerosdDescription"
+        }
+      },
+      "expert_type": "",
+      "status": [],
+      "statuses": [],
+      "edges": [],
+      "edges_list": {
+        "Fearsome": {
+          "label": "AFOD.EdgesFearsome",
+          "description": "AFOD.EdgesFearsomeDescription",
+          "selected": false
+        },
+        "Independent": {
+          "label": "AFOD.EdgesIndependent",
+          "description": "AFOD.EdgesIndependentDescription",
+          "selected": false
+        },
+        "Loyal": {
+          "label": "AFOD.EdgesLoyal",
+          "description": "AFOD.EdgesLoyalDescription",
+          "selected": false
+        },
+        "Tenacious": {
+          "label": "AFOD.EdgesTenacious",
+          "description": "AFOD.EdgesTenaciousDescription",
+          "selected": false
+        }
+      },
+      "flaws": [],
+      "flaws_list": {
+        "Principled": {
+          "label": "AFOD.FlawsPrincipled",
+          "description": "AFOD.FlawsPrincipledDescription",
+          "selected": false
+        },
+        "Savage": {
+          "label": "AFOD.FlawsSavage",
+          "description": "AFOD.FlawsSavageDescription",
+          "selected": false
+        },
+        "Unreliable": {
+          "label": "AFOD.FlawsUnreliable",
+          "description": "AFOD.FlawsUnreliableDescription",
+          "selected": false
+        },
+        "Wild": {
+          "label": "AFOD.FlawsWild",
+          "description": "AFOD.FlawsWildDescription",
+          "selected": false
+        }
+      },
+      "harm": ["No"],
+      "harm_list": {
+        "No": {
+          "label": "AFOD.HarmNoHarm",
+          "description": "AFOD.HarmNoHarmDescription",
+          "value": 0
+        },
+        "Weakened": {
+          "label": "AFOD.HarmWeakened",
+          "description": "AFOD.HarmWeakenedDescription",
+          "value": 1
+        },
+        "Impaired": {
+          "label": "AFOD.HarmImpaired",
+          "description": "AFOD.HarmImpairedDescription",
+          "value": 2
+        },
+        "Broken": {
+          "label": "AFOD.HarmBroken",
+          "description": "AFOD.HarmBrokenDescription",
+          "value": 3
+        },
+        "Dead": {
+          "label": "AFOD.HarmDead",
+          "description": "AFOD.HarmDeadDescription",
+          "value": 4
+        }
+      },
+      "armor": false
+    },
+
+    "crew_upgrade": {
+      "templates": ["ability", "logic", "activatedEffect"],
+      "crew_type": ""
+    },
+
+    "crew_ability": {
+      "templates": ["ability", "activatedEffect"]
+    },
+
+    "crew_type": {
+      "templates": ["activatedEffect"],
+      "description": "",
+      "experience_clues": "",
+      "modus_options": [],
+      "contacts": "",
+      "achievements": [
+        {"name":""},{"name":""},{"name":""},{"name":""},{"name":""},
+        {"name":""},{"name":""},{"name":""},{"name":""},{"name":""},
+        {"name":""},{"name":""},{"name":""},{"name":""},{"name":""}
+      ]
+    },
+
+    "achievement": {
+      "templates": ["default"],
+      "class": "",
+      "type": "neutral",
+      "effect": "",
+      "claimed": false
+    },
+
+    "artifact": {
+      "templates": ["default"],
+      "origin": "",
+      "quality": 0,
+      "drawbacks": "",
+      "load": 1,
+      "equipped": false
+    }
+
+  }
+}

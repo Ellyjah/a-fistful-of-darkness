@@ -1,0 +1,59 @@
+<div class="dice-tooltip afod-die-tooltip">
+
+  {{!-- Atributo usado para resistir --}}
+  {{#if attribute_label}}
+    <div class="chat-label label-stripe-chat">
+      {{localize "AFOD.ResistanceRoll"}} — {{localize attribute_label}}
+    </div>
+  {{/if}}
+  {{#if zeromode}}
+    <div class="chat-label-small label-stripe-chat-small">0d</div>
+  {{/if}}
+
+  {{!-- Crítico: sin coste (o incluso recuperas) --}}
+  {{#if (eq roll_status "critical-success")}}
+    <div class="die critical-success">{{localize "AFOD.RollCriticalSuccess"}}</div>
+    <div class="description">
+      <p>{{localize "AFOD.RollResistanceCritical"}}</p>
+    </div>
+
+  {{!-- Cualquier otro resultado: siempre resistes, pero a un coste --}}
+  {{else}}
+    <div class="die success">{{localize "AFOD.RollSuccess"}}</div>
+    <div class="description">
+      <p>
+        {{#if (lteq grit_cost 0)}}
+          {{localize "AFOD.RollResistanceCritical"}}
+        {{else}}
+          {{localize "AFOD.RollResistance"}}:
+          <strong>−{{grit_cost}} {{localize "AFOD.Grit"}}</strong>
+        {{/if}}
+      </p>
+    </div>
+  {{/if}}
+
+  {{#if note}}
+    <em class="roll-note">{{note}}</em>
+  {{/if}}
+
+  <ol class="dice-rolls">
+    {{#each this.rolls}}
+      {{#if this.result}}
+        <li class="roll die d6"
+          {{#if (eq this.result 6)}} style="color: #5a7a4a; font-weight:bold;"
+          {{else if (lteq this.result 3)}} style="color: #8b2c1a;"
+          {{/if}}>
+          {{this.result}}
+        </li>
+      {{else}}
+        <li class="roll die d6">{{this.roll}}</li>
+      {{/if}}
+    {{/each}}
+    {{#if @root.method}}
+      {{#unless (eq @root.method.type "mersenne")}}
+        <li class="roll method" data-tooltip="{{localize @root.method.label}}">{{{@root.method.icon}}}</li>
+      {{/unless}}
+    {{/if}}
+  </ol>
+
+</div>

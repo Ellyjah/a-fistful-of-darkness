@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbOrador001",
+  "name": "Caminar por el Valle",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Puedes gastar tu armadura especial para resistir la consecuencia de algo sobrenatural, o para esforzarte al tratar con fuerzas infernales.</p>",
+    "class": "El Orador",
+    "price": 1,
+    "purchased": false,
+    "class_default": true
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbOrador001",
+  "effects": [],
+  "folder": "TEHuR4f8DknafEtC"
+}

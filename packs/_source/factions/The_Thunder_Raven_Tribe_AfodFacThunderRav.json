@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacThunderRav",
+  "name": "The Thunder Raven Tribe",
+  "type": "faction",
+  "img": "icons/svg/sun.svg",
+  "system": {
+    "description": "<p>Una de las tribus locales nativas más grandes, de la que se dice que tiene la medicina potenciada por Hellstone más fuerte y avanzada — la Danza de los Espíritus. La eminencia gris detrás del Jefe Canowicakte es el chamán Kangee.</p><p>Les gusta atacar bajo la cobertura de la oscuridad nocturna, a menudo apoyados por tormentas eléctricas y espíritus de la naturaleza.</p>",
+    "type": "",
+    "tier": 3,
+    "hold": {
+      "value": [
+        1
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        3
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Alimentar al Cuervo (Repetir)",
+    "goal_1_clock_max": 10,
+    "goal_2": "Destruir mina (Repetir)",
+    "goal_2_clock_max": 8,
+    "goal_clock": 0,
+    "assets": "Medicina Hellstone avanzada. Guerreros expertos. Espíritus de la naturaleza como aliados. Control del territorio.",
+    "quirks": "Ataques nocturnos. Uso de tormentas eléctricas. Danza de los Espíritus.",
+    "notables": "Jefe Canowicakte, Chamán Kangee (la verdadera mente)",
+    "allies": "Otras tribus nativas",
+    "enemies": "The Pony Express (beneficiario de sus ataques). The 8th Cavalry. Ironware & Metal Goods.",
+    "situation": "Fuerza activa y poderosa defendiendo el territorio ancestral de la explotación de Hellstone.",
+    "notes": "Reloj 1 (Repetir): -1 Perdición al completarse. Reloj 2 (Repetir): -1 Perdición al completarse. Facción de tendencia positiva para la Perdición."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacThunderRav",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "IbiZulIZUrc745cz",
+  "name": "Sureña",
+  "type": "heritage",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>Creciste en el Sur, donde las cicatrices de la Guerra Civil aún sangran. Tu herencia está marcada por el conflicto, el honor y el peso de un mundo que ya no existe.</p><p><em>Pista de XP: Expresaste tu herencia o trasfondo sureño durante la sesión.</em></p>"
+  },
+  "folder": "obsxk7MVOBexe5Kv",
+  "sort": 300,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774931069946,
+    "modifiedTime": 1774931069946,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!IbiZulIZUrc745cz",
+  "effects": []
+}

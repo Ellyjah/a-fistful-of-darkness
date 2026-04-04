@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbApuesta003",
+  "name": "Cortar Cartas",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Tus trucos de cartas son hipnóticos. Puedes alterar recuerdos, sembrar sugestiones y generar dudas. Las cartas también son armas arrojadizas peligrosas.</p>",
+    "class": "La Apuesta",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbApuesta003",
+  "effects": [],
+  "folder": "ba5EPytcNujEnqf6"
+}

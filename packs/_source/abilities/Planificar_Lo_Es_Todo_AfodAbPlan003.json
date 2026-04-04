@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbPlan003",
+  "name": "Planificar Lo Es Todo",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Durante el tiempo libre, puedes darte a ti mismo o a un miembro de la cuadrilla +1 acción de tiempo libre gratuita para una misión.</p>",
+    "class": "El Plan",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbPlan003",
+  "effects": [],
+  "folder": "nCv89eHovuRoDoVg"
+}

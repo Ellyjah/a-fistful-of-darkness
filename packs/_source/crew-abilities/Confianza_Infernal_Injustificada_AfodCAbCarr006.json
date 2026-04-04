@@ -1,0 +1,26 @@
+{
+  "_id": "AfodCAbCarr006",
+  "name": "Confianza Infernal Injustificada",
+  "type": "crew_ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Una vez por misión, cuando la cuadrilla usa Hellstone para mejorar una acción, no se marca el flag \"Hellstone Explotado\".</p>",
+    "class": "Carroñeros de Hellstone",
+    "price": 1,
+    "purchased": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodCAbCarr006",
+  "effects": [],
+  "folder": "LAFSZcT03Y9wBYV8"
+}

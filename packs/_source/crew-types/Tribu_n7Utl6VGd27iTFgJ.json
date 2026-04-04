@@ -1,0 +1,114 @@
+{
+  "name": "Tribu",
+  "type": "crew_type",
+  "img": "icons/magic/nature/dreamcatcher-green.webp",
+  "system": {
+    "activation": {
+      "type": "",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": 0,
+      "per": null
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "description": "<p>Guerreros, chamanes y guardianes de las tierras ancestrales. La Tribu defiende su pueblo y sus territorios sagrados del avance de los colonizadores y los demonios de la Hellstone.</p><h3>Habilidades Especiales de Cuadrilla</h3><ul><li><strong>VIGÍAS</strong> Cada PJ puede añadir +1 en una acción de Sintonizar, Rastrear o Explorar (máximo 3).</li><li><strong>HACIA EL MÁS ALLÁ ARDIENTE</strong> Los espíritus os mostraron los caminos cambiantes hacia el Más Allá Ardiente y de vuelta. Podéis Sintonizar para visitar lugares del Más Allá si respetáis a sus habitantes y traéis ofrendas apropiadas. No tenéis que salir por donde entrasteis.</li><li><strong>LA MONTURA ES EL HOGAR</strong> Obtenéis +1d mientras vais a caballo. Habláis el lenguaje de los caballos. Podéis pedirles que Recopilen Información con +1 efecto. Perdéis 3 Tesón cuando muere vuestro caballo.</li><li><strong>UNO CON LA TIERRA</strong> Podéis ordenar a los espíritus de la tierra o pedirles amablemente ayuda o consejo. Podéis ignorar una consecuencia si los espíritus eligen proporcionar cobertura. O podéis ganar +1d si eligen ayudaros en vuestro camino.</li><li><strong>UNO CON EL PUEBLO</strong> Cuando descansáis en el hogar de vuestro pueblo, la tribu tiene una acción de Descanso adicional y gana +1d para Adquirir Recurso. Describid cómo es posible.</li><li><strong>CAZADORES DE DEMONIOS</strong> Os enseñaron a detectar las debilidades de los demonios usando magia tabú. Si Sintonizáis con éxito con un demonio, el DJ os dice su debilidad y cómo puede ser destruido. En un CRÍTICO podéis aprender su nombre verdadero.</li><li><strong>ESTÁN CON NOSOTROS</strong> Llevad un símbolo de vuestro pueblo o tierra; describidlo y el sombrío ritual de vinculación. Mientras lo llevéis, la tribu obtiene +1d contra Excavar Demasiado Profundo y +1d de Resistencia contra criaturas del Más Allá Ardiente u otros espíritus, así como contra el terror o la desesperación. Si perdéis el símbolo o es destruido, todos reciben daño de nivel 3: desanimado. Solo puede curarse restaurando el símbolo de algún modo.</li><li><strong>VETERANO</strong> Elegid una habilidad especial de otra cuadrilla.</li></ul><h3>Contactos</h3><ul><li>Red Horse, un hombre medicina de tribu aliada</li><li>The Petrified Tree, un espíritu ancestral consejero</li><li>Un explorador blanco que conoce la lengua tribal</li><li>Black Hoof, un Jefe que lidera negociaciones</li><li>Un chamán mestizo que conoce ambos mundos</li></ul>",
+    "experience_clues": "Al final de cada sesión marca 1 px de cuadrilla por:\n- Protegisteis vuestro territorio o pueblo de una amenaza.\n- Realizasteis un ritual o acto que redujo la Perdición de Mudwater.\n- Forjasteis o reforzasteis una alianza con otra facción o tribu.",
+    "modus_options": [
+      "Demostración de Fuerza (intimidación y combate abierto)",
+      "Rapidez (movimiento y ataques relámpago)",
+      "Social (negociación y diplomacia intertribal)",
+      "Sacrificio (rituales de coste personal por bien mayor)"
+    ],
+    "contacts": "<ul>\n    <li><strong>'the Cheat' Murray</strong>, traficante de armas</li>\n    <li><strong>Hawk</strong>, espíritu salvaje</li>\n    <li><strong>Kills Many</strong>, guardián del umbral</li>\n    <li><strong>Free Cloud Raining</strong>, curandero</li>\n    <li><strong>Seeker</strong>, guía</li>\n    <li><strong>'Coin' Slate</strong>, mercader</li>\n  </ul>",
+    "achievements": [
+      {
+        "name": "LA TORMENTA ROTA"
+      },
+      {
+        "name": "EL ORÁCULO"
+      },
+      {
+        "name": "EL GUARDIÁN"
+      },
+      {
+        "name": "ESPÍRITUS ANCESTRALES"
+      },
+      {
+        "name": "SOMBRA DE LA LUNA"
+      },
+      {
+        "name": "EL VÍNCULO"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "EQUILIBRIO"
+      },
+      {
+        "name": "EL CANTO DEL BÚFALO"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "VISIONES DEL FIN DE LOS TIEMPOS"
+      },
+      {
+        "name": "EL MAR DE HUESOS"
+      },
+      {
+        "name": "LA DANZA DEL COYOTE"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "DOMANDO AL PÁJARO TRUENO"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "fqnmpYNEZM7GFKpA",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.a-fistful-of-darkness.crew-types.Item.AfodCrewTribu001",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774615631899,
+    "modifiedTime": 1774615631899,
+    "lastModifiedBy": "ejITwgjzWo4BaC5z"
+  },
+  "ownership": {
+    "default": 0,
+    "ejITwgjzWo4BaC5z": 3
+  },
+  "_id": "n7Utl6VGd27iTFgJ",
+  "sort": 0,
+  "_key": "!items!n7Utl6VGd27iTFgJ"
+}

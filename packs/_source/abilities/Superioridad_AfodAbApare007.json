@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbApare007",
+  "name": "Superioridad",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Gasta 1 Pasión para percibir más allá de los límites humanos: escucha pensamientos/sentimientos reales, ve en oscuridad total, percibe lo invisible, intuye la ubicación de objetos ocultos.</p>",
+    "class": "El Aparecido",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbApare007",
+  "effects": [],
+  "folder": "Wx2nmL6XAFOVkfYF"
+}

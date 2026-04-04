@@ -1,0 +1,3207 @@
+{
+  "generatedAt": "manual",
+  "packs": {
+    "crew-types": {
+      "yDHC1bXuznjS1S1f": {
+        "name": "Carronyaires d'Hellstone",
+        "system": {
+          "description": "<p>Cercadors, miners i comerciants d'Hellstone. Els Carronyaires coneixen les mines millor que ningú i saben com sobreviure sota terra i treure el màxim profit de la pedra infernal sense (massa) perdició.</p><h3>Habilitats Especials de Colla</h3><ul><li><strong>HEIGH-HO</strong> Cada PJ pot afegir +1 en una acció de Sintonitzar, Sabotejar o Assetjar (màxim 3).</li><li><strong>TRANSPORTISTA</strong> Quan executeu un Pla de Viatge per iniciar la vostra missió o Rapiña d'Hellstone, obteniu +1d a la tirada d'Entrada en Escena.</li><li><strong>EXCAVAR FONS</strong> Ningú no us pot estafar. Quan adquiriu equip de mineria o explosius, obteniu +1 nivell de resultat a la vostra tirada.</li><li><strong>PALANCA</strong> La vostra colla proveeix materials trobats a altres faccions. El vostre èxit les beneficia. Sempre que guanyeu Reputació, guanyeu +1 Reputació addicional. Quines faccions? Qui està molest amb l'acord? Quin nivell de qualitat de quin lloc queda afectat?</li><li><strong>ACOSTUMATS A LA VIDA ESTRANYA</strong> Obteniu +1d a les tirades de Resistència contra amenaces sobrenaturals, inclòs excavar massa profund. Obteniu +1d a les tirades de Curació quan patiu dany sobrenatural.</li><li><strong>CONFIANÇA INFERNAL INJUSTIFICADA</strong> Ningú no pot amb la vostra colla mentre tingueu Hellstone a prop (almenys així ho sentiu). Un cop per missió podeu recuperar 1 Aguant si feu una Tirada de Mutació.</li><li><strong>PATRÓ</strong> Quan augmenteu el vostre Rang, costa la meitat de Monedes. Qui és el vostre patró? Per què us ajuda?</li><li><strong>VETERÀ</strong> Escolliu una habilitat especial d'una altra colla.</li></ul><h3>Contactes</h3><ul><li>Philomena Standish, directora d'Ironware and Metal Goods</li><li>Un exminer que coneix un filó secret</li><li>Ignaz Toodlebrock, inventor de dispositius d'Hellstone</li><li>Un oficial de l'Oficina d'Assaig local</li><li>Un comerciant del mercat negre d'Hellstone</li></ul>",
+          "experience_clues": "Al final de cada sessió marca 1 px de colla per:\n- Vau adquirir o processar Hellstone amb èxit.\n- Vau defensar o ampliar una Concessió d'Hellstone.\n- Un membre va avançar o va resistir una mutació pel bé del grup.",
+          "modus_options": [
+            "Rapiña (Scavenge, cerca i recuperació d'Hellstone)",
+            "Mineria (extracció directa a les mines)",
+            "Subministrament (provisió de materials a faccions)",
+            "Venda (comerç i distribució d'Hellstone)"
+          ],
+          "contacts": "<ul>\n    <li><strong>Bill 'Scar' Morgan</strong>, jutge</li>\n    <li><strong>'Railroad' Gilliam</strong>, xèrif</li>\n    <li><strong>Sweet Dave</strong>, pianista</li>\n    <li><strong>Grover McIntyre</strong>, amo de la ferrateria</li>\n    <li><strong>Ling Lee</strong>, col·leccionista</li>\n    <li><strong>Old Man Bruford</strong>, amo de la taverna</li>\n  </ul>",
+          "achievements": [
+            {
+              "name": "LA XARXA EMBULLADA"
+            },
+            {
+              "name": "LA CACERA SALVATGE"
+            },
+            {
+              "name": "XIUS A LA FANGA"
+            },
+            {
+              "name": "PAS SEGUR"
+            },
+            {
+              "name": "ENTERRAMORTS"
+            },
+            {
+              "name": "OMBRES MOSSEGADORES"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "EQUILIBRI"
+            },
+            {
+              "name": "ARMA SAGRADA"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "SERVENT DE LA MORT"
+            },
+            {
+              "name": "ARMA PROFANA"
+            },
+            {
+              "name": "AMAGATALL SECRET"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "BALA PERDUDA"
+            }
+          ]
+        }
+      },
+      "5TSA9OhViHuazSz4": {
+        "name": "Caçarecompenses",
+        "system": {
+          "description": "<p>Rastrejadors, capturadors i executors que cobren pels seus serveis. Els Caçarecompenses treballen als límits de la llei perseguint criminals, foragits i criatures sobrenaturals per encàrrec.</p><h3>Habilitats Especials de Colla</h3><ul><li><strong>SABUESOS</strong> Cada PJ pot afegir +1 en una acció de Comandar, Disparar o Rastrejar (màxim 3).</li><li><strong>GALERIA DE FORAGITS AMB POTES</strong> Quan la vostra colla té ocasió de parlar, reconeixereu qualsevol foragit o agent de la llei que vegeu en persona o en un retrat. Sabeu si hi ha recompensa pel seu cap i quant val.</li><li><strong>LÍNIA DE VIDA</strong> Els porteu vius. Podeu escollir que el vostre objectiu quedi incapacitat en lloc de mort. Sempre els queda un bri de vida.</li><li><strong>ULL EXPERT</strong> Podeu llegir artefactes i armes d'Hellstone per descobrir què fan i com són de perillosos. Sempre obteniu bons detalls.</li><li><strong>REALMENT ÚTILS</strong> De vegades els amics valen tant com el territori. Podeu comptar fins a tres estatus de facció +3 com si fossin Concessions.</li><li><strong>TIPUS AFORTUNATS</strong> Quan tireu Esdeveniments, tireu dues vegades i us quedeu amb el resultat que vulgueu. Quan reduïu la Perdició de la colla, obteniu +1d.</li><li><strong>PATRÓ</strong> Quan augmenteu el vostre Rang, costa la meitat de Monedes. Qui és el vostre patró? Per què us ajuda?</li><li><strong>VETERÀ</strong> Escolliu una habilitat especial d'una altra colla.</li></ul><h3>Contactes</h3><ul><li>Horatio Freeman, un xèrif que paga bé</li><li>Levi Boyle, un ranger que comparteix informació</li><li>Una carcellera que accepta presoners sense fer preguntes</li><li>Un advocat que gestiona els contractes</li><li>Un ferrer que fabrica equip de captura</li></ul>",
+          "experience_clues": "Al final de cada sessió marca 1 px de colla per:\n- Vau capturar o eliminar un objectiu per encàrrec.\n- Vau recopilar informació crucial sobre un fugitiu o una amenaça activa.\n- Vau posar la llei o l'ordre per davant del vostre benefici personal.",
+          "modus_options": [
+            "Violència (eliminació directa d'objectius)",
+            "Negociació (captura i tracte amb faccions)",
+            "Contactes (xarxa d'informació i col·laboració)",
+            "Parany (emboscades i captura tàctica)"
+          ],
+          "contacts": "<ul>\n    <li><strong>Bill 'Scar' Morgan</strong>, jutge</li>\n    <li><strong>'Railroad' Gilliam</strong>, xèrif</li>\n    <li><strong>'Silent' Bob</strong>, ferrer</li>\n    <li><strong>Moe</strong>, amo del saloon</li>\n    <li><strong>Madam Zona</strong>, vident</li>\n    <li><strong>Xiang</strong>, ocultista</li>\n  </ul>",
+          "achievements": [
+            {
+              "name": "LA XARXA EMBULLADA"
+            },
+            {
+              "name": "LA CACERA SALVATGE"
+            },
+            {
+              "name": "XIUS A LA FANGA"
+            },
+            {
+              "name": "PAS SEGUR"
+            },
+            {
+              "name": "ENTERRAMORTS"
+            },
+            {
+              "name": "OMBRES MOSSEGADORES"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "EQUILIBRI"
+            },
+            {
+              "name": "ARMA SAGRADA"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "SERVENT DE LA MORT"
+            },
+            {
+              "name": "ARMA PROFANA"
+            },
+            {
+              "name": "AMAGATALL SECRET"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "BALA PERDUDA"
+            }
+          ]
+        }
+      },
+      "tyFP1LDns1RAAKI6": {
+        "name": "Colla de Foragits",
+        "system": {
+          "description": "<p>Foragits, pistolers i fugitius que viuen més enllà de la llei. La Colla de Foragits actua ràpid, colpeja fort i desapareix abans que arribin els reforços.</p><h3>Habilitats Especials de Colla</h3><ul><li><strong>MORTALMENT DE DEBÒ</strong> Cada PJ pot afegir +1 en una acció de Comandar, Disparar o Barallar-se (màxim 3).</li><li><strong>GERMANS DE SANG</strong> Quan combatiu al costat de les vostres cohorts, aquestes obtenen +1d en tirades de treball en equip (preparació i accions en grup). Totes les vostres cohorts aconsegueixen el tipus Matons de franc (si ja són Matons, afegiu-hi un altre tipus).</li><li><strong>SENSE RODEJOS</strong> Quan executeu un pla d'Assalt, obteniu +1d a la tirada d'Entrada en Escena.</li><li><strong>DEMONIS</strong> La por val tant com el respecte. Podeu comptar cada Genet com si fos una Concessió.</li><li><strong>FORJATS EN EL FOC</strong> Cada PJ ha estat endurit per experiències cruels. Obteniu +1d a les tirades de Resistència.</li><li><strong>PATRÓ</strong> Quan augmenteu el vostre Rang, costa la meitat de Monedes. Qui és el vostre patró? Per què us ajuda?</li><li><strong>GOSSOS DE GUERRA</strong> Quan esteu en rencilla (estatus de facció -3), la vostra colla no pateix -1 Domini i els PJ continuen tenint dues activitats de Descans en lloc de només una.</li><li><strong>VETERÀ</strong> Escolliu una habilitat especial d'una altra colla.</li></ul><h3>Contactes</h3><ul><li>Polly Gains, una tractant d'informació</li><li>Un alcalde corrupte endeutat amb la colla</li><li>Adolphus Vasquez, un treballador del ferrocarril amb accés als horaris</li><li>Una tavernera que fa de bústia de missatges</li><li>Un nadiu que coneix els passos amagats</li></ul>",
+          "experience_clues": "Al final de cada sessió marca 1 px de colla per:\n- Vau robar o assaltar un objectiu de Rang superior.\n- Vau evitar o vau escapar d'un intent de captura.\n- La vostra reputació o els vostres actes van causar un impacte notable a Mudwater o a la regió.",
+          "modus_options": [
+            "Intimidació (domini per por i reputació)",
+            "Superioritat (combat i assalts directes)",
+            "Rapidesa (cops ràpids i fugides)",
+            "Espectacle (actes cridaners que generen fama)"
+          ],
+          "contacts": "<ul>\n    <li><strong>Bill 'Scar' Morgan</strong>, jutge</li>\n    <li><strong>'the Cheat' Murray</strong>, traficant d'armes</li>\n    <li><strong>'Silent' Bob</strong>, ferrer</li>\n    <li><strong>Moe</strong>, amo del saloon</li>\n    <li><strong>Sam Malone</strong>, contrabandista</li>\n    <li><strong>Old Man Bruford</strong>, amo de la taverna</li>\n  </ul>",
+          "achievements": [
+            {
+              "name": "LA MORGUE"
+            },
+            {
+              "name": "FUNERAL D'HOME LLIURE"
+            },
+            {
+              "name": "UNA GOTA DE L'INFERN"
+            },
+            {
+              "name": "DAUS CARREGATS"
+            },
+            {
+              "name": "EL TRON DE CALAVERES"
+            },
+            {
+              "name": "LA BÈSTIA"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "EQUILIBRI"
+            },
+            {
+              "name": "ÚLTIMS TRACTES D'HOMES MORTS"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "FANTASMES VENJATIUS"
+            },
+            {
+              "name": "PORTADOR DEL DOLOR"
+            },
+            {
+              "name": "CONNEXIÓ FERROVIÀRIA"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "ARBRE DELS PENJATS"
+            }
+          ]
+        }
+      },
+      "n7Utl6VGd27iTFgJ": {
+        "name": "Tribu",
+        "system": {
+          "description": "<p>Guerrers, xamans i guardians de les terres ancestrals. La Tribu defensa el seu poble i els seus territoris sagrats de l'avanç dels colonitzadors i dels dimonis de l'Hellstone.</p><h3>Habilitats Especials de Colla</h3><ul><li><strong>VIGIES</strong> Cada PJ pot afegir +1 en una acció de Sintonitzar, Rastrejar o Explorar (màxim 3).</li><li><strong>CAP AL MÉS ENLLÀ ARDENT</strong> Els esperits us van mostrar els camins canviants cap al Més Enllà Ardent i de tornada. Podeu Sintonitzar per visitar indrets del Més Enllà si respecteu els seus habitants i hi porteu ofrenes adequades. No cal que en sortiu pel mateix lloc on heu entrat.</li><li><strong>LA MUNTURA ÉS LA LLAR</strong> Obteniu +1d mentre aneu a cavall. Parleu el llenguatge dels cavalls. Podeu demanar-los que Recopilin Informació amb +1 efecte. Perdeu 3 Aguant quan mor el vostre cavall.</li><li><strong>U AMB LA TERRA</strong> Podeu ordenar als esperits de la terra o demanar-los ajuda o consell amb amabilitat. Podeu ignorar una conseqüència si els esperits escullen proporcionar cobertura. O bé podeu guanyar +1d si decideixen ajudar-vos en el vostre camí.</li><li><strong>U AMB EL POBLE</strong> Quan descanseu a la llar del vostre poble, la tribu té una acció de Descans addicional i obté +1d per Adquirir Recurs. Descriviu com és possible.</li><li><strong>CAÇADORS DE DIMONIS</strong> Us van ensenyar a detectar les debilitats dels dimonis utilitzant màgia tabú. Si Sintonitzeu amb èxit amb un dimoni, el DJ us diu la seva debilitat i com pot ser destruït. En un CRÍTIC podeu aprendre el seu nom veritable.</li><li><strong>ESTAN AMB NOSALTRES</strong> Porteu un símbol del vostre poble o de la vostra terra; descriviu-lo i el ritual ombrívol de vinculació. Mentre el porteu, la tribu obté +1d contra Excavar Massa Profund i +1d de Resistència contra criatures del Més Enllà Ardent o altres esperits, així com contra el terror o la desesperació. Si perdeu el símbol o és destruït, tothom rep dany de nivell 3: desanimat. Només es pot curar restaurant el símbol d'alguna manera.</li><li><strong>VETERÀ</strong> Escolliu una habilitat especial d'una altra colla.</li></ul><h3>Contactes</h3><ul><li>Red Horse, un home medicina d'una tribu aliada</li><li>The Petrified Tree, un esperit ancestral conseller</li><li>Un explorador blanc que coneix la llengua tribal</li><li>Black Hoof, un cap que lidera negociacions</li><li>Un xaman mestís que coneix tots dos mons</li></ul>",
+          "experience_clues": "Al final de cada sessió marca 1 px de colla per:\n- Vau protegir el vostre territori o poble d'una amenaça.\n- Vau fer un ritual o acte que va reduir la Perdició de Mudwater.\n- Vau forjar o reforçar una aliança amb una altra facció o tribu.",
+          "modus_options": [
+            "Demostració de Força (intimidació i combat obert)",
+            "Rapidesa (moviment i atacs llampec)",
+            "Social (negociació i diplomàcia intertribal)",
+            "Sacrifici (rituals de cost personal pel bé comú)"
+          ],
+          "contacts": "<ul>\n    <li><strong>'the Cheat' Murray</strong>, traficant d'armes</li>\n    <li><strong>Hawk</strong>, esperit salvatge</li>\n    <li><strong>Kills Many</strong>, guardià del llindar</li>\n    <li><strong>Free Cloud Raining</strong>, guaridor</li>\n    <li><strong>Seeker</strong>, guia</li>\n    <li><strong>'Coin' Slate</strong>, mercader</li>\n  </ul>",
+          "achievements": [
+            {
+              "name": "LA TEMPESTA TRENCADA"
+            },
+            {
+              "name": "L'ORACLE"
+            },
+            {
+              "name": "EL GUARDIÀ"
+            },
+            {
+              "name": "ESPERITS ANCESTRALS"
+            },
+            {
+              "name": "OMBRA DE LA LLUNA"
+            },
+            {
+              "name": "EL VINCLE"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "EQUILIBRI"
+            },
+            {
+              "name": "EL CANT DEL BÚFAL"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "VISIONS DE LA FI DELS TEMPS"
+            },
+            {
+              "name": "LA MAR D'OSSOS"
+            },
+            {
+              "name": "LA DANSA DEL COIOT"
+            },
+            {
+              "name": "CONCESSIÓ D'HELLSTONE"
+            },
+            {
+              "name": "DOMANT L'OCELL DEL TRO"
+            }
+          ]
+        }
+      }
+    },
+    "heritages": {
+      "avWPaxADkL6VMte9": {
+        "name": "Africana",
+        "system": {
+          "description": "<p>La teva família té arrels al continent africà, ja sigui a través d'esclaus alliberats, immigrants o comunitats establertes. La teva herència et connecta amb tradicions de resistència, música i espiritualitat.</p><p><em>Pista d'XP: Vas expressar la teva herència o el teu trasfons africà durant la sessió.</em></p>"
+        }
+      },
+      "0nmfuf8DQF4viRib": {
+        "name": "Europea",
+        "system": {
+          "description": "<p>La teva família va emigrar des d'Europa, portant amb ella llengües, costums i ambicions. A l'Oest, l'herència europea pot obrir portes o tancar-les segons el cognom i l'accent.</p><p><em>Pista d'XP: Vas expressar la teva herència o el teu trasfons europeu durant la sessió.</em></p>"
+        }
+      },
+      "qlOneFM30X8983iF": {
+        "name": "Llunyà Orient",
+        "system": {
+          "description": "<p>Provens de les comunitats asiàtiques que van arribar a l'Oest com a treballadors, comerciants o refugiats. La teva herència combina tradicions antigues amb la dura realitat de ser estranger en terra aliena.</p><p><em>Pista d'XP: Vas expressar la teva herència o el teu trasfons del Llunyà Orient durant la sessió.</em></p>"
+        }
+      },
+      "R43yj8vILOPWvMj0": {
+        "name": "Misteriosa",
+        "system": {
+          "description": "<p>Els teus orígens són incerts, barrejats o deliberadament ocults. Potser no coneixes el teu propi passat, o potser prefereixes que ningú no el conegui. La teva herència és un misteri fins i tot per a tu.</p><p><em>Pista d'XP: Vas expressar la teva herència o el teu trasfons misteriós durant la sessió.</em></p>"
+        }
+      },
+      "iLoJM70ZMjo7ezYN": {
+        "name": "Nativa",
+        "system": {
+          "description": "<p>Descendeixes dels pobles originaris d'aquestes terres. La teva herència et connecta amb una relació profunda amb la terra, tradicions espirituals i la resistència davant de qui pretén esborrar la teva existència.</p><p><em>Pista d'XP: Vas expressar la teva herència o el teu trasfons natiu durant la sessió.</em></p>"
+        }
+      },
+      "IbiZulIZUrc745cz": {
+        "name": "Meridional",
+        "system": {
+          "description": "<p>Vas créixer al Sud, on les cicatrius de la Guerra Civil encara sagnen. La teva herència està marcada pel conflicte, l'honor i el pes d'un món que ja no existeix.</p><p><em>Pista d'XP: Vas expressar la teva herència o el teu trasfons meridional durant la sessió.</em></p>"
+        }
+      }
+    },
+    "vices": {
+      "AfodViceEstupor01": {
+        "name": "Estupor",
+        "system": {
+          "description": "<p>Busques l'oblit en l'abús de drogues, bevent en excés, rebent pallisses en baralles de saloon, etc.</p><p>Detalla el teu vici específic i indica el nom i la ubicació del teu proveïdor de vici (taverner, traficant, saló de boxa, etc.).</p>"
+        }
+      },
+      "AfodViceExtrano01": {
+        "name": "Estrany",
+        "system": {
+          "description": "<p>Experimentes amb essències estranyes o parts del cos, tractes amb esperits, fantasmes o dimonis, observes rituals o tabús estrafolaris, etc.</p><p>Detalla el teu vici específic i indica el nom i la ubicació del teu proveïdor de vici (ocultista, mèdium, culte secret, etc.).</p>"
+        }
+      },
+      "AfodViceFe000001": {
+        "name": "Fe",
+        "system": {
+          "description": "<p>Estàs dedicat a un poder invisible, ésser espiritual, déu, avantpassat, etc.</p><p>Detalla la teva fe específica i indica el nom i la ubicació del teu proveïdor de vici (predicador, xaman, altar secret, etc.).</p>"
+        }
+      },
+      "AfodViceJuego001": {
+        "name": "Joc",
+        "system": {
+          "description": "<p>Desitges els jocs d'atzar, jugar al pòquer, apostar en curses de cavalls, baralles de galls, etc.</p><p>Detalla el teu vici específic i indica el nom i la ubicació del teu proveïdor de vici (saloon, casa de joc, apostador, etc.).</p>"
+        }
+      },
+      "AfodViceLujo0001": {
+        "name": "Luxe",
+        "system": {
+          "description": "<p>Exhibicions costoses i/o ostentoses d'opulència.</p><p>Detalla el teu vici específic i indica el nom i la ubicació del teu proveïdor de vici (joier, modista, restaurant de luxe, etc.).</p>"
+        }
+      },
+      "AfodViceObligac01": {
+        "name": "Obligació",
+        "system": {
+          "description": "<p>Estàs entregat a una família, una causa, una caritat, etc.</p><p>Detalla la teva obligació específica i indica el nom i la ubicació del teu proveïdor de vici (familiar, líder d'una causa, representant, etc.).</p>"
+        }
+      },
+      "AfodVicePlacer01": {
+        "name": "Plaer",
+        "system": {
+          "description": "<p>Gratificació d'amants, menjar, beguda, drogues, art, teatre, etc.</p><p>Detalla el teu plaer específic i indica el nom i la ubicació del teu proveïdor de vici (taverna, madama, artista, traficant, etc.).</p>"
+        }
+      }
+    },
+    "playbooks": {
+      "AfodAparecido01": {
+        "name": "L'Aparegut",
+        "system": {
+          "description": "<p>Un esperit venjatiu dins d'un cos mort. Aquest llibret es desbloqueja quan un PJ mor i accepta el tracte del Diable. L'Aparegut utilitza Passió en lloc d'Aguant i Decadència en lloc d'Estigma.</p><p><em>Estigmes de Decadència: Fred, Obsessionat, Decapitat, Caòtic, Inestable, Viciós, Pudent.</em></p><h3>Habilitats Especials</h3><ul><li><strong>UN PAS MÉS ENLLÀ</strong> T'afecten els amulets antiesperits (perd 2 de Passió per superar la repulsió). Quan hauries de perdre Aguant, perds Passió en lloc seu. Quan hauries de rebre un Estigma, reps Decadència.</li><li><strong>ÀNGEL DE LA VENJANÇA</strong> Pots gastar la teva armadura especial per aterrir o impressionar un enemic, o per esforçar-te quan Sintonitzes amb el Més Enllà Ardent.</li><li><strong>TOCAT PEL MÉS ENLLÀ ARDENT</strong> Pots esforçar-te per: parlar en llengües, aterrir un grup de persones o captar l'atenció d'un fantasma o d'un dimoni.</li><li><strong>TORXA INFERNAL</strong> El teu cos crema amb una flama que no consumeix i sembla que tu i les teves coses estigueu en flames. Rep +1d o posició millorada en situacions on estar en flames sigui útil.</li><li><strong>MUNTURA PROFANA</strong> El teu cavall o company animal és igualment aterridor. Té potència en rastreig o en combat contra allò sobrenatural. Per 1 de Passió té un vincle mental temporal amb tu.</li><li><strong>COM JOHAN</strong> Per 1 de Passió pots dissipar-te en un núvol de vapor. Pots moure't flotant i volar sense cansar-te. Pots fluir lentament per petites obertures.</li><li><strong>SUPERIORITAT</strong> Perd 1 de Passió per sentir més enllà dels límits humans: percebre els pensaments o sentiments veritables d'un subjecte, veure en foscor total o percebre coses invisibles.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul>",
+          "subtitle": "Un esperit venjatiu dins d'un cos mort",
+          "experience_clues": [
+            "Vas perseguir la teva venjança sense importar-ne el preu.",
+            "Vas expressar la teva alienació respecte de les teves creences, herència o trasfons.",
+            "Vas lluitar amb el teu vincle amb els vius o amb la teva decadència durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>Qui et va matar</strong> — Assassí / objectiu de venjança</li><li><strong>Un amor perdut</strong> — Vincle amb el món dels vius</li><li><strong>Un xaman que sap què ets</strong> — Aliat o amenaça</li><li><strong>Un caçador de fantasmes</strong> — Rival o aliat</li><li><strong>El teu antic millor amic</strong> — No sap que has tornat</li></ul>"
+        }
+      },
+      "AfodTrueno00001": {
+        "name": "El Cor de Tro",
+        "system": {
+          "description": "<p>Un guerrer totèmic nascut de la terra. El Cor de Tro canalitza el poder del seu tòtem animal per combatre i sobreviure.</p><h3>Habilitats Especials</h3><ul><li><strong>GUIAT PEL TÒTEM</strong> Pots gastar la teva armadura especial per resistir una conseqüència sobrenatural, o per esforçar-te en una proesa d'atletisme o de caça.</li><li><strong>RECEPTACLE DEL TÒTEM</strong> Quan t'esforces i obres cos i ànima com a conducte per al teu tòtem, tria un benefici addicional: realitzar una proesa d'atletisme o sigil gairebé sobrehumana, maniobrar per confondre els teus enemics fent que s'ataquin entre ells o sentir on és la teva presa sigui on sigui.</li><li><strong>PROTECTOR DEL POBLE</strong> Quan protegeixes un company o el teu poble, rep +1d a la teva tirada de resistència. Quan recopiles informació per anticipar possibles amenaces, obtens +1 efecte.</li><li><strong>UN DIMONI AMB UNA FULLA</strong> Ets molt efectiu trobant òrgans vitals amb la teva fulla. Quan fas servir Llançar per llançar o lluitar amb una fulla, guanyes potència i ho pots fer en absolut silenci.</li><li><strong>PINTURA DE GUERRA MACABRA</strong> Els enemics vacil·len, dubten o s'estremeixen quan els ataques en combat cos a cos. Tens una aura d'amenaça i perill. Guanyes potència quan intentes intimidar.</li><li><strong>SENTIT TOTÈMIC</strong> Escull un sentit animal d'acord amb el teu tòtem. Aquest sentit s'aguditza fins a una sensibilitat animal.</li><li><strong>LLOP SOLITARI</strong> Guanyes un disparador de px addicional: Vas complicar les coses actuant sol. Si la teva colla té problemes per això, també marca px de colla.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul><h3>Contactes</h3><ul><li>L'Arbre Petrificat</li><li>Maxwell, un Explorador</li><li>Peülla Negra, un Cap Nadiu / Caçador</li><li>Cavall Roig, un home medicina</li><li>El Caçador, un Esperit de la Terra</li></ul>",
+          "subtitle": "Un guerrer totèmic nascut de la terra",
+          "experience_clues": [
+            "Vas afrontar un desafiament amb atletisme o poder espiritual.",
+            "Vas expressar les teves creences, impulsos, herència o trasfons.",
+            "Vas lluitar amb problemes del teu vici, mutació o estigma durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>L'Arbre Petrificat</strong> — Esperit antic</li><li><strong>Maxwell</strong> — Explorador</li><li><strong>Peülla Negra</strong> — Cap nadiu / Caçador</li><li><strong>Cavall Roig</strong> — Home medicina</li><li><strong>El Caçador</strong> — Esperit de la terra</li></ul>"
+        }
+      },
+      "AfodDisparo000001": {
+        "name": "El Tret",
+        "system": {
+          "description": "<p>Un pistoler mortal i un artista de l'espectacle. El Tret és un mestre de les armes de foc que combina destresa letal amb espectacle.</p><h3>Habilitats Especials</h3><ul><li><strong>FUM I MIRALLS</strong> Pots gastar la teva armadura especial per resistir dany de combat o aparentar morir només per reaparèixer en una ubicació a la teva elecció amb +1d a la teva acció següent.</li><li><strong>ULL D'ASTOR</strong> Pots esforçar-te per: fer un atac a distància extrema, realitzar un tret impossible (rebot, a través d'un grup) o tenir una última bala que ningú no havia comptat.</li><li><strong>EASTWOOD</strong> Abans que es desembainin les armes, pots mirar fixament algú forçant-lo a dubtar o encongir-se. Rep +1d per a la teva acció següent contra ell.</li><li><strong>NERVIS D'ACER I VELOCITAT DEL LLAMP</strong> Sempre pots disparar primer i pots esperar fins a l'últim moment possible i continuar sent el primer a (re)accionar.</li><li><strong>BALES DE PLATA</strong> Pots enriquir els teus trets amb energia espiritual. Els teus trets guanyen potència en combat contra allò sobrenatural.</li><li><strong>OMPLIR L'AIRE DE PLOM</strong> Gasta la teva Munició Especial per: desfermar una ràfega de foc ràpid per suprimir l'enemic o atacar un grup / +1 escala.</li><li><strong>ACTUACIÓ ENLLUERNADORA</strong> Pots fer un espectacle cridaner amb les teves armes o el teu cavall que deixi el públic bocabadat. Rep +1 efecte per actuar sobre els impressionats o per escapar.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul><h3>Contactes</h3><ul><li>Arthur Fog, un fals Nadiu / Artista d'espectacle</li><li>Ralph 'Ou Podrit' Horn, un Armer</li><li>Sam 'Ull Sortós' Freeman, un Vaquer</li><li>Peülla Negra, un Cap Nadiu / Caçador</li><li>El Gran Lo Scalzo</li></ul>",
+          "subtitle": "Un pistoler mortal i un artista de l'espectacle",
+          "experience_clues": [
+            "Vas afrontar un desafiament amb velocitat o estil.",
+            "Vas expressar les teves creences, impulsos, herència o trasfons.",
+            "Vas lluitar amb problemes del teu vici, mutació o estigma durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>Arthur Fog</strong> — Nadiu fals / Showman</li><li><strong>Ralph 'Ou Podrit' Horn</strong> — Armer</li><li><strong>Sam 'Ull Sortós' Freeman</strong> — Vaquer</li><li><strong>Peülla Negra</strong> — Cap nadiu / Caçador</li><li><strong>El Gran Lo Scalzo</strong> — Espectacle itinerant</li></ul>"
+        }
+      },
+      "AfodExplorador001": {
+        "name": "L'Explorador",
+        "system": {
+          "description": "<p>Un rastrejador sigil·lós i caçador. L'Explorador sobreviu a les terres salvatges i localitza qualsevol presa.</p><h3>Habilitats Especials</h3><ul><li><strong>MÉS FOSC QUE LES OMBRES</strong> Pots gastar la teva armadura especial per resistir una conseqüència de detecció, o per esforçar-te en una proesa de caça o de sigil.</li><li><strong>CAÇADOR SILENCIÓS</strong> Quan recopiles informació per localitzar un objectiu, obtens +1 efecte. Quan t'amagues en una posició preparada o fas servir camuflatge, obtens +1d a les tirades per evitar ser detectat.</li><li><strong>SUPERVIVENT</strong> Per experiència dura o entrenament especialitzat, pots subsistir amb allò que proporcioni qualsevol entorn. Obtens +1 casella d'Aguant.</li><li><strong>VAIG APRENDRE L'OFICI DEL MILLOR</strong> Quan ataques des d'un amagatall o actives una trampa, obtens +1d.</li><li><strong>ETS LA MEVA PRESA</strong> Pots olorar la seva sang. Quan caces un objectiu que has rastrejat o ferit prèviament, guanyes +1 nivell d'efecte. Quan recopiles informació sobre una debilitat, el pitjor que obtens sempre són bons detalls.</li><li><strong>COM UN GERMÀ</strong> Explica com la teva muntura és útil en allò que intentes aconseguir i guanya +1 nivell d'efecte o +1d. La teva muntura sempre coneix el camí de tornada a casa.</li><li><strong>VEURE UN ALTRE DIA</strong> Guanyes un disparador de px addicional: Vas deixar escapar la teva presa perquè mereixia veure un altre dia. Si la teva colla té problemes per això, també marca px de colla.</li><li><strong>ESCOLTAR LA TERRA</strong> Fora de la civilització sempre saps on ets i com cuidar-te tu i la teva muntura. Pots sentir un canvi de temps amb antelació.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul><h3>Contactes</h3><ul><li>Sherman Townsend, un Botiguer</li><li>Qui-Parla, un Esperit lliure</li><li>Petita-Guineu-Caçant, un Tribal</li><li>Jackson 'Dent de Bala', un Ranger</li><li>Problema, una Noia o Noi</li></ul>",
+          "subtitle": "Un rastrejador sigil·lós i caçador",
+          "experience_clues": [
+            "Vas afrontar un desafiament amb rastreig o sigil.",
+            "Vas expressar les teves creences, impulsos, herència o trasfons.",
+            "Vas lluitar amb problemes del teu vici, mutació o estigma durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>Sherman Townsend</strong> — Botiguer</li><li><strong>Qui-Parla</strong> — Esperit lliure</li><li><strong>Petita-Guineu-Caçant</strong> — Guerrer tribal</li><li><strong>Jackson 'Dent de Bala'</strong> — Ranger</li><li><strong>Problema</strong> — Noi o noia misteriós/a</li></ul>"
+        }
+      },
+      "AfodForajido0001": {
+        "name": "El Foragit",
+        "system": {
+          "description": "<p>Un inconformista i desesperat més enllà de les regles. El Foragit viu al marge de la llei, imprevisible i perillós.</p><h3>Habilitats Especials</h3><ul><li><strong>UN ALTRE D'AQUELLS DIES</strong> Pots gastar la teva armadura especial per resistir una conseqüència d'una tirada desesperada, o per escapar d'on o del que vulguis.</li><li><strong>ARA! ARA! ARA!</strong> Quan t'esforces, pots gastar +1 d'Aguant (3 d'Aguant en total) per guanyar tant +1 efecte com +1d en lloc d'una de les dues coses.</li><li><strong>NO T'HO ESPERAVES</strong> Quan fas un moviment sorprenent més enllà de les convencions civilitzades, obtens +1d o +1 efecte (a la teva elecció).</li><li><strong>TEMERARI</strong> Quan fas una acció desesperada, obtens +1d a la teva tirada si també assumes -1d a qualsevol tirada de resistència contra les conseqüències de la teva acció.</li><li><strong>VENJATIU</strong> Guanyes un disparador de px addicional: Vas obtenir venjança contra algú que et va fer mal a tu o a algú que t'importa. Si la teva colla et va ajudar, també marca px de colla.</li><li><strong>QUINA REPUTACIÓ</strong> En entrar en una localització pots explicar-nos què ha sentit la gent sobre tu. Quan reveles el teu nom i explotes la teva reputació guanyes posició millorada o +1 efecte.</li><li><strong>ESCLAT DE GLÒRIA</strong> Quan marques un estigma i dius unes darreres paraules memorables, pots prendre represàlies contra tots els enemics al teu abast.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul><h3>Contactes</h3><ul><li>Polly Gains, una Comerciant</li><li>Pare Mathew, un Sacerdot</li><li>El Noi, un Caçarecompenses</li><li>Un amic a qui encara deus diners</li><li>Adolphus Vasquez, un Treballador del Ferrocarril</li><li>Rufus Johnson, un Cotxer</li></ul>",
+          "subtitle": "Un inconformista i desesperat més enllà de les regles",
+          "experience_clues": [
+            "Vas afrontar un desafiament trencant les regles o amb gosadia.",
+            "Vas expressar les teves creences, impulsos, herència o trasfons.",
+            "Vas lluitar amb problemes del teu vici, mutació o estigma durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>Polly Gains</strong> — Comerciant</li><li><strong>Pare Mathew</strong> — Capellà</li><li><strong>El Noi</strong> — Caçarecompenses</li><li><strong>Un amic a qui deus diners</strong> — Creditor</li><li><strong>Adolphus Vasquez</strong> — Treballador ferroviari</li><li><strong>Rufus Johnson</strong> — Carreter</li></ul>"
+        }
+      },
+      "AfodOrador00001": {
+        "name": "L'Orador",
+        "system": {
+          "description": "<p>Un guia espiritual i protector. L'Orador camina entre els mons, serveix la seva fe i guia els altres a través de les ombres.</p><h3>Habilitats Especials</h3><ul><li><strong>CAMINAR PER LA VALL</strong> Pots gastar la teva armadura especial per resistir una conseqüència sobrenatural, o per esforçar-te quan tractes amb les forces de l'Infern.</li><li><strong>PASTOR</strong> Pots esforçar-te per: realitzar una proesa de gràcia social, influir en una multitud o captar l'atenció d'allò Diví.</li><li><strong>FLAIRE DE SABUÉS</strong> Sempre perceps allò que no està bé. Rep +1d quan recopiles informació per descobrir corrupció o trobar el corrupte.</li><li><strong>CONSAGRAR</strong> Pots esforçar-te per amarar un objecte o un lloc amb poder diví. Guanyes potència quan s'enfronta a allò sobrenatural.</li><li><strong>CURANDER</strong> Quan reps un jurament sincer d'algú per seguir un dels preceptes de la teva Fe, pot netejar qualsevol nivell de gravetat de dany. Si alguna vegada trenca el precepte, rep dany de nivell 2: Condemnat.</li><li><strong>ELÍ</strong> Un dels teus sentits està tan sintonitzat amb el món que pot substituir qualsevol dels altres. Obté +1d a qualsevol acció que puguis plantejar com a sorpresa d'aquesta habilitat inesperada.</li><li><strong>PREMONICIÓ</strong> Tingues un flashback per sessió a una visió, somni, pregària o meditació que ara cobra sentit i t'ha preparat per aquest mateix moment. El primer Aguant gastat d'aquesta manera és gratuït.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul><h3>Contactes</h3><ul><li>Nathaniel, un Pecador Redimit</li><li>Patience, una Advocada</li><li>Cyrus, un Pistoler</li><li>Mistress Bethia, una Artista</li><li>Parla-amb-el-Vent</li></ul>",
+          "subtitle": "Un guia espiritual i protector",
+          "experience_clues": [
+            "Vas afrontar un desafiament amb convicció o sacrifici.",
+            "Vas expressar les teves creences, impulsos, herència o trasfons.",
+            "Vas lluitar amb problemes del teu vici, mutació o estigma durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>Nathaniel</strong> — Pecador redimit</li><li><strong>Patience</strong> — Advocada</li><li><strong>Cyrus</strong> — Pistoler</li><li><strong>Mistress Bethia</strong> — Artista</li><li><strong>Parla-amb-el-Vent</strong> — Xaman</li></ul>"
+        }
+      },
+      "AfodElPlan00001": {
+        "name": "El Pla",
+        "system": {
+          "description": "<p>Un cervell ben connectat. El Pla sempre té un as a la màniga i sap moure els fils des de les ombres.</p><h3>Habilitats Especials</h3><ul><li><strong>DÉU EM DESLLIURI DELS AMICS</strong> Pots gastar la teva armadura especial per protegir un company, o per esforçar-te quan recopiles informació o treballes en un projecte a llarg termini.</li><li><strong>PREVISIÓ</strong> Dues vegades per missió pots assistir un company sense pagar Aguant. Quan et quedes sense Aguant, en lloc d'un Estigma pots triar tornar amb 1 d'Aguant.</li><li><strong>PLANIFICAR-HO ÉS TOT</strong> Gràcies a la teva planificació acurada, durant el descans pots donar-te a tu mateix o a un altre membre de la colla +1 activitat de descans.</li><li><strong>ASSUMPTE DE FAMÍLIA</strong> Durant el descans, obtens +1 nivell de resultat quan adquireixes un recurs o redueixes perdició. Pots triar un cosí llunyà com a recurs que arriba amb tren.</li><li><strong>TEIXIR LA TERANYINA</strong> Guanyes +1d a Alternar quan recopiles informació sobre un objectiu per a una missió. Obtens +1d a la tirada d'entrada en escena per a aquella operació.</li><li><strong>VELLS AMICS A TOT ARREU</strong> Quan arribes a un poble o assentament nou, anomena-hi un Amic, Connexió, Proveïdor de Vici o Enemic que ja tinguis.</li><li><strong>DITS A TOTS ELS PASTISSOS</strong> Al final de cada fase de descans, guanyes +2 d'Indulgència.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul><h3>Contactes</h3><ul><li>John P. Little, un Baró Ramader</li><li>El Holandès, un Executor</li><li>Pebre, un Amulet de la Sort</li><li>Capità Hodgens, Fort Hubert</li><li>Horatio Freeman, un Xèrif</li><li>Sylvester Stubbs, un Funcionari</li></ul>",
+          "subtitle": "Un cervell ben connectat",
+          "experience_clues": [
+            "Vas afrontar un desafiament amb càlcul o negociació.",
+            "Vas expressar les teves creences, impulsos, herència o trasfons.",
+            "Vas lluitar amb problemes del teu vici, mutació o estigma durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>John P. Little</strong> — Magnat ramader</li><li><strong>El Holandès</strong> — Executor</li><li><strong>Pebre</strong> — Talismà de la sort</li><li><strong>Capità Hodgens</strong> — Fort Hubert</li><li><strong>Horatio Freeman</strong> — Xèrif</li><li><strong>Sylvester Stubbs</strong> — Funcionari</li></ul>"
+        }
+      },
+      "AfodPuno00000001": {
+        "name": "El Puny",
+        "system": {
+          "description": "<p>Com una cobra, a punt per colpejar. El Puny és un guerrer formidable que resol els problemes amb força bruta i expressió física.</p><h3>Habilitats Especials</h3><ul><li><strong>AIXÒ ÉS TOT EL QUE TENS?</strong> Pots gastar la teva armadura especial per evitar dany d'un atac en combat, o per esforçar-te durant una baralla.</li><li><strong>TOTHOM FA KUNG-FU</strong> Pots esforçar-te per realitzar una proesa de control corporal o força física que frega allò sobrehumà, o per enfrontar-te a una petita banda en igualtat de condicions en combat cos a cos.</li><li><strong>D'ON SURT AIXÒ?</strong> Sempre tens un objecte d'1 de Càrrega restant sense importar la càrrega ja utilitzada. Si pots aprofitar la sorpresa al teu favor, guanyes la iniciativa fins i tot contra experts.</li><li><strong>IRA SAGRADA</strong> Quan obres cos i ànima al Més Enllà Ardent pots imbuir les teves mans, armes cos a cos o eines amb energia espiritual. Guanyes potència en combat contra allò sobrenatural.</li><li><strong>MÉS VAL TRAÇA QUE FORÇA</strong> Et recuperes del dany més ràpidament. Omple permanentment un segment del teu rellotge de curació. Rep +1d a les tirades de tractament de curació.</li><li><strong>HOME D'HONOR</strong> Guanyes un disparador de px addicional: Vas lluitar pel teu honor o pel d'un altre a costa teva.</li><li><strong>KATA IMPRESSIONANT</strong> Descriu com presumeixes i impressiones amb les teves habilitats físiques. Si pots explotar aquesta actuació en el teu moviment següent, rep posició millorada o +1 efecte.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul><h3>Contactes</h3><ul><li>Jim-Bob Thornton, un Ramader</li><li>Jane, una Noia de Saló</li><li>Octavius Slone, un Doctor</li><li>Master Lee</li><li>Sergent Meyers, Fort Hubert</li></ul>",
+          "subtitle": "Com una cobra, a punt per colpejar",
+          "experience_clues": [
+            "Vas afrontar un desafiament amb força o expressió física.",
+            "Vas expressar les teves creences, impulsos, herència o trasfons.",
+            "Vas lluitar amb problemes del teu vici, mutació o estigma durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>Jim-Bob Thornton</strong> — Ramader</li><li><strong>Jane</strong> — Noia de saló</li><li><strong>Octavius Slone</strong> — Doctor</li><li><strong>Master Lee</strong> — Mestre d'arts marcials</li><li><strong>Sergent Meyers</strong> — Fort Hubert</li></ul>"
+        }
+      },
+      "AfodToqueSutil01": {
+        "name": "El Toc Subtil",
+        "system": {
+          "description": "<p>Una llum empàtica en un món fosc. El Toc Subtil és un sanador i viatger que entén la gent i sap quan i com ajudar.</p><h3>Habilitats Especials</h3><ul><li><strong>MIRACLES DE FIRAIRE</strong> Quan assisteixes o participes en una acció de grup amb algú, també pot ignorar una penalització per dany.</li><li><strong>INFLUENT</strong> Proporciones un servei valuós al poble i ets benvingut fins i tot en llocs perillosos. Obté +1 nivell de resultat quan parles en nom d'una comunitat local, adquireixes un recurs o redueixes perdició.</li><li><strong>PETITS VOLTORS</strong> Les cohorts que comandes guanyen potència per recopilar informació i tenen armadura especial per resistir una conseqüència de detecció o engany.</li><li><strong>MOLT VIATJAT</strong> Parles multitud d'idiomes i tens una educació àmplia. Quan recopiles informació en un lloc estrany o forà, rep +1d a la teva tirada.</li><li><strong>FANDANGO</strong> Quan et dones al vici, pots ajustar el resultat dels daus en 1 o 2 (amunt o avall). Un aliat que s'uneixi al teu vici pot fer el mateix.</li><li><strong>AGUDESA</strong> Pots gastar la teva armadura especial per resistir una conseqüència de persuasió o sospita. Quan resisteixes amb Agalles, rep +1d.</li><li><strong>VÍBORA</strong> Quan inventes, fabriques o intentes aplicar un verí o narcòtic, rep +1d. Comences el joc amb una fórmula addicional ja coneguda.</li><li><strong>EN BONES MANS</strong> Quan proporciones una perspectiva significativa o un consell sincer, tots dos netegeu 1 d'Aguant. Tothom de la teva colla obté +1d a les seves tirades de tractament de curació.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul><h3>Contactes</h3><ul><li>Mitch Cochran, un Empresari</li><li>Janet Irsinghausen, una Erudita</li><li>Mr. Rosenberg, un Comissari</li><li>Joe Sawyer, un Granger</li><li>Ron Maddox, un Cirurgià</li></ul>",
+          "subtitle": "Una llum empàtica en un món fosc",
+          "experience_clues": [
+            "Vas afrontar un desafiament amb influència o empatia.",
+            "Vas expressar les teves creences, impulsos, herència o trasfons.",
+            "Vas lluitar amb problemes del teu vici, mutació o estigma durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>Mitch Cochran</strong> — Empresari</li><li><strong>Janet Irsinghausen</strong> — Erudita</li><li><strong>Mr. Rosenberg</strong> — Comissari</li><li><strong>Joe Sawyer</strong> — Granger</li><li><strong>Ron Maddox</strong> — Cirurgià</li></ul>"
+        }
+      },
+      "AfodApuesta000001": {
+        "name": "L'Aposta",
+        "system": {
+          "description": "<p>Un manipulador subtil i un trampós astut. L'Aposta viu per l'engany, l'encant i l'audàcia.</p><h3>Habilitats Especials</h3><ul><li><strong>TOTES LES MIRADES EN... MI!</strong> Pots gastar la teva armadura especial per resistir la conseqüència de detecció d'un aliat o per esforçar-te per impressionar els altres. Sempre pots fer una entrada triomfal.</li><li><strong>DO DE JUGADOR</strong> Quan algú t'enganya o t'agafa per sorpresa, guanyes un Flashback gratuït d'1 d'Aguant. Quan recopiles informació durant una festa o jugant, guanyes +1 efecte.</li><li><strong>TALLAR CARTES</strong> La teva habilitat amb les cartes és hipnòtica. Mentre fas un truc de cartes, pots alterar un record, implantar una suggestió o sembrar un dubte. Pots usar les teves cartes com a armes llancívoles perilloses.</li><li><strong>EL COR DE LES CARTES</strong> Quan acceptes la Posició i Efecte donats pel DJ tal com són, sense gastar Aguant ni forçar la situació, i simplement deixes que els daus decideixin, recuperes 1 d'Aguant.</li><li><strong>LLUITAR AMB SOLTURA</strong> Quan lluites en un duel, els espectadors no hi interferiran. Si uses Llançar mentre ets en combat cos a cos, guanyes +1 efecte.</li><li><strong>GALANTERIA DE SALÓ</strong> Guanyes +1d en situacions on la teva aparença et seria avantatjosa. Si intentes persuadir algú amb una proposta rendible o desafiar altres a un duel, guanyes potència.</li><li><strong>SENYORA FORTUNA</strong> Pots guanyar qualsevol joc d'atzar. Gasta 1 d'Aguant per causar un accident menor, 2 per a un de més gran o 3 per a una catàstrofe.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul><h3>Contactes</h3><ul><li>Zane Cooper, un Crupier</li><li>Mrs. Millie, una Madama</li><li>Dandy Jim Buckley, un Estafador</li><li>Sly Eddison, un Tahur</li><li>Owen O'Neill, un Destil·lador clandestí</li></ul>",
+          "subtitle": "Un manipulador subtil i un trampós astut",
+          "experience_clues": [
+            "Vas afrontar un desafiament amb engany o audàcia.",
+            "Vas expressar les teves creences, impulsos, herència o trasfons.",
+            "Vas lluitar amb problemes del teu vici, mutació o estigma durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>Zane Cooper</strong> — Crupier</li><li><strong>Mrs. Millie</strong> — Madama</li><li><strong>Dandy Jim Buckley</strong> — Estafador</li><li><strong>Sly Eddison</strong> — Tahur</li><li><strong>Owen O'Neill</strong> — Contrabandista</li></ul>"
+        }
+      },
+      "AfodLaLey0000001": {
+        "name": "La Llei",
+        "system": {
+          "description": "<p>Un representant de la llei i executor. La Llei fa complir l'ordre amb autoritat i determinació.</p><h3>Habilitats Especials</h3><ul><li><strong>JO SÓC LA LLEI</strong> Pots gastar la teva armadura especial per mostrar la teva placa d'autoritat i forçar obediència, o per esforçar-te durant una baralla.</li><li><strong>UNA HISTÒRIA PER EXPLICAR</strong> Un cop per missió pots esforçar-te per explicar una història sobre un embolic terrible del qual vas sobreviure per: motivar una cohort o turba a lluitar o fugir, donar a una cohort lluitadora +1 efecte o restaurar 1 d'Aguant a tothom de la colla.</li><li><strong>AIXÒ NO ÉS CAÇA DE MAPATXOS</strong> Quan Comandes una cohort en combat, continuen lluitant quan normalment trencarien files. Guanyen +1 efecte i 1 armadura.</li><li><strong>PREGUNTA QUÈ POT FER EL TEU PAÍS PER TU</strong> Tens accés a recursos de les forces de l'ordre. Obté +1d quan adquireixis recursos durant el descans. Tots els recursos tenen una qualitat mínima d'1.</li><li><strong>NOMÉS ÉS UNA RASCADA</strong> Les penalitzacions per dany són un nivell menys severes. Quan acceptes dany en lloc de resistir-lo, neteges 1 d'Aguant.</li><li><strong>BRÚIXOLA MORAL</strong> Guanyes un disparador de px addicional: Vas fer el correcte a costa teva. Si la teva colla té problemes per això, també marca px de colla.</li><li><strong>GENI TÀCTIC</strong> Sempre coneixes la millor posició durant una baralla o una cacera. Si pots ocupar aquesta posició, guanyes +1 efecte per a tu i per a tots els qui siguin amb tu.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul><h3>Contactes</h3><ul><li>Levi Boyle, un Ranger (Emboscada)</li><li>Gladis Wells, una Caçarecompenses (Sang)</li><li>Karl McCann, un assassí de sang freda (Sense Dents)</li><li>Carlos Vasquez, un Cap Foragit</li><li>El Caçador, un esperit venjatiu</li></ul>",
+          "subtitle": "Un representant de la llei i executor",
+          "experience_clues": [
+            "Vas afrontar un desafiament amb autoritat o resistència.",
+            "Vas expressar les teves creences, impulsos, herència o trasfons.",
+            "Vas lluitar amb problemes del teu vici, mutació o estigma durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>Levi 'Emboscada' Boyle</strong> — Ranger</li><li><strong>Gladis 'Sang' Wells</strong> — Caçarecompenses</li><li><strong>Karl 'Sense Dents' McCann</strong> — Assassí de sang freda</li><li><strong>Carlos Vasquez</strong> — Cap foragit</li><li><strong>El Caçador</strong> — Esperit venjatiu</li></ul>"
+        }
+      },
+      "AfodLlaveSierra1": {
+        "name": "La Clau i la Serra",
+        "system": {
+          "description": "<p>Científic boig, fanàtic de l'Hellstone. La Clau i la Serra és un inventor i alquimista que domina la ciència i la màgia de la pedra infernal.</p><h3>Habilitats Especials</h3><ul><li><strong>MOTIVAT</strong> Durant el descans, obtens dues marques per repartir entre qualsevol rellotge de projecte a llarg termini que impliqui investigació o aprendre una nova fórmula o disseny. En llegir, esforça't per 1 d'Aguant en lloc de 2.</li><li><strong>HÀBIL</strong> Pots gastar la teva armadura especial per resistir una conseqüència per trencar màquines o Hellstone, o per esforçar-te quan treballes en ciència estranya o manipules Hellstone.</li><li><strong>CIENTÍFIC BOIG</strong> Quan inventes o fabriques una creació amb característiques steampunk o d'Hellstone, rep +1 nivell de resultat. Comences amb un disseny especial ja conegut.</li><li><strong>ESPIRITOMANT</strong> Quan inventes o fabriques una creació amb característiques arcàniques, espirituals o demoníaques, rep +1 nivell de resultat. Comences amb una fórmula especial ja coneguda.</li><li><strong>ESCOLTAR LES SEVES VEUS</strong> Quan les toques pots Alternar amb màquines per Recopilar Informació amb +1 nivell de resultat. Després, pots esforçar-te per donar-li una característica o una tasca per a la qual no va ser construïda.</li><li><strong>PARLAR LA SEVA LLENGUA</strong> Pots sintonitzar amb qualsevol màquina per activar-la o desactivar-la.</li><li><strong>SANG, SUOR I ENGRANATGES</strong> Si vas aconseguir un avenç en un invent significatiu o en un problema científic, marca px. Si el teu projecte va causar problemes a la teva colla, també marca px de colla.</li><li><strong>MOMENT JUST, EINA JUSTA</strong> Pots fer servir un dels teus objectes per a un propòsit per al qual no va ser dissenyat. Els objectes refinats continuen sent refinats.</li><li><strong>VETERÀ</strong> Escull una habilitat especial d'una altra font.</li></ul><h3>Contactes</h3><ul><li>Ignaz Toodlebrock, un inventor</li><li>Una veu dins del teu cap</li><li>Una eina preferida sense nom</li><li>Virex, un experiment fallit</li><li>Mathilda, la teva promesa</li></ul>",
+          "subtitle": "Científic boig, fanàtic de l'Hellstone",
+          "experience_clues": [
+            "Vas afrontar un desafiament amb habilitat tècnica o enginy.",
+            "Vas expressar les teves creences, impulsos, herència o trasfons.",
+            "Vas lluitar amb problemes del teu vici, mutació o estigma durant la sessió."
+          ],
+          "contacts": "<ul><li><strong>Ignaz Toodlebrock</strong> — Inventor</li><li><strong>Una veu dins del teu cap</strong> — Entitat desconeguda</li><li><strong>Una eina preferida anomenada ___</strong> — Companya de feina</li><li><strong>Virex</strong> — Experiment fallit</li><li><strong>Mathilda</strong> — La teva promesa</li></ul>"
+        }
+      }
+    },
+    "abilities": {
+      "AfodAbApare001": {
+        "name": "Un Pas Més Enllà",
+        "system": {
+          "description": "<p>Els segells espirituals t'afecten (perd 2 de Passió per superar-los). Perds Passió en lloc d'Aguant. Reps Decadència en lloc d'Estigma.</p>"
+        }
+      },
+      "AfodAbApare003": {
+        "name": "Tocat pel Més Enllà Ardent",
+        "system": {
+          "description": "<p>Esforça't per: parlar en llengües, aterrir un grup o atreure l'atenció d'un fantasma o d'un dimoni.</p>"
+        }
+      },
+      "AfodAbApare004": {
+        "name": "Torxa Infernal",
+        "system": {
+          "description": "<p>El teu cos crema amb flames que no consumeixen. Tu i les coses que toques sembla que cremeu. +1d o posició millorada quan les flames són útils.</p>"
+        }
+      },
+      "AfodAbApare005": {
+        "name": "Muntura Profana",
+        "system": {
+          "description": "<p>La teva muntura o company animal és igualment aterridor. Potència en rastreig o combat contra allò sobrenatural. Gasta 1 de Passió per obtenir un vincle mental temporal.</p>"
+        }
+      },
+      "AfodAbApare006": {
+        "name": "Com Johan",
+        "system": {
+          "description": "<p>Gasta 1 de Passió per dispersar-te en un núvol de vapor. Flotes i vols sense fatiga. Flueixes lentament per petites obertures. +1 de Passió per refredar l'àrea i aterrir els vius.</p>"
+        }
+      },
+      "AfodAbApare007": {
+        "name": "Superioritat",
+        "system": {
+          "description": "<p>Gasta 1 de Passió per percebre més enllà dels límits humans: escoltar pensaments o sentiments reals, veure en foscor total, percebre allò invisible o intuir la ubicació d'objectes ocults.</p>"
+        }
+      },
+      "AfodAbApare008": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbTrueno001": {
+        "name": "Guiat pel Tòtem",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per resistir la conseqüència d'alguna cosa sobrenatural, o per esforçar-te en una proesa atlètica o de caça.</p>"
+        }
+      },
+      "AfodAbTrueno002": {
+        "name": "Receptacle del Tòtem",
+        "system": {
+          "description": "<p>Esforça't i obre't com a canal per escollir: atletisme o sigil sobrehumà, confondre els enemics fent-los atacar-se entre ells o percebre la ubicació de la teva presa.</p>"
+        }
+      },
+      "AfodAbTrueno003": {
+        "name": "Protector del Poble",
+        "system": {
+          "description": "<p>Quan protegeixes un aliat o el teu poble, +1d a les tirades de resistència. +1 efecte quan recopiles informació per anticipar amenaces.</p>"
+        }
+      },
+      "AfodAbTrueno004": {
+        "name": "Un Dimoni amb una Fulla",
+        "system": {
+          "description": "<p>Ets extremadament eficaç trobant òrgans vitals. Llançar amb una fulla obté potència i silenci absolut. Un fracàs no atorga resultat positiu.</p>"
+        }
+      },
+      "AfodAbTrueno005": {
+        "name": "Pintura de Guerra Macabra",
+        "system": {
+          "description": "<p>Els enemics dubten i retrocedeixen quan ataques en cos a cos. Aura d'amenaça i perill. Guanyes potència per intimidar. +1d immediatament després de demostrar la teva força.</p>"
+        }
+      },
+      "AfodAbTrueno006": {
+        "name": "Sentit Totèmic",
+        "system": {
+          "description": "<p>Escull un sentit animal d'acord amb el teu tòtem. S'aguditza fins a la sensibilitat animal.</p>"
+        }
+      },
+      "AfodAbTrueno007": {
+        "name": "Llop Solitari",
+        "system": {
+          "description": "<p>Guanyes un disparador de px addicional: vas complicar les coses actuant sol (PJ o px de colla).</p>"
+        }
+      },
+      "AfodAbTrueno008": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbDisp001": {
+        "name": "Fum i Miralls",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per resistir la conseqüència d'un atac en combat o per fingir la teva mort. Reapareixes a l'escena amb +1d a la teva acció següent.</p>"
+        }
+      },
+      "AfodAbDisp002": {
+        "name": "Ull d'Astor",
+        "system": {
+          "description": "<p>Pots esforçar-te per: fer un tret a distància extrema, un rebot impossible o trobar una última bala amagada.</p>"
+        }
+      },
+      "AfodAbDisp003": {
+        "name": "Eastwood",
+        "system": {
+          "description": "<p>Mira fixament algú abans d'un duel per sembrar el dubte; tots dos sabeu que pots interrompre el que faci a continuació. +1d a la teva acció següent contra aquella persona.</p>"
+        }
+      },
+      "AfodAbDisp004": {
+        "name": "Nervis d'Acer i Velocitat del Llamp",
+        "system": {
+          "description": "<p>Sempre dispares primer. Pots esperar fins a l'últim moment i, així i tot, reaccionar abans que la resta.</p>"
+        }
+      },
+      "AfodAbDisp005": {
+        "name": "Bales de Plata",
+        "system": {
+          "description": "<p>Pots enriquir els teus trets amb energia espiritual. Guanyes potència contra allò sobrenatural.</p>"
+        }
+      },
+      "AfodAbDisp006": {
+        "name": "Omplir l'Aire de Plom",
+        "system": {
+          "description": "<p>Gasta munició especial per desfermar un foc de supressió ràpid o atacar un grup amb +1 escala.</p>"
+        }
+      },
+      "AfodAbDisp007": {
+        "name": "Actuació Enlluernadora",
+        "system": {
+          "description": "<p>Fes una exhibició cridanera amb les teves armes o la teva muntura. +1 efecte per actuar sobre el públic impressionat o per escapar.</p>"
+        }
+      },
+      "AfodAbDisp008": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbExplor001": {
+        "name": "Més Fosc que les Ombres",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per resistir la conseqüència de detecció, o per esforçar-te en una proesa de caça o de sigil.</p>"
+        }
+      },
+      "AfodAbExplor002": {
+        "name": "Caçador Silenciós",
+        "system": {
+          "description": "<p>+1 efecte quan recopiles informació per localitzar un objectiu. +1d per evitar la detecció quan estàs ocult o fas servir camuflatge.</p>"
+        }
+      },
+      "AfodAbExplor003": {
+        "name": "Supervivent",
+        "system": {
+          "description": "<p>Subsisteixes amb allò que proporciona l'entorn. Guanyes una casella d'Aguant addicional.</p>"
+        }
+      },
+      "AfodAbExplor004": {
+        "name": "Vaig Aprendre l'Ofici del Millor",
+        "system": {
+          "description": "<p>+1d quan ataques des d'una posició oculta o actives una trampa.</p>"
+        }
+      },
+      "AfodAbExplor005": {
+        "name": "Ets la Meva Presa",
+        "system": {
+          "description": "<p>En flaires la sang. Quan caces un objectiu prèviament rastrejat o ferit, guanyes +1 nivell d'efecte. El pitjor resultat en obtenir informació sobre debilitats sempre dona bons detalls.</p>"
+        }
+      },
+      "AfodAbExplor006": {
+        "name": "Com un Germà",
+        "system": {
+          "description": "<p>Explica com t'ajuda la teva muntura. Guanya +1 nivell d'efecte o +1d. La teva muntura sempre coneix el camí de tornada a casa.</p>"
+        }
+      },
+      "AfodAbExplor007": {
+        "name": "Veure un Altre Dia",
+        "system": {
+          "description": "<p>Guanyes un disparador de px addicional: vas deixar escapar la teva presa perquè mereixia un altre dia (PJ o px de colla).</p>"
+        }
+      },
+      "AfodAbExplor008": {
+        "name": "Escoltar la Terra",
+        "system": {
+          "description": "<p>Fora de la civilització sempre saps on ets i com cuidar la teva muntura. Perceps els canvis climàtics abans que arribin.</p>"
+        }
+      },
+      "AfodAbExplor009": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbForaj001": {
+        "name": "Un Altre d'Aquells Dies",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per resistir la conseqüència d'una acció desesperada, o per escapar de qualsevol cosa.</p>"
+        }
+      },
+      "AfodAbForaj003": {
+        "name": "No T'Ho Esperaves",
+        "system": {
+          "description": "<p>Fer un moviment sorprenent més enllà de les convencions civilitzades atorga +1d o +1 efecte.</p>"
+        }
+      },
+      "AfodAbForaj004": {
+        "name": "Temerari",
+        "system": {
+          "description": "<p>Una acció desesperada atorga +1d si també acceptes -1d a les tirades de resistència a les conseqüències d'aquella acció.</p>"
+        }
+      },
+      "AfodAbForaj005": {
+        "name": "Venjatiu",
+        "system": {
+          "description": "<p>Guanyes un disparador de px addicional: et vas venjar d'algú que et va fer mal a tu o a un ésser estimat (PJ o px de colla).</p>"
+        }
+      },
+      "AfodAbForaj006": {
+        "name": "Quina Reputació",
+        "system": {
+          "description": "<p>Quan entres en un lloc, digues-nos què ha sentit la gent sobre tu. Revelar el teu nom i explotar la teva reputació millora la posició o afegeix +1 efecte.</p>"
+        }
+      },
+      "AfodAbForaj007": {
+        "name": "Esclat de Glòria",
+        "system": {
+          "description": "<p>Quan marques un Estigma amb paraules memorables, prens represàlies contra tots els enemics al teu abast abans de caure abatut. Pots marcar l'Estigma anticipadament per fer-lo servir.</p>"
+        }
+      },
+      "AfodAbForaj008": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbOrador001": {
+        "name": "Caminar per la Vall",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per resistir la conseqüència d'alguna cosa sobrenatural, o per esforçar-te en tractar amb forces infernals.</p>"
+        }
+      },
+      "AfodAbOrador002": {
+        "name": "Pastor",
+        "system": {
+          "description": "<p>Esforça't per realitzar una proesa de gràcia social, influir en una multitud o captar l'atenció d'allò Diví.</p>"
+        }
+      },
+      "AfodAbOrador003": {
+        "name": "Flaira de Sabués",
+        "system": {
+          "description": "<p>Sempre perceps que alguna cosa va malament. +1d per recopilar informació i descobrir corrupció o trobar els corruptes.</p>"
+        }
+      },
+      "AfodAbOrador004": {
+        "name": "Consagrar",
+        "system": {
+          "description": "<p>Esforça't per amarar un objecte o un lloc amb poder diví. Guanyes potència contra allò sobrenatural.</p>"
+        }
+      },
+      "AfodAbOrador005": {
+        "name": "Curander",
+        "system": {
+          "description": "<p>Quan algú jura sincerament seguir un dels preceptes de la teva fe, neteja qualsevol nivell de dany. Si trenca el precepte, rep dany de nivell 2: \"Condemnat\".</p>"
+        }
+      },
+      "AfodAbOrador006": {
+        "name": "Elí",
+        "system": {
+          "description": "<p>Un sentit tan sintonitzat amb el món que pot substituir qualsevol altre. +1d a qualsevol acció que puguis emmarcar com una sorpresa des d'aquest sentit inesperat.</p>"
+        }
+      },
+      "AfodAbOrador007": {
+        "name": "Premonició",
+        "system": {
+          "description": "<p>Un flashback gratuït per sessió d'una visió, un somni, una pregària o una meditació que ara té sentit i per a la qual estaves preparat. El primer Aguant gastat és gratuït.</p>"
+        }
+      },
+      "AfodAbOrador008": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbPlan001": {
+        "name": "Déu Em Deslliuri dels Amics",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per protegir un aliat, o per esforçar-te a recopilar informació o treballar en un projecte a llarg termini.</p>"
+        }
+      },
+      "AfodAbPlan002": {
+        "name": "Previsió",
+        "system": {
+          "description": "<p>Dues vegades per missió pots ajudar un aliat sense gastar Aguant. Quan et quedes sense Aguant, en lloc de prendre un Estigma, pots tornar amb 1 d'Aguant (explica la teva preparació).</p>"
+        }
+      },
+      "AfodAbPlan003": {
+        "name": "Planificar-ho És Tot",
+        "system": {
+          "description": "<p>Durant el descans, pots donar-te a tu mateix o a un membre de la colla +1 activitat de descans gratuïta per a una missió.</p>"
+        }
+      },
+      "AfodAbPlan004": {
+        "name": "Assumpte de Família",
+        "system": {
+          "description": "<p>Durant el descans, +1 nivell de resultat en adquirir un recurs o reduir la Perdició. Pots triar un \"cosí llunyà\" com a recurs que arriba.</p>"
+        }
+      },
+      "AfodAbPlan005": {
+        "name": "Teixir la Teranyina",
+        "system": {
+          "description": "<p>+1d a Alternar recopilant informació per a una missió. +1d a la tirada d'obertura d'aquella operació. Si la tirada d'obertura és un 6, guanyes 1 d'Aguant.</p>"
+        }
+      },
+      "AfodAbPlan006": {
+        "name": "Vells Amics a Tot Arreu",
+        "system": {
+          "description": "<p>En arribar a una ciutat nova, anomena un Amic, Contacte, Proveïdor de Vici o Enemic que hi tinguis. Explica la història de com us vau conèixer.</p>"
+        }
+      },
+      "AfodAbPlan007": {
+        "name": "Dits a Tots els Pastissos",
+        "system": {
+          "description": "<p>Al final de cada fase de descans, guanyes +2 d'Indulgència.</p>"
+        }
+      },
+      "AfodAbPlan008": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbPuno002": {
+        "name": "Tothom Fa Kung-Fu",
+        "system": {
+          "description": "<p>Pots esforçar-te per realitzar una proesa de control corporal o força física que frega allò sobrehumà, o per enfrontar-te a una petita banda en igualtat de condicions en combat cos a cos.</p>"
+        }
+      },
+      "AfodAbPuno004": {
+        "name": "Ira Sagrada",
+        "system": {
+          "description": "<p>Quan obres cos i ànima al Més Enllà Ardent pots imbuir les teves mans, armes cos a cos o eines amb energia espiritual. Guanyes potència en combat contra allò sobrenatural. Pots aferrar i capturar esperits amb les mans nues.</p>"
+        }
+      },
+      "AfodAbPuno005": {
+        "name": "Més Val Traça que Força",
+        "system": {
+          "description": "<p>Et recuperes del dany més ràpidament. Omple permanentment un segment del teu rellotge de curació. Rep +1d a les tirades de tractament de curació.</p>"
+        }
+      },
+      "AfodAbPuno006": {
+        "name": "Home d'Honor",
+        "system": {
+          "description": "<p>Guanyes un disparador de px addicional: vas lluitar pel teu honor o pel d'un altre a costa teva (PJ o px de colla).</p>"
+        }
+      },
+      "AfodAbPuno007": {
+        "name": "Kata Impressionant",
+        "system": {
+          "description": "<p>Descriu com presumeixes i impressiones amb les teves habilitats físiques. Si pots explotar aquesta actuació per al teu moviment següent, rep posició millorada o +1 efecte.</p>"
+        }
+      },
+      "AfodAbPuno008": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbSutil001": {
+        "name": "Miracles de Firaire",
+        "system": {
+          "description": "<p>Ajuda o participa en una acció de grup amb algú; pot ignorar una penalització per dany.</p>"
+        }
+      },
+      "AfodAbSutil002": {
+        "name": "Influent",
+        "system": {
+          "description": "<p>Proporciones serveis valuosos i ets benvingut fins i tot en llocs perillosos. +1 nivell de resultat en parlar per una comunitat, adquirir un recurs o reduir la Perdició.</p>"
+        }
+      },
+      "AfodAbSutil003": {
+        "name": "Petits Voltors",
+        "system": {
+          "description": "<p>Les cohorts que comandes guanyen potència en recopilar informació i armadura especial en resistir conseqüències de detecció o engany.</p>"
+        }
+      },
+      "AfodAbSutil004": {
+        "name": "Molt Viatjat",
+        "system": {
+          "description": "<p>Parles molts idiomes i tens una educació àmplia. +1d en recopilar informació en un lloc estrany o estranger.</p>"
+        }
+      },
+      "AfodAbSutil005": {
+        "name": "Fandango",
+        "system": {
+          "description": "<p>En satisfer el teu vici, ajusta el resultat dels daus en 1 o 2 (amunt o avall). Un aliat que s'hi uneixi pot fer el mateix.</p>"
+        }
+      },
+      "AfodAbSutil006": {
+        "name": "Agudesa",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per resistir la conseqüència de persuasió o sospita. Quan resisteixes amb Agalles, +1d.</p>"
+        }
+      },
+      "AfodAbSutil007": {
+        "name": "Víbora",
+        "system": {
+          "description": "<p>+1d en inventar, fabricar o aplicar verí o narcòtic. Comences amb una fórmula addicional coneguda.</p>"
+        }
+      },
+      "AfodAbSutil008": {
+        "name": "En Bones Mans",
+        "system": {
+          "description": "<p>Quan ofereixes una perspectiva significativa o un consell sincer, tots dos netegeu 1 d'Aguant. Tots els membres de la colla tenen +1d a les tirades de curació.</p>"
+        }
+      },
+      "AfodAbSutil009": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbApuesta002": {
+        "name": "Do de Jugador",
+        "system": {
+          "description": "<p>Quan t'enganyen o et sorprenen, obtens un flashback d'1 d'Aguant gratuït. +1 efecte quan recopiles informació en festes o partides de joc.</p>"
+        }
+      },
+      "AfodAbApuesta003": {
+        "name": "Tallar Cartes",
+        "system": {
+          "description": "<p>Els teus trucs de cartes són hipnòtics. Pots alterar records, sembrar suggeriments i generar dubtes. Les cartes també són armes llancívoles perilloses.</p>"
+        }
+      },
+      "AfodAbApuesta004": {
+        "name": "El Cor de les Cartes",
+        "system": {
+          "description": "<p>Accepta la posició i l'efecte del DJ tal com els marca, sense esforçar-te ni gastar Aguant. Recuperes 1 d'Aguant.</p>"
+        }
+      },
+      "AfodAbApuesta005": {
+        "name": "Lluitar amb Soltura",
+        "system": {
+          "description": "<p>En un duel, els espectadors no hi interferiran. Fer servir Llançar en cos a cos atorga +1 efecte.</p>"
+        }
+      },
+      "AfodAbApuesta006": {
+        "name": "Galanteria de Saló",
+        "system": {
+          "description": "<p>+1d en situacions on l'aspecte és avantatjós. Guanyes potència persuadint amb una proposta rendible o reptant a duel.</p>"
+        }
+      },
+      "AfodAbApuesta007": {
+        "name": "Senyora Fortuna",
+        "system": {
+          "description": "<p>Guanyes qualsevol partida de joc. Gasta 1 d'Aguant per un accident menor, 2 per un de més gran i 3 per una catàstrofe. Guanyes +Perdició per un cost igual a l'Aguant gastat.</p>"
+        }
+      },
+      "AfodAbApuesta008": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbLey001": {
+        "name": "Jo Sóc la Llei",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per mostrar la teva autoritat i forçar l'obediència, o per esforçar-te en una baralla.</p>"
+        }
+      },
+      "AfodAbLey002": {
+        "name": "Una Història per Explicar",
+        "system": {
+          "description": "<p>Un cop per missió, pots esforçar-te per explicar una història de supervivència que: motivi una cohort o una turba a lluitar o fugir, atorgui +1 efecte a la cohort o restauri 1 d'Aguant a cada membre de la colla.</p>"
+        }
+      },
+      "AfodAbLey003": {
+        "name": "Això No És Caça de Mapatxos",
+        "system": {
+          "description": "<p>Les cohorts que comandes continuen lluitant quan normalment es retirarien. Guanyen +1 efecte i 1 armadura.</p>"
+        }
+      },
+      "AfodAbLey004": {
+        "name": "Pregunta Què Pot Fer el Teu País per Tu",
+        "system": {
+          "description": "<p>Tens accés a recursos de les forces de l'ordre. +1d per adquirir actius durant el descans. Tots els recursos tenen qualitat mínima 1.</p>"
+        }
+      },
+      "AfodAbLey005": {
+        "name": "Només És una Rascada",
+        "system": {
+          "description": "<p>Les penalitzacions per dany són un nivell menys greus (excepte el nivell 4, que continua sent fatal). Pots acceptar el dany en lloc de resistir-lo per netejar 1 d'Aguant.</p>"
+        }
+      },
+      "AfodAbLey006": {
+        "name": "Brúixola Moral",
+        "system": {
+          "description": "<p>Guanyes un disparador de px addicional: vas fer el correcte a costa teva (PJ o px de colla).</p>"
+        }
+      },
+      "AfodAbLey007": {
+        "name": "Geni Tàctic",
+        "system": {
+          "description": "<p>Sempre saps quina és la millor posició en una baralla o cacera. Si l'ocupes, tu i els teus aliats guanyeu +1 efecte.</p>"
+        }
+      },
+      "AfodAbLey008": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbLlave001": {
+        "name": "Motivat",
+        "system": {
+          "description": "<p>Durant el descans, guanyes dues marques per a qualsevol projecte de recerca o fórmula a llarg termini. Quan llegeixes, esforça't per 1 d'Aguant en lloc de 2.</p>"
+        }
+      },
+      "AfodAbLlave002": {
+        "name": "Hàbil",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per resistir la conseqüència de trencar una màquina o Hellstone, o per esforçar-te en ciència estranya o manipulació d'Hellstone.</p>"
+        }
+      },
+      "AfodAbLlave003": {
+        "name": "Científic Boig",
+        "system": {
+          "description": "<p>Inventar o fabricar creacions steampunk o d'Hellstone obté +1 nivell de resultat. Comences amb un disseny especial conegut.</p>"
+        }
+      },
+      "AfodAbLlave004": {
+        "name": "Espiritomant",
+        "system": {
+          "description": "<p>Inventar o fabricar creacions arcàniques, espirituals o demoníaques obté +1 nivell de resultat. Comences amb una fórmula especial coneguda.</p>"
+        }
+      },
+      "AfodAbLlave005": {
+        "name": "Escoltar les Seves Veus",
+        "system": {
+          "description": "<p>Toca màquines per Alternar-hi i recopilar informació amb +1 nivell de resultat. Esforça't per donar-los una característica o una tasca no prevista.</p>"
+        }
+      },
+      "AfodAbLlave006": {
+        "name": "Parlar la Seva Llengua",
+        "system": {
+          "description": "<p>Sintonitza amb qualsevol màquina per activar-la o desactivar-la.</p>"
+        }
+      },
+      "AfodAbLlave007": {
+        "name": "Sang, Suor i Engranatges",
+        "system": {
+          "description": "<p>Guanyes px per un gran avenç en una invenció. Si el projecte va causar problemes a la colla, guanyes també px de colla.</p>"
+        }
+      },
+      "AfodAbLlave008": {
+        "name": "Moment Just, Eina Justa",
+        "system": {
+          "description": "<p>Fes servir un dels teus objectes per a un propòsit per al qual no va ser dissenyat. Els objectes refinats continuen sent refinats. Descriu com és útil.</p>"
+        }
+      },
+      "AfodAbLlave009": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat especial d'una altra font.</p>"
+        }
+      },
+      "AfodAbForaj002": {
+        "name": "Ara! Ara! Ara!",
+        "system": {
+          "description": "<p>Quan t'esforces, gasta +1 d'Aguant (3 en total) per obtenir +1 efecte I +1d alhora, en lloc de només una cosa o l'altra.</p>"
+        }
+      },
+      "AfodAbPuno003": {
+        "name": "D'on surt això?",
+        "system": {
+          "description": "<p>Sempre tens un objecte d'1 Càrrega restant sense importar la càrrega ja usada. Si pots fer servir la sorpresa al teu favor, guanyes la iniciativa fins i tot contra experts.</p>"
+        }
+      },
+      "AfodAbPuno001": {
+        "name": "Això és tot el que tens?",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per evitar el dany d'un atac en combat, o per esforçar-te durant una baralla.</p>"
+        }
+      },
+      "AfodAbApare002": {
+        "name": "Àngel de la Venjança",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per aterrir o impressionar un enemic, o per esforçar-te quan Sintonitzes amb el Més Enllà Ardent.</p>"
+        }
+      },
+      "AfodAbApuesta001": {
+        "name": "Totes les mirades sobre... mi!",
+        "system": {
+          "description": "<p>Pots gastar la teva armadura especial per resistir la conseqüència de detecció per a un aliat, o per esforçar-te i impressionar. Sempre pots fer una entrada triomfal.</p>"
+        }
+      }
+    },
+    "crew-abilities": {
+      "AfodCAbCarr005": {
+        "name": "Acostumats a la Vida Estranya",
+        "system": {
+          "description": "<p>Els membres de la colla redueixen les conseqüències de mutació en 1 nivell. +1d a les tirades de curació relacionades amb Hellstone.</p>"
+        }
+      },
+      "AfodCAbTribu005": {
+        "name": "Caçadors de Dimonis",
+        "system": {
+          "description": "<p>+1 efecte contra dimonis i criatures del Més Enllà Ardent. Un cop per missió, nega l'escut sobrenatural d'un enemic.</p>"
+        }
+      },
+      "AfodCAbCarr006": {
+        "name": "Confiança Infernal Injustificada",
+        "system": {
+          "description": "<p>Un cop per missió, quan la colla usa Hellstone per millorar una acció, no es marca el senyalador \"Hellstone Explotada\".</p>"
+        }
+      },
+      "AfodCAbForaj004": {
+        "name": "Dimonis",
+        "system": {
+          "description": "<p>+1d a les tirades de resistència contra la por o el Més Enllà Ardent. Un cop per missió, ignora la primera conseqüència sobrenatural.</p>"
+        }
+      },
+      "AfodCAbTribu006": {
+        "name": "Estan amb Nosaltres",
+        "system": {
+          "description": "<p>Els esperits ancestrals ajuden la colla. Un cop per descans, invoca la seva ajuda per retirar 1 de Perdició o curar 1 nivell de dany a un membre.</p>"
+        }
+      },
+      "AfodCAbCarr003": {
+        "name": "Excavar a Fons",
+        "system": {
+          "description": "<p>Quan la colla treballa en un projecte d'Hellstone, +1d a la tirada de descans relacionada. Redueix el risc d'exposició en 1.</p>"
+        }
+      },
+      "AfodCAbForaj005": {
+        "name": "Forjats en el Foc",
+        "system": {
+          "description": "<p>Les cohorts de la colla guanyen +1 qualitat quan lluiten al costat de membres de la colla.</p>"
+        }
+      },
+      "AfodCAbCaza002": {
+        "name": "Galeria de Foragits Ambulant",
+        "system": {
+          "description": "<p>La colla manté una xarxa d'informació sobre objectius. +1d en recopilar informació sobre qualsevol objectiu amb preu pel seu cap.</p>"
+        }
+      },
+      "AfodCAbTribu002": {
+        "name": "Cap al Més Enllà Ardent",
+        "system": {
+          "description": "<p>La colla pot Sintonitzar amb el Més Enllà Ardent sense risc de mutació la primera vegada per missió. +1d a rituals xamànics.</p>"
+        }
+      },
+      "AfodCAbCarr001": {
+        "name": "Heigh-Ho",
+        "system": {
+          "description": "<p>Cada PJ pot afegir +1 en una acció de Sintonitzar, Sabotejar o Assetjar (màxim 3).</p>"
+        }
+      },
+      "AfodCAbForaj002": {
+        "name": "Germans de Sang",
+        "system": {
+          "description": "<p>Quan un membre de la colla rep dany en combat mentre un altre és present, el testimoni pot gastar 1 d'Aguant per reduir el dany en 1 nivell.</p>"
+        }
+      },
+      "AfodCAbCaza003": {
+        "name": "Línia de Vida",
+        "system": {
+          "description": "<p>Un cop per missió, si un membre de la colla ha de ser eliminat, pot ser capturat en lloc d'això. El rescat es converteix automàticament en la missió següent.</p>"
+        }
+      },
+      "AfodCAbTribu003": {
+        "name": "La Muntura És la Llar",
+        "system": {
+          "description": "<p>Els membres de la colla no necessiten estable ni cotxera. Les seves muntures compten sempre com una cohort d'Escala 1.</p>"
+        }
+      },
+      "AfodCAbForaj001": {
+        "name": "Mortalment de Debò",
+        "system": {
+          "description": "<p>Cada PJ pot afegir +1 en una acció de Comandar, Llançar o Barallar-se (màxim 3).</p>"
+        }
+      },
+      "AfodCAbCaza004": {
+        "name": "Ull Expert",
+        "system": {
+          "description": "<p>+1 efecte en avaluar el valor o la perillositat d'un objectiu. Mai no us sorprèn el nivell de dificultat d'un contracte abans d'acceptar-lo.</p>"
+        }
+      },
+      "AfodCAbCarr004": {
+        "name": "Palanca",
+        "system": {
+          "description": "<p>Pots vendre Hellstone a preu de mercat negre (2 Monedes per Hellstone) sense incórrer en Perdició extra. Un cop per descans.</p>"
+        }
+      },
+      "AfodCAbCarr007": {
+        "name": "Patró",
+        "system": {
+          "description": "<p>La colla té un patró o comprador habitual. +1d per adquirir recursos relacionats amb mineria o Hellstone durant el descans.</p>"
+        }
+      },
+      "AfodCAbForaj006": {
+        "name": "Gossos de Guerra",
+        "system": {
+          "description": "<p>La colla pot reclutar una cohort addicional de tipus Matons sense cost de millora. Aquesta cohort comença amb dany \"Debilitat\" però no costa activitat de descans.</p>"
+        }
+      },
+      "AfodCAbCaza005": {
+        "name": "Realment Útils",
+        "system": {
+          "description": "<p>Les cohorts de tipus Exploradors guanyen potència en rastrejar o vigilar. +1d a les tirades de descans d'adquisició de recursos d'informació.</p>"
+        }
+      },
+      "AfodCAbCaza001": {
+        "name": "Gossos de Rastre",
+        "system": {
+          "description": "<p>Cada PJ pot afegir +1 en una acció de Caçar, Rastrejar o Aguaitar (màxim 3).</p>"
+        }
+      },
+      "AfodCAbForaj003": {
+        "name": "Sense Embuts",
+        "system": {
+          "description": "<p>La colla pot iniciar accions sense tirada d'obertura en situacions de violència directa. El primer resultat és sempre almenys un 4.</p>"
+        }
+      },
+      "AfodCAbCaza006": {
+        "name": "Tipus Afortunats",
+        "system": {
+          "description": "<p>Un cop per descans, un membre de la colla pot retirar i repetir una tirada de resistència. Usa el resultat nou.</p>"
+        }
+      },
+      "AfodCAbCarr002": {
+        "name": "Transportista",
+        "system": {
+          "description": "<p>Cada PJ pot afegir +1 en una acció de Fabricar, Inutilitzar o Llançar (màxim 3).</p>"
+        }
+      },
+      "AfodCAbTribu004": {
+        "name": "U amb la Terra i el Poble",
+        "system": {
+          "description": "<p>En territori tribal, la colla sempre sap on és. +1d a les tirades d'exploració en camp obert. Les tribus locals són com a mínim neutrals.</p>"
+        }
+      },
+      "AfodCAbCarr008": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat d'una altra font.</p>"
+        }
+      },
+      "AfodCAbCaza007": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat d'una altra font.</p>"
+        }
+      },
+      "AfodCAbForaj007": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat d'una altra font.</p>"
+        }
+      },
+      "AfodCAbTribu007": {
+        "name": "Veterà",
+        "system": {
+          "description": "<p>Escull una habilitat d'una altra font.</p>"
+        }
+      },
+      "AfodCAbTribu001": {
+        "name": "Vigies",
+        "system": {
+          "description": "<p>Cada PJ pot afegir +1 en una acció de Sintonitzar, Caçar o Explorar (màxim 3).</p>"
+        }
+      }
+    },
+    "items": {
+      "AfodItemArmadura1": {
+        "name": "Armadura",
+        "system": {
+          "description": "<p>Armilla de cuir gruixut. Una placa metàl·lica just al lloc adequat. Una armilla blindada amb enduriment d'Hellstone.</p>",
+          "additional_info": "Atorga ús d'armadura"
+        }
+      },
+      "AfodItemCuchillos": {
+        "name": "Ganivets Llancívols",
+        "system": {
+          "description": "<p>Un joc de ganivets lleugers i ben equilibrats o un únic Arkansas Toothpick.</p>"
+        }
+      },
+      "AfodItemDocumentos": {
+        "name": "Documents",
+        "system": {
+          "description": "<p>Una col·lecció de documents possiblement útils. Alguns mapes interessants. Pàgines en blanc. Una ploma o un llapis.</p>"
+        }
+      },
+      "AfodItemEscalada1": {
+        "name": "Equip d'Escalada",
+        "system": {
+          "description": "<p>Una corda gran. Ganxos d'agafada. Un petit sac de guix en pols. Un joc de pitons de ferro i un petit martell.</p>"
+        }
+      },
+      "AfodItemFarol001": {
+        "name": "Fanal",
+        "system": {
+          "description": "<p>Un fanal d'oli, un fanal d'Hellstone o una altra font de llum.</p>"
+        }
+      },
+      "AfodItemDemolicion": {
+        "name": "Eines de Demolició",
+        "system": {
+          "description": "<p>Un cartutx de dinamita, una bomba de claus, un martell pesant, una palanca, un trepant. Un flascó de nitroglicerina.</p>"
+        }
+      },
+      "AfodItemFabricac1": {
+        "name": "Eines de Fabricació",
+        "system": {
+          "description": "<p>Un assortiment per a ferrers, fusters i mecànics d'Hellstone: una lupa, pinces, martells, alicates, tornavís, llima, serra, destral, forqueta d'Hellstone i bateria.</p>"
+        }
+      },
+      "AfodItemImplArcano": {
+        "name": "Implements Arcans",
+        "system": {
+          "description": "<p>Un flascó de mercuri, sang o perfum. Peiot. Un saquet de sal negra, pols d'ossos o Hellstone ratllada. Una petita pedra o un os amb una runa gravada. Un símbol sagrat.</p>"
+        }
+      },
+      "AfodItemSubterfug1": {
+        "name": "Subministraments de Subterfugi",
+        "system": {
+          "description": "<p>Un kit de maquillatge teatral. Pepita d'or o d'Hellstone falsa. Una placa d'autoritat o símbol de fe falsificat.</p>"
+        }
+      },
+      "AfodItemArmaCaC1": {
+        "name": "Una Arma Cos a Cos",
+        "system": {
+          "description": "<p>Un ganivet Bowie o Arkansas Toothpick. Un ganivet de carnisser o d'escorxar. Un estilet, espasa lleugera o sabre. Una destral, tomahawk, porra o manoples de llautó.</p>"
+        }
+      },
+      "AfodItemArmaGrande": {
+        "name": "Una Arma Grossa",
+        "system": {
+          "description": "<p>Una arma a dues mans. Una llança, un rifle de caça o de búfal, un mosquet, una ballesta, un arc o una destral de guerra.</p>"
+        }
+      },
+      "AfodItemArmaInusl": {
+        "name": "Una Arma Inusual",
+        "system": {
+          "description": "<p>Una curiositat o una eina convertida en arma. Un fuet, un llaç, boleadores, una fona o un escurçó.</p>"
+        }
+      },
+      "AfodItemCaballo01": {
+        "name": "Un Cavall amb Sella",
+        "system": {
+          "description": "<p>El teu aliat fiable i mitjà de transport a les terres salvatges.</p>",
+          "additional_info": "Vehicle o muntura: no ocupa càrrega personal"
+        }
+      },
+      "AfodItemObjetoUtil": {
+        "name": "Un Objecte Útil",
+        "system": {
+          "description": "<p>Algun objecte útil que puguis necessitar just ara. Explica per què és útil i per què el vas portar. Botes de pell de serp? Guitarra, banjo o harmònica? Un tros d'Hellstone? Un detector d'Hellstone? Una pipa?</p>",
+          "additional_info": "Defineix l'objecte específic en crear-lo"
+        }
+      },
+      "AfodItemRepelente1": {
+        "name": "Un Repel·lent d'Esperits",
+        "system": {
+          "description": "<p>Un petit penjoll, una andròmina, roca o os que els esperits, fantasmes i potser els no-morts prefereixen evitar.</p>"
+        }
+      },
+      "AfodItemPistola1": {
+        "name": "Una Pistola",
+        "system": {
+          "description": "<p>Un revòlver Smith &amp; Wesson, un Colt Dragoon o Buntline, un Navy o Army Colt. Un Peacemaker o Thunderer de doble acció.</p>"
+        }
+      },
+      "ElCorazndeTrueno": {
+        "name": "Un Regal del Tòtem",
+        "system": {
+          "description": "<p>Un objecte de poder espiritual, donat o guanyat. Connecta amb alguna cosa més gran que tu mateix.</p>",
+          "class": "El Cor de Tro"
+        }
+      },
+      "ElDisparoKitdedi": {
+        "name": "Kit de Disfressa Refinat",
+        "system": {
+          "description": "<p>Postissos, tints i roba de recanvi. Tot el necessari per convertir-te en una altra persona en minuts.</p>",
+          "class": "El Tret"
+        }
+      },
+      "ElDisparoLightni": {
+        "name": "Lightning, un Cavall Refinat",
+        "system": {
+          "description": "<p>El teu cavall, ràpid com el llamp i tan vistós com tu. Coneix els teus senyals i et segueix a qualsevol lloc.</p>",
+          "class": "El Tret"
+        }
+      },
+      "ElDisparoMunicin": {
+        "name": "Munició Especial",
+        "system": {
+          "description": "<p>Cartutxos de plata, bales beneïdes o projectils amb punta d'Hellstone. Per a allò que no mor amb bales normals.</p>",
+          "class": "El Tret"
+        }
+      },
+      "ElDisparoPardepi": {
+        "name": "Parell de Pistoles Refinades i Cridaneres",
+        "system": {
+          "description": "<p>Dos revòlvers a joc, gravats i equilibrats a la perfecció. Et fan semblar tan perillós com ets.</p>",
+          "class": "El Tret"
+        }
+      },
+      "ElDisparoRiflere": {
+        "name": "Rifle Refinat",
+        "system": {
+          "description": "<p>Un rifle de repetició de primera qualitat, amb mira ajustada i gallet suau.</p>",
+          "class": "El Tret"
+        }
+      },
+      "ElDisparoUnmensa": {
+        "name": "Un Missatge d'un Admirador",
+        "system": {
+          "description": "<p>Una nota perfumada o una carta apassionada. De vegades és útil tenir admiradors als llocs correctes.</p>",
+          "class": "El Tret"
+        }
+      },
+      "ElExploradorCaba": {
+        "name": "Cavall amb Sella Refinat",
+        "system": {
+          "description": "<p>Un cavall resistent i ben entrenat per al terreny obert, amb sella de cuir de qualitat.</p>",
+          "class": "L'Explorador"
+        }
+      },
+      "ElExploradorCuch": {
+        "name": "Ganivet de Caça Refinat",
+        "system": {
+          "description": "<p>Un ganivet de fulla llarga perfectament equilibrat. Per caçar, acampar i el que calgui.</p>",
+          "class": "L'Explorador"
+        }
+      },
+      "ElExploradorKitd": {
+        "name": "Kit de Supervivència a l'Aire Lliure",
+        "system": {
+          "description": "<p>Esca, corda, menjar sec i farmaciola bàsica. Tot el necessari per sobreviure lluny de la civilització.</p>",
+          "class": "L'Explorador"
+        }
+      },
+      "ElExploradorRifl": {
+        "name": "Rifle o Arc Refinat",
+        "system": {
+          "description": "<p>Un rifle de llarg abast o un arc compost de precisió. La teva elecció per a la caça major.</p>",
+          "class": "L'Explorador"
+        }
+      },
+      "ElExploradorRopa": {
+        "name": "Roba de Cuir Refinada",
+        "system": {
+          "description": "<p>Roba pràctica i resistent que et permet moure't en silenci per qualsevol terreny.</p>",
+          "class": "L'Explorador"
+        }
+      },
+      "ElExploradorTram": {
+        "name": "Paranys",
+        "system": {
+          "description": "<p>Un joc de paranys d'acer per a animals i per a humans. Paciència convertida en ferro.</p>",
+          "class": "L'Explorador"
+        }
+      },
+      "ElForajidoFundad": {
+        "name": "Funda de Guitarra",
+        "system": {
+          "description": "<p>Una funda de guitarra gastada. El que porta a dins no sempre és una guitarra.</p>",
+          "class": "El Foragit"
+        }
+      },
+      "ElForajidoPistol": {
+        "name": "Pistola Refinada",
+        "system": {
+          "description": "<p>Un revòlver ràpid i fiable. El teu millor amic a la carretera.</p>",
+          "class": "El Foragit"
+        }
+      },
+      "ElForajidoPoncho": {
+        "name": "Ponxo o Barret Refinat",
+        "system": {
+          "description": "<p>La teva marca personal a la carretera. Pràctic, distintiu i amb anys d'història al darrere.</p>",
+          "class": "El Foragit"
+        }
+      },
+      "ElForajidoRepele": {
+        "name": "Repel·lent d'Esperits Refinat",
+        "system": {
+          "description": "<p>Sal beneïda, pols de plata i herbes específiques. T'has trobat amb coses estranyes a la carretera.</p>",
+          "class": "El Foragit"
+        }
+      },
+      "ElForajidoRifleo": {
+        "name": "Rifle o Escopeta Refinats",
+        "system": {
+          "description": "<p>Per quan necessites més abast o més dispersió. Ben mantingut.</p>",
+          "class": "El Foragit"
+        }
+      },
+      "ElForajidoUnpequ": {
+        "name": "Un Petit Tros d'Hellstone",
+        "system": {
+          "description": "<p>Un fragment de pedra amb una lluentor interna inquietant. Val diners... si trobes el comprador adequat.</p>",
+          "class": "El Foragit"
+        }
+      },
+      "ElOradorImplemen": {
+        "name": "Implements Beneïts per a un Ritual",
+        "system": {
+          "description": "<p>Espelmes, sal, aigua beneïda i herbes sagrades. Tot el necessari per a un ritual de protecció o purificació.</p>",
+          "class": "L'Orador"
+        }
+      },
+      "ElOradorInstrume": {
+        "name": "Instrument de la Teva Fe",
+        "system": {
+          "description": "<p>Un instrument musical, un llibre sagrat o un encenser. Allò que uses en la teva pràctica espiritual.</p>",
+          "class": "L'Orador"
+        }
+      },
+      "ElOradorPistolad": {
+        "name": "Pistola de Butxaca o Fulla Oculta",
+        "system": {
+          "description": "<p>El pastor també ha de protegir el seu ramat. De vegades, de maneres poc convencionals.</p>",
+          "class": "L'Orador"
+        }
+      },
+      "ElOradorRopajesd": {
+        "name": "Ropatges de Cerimònia Refinats",
+        "system": {
+          "description": "<p>Vestimentes formals de la teva tradició religiosa. Et donen autoritat davant dels creients.</p>",
+          "class": "L'Orador"
+        }
+      },
+      "ElOradorSmbolode": {
+        "name": "Símbol de la Teva Fe",
+        "system": {
+          "description": "<p>Un crucifix, un medalló sagrat o un tòtem d'os. El teu vincle visible amb allò diví.</p>",
+          "class": "L'Orador"
+        }
+      },
+      "ElOradorUnaConfe": {
+        "name": "Una Confessió Antiga",
+        "system": {
+          "description": "<p>Els secrets d'algú important, confiats a la teva cura. O arrencats.</p>",
+          "class": "L'Orador"
+        }
+      },
+      "ElPlanAmuletodee": {
+        "name": "Amulet d'Esperits",
+        "system": {
+          "description": "<p>Una protecció discreta contra allò que s'amaga en la foscor. Fins i tot els homes de poder tenen les seves pors.</p>",
+          "class": "El Pla"
+        }
+      },
+      "ElPlanCarruajeor": {
+        "name": "Carruatge Ornamentat Refinat",
+        "system": {
+          "description": "<p>Un carruatge còmode amb compartiments ocults i conductor de confiança. La imatge importa.</p>",
+          "class": "El Pla"
+        }
+      },
+      "ElPlanDocumentos": {
+        "name": "Documents Refinats",
+        "system": {
+          "description": "<p>Identitats falses, cartes de presentació i autoritzacions. El paper correcte en el moment correcte.</p>",
+          "class": "El Pla"
+        }
+      },
+      "ElPlanInformacin": {
+        "name": "Informació de Xantatge",
+        "system": {
+          "description": "<p>Proves d'alguna cosa que algú important preferiria que no existís. La teva assegurança de vida.</p>",
+          "class": "El Pla"
+        }
+      },
+      "ElPlanPistolaocu": {
+        "name": "Pistola Oculta de Butxaca",
+        "system": {
+          "description": "<p>Una derringer o pistola de butxaca petita i discreta. Per a l'última carta a la màniga.</p>",
+          "class": "El Pla"
+        }
+      },
+      "ElPlanSmbolodees": {
+        "name": "Símbol d'Estatus Refinat",
+        "system": {
+          "description": "<p>Un rellotge d'or, un bessó de diamant o una insígnia d'un club exclusiu. T'obre portes.</p>",
+          "class": "El Pla"
+        }
+      },
+      "ElPuoArmademanor": {
+        "name": "Arma de Mà Refinada",
+        "system": {
+          "description": "<p>Una arma cos a cos lleugera i dissenyada amb elegància. Excepcionalment equilibrada per a algú que sap fer-la servir.</p>",
+          "class": "El Puny"
+        }
+      },
+      "ElPuoArmaoherram": {
+        "name": "Arma o Eina Aterridora",
+        "system": {
+          "description": "<p>Alguna cosa dissenyada tant per intimidar com per fer mal. Pot ser una arma inusual o una eina reconvertida.</p>",
+          "class": "El Puny"
+        }
+      },
+      "ElPuoArmapesadar": {
+        "name": "Arma Pesada Refinada",
+        "system": {
+          "description": "<p>Una destral de guerra, un mall o una arma a dues mans d'una qualitat excepcional. Deixa empremta.</p>",
+          "class": "El Puny"
+        }
+      },
+      "ElPuoBotelladewh": {
+        "name": "Ampolla de Whisky",
+        "system": {
+          "description": "<p>Una ampolla de bon whisky americà. Per als moments difícils i per als moments de celebració.</p>",
+          "class": "El Puny"
+        }
+      },
+      "ElPuoFotodeunamo": {
+        "name": "Foto d'un Amor Perdut",
+        "system": {
+          "description": "<p>Un daguerreotip o una fotografia gastada. Un record d'algú que ja no hi és.</p>",
+          "class": "El Puny"
+        }
+      },
+      "ElPuoPaquetedeve": {
+        "name": "Paquet de Benes",
+        "system": {
+          "description": "<p>Tires de tela neta per cobrir ferides. No és medicina, però ajuda.</p>",
+          "class": "El Puny"
+        }
+      },
+      "ElToqueSutilBols": {
+        "name": "Bossa i Davantal de Doctor Refinats",
+        "system": {
+          "description": "<p>Instruments quirúrgics nets, sutures i medicaments bàsics. Saps com fer-los servir.</p>",
+          "class": "El Toc Subtil"
+        }
+      },
+      "ElToqueSutilBuen": {
+        "name": "Bons Modals al Costat del Llit Refinats",
+        "system": {
+          "description": "<p>La capacitat de fer que qualsevol se senti segur i cuidat. No ve en una caixa.</p>",
+          "class": "El Toc Subtil"
+        }
+      },
+      "ElToqueSutilJara": {
+        "name": "Xarop per a la Tos Molt Fort i Refinat",
+        "system": {
+          "description": "<p>Una ampolla de làudan o alguna cosa semblant. Alleuja el dolor, indueix la son i, en la dosi correcta, alguna cosa més.</p>",
+          "class": "El Toc Subtil"
+        }
+      },
+      "ElToqueSutilPist": {
+        "name": "Pistola de Butxaca Oculta Refinada",
+        "system": {
+          "description": "<p>Una petita pistola d'excel·lent qualitat, fàcil d'amagar. Per quan les paraules no són suficients.</p>",
+          "class": "El Toc Subtil"
+        }
+      },
+      "ElToqueSutilUnvi": {
+        "name": "Un Vell Favor",
+        "system": {
+          "description": "<p>Algú en algun lloc et deu alguna cosa important. Encara no l'has cobrat.</p>",
+          "class": "El Toc Subtil"
+        }
+      },
+      "ElToqueSutilUnac": {
+        "name": "Una Cançó Reconfortant",
+        "system": {
+          "description": "<p>Saps exactament què cantar perquè la gent abaixi la guàrdia. La música arriba allà on les paraules no arriben.</p>",
+          "class": "El Toc Subtil"
+        }
+      },
+      "LaApuestaArmacue": {
+        "name": "Arma Cos a Cos Extravagant Refinada",
+        "system": {
+          "description": "<p>Un bastó amb estoc ocult, un ganivet amb mànec de nacre o alguna cosa igualment elegant i letal.</p>",
+          "class": "L'Aposta"
+        }
+      },
+      "LaApuestaCartasy": {
+        "name": "Cartes i Daus Refinats",
+        "system": {
+          "description": "<p>Una baralla marcada i daus carregats de primera qualitat. Per a les apostes on l'atzar no es pot permetre ser atzar.</p>",
+          "class": "L'Aposta"
+        }
+      },
+      "LaApuestaConjunt": {
+        "name": "Conjunt de Documents Valuosos Guanyats",
+        "system": {
+          "description": "<p>Títols de propietat, pagarés i cartes comprometedores. Guanyats sobre una taula de joc.</p>",
+          "class": "L'Aposta"
+        }
+      },
+      "LaApuestaRopayjo": {
+        "name": "Roba i Joieria Refinades",
+        "system": {
+          "description": "<p>Un guarda-roba curosament seleccionat que crida èxit. La primera impressió és la que compta.</p>",
+          "class": "L'Aposta"
+        }
+      },
+      "LaApuestaUnpeque": {
+        "name": "Un Petit Amulet de la Sort",
+        "system": {
+          "description": "<p>Una pota de conill, una moneda de dues cares o alguna cosa de poder dubtós. Et fa sentir invencible.</p>",
+          "class": "L'Aposta"
+        }
+      },
+      "LaApuestaUnabuen": {
+        "name": "Una Bona Història",
+        "system": {
+          "description": "<p>Sempre tens una història preparada. Cadascuna ajustada al públic i perfectament creïble.</p>",
+          "class": "L'Aposta"
+        }
+      },
+      "LaLeyDocumentosr": {
+        "name": "Documents Refinats",
+        "system": {
+          "description": "<p>Manaments d'arrest, ordres d'extradició i cartes d'autoritat. El paperam correcte obre moltes portes.</p>",
+          "class": "La Llei"
+        }
+      },
+      "LaLeyEscopetaref": {
+        "name": "Escopeta Refinada",
+        "system": {
+          "description": "<p>Una escopeta de doble canó retallada o de canó complet. Persuasiva a curta distància.</p>",
+          "class": "La Llei"
+        }
+      },
+      "LaLeyGrilletesyc": {
+        "name": "Grillets i Cadenes",
+        "system": {
+          "description": "<p>Manilles de ferro amb la seva clau corresponent. Per quan has de portar algú de tornada.</p>",
+          "class": "La Llei"
+        }
+      },
+      "LaLeyPardepistol": {
+        "name": "Parell de Pistoles Refinades",
+        "system": {
+          "description": "<p>Dos revòlvers de servei en perfectes condicions. L'eina de l'ofici.</p>",
+          "class": "La Llei"
+        }
+      },
+      "LaLeyPlacadeauto": {
+        "name": "Placa d'Autoritat",
+        "system": {
+          "description": "<p>Una estrella de peltre, plata o llautó. Potser ja no és oficial, però la majoria no ho sap.</p>",
+          "class": "La Llei"
+        }
+      },
+      "LaLeyUnrecuerdo0": {
+        "name": "Un Record",
+        "system": {
+          "description": "<p>Un objecte del teu temps com a representant de la llei. Et recorda per què vas començar.</p>",
+          "class": "La Llei"
+        }
+      },
+      "LaLlaveylaSierra": {
+        "name": "Una Veritat Pertorbadora",
+        "system": {
+          "description": "<p>Un descobriment científic o arcà que canvia la manera de veure el món. No tothom voldrà escoltar-lo.</p>",
+          "class": "La Clau i la Serra"
+        }
+      }
+    },
+    "factions": {
+      "AfodFacEastWestRl": {
+        "name": "East-West Rail",
+        "system": {
+          "description": "<p>Companyia ferroviària més petita i agressiva a Mudwater. De vegades sembla que els importi més sabotejar Northern Rail &amp; Transport que no pas fer avançar les seves pròpies vies.</p><p>També lluiten pel contracte governamental exclusiu. Dirigida per Ruth McCoy i també traficant amb contraban.</p>"
+        }
+      },
+      "AfodFacExplorerSo": {
+        "name": "Societat d'Exploradors",
+        "system": {
+          "description": "<p>Barreja salvatge de professors i erudits de la costa est amb aventurers que afirmen explorar les mines i coves per descobrir més coses sobre l'Hellstone i l'esdeveniment que la va causar. També són coneguts per vendre artefactes trobats al mercat negre.</p><p>Compren i acumulen Hellstone amb un propòsit desconegut.</p>"
+        }
+      },
+      "AfodFacFellsWargo": {
+        "name": "Fells & Wargo",
+        "system": {
+          "description": "<p>Semblant al Pony Express, tots els carruatges de Fells &amp; Wargo tenen llicència per fer lliuraments en territori nadiu i a Mudwater. Actualment, una competència ferotge amb el Pony Express acaba en diversos carruatges emboscats, desapareguts o perduts.</p><p>La gent diu que la Tribu del Corb del Tro és responsable d'aquests incidents, amb el Pony Express com a beneficiari.</p>"
+        }
+      },
+      "AfodFacFineEnergy": {
+        "name": "Fine Energy Enterprise",
+        "system": {
+          "description": "<p>El segon comprador més gran d'Hellstone a Mudwater, dirigida per John Cusack, germà de Philomena Standish, que intenta proporcionar el que ells creuen que és energia neta per a nova tecnologia.</p><p>Molt curiosos sobre el pla d'I&amp;MG per a una refineria d'Hellstone i més que disposats a pagar per aquesta informació. Inverteixen en noves concessions i en sabotatge.</p>"
+        }
+      },
+      "AfodFacFirstChurch": {
+        "name": "Primera Església de Sant Miquel",
+        "system": {
+          "description": "<p>El pare Ike solia ser la voluntat del Senyor fins que va aparèixer la Inquisició. Encara té certa influència sobre la gent, però el seu control s'ha afeblit. Un borratxo notori.</p><p>D'entrada sembla que no li importi, però últimament els seus sermons tendeixen a centrar-se en falsos profetes i fanàtics religiosos que caminen cap a l'infern. Especialment els que es fan dir Michael.</p>"
+        }
+      },
+      "AfodFacFirstDiamo": {
+        "name": "First Diamond Trust",
+        "system": {
+          "description": "<p>Fent de segon banc local, el Trust queda en segon terme finançant negocis secundaris com mines de diamants o d'or. És només qüestió de temps abans que el director Arthur Peabody recorri al seu passat tèrbol i a alguns mètodes poc convencionals per alterar els llaços familiars entre la ciutat i la seva competència.</p>"
+        }
+      },
+      "AfodFacIronwareMG": {
+        "name": "Ironware & Metal Goods",
+        "system": {
+          "description": "<p>El peix gros de les companyies mineres d'Hellstone amb llicència a Mudwater. Va créixer molt ràpid gràcies al nou comerç. Corren alguns rumors sobre membres del personal corruptes i grans quantitats d'Hellstone que s'escapen per les escletxes.</p><p>Dirigida per Philomena Standish, esposa del director del banc Barnabas Standish.</p>"
+        }
+      },
+      "AfodFacLordDorian": {
+        "name": "Lord Dorian Lockwood-Tate",
+        "system": {
+          "description": "<p>Un comte anglès, o això es diu, al país per riquesa i per portar les belles arts al poble. Els rumors diuen que va haver de deixar Anglaterra amb el seu majordom Alfred a corre-cuita després de clavar una estaca al cor d'un suposat vampir i compatriota anglès.</p><p>Fa poc va tenir un enfrontament amb la Good Health Association arran d'una representació de Shakespeare a la Casa de les Roses.</p>"
+        }
+      },
+      "AfodFacMinersUnio": {
+        "name": "Sindicat de Miners",
+        "system": {
+          "description": "<p>Algunes ànimes desesperades intentant donar als homes i dones treballadors i arriscats de les mines el que es mereixen. Potser prou desesperats per prendre mesures poc convencionals.</p><p>Liderats per Gus Cochran, intentant decidir-se sobre la seva senyoria. Esperant suport de la Capital.</p>"
+        }
+      },
+      "AfodFacWongFamily": {
+        "name": "Negoci Familiar del Sr. Wong",
+        "system": {
+          "description": "<p>No només la clàssica bugaderia, sinó també altres negocis. Almenys tres generacions de Wong complint amb el seu deure en aquest negoci familiar. El cap de família és Wong Cheng, de més de 80 anys, que va venir al país amb els seus tres fills, Fan, Hai i Huang, i les seves esposes.</p><p>S'han sentit rumors sobre maneres misterioses, com clavar agulles als cossos, i altra màgia de sang.</p>"
+        }
+      },
+      "AfodFacNewHorizon": {
+        "name": "New Horizon Credit Union",
+        "system": {
+          "description": "<p>El banc més gran de Mudwater, amb beneficis sorprenents en finançar mines d'Hellstone i altres empreses agosarades i d'alt risc. El director Barnabas P. Standish és sogre de l'alcalde Walter Smith i marit de Philomena Standish.</p><p>Standish és vist sovint a la Casa de les Roses per afers de negocis.</p>"
+        }
+      },
+      "AfodFacNorthernRl": {
+        "name": "Northern Rail & Transport",
+        "system": {
+          "description": "<p>La companyia ferroviària més gran de Mudwater intenta fer avançar la seva connexió ferroviària. Lluita pel contracte governamental exclusiu i és ràpida a queixar-se a Fort Hubert si els seus trens o treballadors són atacats.</p>"
+        }
+      },
+      "AfodFacSouthernRef": {
+        "name": "Refugiats del Sud",
+        "system": {
+          "description": "<p>Moltes famílies intentant tenir una vida millor aquí que no pas al Sud. Poca sort amb tots aquests dimonis i amb els veïns del poble mirant-los amb suspicàcia. Molt religiosos i supersticiosos.</p><p>Sovint dividits sobre què és correcte i què no, amb molta xerrameca i esforços en solitari per part de persones o famílies individuals.</p>"
+        }
+      },
+      "AfodFac8thCavalry": {
+        "name": "8a Cavalleria",
+        "system": {
+          "description": "<p>Ocupats últimament lluitant contra partides de guerra natives i intentant cobrir moltes línies de diligències i trens per prevenir atacs. No els és fàcil arribar a Mudwater perquè les tribus hi presten molta atenció, especialment si la tropa és més gran que uns quants soldats.</p><p>Hi ha rumors que reben nous subministraments de la Capital, incloent-hi millors armes i algun altre tipus de suport.</p>"
+        }
+      },
+      "AfodFacBlackRider": {
+        "name": "El Genet Negre",
+        "system": {
+          "description": "<p>Suposadament un agent de la llei no-mort retornat de l'Infern per prendre venjança. Qui li va fer mal és desconegut, i també ho són els seus altres objectius o motius.</p><p>Sovint va acompanyat d'un xaman nadiu i no sempre és clar si la força motriu d'aquesta vendetta és el mateix Genet Negre o el xaman.</p>"
+        }
+      },
+      "AfodFacGoodHealth": {
+        "name": "Good Health Association",
+        "system": {
+          "description": "<p>Organització privada discreta amb una sòlida membresia entre els ciutadans prestigiosos de la ciutat. L'objectiu públic és l'avenç del bé comú.</p><p>Només el cercle intern, que s'autodenomina els Knights of Solomon, coneix l'objectiu veritable. Hi ha alguns rumors sobre llocs secrets i rituals a la natura, amb propòsit desconegut. Inverteixen en recerca nova, estranya i poc convencional.</p>"
+        }
+      },
+      "AfodFacHouseRose": {
+        "name": "La Casa de les Roses",
+        "system": {
+          "description": "<p>La tia Polly posseeix la millor casa de tolerància del poble. Joves, vells, nois, noies? Demana-ho i ella ho té. No només comercia amb plaers pecaminosos de la carn, sinó que també té un sòlid negoci secundari de tràfic de secrets. Molts es revelen, es negocien, es blanquegen i s'obliden a casa de Polly, per una tarifa raonable, és clar.</p><p>Últimament va evitar un intent de presa hostil executat per la Família Wong. Després d'una certa lluita, ambdues parts van acordar una cooperació pacífica... de moment.</p>"
+        }
+      },
+      "AfodFacInquisitio": {
+        "name": "La Inquisició",
+        "system": {
+          "description": "<p>Afirmen haver estat enviats per Sa Santedat el Papa en persona per a la salvació dels veritables creients. I tenen un elegant certificat oficial per demostrar-ho.</p><p>Només l'Inquisidor en Cap Michael és conegut de cara i de nom; tots els altres inquisidors van sempre encaputxats. Hi ha un terrible secret amagat sota aquestes caputxes? Les relacions amb els funcionaris del poble, l'església local i gairebé tothom a Mudwater són tenses. Michael pot pagar recompenses per dimonis morts.</p>"
+        }
+      },
+      "AfodFacPonyExpres": {
+        "name": "The Pony Express",
+        "system": {
+          "description": "<p>El Pony Express té llicència per fer lliuraments al territori nadiu i a Mudwater. Darrerament està sota molta pressió del competidor Fells &amp; Wargo, perquè un genet solitari només pot transportar una petita quantitat d'Hellstone cada vegada.</p><p>Acostumen a ser molt més ràpids, si el genet no desapareix o mor per mutació o per qualsevol altra causa.</p>"
+        }
+      },
+      "AfodFacRattlesnak": {
+        "name": "La Banda de la Serp de Cascavell",
+        "system": {
+          "description": "<p>El cercle intern de la banda està format per la família Burns, encapçalada per Edwina Burns des que el seu marit Rufus va morir fa aproximadament un any. Edwina està convençuda que el seu marit tornarà, i no només aviat, sinó també viu.</p><p>Això podria explicar per què sempre va acompanyada d'un taüt on haurien de descansar les restes mortals de Rufus. El mitjà principal de la banda per guanyar diners són els robatoris.</p>"
+        }
+      },
+      "AfodFacShadowVall": {
+        "name": "La Banda de Shadow Valley",
+        "system": {
+          "description": "<p>Quadrilla de foragits amb amagatall en algun lloc de Shadow Valley. Es rumoreja que està liderada per un grup de germanes d'origen desconegut. La quadrilla és una banda molt unida compromesa amb el secret absolut.</p><p>El fet que un membre capturat que va intentar presumir morís per combustió espontània va reforçar el rumor que la banda també és un culte fosc. Darrerament busquen artefactes.</p>"
+        }
+      },
+      "AfodFacThunderRav": {
+        "name": "La Tribu del Corb del Tro",
+        "system": {
+          "description": "<p>Una de les tribus natives locals més grans, de la qual es diu que té la medicina potenciada per Hellstone més forta i avançada: la Dansa dels Esperits. L'eminència grisa darrere del cap Canowicakte és el xaman Kangee.</p><p>Els agrada atacar sota la cobertura de la foscor nocturna, sovint recolzats per tempestes elèctriques i esperits de la natura.</p>"
+        }
+      },
+      "AfodFacTheTwins1": {
+        "name": "Els Bessons",
+        "system": {
+          "description": "<p>Horatio i Ulysses Jones van escapar de la presó estatal recentment i són nouvinguts al poble. Malgrat la seva curta presència, ja han construït una certa influència real a causa dels seus mètodes molt agressius.</p><p>Els rumors sobre que són una banda amb obligació profana i deute a l'infern segurament estan exagerats.</p>"
+        }
+      }
+    },
+    "rolltables": {
+      "AfodRTAspe000001": {
+        "name": "Aspectes Demoníacs",
+        "results": [
+          {
+            "_id": "AfodRRAspe000001",
+            "text": "Aigua"
+          },
+          {
+            "_id": "AfodRRAspe000002",
+            "text": "Foscor"
+          },
+          {
+            "_id": "AfodRRAspe000003",
+            "text": "Terra"
+          },
+          {
+            "_id": "AfodRRAspe000004",
+            "text": "Boira / Fum"
+          },
+          {
+            "_id": "AfodRRAspe000005",
+            "text": "Foc"
+          },
+          {
+            "_id": "AfodRRAspe000006",
+            "text": "Metall"
+          },
+          {
+            "_id": "AfodRRAspe000007",
+            "text": "Ossos"
+          },
+          {
+            "_id": "AfodRRAspe000008",
+            "text": "Llamp"
+          },
+          {
+            "_id": "AfodRRAspe000009",
+            "text": "Lava"
+          },
+          {
+            "_id": "AfodRRAspe000010",
+            "text": "Tempesta / Vent"
+          },
+          {
+            "_id": "AfodRRAspe000011",
+            "text": "Ombres"
+          },
+          {
+            "_id": "AfodRRAspe000012",
+            "text": "Gebre / Fred"
+          },
+          {
+            "_id": "AfodRRAspe000013",
+            "text": "Còpia"
+          },
+          {
+            "_id": "AfodRRAspe000014",
+            "text": "Ecos"
+          },
+          {
+            "_id": "AfodRRAspe000015",
+            "text": "Carn"
+          },
+          {
+            "_id": "AfodRRAspe000016",
+            "text": "Pols / Cendres"
+          },
+          {
+            "_id": "AfodRRAspe000017",
+            "text": "Invisible"
+          },
+          {
+            "_id": "AfodRRAspe000018",
+            "text": "Distorsió"
+          },
+          {
+            "_id": "AfodRRAspe000019",
+            "text": "Espines"
+          },
+          {
+            "_id": "AfodRRAspe000020",
+            "text": "Sang"
+          },
+          {
+            "_id": "AfodRRAspe000021",
+            "text": "Cel"
+          },
+          {
+            "_id": "AfodRRAspe000022",
+            "text": "Cranis / Ossos"
+          },
+          {
+            "_id": "AfodRRAspe000023",
+            "text": "Màquina"
+          },
+          {
+            "_id": "AfodRRAspe000024",
+            "text": "Parts del cos"
+          },
+          {
+            "_id": "AfodRRAspe000025",
+            "text": "Eixam"
+          },
+          {
+            "_id": "AfodRRAspe000026",
+            "text": "Serp"
+          },
+          {
+            "_id": "AfodRRAspe000027",
+            "text": "Estrelles"
+          },
+          {
+            "_id": "AfodRRAspe000028",
+            "text": "Cristall / Vidre"
+          },
+          {
+            "_id": "AfodRRAspe000029",
+            "text": "Animal"
+          },
+          {
+            "_id": "AfodRRAspe000030",
+            "text": "Insecte(s)"
+          },
+          {
+            "_id": "AfodRRAspe000031",
+            "text": "Caos"
+          },
+          {
+            "_id": "AfodRRAspe000032",
+            "text": "Plasma"
+          },
+          {
+            "_id": "AfodRRAspe000033",
+            "text": "Abstracte"
+          },
+          {
+            "_id": "AfodRRAspe000034",
+            "text": "Neu / Gel"
+          },
+          {
+            "_id": "AfodRRAspe000035",
+            "text": "Infant"
+          },
+          {
+            "_id": "AfodRRAspe000036",
+            "text": "Humanoide"
+          }
+        ]
+      },
+      "AfodFldAnta00001": {
+        "name": "Antagonistes"
+      },
+      "AfodFldEncu00001": {
+        "name": "Encontres"
+      },
+      "AfodFldMuta00001": {
+        "name": "Mutacions"
+      },
+      "AfodFldViaj00001": {
+        "name": "Perills de Viatge"
+      },
+      "AfodFldPers00001": {
+        "name": "Personatges"
+      },
+      "AfodRTGent000001": {
+        "name": "Gent",
+        "results": [
+          {
+            "_id": "AfodRRGent000001",
+            "text": "Vaquer"
+          },
+          {
+            "_id": "AfodRRGent000002",
+            "text": "Granger"
+          },
+          {
+            "_id": "AfodRRGent000003",
+            "text": "Parroquià"
+          },
+          {
+            "_id": "AfodRRGent000004",
+            "text": "Miner"
+          },
+          {
+            "_id": "AfodRRGent000005",
+            "text": "Mosso d'estable"
+          },
+          {
+            "_id": "AfodRRGent000006",
+            "text": "Cantiner"
+          },
+          {
+            "_id": "AfodRRGent000007",
+            "text": "Banquer"
+          },
+          {
+            "_id": "AfodRRGent000008",
+            "text": "Noia de saló"
+          },
+          {
+            "_id": "AfodRRGent000009",
+            "text": "Barber"
+          },
+          {
+            "_id": "AfodRRGent000010",
+            "text": "Ferrer"
+          },
+          {
+            "_id": "AfodRRGent000011",
+            "text": "Oficinista"
+          },
+          {
+            "_id": "AfodRRGent000012",
+            "text": "Nadiu"
+          },
+          {
+            "_id": "AfodRRGent000013",
+            "text": "Jugador"
+          },
+          {
+            "_id": "AfodRRGent000014",
+            "text": "Missatger"
+          },
+          {
+            "_id": "AfodRRGent000015",
+            "text": "Xèrif"
+          },
+          {
+            "_id": "AfodRRGent000016",
+            "text": "Predicador"
+          },
+          {
+            "_id": "AfodRRGent000017",
+            "text": "Guerrer"
+          },
+          {
+            "_id": "AfodRRGent000018",
+            "text": "Botiguer"
+          },
+          {
+            "_id": "AfodRRGent000019",
+            "text": "Doctor"
+          },
+          {
+            "_id": "AfodRRGent000020",
+            "text": "Pistoler de lloguer"
+          },
+          {
+            "_id": "AfodRRGent000021",
+            "text": "Soldat"
+          },
+          {
+            "_id": "AfodRRGent000022",
+            "text": "Enterramorts"
+          },
+          {
+            "_id": "AfodRRGent000023",
+            "text": "Xaman"
+          },
+          {
+            "_id": "AfodRRGent000024",
+            "text": "Enginyer"
+          },
+          {
+            "_id": "AfodRRGent000025",
+            "text": "Novell"
+          },
+          {
+            "_id": "AfodRRGent000026",
+            "text": "Infant"
+          },
+          {
+            "_id": "AfodRRGent000027",
+            "text": "Artista d'espectacle"
+          },
+          {
+            "_id": "AfodRRGent000028",
+            "text": "Agent de vendes"
+          },
+          {
+            "_id": "AfodRRGent000029",
+            "text": "Científic"
+          },
+          {
+            "_id": "AfodRRGent000030",
+            "text": "Ramader"
+          },
+          {
+            "_id": "AfodRRGent000031",
+            "text": "Jutge"
+          },
+          {
+            "_id": "AfodRRGent000032",
+            "text": "Alcalde"
+          },
+          {
+            "_id": "AfodRRGent000033",
+            "text": "Mariscal"
+          },
+          {
+            "_id": "AfodRRGent000034",
+            "text": "Capità"
+          },
+          {
+            "_id": "AfodRRGent000035",
+            "text": "Cap"
+          },
+          {
+            "_id": "AfodRRGent000036",
+            "text": "Estrany"
+          }
+        ]
+      },
+      "AfodRTHDem000001": {
+        "name": "Habilitats: Dimonis",
+        "results": [
+          {
+            "_id": "AfodRRHDem000001",
+            "text": "Foc / Cendres"
+          },
+          {
+            "_id": "AfodRRHDem000002",
+            "text": "Àcid (Sang)"
+          },
+          {
+            "_id": "AfodRRHDem000003",
+            "text": "Gel"
+          },
+          {
+            "_id": "AfodRRHDem000004",
+            "text": "Vol"
+          },
+          {
+            "_id": "AfodRRHDem000005",
+            "text": "Terror"
+          },
+          {
+            "_id": "AfodRRHDem000006",
+            "text": "Antimàgia"
+          }
+        ]
+      },
+      "AfodRTHEsp000001": {
+        "name": "Habilitats: Esperits",
+        "results": [
+          {
+            "_id": "AfodRRHEsp000001",
+            "text": "Paràlisi"
+          },
+          {
+            "_id": "AfodRRHEsp000002",
+            "text": "Duplicar"
+          },
+          {
+            "_id": "AfodRRHEsp000003",
+            "text": "Absorbir / Ofegar"
+          },
+          {
+            "_id": "AfodRRHEsp000004",
+            "text": "Camuflatge"
+          },
+          {
+            "_id": "AfodRRHEsp000005",
+            "text": "Enredar"
+          },
+          {
+            "_id": "AfodRRHEsp000006",
+            "text": "Reflectir"
+          }
+        ]
+      },
+      "AfodRTHabi000001": {
+        "name": "Habilitats Especials de Monstres",
+        "results": [
+          {
+            "_id": "AfodRRHabi000001",
+            "text": "Natura — Tira a la subtaula Habilitats: Natura"
+          },
+          {
+            "_id": "AfodRRHabi000002",
+            "text": "Dimonis — Tira a la subtaula Habilitats: Dimonis"
+          },
+          {
+            "_id": "AfodRRHabi000003",
+            "text": "Fantasmes — Tira a la subtaula Habilitats: Fantasmes"
+          },
+          {
+            "_id": "AfodRRHabi000004",
+            "text": "Esperits — Tira a la subtaula Habilitats: Esperits"
+          },
+          {
+            "_id": "AfodRRHabi000005",
+            "text": "Fissura Dimensional — Tira a la subtaula Habilitats: Fissura Dimensional"
+          },
+          {
+            "_id": "AfodRRHabi000006",
+            "text": "Mixt — Escull lliurement de qualsevol de les subtaules anteriors"
+          }
+        ]
+      },
+      "AfodRTHFan000001": {
+        "name": "Habilitats: Fantasmes",
+        "results": [
+          {
+            "_id": "AfodRRHFan000001",
+            "text": "Ceguesa"
+          },
+          {
+            "_id": "AfodRRHFan000002",
+            "text": "Silenci"
+          },
+          {
+            "_id": "AfodRRHFan000003",
+            "text": "Elèctric"
+          },
+          {
+            "_id": "AfodRRHFan000004",
+            "text": "Estrangulament"
+          },
+          {
+            "_id": "AfodRRHFan000005",
+            "text": "Invisible"
+          },
+          {
+            "_id": "AfodRRHFan000006",
+            "text": "Drenar vida"
+          }
+        ]
+      },
+      "AfodRTHFis000001": {
+        "name": "Habilitats: Fissura Dimensional",
+        "results": [
+          {
+            "_id": "AfodRRHFis000001",
+            "text": "Canviar de forma"
+          },
+          {
+            "_id": "AfodRRHFis000002",
+            "text": "Explotar"
+          },
+          {
+            "_id": "AfodRRHFis000003",
+            "text": "Vol"
+          },
+          {
+            "_id": "AfodRRHFis000004",
+            "text": "Distorsió"
+          },
+          {
+            "_id": "AfodRRHFis000005",
+            "text": "Terror"
+          },
+          {
+            "_id": "AfodRRHFis000006",
+            "text": "Antimàgia"
+          }
+        ]
+      },
+      "AfodRTHNat000001": {
+        "name": "Habilitats: Natura",
+        "results": [
+          {
+            "_id": "AfodRRHNat000001",
+            "text": "Urpes / Ullals"
+          },
+          {
+            "_id": "AfodRRHNat000002",
+            "text": "Cua / Agulló"
+          },
+          {
+            "_id": "AfodRRHNat000003",
+            "text": "Closca / Plaques"
+          },
+          {
+            "_id": "AfodRRHNat000004",
+            "text": "Astes / Banyes"
+          },
+          {
+            "_id": "AfodRRHNat000005",
+            "text": "Verí"
+          },
+          {
+            "_id": "AfodRRHNat000006",
+            "text": "Ales"
+          }
+        ]
+      },
+      "AfodRTHeri000001": {
+        "name": "Herències",
+        "results": [
+          {
+            "_id": "AfodRRHeri000001",
+            "text": "Africana (-americana)"
+          },
+          {
+            "_id": "AfodRRHeri000002",
+            "text": "Llunyà Orient (Xina, Japó, etc.)"
+          },
+          {
+            "_id": "AfodRRHeri000003",
+            "text": "Europea (irlandesa-americana, italiana, alemanya)"
+          },
+          {
+            "_id": "AfodRRHeri000004",
+            "text": "Meridional (mexicana, cubana, sud-americana)"
+          },
+          {
+            "_id": "AfodRRHeri000005",
+            "text": "Nativa (-americana)"
+          },
+          {
+            "_id": "AfodRRHeri000006",
+            "text": "Misteriosa (potser dimoni?)"
+          }
+        ]
+      },
+      "AfodRTMuta000001": {
+        "name": "Mutacions",
+        "results": [
+          {
+            "_id": "AfodRRMuta000001",
+            "text": "Boca — Tira a la subtaula Mutacions: Boca"
+          },
+          {
+            "_id": "AfodRRMuta000002",
+            "text": "Tentacles — Tira a la subtaula Mutacions: Tentacles"
+          },
+          {
+            "_id": "AfodRRMuta000003",
+            "text": "Ulls — Tira a la subtaula Mutacions: Ulls"
+          },
+          {
+            "_id": "AfodRRMuta000004",
+            "text": "Pell — Tira a la subtaula Mutacions: Pell"
+          },
+          {
+            "_id": "AfodRRMuta000005",
+            "text": "Extremitat — Tira a la subtaula Mutacions: Extremitat"
+          },
+          {
+            "_id": "AfodRRMuta000006",
+            "text": "Diversos — Tira a la subtaula Mutacions: Diversos"
+          }
+        ]
+      },
+      "AfodRTMBoc000001": {
+        "name": "Mutacions: Boca",
+        "results": [
+          {
+            "_id": "AfodRRMBoc000001",
+            "text": "Segellada"
+          },
+          {
+            "_id": "AfodRRMBoc000002",
+            "text": "Ullals"
+          },
+          {
+            "_id": "AfodRRMBoc000003",
+            "text": "Sense dents"
+          },
+          {
+            "_id": "AfodRRMBoc000004",
+            "text": "Ferum"
+          },
+          {
+            "_id": "AfodRRMBoc000005",
+            "text": "Set / Fam"
+          },
+          {
+            "_id": "AfodRRMBoc000006",
+            "text": "Somriure demoníac"
+          }
+        ]
+      },
+      "AfodRTMExt000001": {
+        "name": "Mutacions: Extremitat",
+        "results": [
+          {
+            "_id": "AfodRRMExt000001",
+            "text": "Braç extra"
+          },
+          {
+            "_id": "AfodRRMExt000002",
+            "text": "Cama extra"
+          },
+          {
+            "_id": "AfodRRMExt000003",
+            "text": "Mà extra"
+          },
+          {
+            "_id": "AfodRRMExt000004",
+            "text": "Cua amb pues"
+          },
+          {
+            "_id": "AfodRRMExt000005",
+            "text": "Cua amb boca"
+          },
+          {
+            "_id": "AfodRRMExt000006",
+            "text": "Cua amb cara"
+          }
+        ]
+      },
+      "AfodRTMOjo000001": {
+        "name": "Mutacions: Ulls",
+        "results": [
+          {
+            "_id": "AfodRRMOjo000001",
+            "text": "Segellats"
+          },
+          {
+            "_id": "AfodRRMOjo000002",
+            "text": "Tercer"
+          },
+          {
+            "_id": "AfodRRMOjo000003",
+            "text": "Cíclop"
+          },
+          {
+            "_id": "AfodRRMOjo000004",
+            "text": "Enormes"
+          },
+          {
+            "_id": "AfodRRMOjo000005",
+            "text": "Minúsculs"
+          },
+          {
+            "_id": "AfodRRMOjo000006",
+            "text": "Sense iris / Color"
+          }
+        ]
+      },
+      "AfodRTMPie000001": {
+        "name": "Mutacions: Pell",
+        "results": [
+          {
+            "_id": "AfodRRMPie000001",
+            "text": "Negre atzabeja"
+          },
+          {
+            "_id": "AfodRRMPie000002",
+            "text": "Verda"
+          },
+          {
+            "_id": "AfodRRMPie000003",
+            "text": "Brillant"
+          },
+          {
+            "_id": "AfodRRMPie000004",
+            "text": "Roca"
+          },
+          {
+            "_id": "AfodRRMPie000005",
+            "text": "Lliscosa"
+          },
+          {
+            "_id": "AfodRRMPie000006",
+            "text": "Cos sencer"
+          }
+        ]
+      },
+      "AfodRTMTen000001": {
+        "name": "Mutacions: Tentacles",
+        "results": [
+          {
+            "_id": "AfodRRMTen000001",
+            "text": "Un o més dits"
+          },
+          {
+            "_id": "AfodRRMTen000002",
+            "text": "Braç"
+          },
+          {
+            "_id": "AfodRRMTen000003",
+            "text": "Peus"
+          },
+          {
+            "_id": "AfodRRMTen000004",
+            "text": "Cama"
+          },
+          {
+            "_id": "AfodRRMTen000005",
+            "text": "Cua"
+          },
+          {
+            "_id": "AfodRRMTen000006",
+            "text": "Llengua"
+          }
+        ]
+      },
+      "AfodRTMVar000001": {
+        "name": "Mutacions: Diversos",
+        "results": [
+          {
+            "_id": "AfodRRMVar000001",
+            "text": "Banyes / Astes"
+          },
+          {
+            "_id": "AfodRRMVar000002",
+            "text": "Glàndules verinoses"
+          },
+          {
+            "_id": "AfodRRMVar000003",
+            "text": "Albinisme / Al·lèrgies"
+          },
+          {
+            "_id": "AfodRRMVar000004",
+            "text": "Fusionat amb objecte"
+          },
+          {
+            "_id": "AfodRRMVar000005",
+            "text": "Trets animals"
+          },
+          {
+            "_id": "AfodRRMVar000006",
+            "text": "Menjacarn"
+          }
+        ]
+      },
+      "AfodRTPeli000001": {
+        "name": "Perills de Viatge",
+        "results": [
+          {
+            "_id": "AfodRRPeli000001",
+            "text": "Natura salvatge — Tira a la subtaula Perills: Natura salvatge"
+          },
+          {
+            "_id": "AfodRRPeli000002",
+            "text": "Monstres i animals — Tira a la subtaula Perills: Monstres i animals"
+          },
+          {
+            "_id": "AfodRRPeli000003",
+            "text": "Sobrenatural — Tira a la subtaula Perills: Sobrenatural"
+          },
+          {
+            "_id": "AfodRRPeli000004",
+            "text": "Llocs — Tira a la subtaula Perills: Llocs"
+          },
+          {
+            "_id": "AfodRRPeli000005",
+            "text": "Gent — Tira a la subtaula Perills: Gent"
+          },
+          {
+            "_id": "AfodRRPeli000006",
+            "text": "Diversos — Tira a la subtaula Perills: Diversos"
+          }
+        ]
+      },
+      "AfodRTPGen000001": {
+        "name": "Perills: Gent",
+        "results": [
+          {
+            "_id": "AfodRRPGen000001",
+            "text": "Venedor / Caçarecompenses"
+          },
+          {
+            "_id": "AfodRRPGen000002",
+            "text": "Foragits / Mutants"
+          },
+          {
+            "_id": "AfodRRPGen000003",
+            "text": "Nadius"
+          },
+          {
+            "_id": "AfodRRPGen000004",
+            "text": "Algú segrestat / Partida de cerca"
+          },
+          {
+            "_id": "AfodRRPGen000005",
+            "text": "Passatgers / Viatger(s)"
+          },
+          {
+            "_id": "AfodRRPGen000006",
+            "text": "Comboi / Transport"
+          }
+        ]
+      },
+      "AfodRTPLug000001": {
+        "name": "Perills: Llocs",
+        "results": [
+          {
+            "_id": "AfodRRPLug000001",
+            "text": "Camí bloquejat"
+          },
+          {
+            "_id": "AfodRRPLug000002",
+            "text": "Hisenda / Granja"
+          },
+          {
+            "_id": "AfodRRPLug000003",
+            "text": "Massacre"
+          },
+          {
+            "_id": "AfodRRPLug000004",
+            "text": "Església de la pesta"
+          },
+          {
+            "_id": "AfodRRPLug000005",
+            "text": "Poble fantasma / Lloc sagrat"
+          },
+          {
+            "_id": "AfodRRPLug000006",
+            "text": "Mina"
+          }
+        ]
+      },
+      "AfodRTPMon000001": {
+        "name": "Perills: Monstres i Animals",
+        "results": [
+          {
+            "_id": "AfodRRPMon000001",
+            "text": "Puma / Manada de llops"
+          },
+          {
+            "_id": "AfodRRPMon000002",
+            "text": "Ós negre o grizzly"
+          },
+          {
+            "_id": "AfodRRPMon000003",
+            "text": "Grup de monstres"
+          },
+          {
+            "_id": "AfodRRPMon000004",
+            "text": "Voltors sobrevolant"
+          },
+          {
+            "_id": "AfodRRPMon000005",
+            "text": "Lladres de bestiar i petit ramat"
+          },
+          {
+            "_id": "AfodRRPMon000006",
+            "text": "Atac!"
+          }
+        ]
+      },
+      "AfodRTPNat000001": {
+        "name": "Perills: Natura Salvatge",
+        "results": [
+          {
+            "_id": "AfodRRPNat000001",
+            "text": "Esllavissada / Despreniment"
+          },
+          {
+            "_id": "AfodRRPNat000002",
+            "text": "Tempesta / Pluja forta"
+          },
+          {
+            "_id": "AfodRRPNat000003",
+            "text": "Foc / Incendi de praderia"
+          },
+          {
+            "_id": "AfodRRPNat000004",
+            "text": "Canó / Pont destruït"
+          },
+          {
+            "_id": "AfodRRPNat000005",
+            "text": "Allau de neu / Allau / Terratrèmol"
+          },
+          {
+            "_id": "AfodRRPNat000006",
+            "text": "Inundació / Riu embravit"
+          }
+        ]
+      },
+      "AfodRTPSob000001": {
+        "name": "Perills: Sobrenatural",
+        "results": [
+          {
+            "_id": "AfodRRPSob000001",
+            "text": "Dimonis o Esperits"
+          },
+          {
+            "_id": "AfodRRPSob000002",
+            "text": "No-morts o Fantasmes"
+          },
+          {
+            "_id": "AfodRRPSob000003",
+            "text": "Veus / Ossos emblanquinats"
+          },
+          {
+            "_id": "AfodRRPSob000004",
+            "text": "Distorsió / Somnis foscos"
+          },
+          {
+            "_id": "AfodRRPSob000005",
+            "text": "Turons Vivents / Ombra fora del temps"
+          },
+          {
+            "_id": "AfodRRPSob000006",
+            "text": "Cap al Més Enllà Ardent"
+          }
+        ]
+      },
+      "AfodRTPVar000001": {
+        "name": "Perills: Diversos",
+        "results": [
+          {
+            "_id": "AfodRRPVar000001",
+            "text": "Lluna de sang"
+          },
+          {
+            "_id": "AfodRRPVar000002",
+            "text": "Fum a la distància"
+          },
+          {
+            "_id": "AfodRRPVar000003",
+            "text": "Tren (atacat)"
+          },
+          {
+            "_id": "AfodRRPVar000004",
+            "text": "Diligència (atacada)"
+          },
+          {
+            "_id": "AfodRRPVar000005",
+            "text": "Tren destrossat"
+          },
+          {
+            "_id": "AfodRRPVar000006",
+            "text": "Maledicció"
+          }
+        ]
+      },
+      "AfodRTTema000001": {
+        "name": "Temes de Missions Subterrànies",
+        "results": [
+          {
+            "_id": "AfodRRTema000001",
+            "text": "Natura — Roques que bloquegen, penya-segats, cascades relliscoses, túnels que s'ensorren, etc."
+          },
+          {
+            "_id": "AfodRRTema000002",
+            "text": "Dimonis — Dimonis i criatures de l'Infern"
+          },
+          {
+            "_id": "AfodRRTema000003",
+            "text": "Fantasmes — Fantasmes i criatures no-mortes"
+          },
+          {
+            "_id": "AfodRRTema000004",
+            "text": "Esperits — Esperits i animals"
+          },
+          {
+            "_id": "AfodRRTema000005",
+            "text": "Fissura Dimensional — Coses alienígenes de la Dimensió Desconeguda"
+          },
+          {
+            "_id": "AfodRRTema000006",
+            "text": "Mixt — Coses variades, possiblement amb humans com bandits, etc."
+          }
+        ]
+      },
+      "AfodRTTras000001": {
+        "name": "Trasfons",
+        "results": [
+          {
+            "_id": "AfodRRTras000001",
+            "text": "Gran Ciutat"
+          },
+          {
+            "_id": "AfodRRTras000002",
+            "text": "Poble Fronterer"
+          },
+          {
+            "_id": "AfodRRTras000003",
+            "text": "Ranxo (com Ponderosa)"
+          },
+          {
+            "_id": "AfodRRTras000004",
+            "text": "Fort (instal·lació militar)"
+          },
+          {
+            "_id": "AfodRRTras000005",
+            "text": "Tribu (nativa americana o altres)"
+          },
+          {
+            "_id": "AfodRRTras000006",
+            "text": "Solitari (pocs o cap contacte social)"
+          },
+          {
+            "_id": "AfodRRTras000007",
+            "text": "Immigrant (nou al país, novell)"
+          }
+        ]
+      },
+      "AfodRTVici000001": {
+        "name": "Vicis",
+        "results": [
+          {
+            "_id": "AfodRRVici000001",
+            "text": "Fe — Dedicat a un poder invisible, ésser espiritual, déu, ancestre, etc."
+          },
+          {
+            "_id": "AfodRRVici000002",
+            "text": "Joc — Desitges els jocs d'atzar, el pòquer, les curses, les baralles de galls, etc."
+          },
+          {
+            "_id": "AfodRRVici000003",
+            "text": "Luxe — Exhibicions costoses i/o ostentoses d'opulència"
+          },
+          {
+            "_id": "AfodRRVici000004",
+            "text": "Obligació — Devot a una família, causa, caritat, etc."
+          },
+          {
+            "_id": "AfodRRVici000005",
+            "text": "Plaer — Gratificació d'amants, menjar, beguda, drogues, art, teatre, etc."
+          },
+          {
+            "_id": "AfodRRVici000006",
+            "text": "Estupor — Busques l'oblit en drogues, alcohol, baralles de saló, etc."
+          },
+          {
+            "_id": "AfodRRVici000007",
+            "text": "Estrany — Experimentes amb essències estranyes, tractes amb esperits o dimonis, rituals estrafolaris, etc."
+          }
+        ]
+      },
+      "AfodRTVuln000001": {
+        "name": "Vulnerabilitats de Monstres",
+        "results": [
+          {
+            "_id": "AfodRRVuln000001",
+            "text": "Explosius"
+          },
+          {
+            "_id": "AfodRRVuln000002",
+            "text": "Foc / Calor"
+          },
+          {
+            "_id": "AfodRRVuln000003",
+            "text": "Aigua"
+          },
+          {
+            "_id": "AfodRRVuln000004",
+            "text": "Metall"
+          },
+          {
+            "_id": "AfodRRVuln000005",
+            "text": "Plata"
+          },
+          {
+            "_id": "AfodRRVuln000006",
+            "text": "Or"
+          },
+          {
+            "_id": "AfodRRVuln000007",
+            "text": "Gel / Fred"
+          },
+          {
+            "_id": "AfodRRVuln000008",
+            "text": "Soroll"
+          },
+          {
+            "_id": "AfodRRVuln000009",
+            "text": "Campanes"
+          },
+          {
+            "_id": "AfodRRVuln000010",
+            "text": "Ferro fred"
+          },
+          {
+            "_id": "AfodRRVuln000011",
+            "text": "Llum de lluna"
+          },
+          {
+            "_id": "AfodRRVuln000012",
+            "text": "Música"
+          },
+          {
+            "_id": "AfodRRVuln000013",
+            "text": "Flors"
+          },
+          {
+            "_id": "AfodRRVuln000014",
+            "text": "Aigua beneïda"
+          },
+          {
+            "_id": "AfodRRVuln000015",
+            "text": "Icona sagrada"
+          },
+          {
+            "_id": "AfodRRVuln000016",
+            "text": "Mirall"
+          },
+          {
+            "_id": "AfodRRVuln000017",
+            "text": "Llàgrimes"
+          },
+          {
+            "_id": "AfodRRVuln000018",
+            "text": "Llum solar"
+          },
+          {
+            "_id": "AfodRRVuln000019",
+            "text": "Àcid"
+          },
+          {
+            "_id": "AfodRRVuln000020",
+            "text": "Verí"
+          },
+          {
+            "_id": "AfodRRVuln000021",
+            "text": "Os"
+          },
+          {
+            "_id": "AfodRRVuln000022",
+            "text": "Cristall"
+          },
+          {
+            "_id": "AfodRRVuln000023",
+            "text": "Esperits"
+          },
+          {
+            "_id": "AfodRRVuln000024",
+            "text": "Sal"
+          },
+          {
+            "_id": "AfodRRVuln000025",
+            "text": "Fusta"
+          },
+          {
+            "_id": "AfodRRVuln000026",
+            "text": "Ivori"
+          },
+          {
+            "_id": "AfodRRVuln000027",
+            "text": "Robí"
+          },
+          {
+            "_id": "AfodRRVuln000028",
+            "text": "Perla negra"
+          },
+          {
+            "_id": "AfodRRVuln000029",
+            "text": "Topazi"
+          },
+          {
+            "_id": "AfodRRVuln000030",
+            "text": "Punt feble"
+          },
+          {
+            "_id": "AfodRRVuln000031",
+            "text": "Whisky"
+          },
+          {
+            "_id": "AfodRRVuln000032",
+            "text": "Màgia"
+          },
+          {
+            "_id": "AfodRRVuln000033",
+            "text": "Artefacte"
+          },
+          {
+            "_id": "AfodRRVuln000034",
+            "text": "Arma especial"
+          },
+          {
+            "_id": "AfodRRVuln000035",
+            "text": "Nom veritable"
+          },
+          {
+            "_id": "AfodRRVuln000036",
+            "text": "Hellstone"
+          }
+        ]
+      }
+    }
+  },
+  "folders": {
+    "abilities": {
+      "wN8FuxwzAPoX2byx": {
+        "name": "Habilitats"
+      },
+      "Wx2nmL6XAFOVkfYF": {
+        "name": "L'Aparegut"
+      },
+      "2Ls9KFCfOX83C10b": {
+        "name": "El Cor de Tro"
+      },
+      "eJ87QxC9eF8JolgP": {
+        "name": "El Tret"
+      },
+      "MfI1whWrc32Nu1QV": {
+        "name": "L'Explorador"
+      },
+      "CNuPuhsn2vIvYZ8z": {
+        "name": "El Foragit"
+      },
+      "TEHuR4f8DknafEtC": {
+        "name": "L'Orador"
+      },
+      "nCv89eHovuRoDoVg": {
+        "name": "El Pla"
+      },
+      "9KLelUVYFW7WN6vi": {
+        "name": "El Puny"
+      },
+      "1eFc5CvghmDiH8h4": {
+        "name": "El Toc Subtil"
+      },
+      "ba5EPytcNujEnqf6": {
+        "name": "L'Aposta"
+      },
+      "Sx8RUbAzmdolW3g5": {
+        "name": "La Llei"
+      },
+      "iF6h0nwbkJAb0XoD": {
+        "name": "La Clau i la Serra"
+      }
+    },
+    "crew-abilities": {
+      "cvy9IzGJMTuv8D0z": {
+        "name": "Habilitats de Colla"
+      },
+      "LAFSZcT03Y9wBYV8": {
+        "name": "Carronyaires d'Hellstone"
+      },
+      "M3EDqXOHw7gJQfAr": {
+        "name": "Caçarecompenses"
+      },
+      "0J0b4TadCRCxGRUh": {
+        "name": "Colla de Foragits"
+      },
+      "Vo7mP8xe5q32ZkJC": {
+        "name": "Tribu"
+      }
+    },
+    "crew-types": {
+      "fqnmpYNEZM7GFKpA": {
+        "name": "Tipus de Colla"
+      }
+    },
+    "factions": {
+      "lQvIjonEN8tszIxS": {
+        "name": "Faccions"
+      }
+    },
+    "heritages": {
+      "obsxk7MVOBexe5Kv": {
+        "name": "Herències"
+      }
+    },
+    "items": {
+      "AlStyhIvW3yp81WH": {
+        "name": "Objectes Estàndard"
+      },
+      "ePOh67UJKhwnwPa5": {
+        "name": "El Cor de Tro"
+      },
+      "md0v4BSHC7iZelAZ": {
+        "name": "El Tret"
+      },
+      "2xmxQbAzS3Q9qZGt": {
+        "name": "L'Explorador"
+      },
+      "CxYLi7eN0XaHShGT": {
+        "name": "El Foragit"
+      },
+      "VUjsBQJWfeZw7Sn6": {
+        "name": "L'Orador"
+      },
+      "fkFkdYh8L8LsVqDU": {
+        "name": "El Pla"
+      },
+      "1ofGFOzojo1ajCdW": {
+        "name": "El Puny"
+      },
+      "zwPk90DC5olIJC7O": {
+        "name": "El Toc Subtil"
+      },
+      "jux23CDkvmJYZq9G": {
+        "name": "L'Aposta"
+      },
+      "4V6FoxI5G1g10DMV": {
+        "name": "La Llei"
+      },
+      "KJcFmfEBgT2HkvOd": {
+        "name": "La Clau i la Serra"
+      }
+    },
+    "playbooks": {
+      "mdKzmXUhAbEnUzo1": {
+        "name": "Llibrets"
+      }
+    },
+    "rolltables": {
+      "AfodFldRoot00001": {
+        "name": "Taules de Tirada"
+      },
+      "AfodFldAnta00001": {
+        "name": "Antagonistes"
+      },
+      "AfodFldEncu00001": {
+        "name": "Encontres"
+      },
+      "AfodFldMuta00001": {
+        "name": "Mutacions"
+      },
+      "AfodFldViaj00001": {
+        "name": "Perills de Viatge"
+      },
+      "AfodFldPers00001": {
+        "name": "Personatges"
+      }
+    },
+    "vices": {
+      "E5e5a30VY1ilC3gD": {
+        "name": "Vicis"
+      }
+    }
+  }
+}

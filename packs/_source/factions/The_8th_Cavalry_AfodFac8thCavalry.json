@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFac8thCavalry",
+  "name": "The 8th Cavalry",
+  "type": "faction",
+  "img": "icons/svg/sword.svg",
+  "system": {
+    "description": "<p>Ocupados luchando contra partidas de guerra nativas últimamente e intentando cubrir muchas líneas de diligencias y trenes para prevenir ataques. No les es fácil llegar a Mudwater porque las tribus prestan seria atención especialmente si la tropa es más grande que unos pocos soldados.</p><p>Rumores sobre recibir nuevos suministros de la Capital, incluyendo mejores armas y algún tipo de otro apoyo.</p>",
+    "type": "",
+    "tier": 3,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Asegurar suministro",
+    "goal_1_clock_max": 8,
+    "goal_2": "Represalia vs. Thunder Raven",
+    "goal_2_clock_max": 10,
+    "goal_clock": 0,
+    "assets": "Fuerza militar. Acceso a recursos gubernamentales. Fort Hubert.",
+    "quirks": "Recursos extendidos. Dificultad para moverse en grupo. Suministros esperados de la Capital.",
+    "notables": "Capitán Hodgens (Fort Hubert)",
+    "allies": "Gobierno. Northern Rail & Transport (protección mutua).",
+    "enemies": "Thunder Raven Tribe. Facciones de forajidos.",
+    "situation": "Fuerza militar sobrecargada, esperando refuerzos. Control del territorio muy limitado actualmente.",
+    "notes": "Reloj 1: +/- Perdición al completarse (depende del método). Reloj 2: +2 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFac8thCavalry",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

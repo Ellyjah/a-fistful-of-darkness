@@ -1,0 +1,556 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet actor character" autocomplete="off">
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   SECCIÓN SUPERIOR: retrato, nombre, alias, rasgos     --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <section class="sheet-header character-header">
+
+    {{!-- Retrato --}}
+    <img class="portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+
+    {{!-- Bloque principal --}}
+    <div class="header-main">
+
+      {{!-- Nombre del personaje --}}
+      <h1 class="charname">
+        <input name="name" type="text" value="{{actor.name}}"
+               placeholder="{{localize 'AFOD.SystemName'}}" />
+      </h1>
+
+      {{!-- Alias y Aspecto --}}
+      <div class="alias-look">
+        <div class="char-field">
+          <label>{{localize "AFOD.Alias"}}</label>
+          <input type="text" name="system.alias" value="{{system.alias}}" placeholder="—" />
+        </div>
+        <div class="char-field">
+          <label>{{localize "AFOD.Look"}}</label>
+          <input type="text" name="system.look" value="{{system.look}}" placeholder="—" />
+        </div>
+      </div>
+
+      {{!-- Rasgos: Libreto / Herencia / Trasfondo / Vicio --}}
+      <div class="character-traits">
+
+        <div class="trait-slot" data-item-type="class">
+          <label class="trait-label">{{localize "AFOD.Class"}}</label>
+          <div class="trait-value">
+            {{#each clases}}
+              <div class="trait-item" data-item-id="{{id}}">
+                <a class="item-sheet-open trait-name">{{name}}</a>
+                <a class="item-delete"><i class="fas fa-times"></i></a>
+              </div>
+            {{else}}
+              <span class="drop-placeholder"><i class="fas fa-scroll"></i> {{localize "AFOD.Class"}}</span>
+            {{/each}}
+          </div>
+        </div>
+
+        <div class="trait-slot" data-item-type="heritage">
+          <label class="trait-label">{{localize "AFOD.Heritage"}}</label>
+          <div class="trait-value">
+            {{#each heritages}}
+              <div class="trait-item" data-item-id="{{id}}">
+                <a class="item-sheet-open trait-name">{{name}}</a>
+                <a class="item-delete"><i class="fas fa-times"></i></a>
+              </div>
+            {{else}}
+              <span class="drop-placeholder"><i class="fas fa-compass"></i> {{localize "AFOD.Heritage"}}</span>
+            {{/each}}
+          </div>
+        </div>
+
+        <div class="trait-slot">
+          <label class="trait-label">{{localize "AFOD.Background"}}</label>
+          <div class="trait-value trait-value-text">
+            <i class="fas fa-map-marker-alt trait-icon"></i>
+            <input type="text" name="system.background" value="{{system.background}}" placeholder="—" class="trait-text-input" />
+          </div>
+        </div>
+
+        {{#if isRevenant}}
+        {{!-- Aparecido: Vínculo con el Mundo de los Vivos en lugar de Vicio --}}
+        <div class="trait-slot vinculo-slot">
+          <label class="trait-label">{{localize "AFOD.Vinculo"}}</label>
+          <div class="trait-value">
+            <textarea class="vinculo-input" rows="2"
+              placeholder="{{localize 'AFOD.VinculoPlaceholder'}}">{{vinculo}}</textarea>
+          </div>
+        </div>
+        {{else}}
+        <div class="trait-slot" data-item-type="vice">
+          <label class="trait-label">{{localize "AFOD.Vice"}}</label>
+          <div class="trait-value">
+            {{#each vices}}
+              <div class="trait-item" data-item-id="{{id}}">
+                <a class="item-sheet-open trait-name">{{name}}</a>
+                <a class="item-delete"><i class="fas fa-times"></i></a>
+              </div>
+            {{else}}
+              <span class="drop-placeholder"><i class="fas fa-fire"></i> {{localize "AFOD.Vice"}}</span>
+            {{/each}}
+          </div>
+        </div>
+        {{/if}}
+
+      </div>{{!-- /character-traits --}}
+
+      {{!-- Cuadrilla vinculada --}}
+      <div class="posse-link" data-actor-type="posse">
+        <label class="trait-label">{{localize "AFOD.Posse"}}</label>
+        {{#if posseActor}}
+          <div class="posse-linked">
+            <img class="posse-portrait" src="{{posseActor.img}}" />
+            <a class="posse-name">{{posseActor.name}}</a>
+            <a class="posse-unlink" title="{{localize 'AFOD.Cancel'}}"><i class="fas fa-unlink"></i></a>
+          </div>
+        {{else}}
+          <span class="drop-placeholder"><i class="fas fa-users"></i> {{localize "AFOD.Posse"}}</span>
+        {{/if}}
+      </div>
+
+    </div>{{!-- /header-main --}}
+  </section>
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   AGUANTE + ESTIGMAS                                    --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <section class="grit-stigma-section">
+
+    {{!-- Barra de Aguante / Pasión (9 segmentos) --}}
+    <div class="grit-block">
+      <div class="block-label">
+        {{#if isRevenant}}{{localize "AFOD.Passion"}}{{else}}{{localize "AFOD.Grit"}}{{/if}}
+        <span class="grit-counter">{{gritValue}}/{{system.grit.max}}</span>
+      </div>
+      <div class="grit-bar">
+        {{#times_from_1 9}}
+          <div class="grit-segment {{#if (lteq this ../gritValue)}}filled{{/if}}"
+               data-value="{{this}}" title="{{this}}"></div>
+        {{/times_from_1}}
+      </div>
+    </div>
+
+    {{!-- Estigmas / Decadencias (10 opciones, máx. 4 activos) --}}
+    <div class="stigma-block">
+      <div class="block-label">
+        {{#if isRevenant}}{{localize "AFOD.Decay"}}{{else}}{{localize "AFOD.Stigma"}}{{/if}}
+        <span class="stigma-counter {{#if (gteq stigmaCount system.stigma.max)}}at-max{{/if}}">
+          {{stigmaCount}}/{{system.stigma.max}}
+        </span>
+      </div>
+      <div class="stigma-list">
+        {{#each stigmaList}}
+          <label class="stigma-item {{#if value}}active{{/if}}">
+            <input type="checkbox"
+                   name="system.stigma.list.{{key}}"
+                   {{#if value}}checked{{/if}} />
+            <span class="stigma-name">{{localize label}}</span>
+          </label>
+        {{/each}}
+      </div>
+    </div>
+
+  </section>
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   RELOJ DE MUTACIÓN + DAÑO                             --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <section class="mutation-harm-section">
+
+    {{!-- Reloj de Mutación (8 segmentos) --}}
+    <div class="mutation-block">
+      <div class="block-label">
+        {{localize "AFOD.MutationClock"}}
+        <span class="mutation-counter">{{mutationValue}}/{{system.mutation_clock.max}}</span>
+      </div>
+      <div class="mutation-bar">
+        {{#times_from_1 8}}
+          <div class="mutation-segment {{#if (lteq this ../mutationValue)}}filled{{/if}}"
+               data-value="{{this}}" title="{{this}}"></div>
+        {{/times_from_1}}
+      </div>
+    </div>
+
+    {{!-- Tabla de Daño --}}
+    <div class="harm-block">
+      <div class="block-label">{{localize "AFOD.Harm"}}</div>
+      <div class="harm-table">
+
+        {{!-- Daño Leve (-1 efecto) --}}
+        <div class="harm-row">
+          <div class="harm-level leve">{{localize "AFOD.HarmLight"}}</div>
+          <div class="harm-slots">
+            <input type="text" name="system.harm.light.one"
+                   value="{{system.harm.light.one}}" placeholder="—" />
+            <input type="text" name="system.harm.light.two"
+                   value="{{system.harm.light.two}}" placeholder="—" />
+          </div>
+        </div>
+
+        {{!-- Daño Medio (-1d) --}}
+        <div class="harm-row">
+          <div class="harm-level medio">{{localize "AFOD.HarmMedium"}}</div>
+          <div class="harm-slots">
+            <input type="text" name="system.harm.medium.one"
+                   value="{{system.harm.medium.one}}" placeholder="—" />
+            <input type="text" name="system.harm.medium.two"
+                   value="{{system.harm.medium.two}}" placeholder="—" />
+          </div>
+        </div>
+
+        {{!-- Daño Grave (necesitas ayuda) --}}
+        <div class="harm-row">
+          <div class="harm-level grave">{{localize "AFOD.HarmHeavy"}}</div>
+          <div class="harm-slots">
+            <input type="text" name="system.harm.heavy.one"
+                   value="{{system.harm.heavy.one}}" placeholder="—" />
+          </div>
+          <div class="harm-armor">
+            <label class="armor-check armor-state-{{armorState}}"
+                   data-armor-field="system.armor_uses.armor"
+                   title="{{localize 'AFOD.ArmorUse'}}">
+              <i class="fas fa-shield-alt"></i>
+              <i class="fas fa-times armor-used-x"></i>
+            </label>
+            <label class="armor-check armor-state-{{armorSpecialState}}"
+                   data-armor-field="system.armor_uses.special"
+                   title="{{localize 'AFOD.ArmorSpecialUse'}}">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-times armor-used-x"></i>
+            </label>
+          </div>
+        </div>
+
+      </div>{{!-- /harm-table --}}
+    </div>{{!-- /harm-block --}}
+
+  </section>
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   MONEDA + INDULGENCIA                                  --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <section class="currency-section">
+
+    {{!-- Slots de moneda dual (6 slots: 4 coin + 2 hellstone) --}}
+    <div class="currency-block">
+      <div class="block-label">
+        <span class="coin-total" title="{{localize 'AFOD.Coin'}}">
+          <i class="fas fa-circle"></i> {{system.coin}}
+        </span>
+        <span class="hellstone-total" title="{{localize 'AFOD.Hellstone'}}">
+          <i class="fas fa-gem"></i> {{system.hellstone}}
+        </span>
+      </div>
+      <div class="currency-slots">
+        {{#each currencySlots}}
+          <div class="currency-slot type-{{this}}" data-slot-index="{{@index}}">
+            {{#if (eq this "coin")}}
+              <i class="fas fa-circle coin-icon"></i>
+            {{else if (eq this "hellstone")}}
+              <i class="fas fa-gem hellstone-icon"></i>
+            {{else}}
+              <span class="slot-empty"></span>
+            {{/if}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    {{!-- Indulgencia --}}
+    <div class="indulgence-block">
+      <div class="block-label">{{localize "AFOD.Indulgence"}}</div>
+      <div class="indulgence-row">
+        <a class="indulgence-btn indulgence-dec"><i class="fas fa-minus"></i></a>
+        <div class="indulgence-bar-wrap">
+          <div class="indulgence-bar-fill" style="width: {{indulgencePercent}}%"></div>
+          <span class="indulgence-counter">{{system.indulgence}} / {{system.indulgence_max}}</span>
+        </div>
+        <a class="indulgence-btn indulgence-inc"><i class="fas fa-plus"></i></a>
+      </div>
+    </div>
+
+  </section>
+
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  {{!--   TABS                                                  --}}
+  {{!-- ═══════════════════════════════════════════════════════ --}}
+  <nav class="tabs" data-group="primary">
+    <a class="item active" data-tab="attributes">{{localize "AFOD.Attributes"}}</a>
+    <a class="item" data-tab="abilities">{{localize "AFOD.Abilities"}}</a>
+    <a class="item" data-tab="items">{{localize "AFOD.Items"}}</a>
+    <a class="item" data-tab="notes">Bio</a>
+  </nav>
+
+  <section class="tab-content">
+
+    <div class="tab active" data-tab="attributes">
+      <div class="attributes-grid">
+
+        {{!-- ── INGENIO ─────────────────────────────── --}}
+        <div class="attribute-block attr-wits">
+          <div class="attribute-header attr-roll" data-attribute="wits" title="{{localize 'AFOD.ResistanceRoll'}}">
+            <span class="attribute-label">{{localize "AFOD.Wits"}}</span>
+            <span class="attribute-dice" title="{{localize 'AFOD.NumberOfDice'}}">
+              {{attributeDice.wits}}<i class="fas fa-dice-d6"></i>
+            </span>
+          </div>
+          {{#each system.attributes.wits.skills}}
+            <div class="skill-row" data-skill="{{@key}}" data-attribute="wits">
+              <div class="skill-dots" data-skill="{{@key}}" data-attribute="wits">
+                {{#times_from_1 4}}
+                  <div class="skill-dot {{#if (lteq this ../value)}}filled{{/if}}"
+                       data-dot="{{this}}"></div>
+                {{/times_from_1}}
+              </div>
+              <a class="skill-name skill-roll" data-skill="{{@key}}" data-attribute="wits">
+                {{localize label}}
+              </a>
+            </div>
+          {{/each}}
+        </div>
+
+        {{!-- ── DESTREZA ────────────────────────────── --}}
+        <div class="attribute-block attr-prowess">
+          <div class="attribute-header attr-roll" data-attribute="prowess" title="{{localize 'AFOD.ResistanceRoll'}}">
+            <span class="attribute-label">{{localize "AFOD.Prowess"}}</span>
+            <span class="attribute-dice">
+              {{attributeDice.prowess}}<i class="fas fa-dice-d6"></i>
+            </span>
+          </div>
+          {{#each system.attributes.prowess.skills}}
+            <div class="skill-row" data-skill="{{@key}}" data-attribute="prowess">
+              <div class="skill-dots" data-skill="{{@key}}" data-attribute="prowess">
+                {{#times_from_1 4}}
+                  <div class="skill-dot {{#if (lteq this ../value)}}filled{{/if}}"
+                       data-dot="{{this}}"></div>
+                {{/times_from_1}}
+              </div>
+              <a class="skill-name skill-roll" data-skill="{{@key}}" data-attribute="prowess">
+                {{localize label}}
+              </a>
+            </div>
+          {{/each}}
+        </div>
+
+        {{!-- ── AGALLAS ─────────────────────────────── --}}
+        <div class="attribute-block attr-guts">
+          <div class="attribute-header attr-roll" data-attribute="guts" title="{{localize 'AFOD.ResistanceRoll'}}">
+            <span class="attribute-label">{{localize "AFOD.Guts"}}</span>
+            <span class="attribute-dice">
+              {{attributeDice.guts}}<i class="fas fa-dice-d6"></i>
+            </span>
+          </div>
+          {{#each system.attributes.guts.skills}}
+            <div class="skill-row" data-skill="{{@key}}" data-attribute="guts">
+              <div class="skill-dots" data-skill="{{@key}}" data-attribute="guts">
+                {{#times_from_1 4}}
+                  <div class="skill-dot {{#if (lteq this ../value)}}filled{{/if}}"
+                       data-dot="{{this}}"></div>
+                {{/times_from_1}}
+              </div>
+              <a class="skill-name skill-roll" data-skill="{{@key}}" data-attribute="guts">
+                {{localize label}}
+              </a>
+            </div>
+          {{/each}}
+        </div>
+
+      </div>{{!-- /attributes-grid --}}
+    </div>
+
+    {{!-- ══════════════════════════════════════════════════════ --}}
+    {{!--   TAB: RASGOS — XP + Habilidades especiales + Contactos --}}
+    {{!-- ══════════════════════════════════════════════════════ --}}
+    <div class="tab" data-tab="abilities">
+
+      {{!-- Experiencia --}}
+      <div class="xp-block">
+        <div class="block-label">
+          {{localize "AFOD.Experience"}}
+          <span class="xp-counter">
+            <input type="number" class="xp-value-input" name="system.experience"
+                   value="{{expValue}}" min="0" max="{{system.experience_max}}" />
+            / {{system.experience_max}}
+          </span>
+        </div>
+        <div class="xp-bar">
+          {{#times_from_1 system.experience_max}}
+            <div class="xp-segment {{#if (lteq this ../expValue)}}filled{{/if}}"
+                 data-value="{{this}}"></div>
+          {{/times_from_1}}
+        </div>
+        {{!-- Disparadores XP desde el libreto equipado --}}
+        {{#each clases}}
+          {{#if system.experience_clues.length}}
+            <div class="section-header xp-clues-label">Ganas Experiencia si...</div>
+            <div class="xp-clues">
+              {{#each system.experience_clues}}
+                <div class="xp-clue">— {{this}}</div>
+              {{/each}}
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+
+      {{!-- Habilidades especiales --}}
+      <div class="abilities-section">
+        <div class="section-header">
+          {{localize "AFOD.Abilities"}}
+        </div>
+        {{#each abilities}}
+          <div class="ability-item {{#if system.purchased}}purchased{{/if}}"
+               data-item-id="{{id}}">
+            <div class="ability-header">
+              <label class="ability-check">
+                <input type="checkbox" class="ability-purchased"
+                       {{#if system.purchased}}checked{{/if}} />
+                <i class="fas {{#if system.purchased}}fa-check-circle{{else}}fa-circle{{/if}}"></i>
+              </label>
+              <a class="item-sheet-open ability-name"><strong>{{name}}</strong></a>
+              <a class="item-delete ability-delete"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="ability-desc">{{{system.description}}}</div>
+          </div>
+        {{else}}
+          <p class="notice">{{localize "AFOD.NoAbilities"}}</p>
+        {{/each}}
+      </div>
+
+      {{!-- Contactos (sólo lectura: provienen del libreto equipado) --}}
+      <div class="contacts-section">
+        <div class="section-header">{{localize "AFOD.Contacts"}}</div>
+        {{#each clases}}
+          {{#if system.contacts}}
+            <div class="contacts-html">{{{system.contacts}}}</div>
+          {{else}}
+            <p class="notice">{{localize "AFOD.NoContacts"}}</p>
+          {{/if}}
+        {{else}}
+          <p class="notice">{{localize "AFOD.NoContacts"}}</p>
+        {{/each}}
+      </div>
+
+    </div>
+
+    {{!-- ══════════════════════════════════════════════════════ --}}
+    {{!--   TAB: EQUIPAMIENTO — Carga + Objetos + Artefactos     --}}
+    {{!-- ══════════════════════════════════════════════════════ --}}
+    <div class="tab" data-tab="items">
+
+      {{!-- Barra de carga --}}
+      <div class="load-block">
+        <div class="block-label">
+          {{localize "AFOD.Load"}}
+          <span class="load-counter">{{system.loadout}} / {{system.base_max_load}}</span>
+        </div>
+        <div class="load-level-selector">
+          <label class="load-level-option {{#if (eq system.selected_load_level 'AFOD.LoadLight')}}active{{/if}}">
+            <input type="radio" name="system.selected_load_level" value="AFOD.LoadLight"
+                   {{#if (eq system.selected_load_level 'AFOD.LoadLight')}}checked{{/if}} />
+            {{localize "AFOD.LoadLight"}}
+          </label>
+          <label class="load-level-option {{#if (eq system.selected_load_level 'AFOD.LoadNormal')}}active{{/if}}">
+            <input type="radio" name="system.selected_load_level" value="AFOD.LoadNormal"
+                   {{#if (eq system.selected_load_level 'AFOD.LoadNormal')}}checked{{/if}} />
+            {{localize "AFOD.LoadNormal"}}
+          </label>
+          <label class="load-level-option {{#if (eq system.selected_load_level 'AFOD.LoadHeavy')}}active{{/if}}">
+            <input type="radio" name="system.selected_load_level" value="AFOD.LoadHeavy"
+                   {{#if (eq system.selected_load_level 'AFOD.LoadHeavy')}}checked{{/if}} />
+            {{localize "AFOD.LoadHeavy"}}
+          </label>
+        </div>
+      </div>
+
+      {{!-- Objetos --}}
+      {{#if equipmentItems.length}}
+        <div class="section-header">{{localize "TYPES.Item.item"}}</div>
+        {{#each equipmentItems}}
+          <div class="equip-row {{#if system.equipped}}equipped{{/if}}"
+               data-item-id="{{id}}">
+            <label class="equip-check" title="{{localize 'AFOD.Equipped'}}">
+              <input type="checkbox" class="item-equipped"
+                     {{#if system.equipped}}checked{{/if}} />
+              <i class="fas {{#if system.equipped}}fa-check-square{{else}}fa-square{{/if}}"></i>
+            </label>
+            <span class="equip-load" title="{{localize 'AFOD.Load'}}">[{{system.load}}]</span>
+            <a class="item-sheet-open equip-name">{{name}}</a>
+            {{#if system.additional_info}}
+              <span class="equip-info">{{system.additional_info}}</span>
+            {{/if}}
+            <a class="item-delete equip-delete"><i class="fas fa-times"></i></a>
+          </div>
+        {{/each}}
+      {{/if}}
+
+      {{!-- Artefactos --}}
+      {{#if artifacts.length}}
+        <div class="section-header">{{localize "TYPES.Item.artifact"}}</div>
+        {{#each artifacts}}
+          <div class="equip-row artifact-row {{#if system.equipped}}equipped{{/if}}"
+               data-item-id="{{id}}">
+            <label class="equip-check" title="{{localize 'AFOD.Equipped'}}">
+              <input type="checkbox" class="item-equipped"
+                     {{#if system.equipped}}checked{{/if}} />
+              <i class="fas {{#if system.equipped}}fa-check-square{{else}}fa-square{{/if}}"></i>
+            </label>
+            <span class="equip-load" title="{{localize 'AFOD.Load'}}">[{{system.load}}]</span>
+            <a class="item-sheet-open equip-name">
+              <i class="fas fa-gem"></i> {{name}}
+            </a>
+            <a class="item-delete equip-delete"><i class="fas fa-times"></i></a>
+          </div>
+        {{/each}}
+      {{/if}}
+
+      {{!-- Cohortes --}}
+      {{#if cohorts.length}}
+        <div class="section-header">{{localize "TYPES.Item.cohort"}}</div>
+        {{#each cohorts}}
+          <div class="equip-row cohort-row" data-item-id="{{id}}">
+            <a class="item-sheet-open equip-name">
+              <i class="fas fa-users"></i> {{name}}
+              <span class="cohort-type">({{system.cohort.[0]}})</span>
+            </a>
+            <a class="item-delete equip-delete"><i class="fas fa-times"></i></a>
+          </div>
+        {{/each}}
+      {{/if}}
+
+      {{#unless equipmentItems.length}}
+        {{#unless artifacts.length}}
+          {{#unless cohorts.length}}
+            <p class="notice">{{localize "AFOD.NoEquipment"}}</p>
+          {{/unless}}
+        {{/unless}}
+      {{/unless}}
+
+    </div>
+
+    <div class="tab" data-tab="notes">
+      <div class="form-group">
+        <label>Trasfondo</label>
+        {{#if playbookDescription}}
+          <div class="notes-view">{{{playbookDescription}}}</div>
+        {{else}}
+          <p class="notice">Sin libreto asociado.</p>
+        {{/if}}
+      </div>
+      <div class="form-group">
+        <label>Herencia</label>
+        {{#if heritageDescription}}
+          <div class="notes-view">{{{heritageDescription}}}</div>
+        {{else}}
+          <p class="notice">Sin herencia asociada.</p>
+        {{/if}}
+      </div>
+      <div class="form-group notes-group">
+        <label>{{localize "AFOD.Notes"}}</label>
+        <textarea name="system.description" class="notes-textarea" rows="14">{{system.description}}</textarea>
+      </div>
+    </div>
+
+  </section>
+
+</form>

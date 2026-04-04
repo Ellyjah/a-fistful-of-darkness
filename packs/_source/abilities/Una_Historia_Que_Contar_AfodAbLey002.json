@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbLey002",
+  "name": "Una Historia Que Contar",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Una vez por misión, puedes esforzarte para contar una historia de supervivencia que: motive a un cohorte/turba para luchar o huir, otorgue +1 efecto al cohorte, o restaure 1 Aguante a cada miembro de la cuadrilla.</p>",
+    "class": "La Ley",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbLey002",
+  "effects": [],
+  "folder": "Sx8RUbAzmdolW3g5"
+}

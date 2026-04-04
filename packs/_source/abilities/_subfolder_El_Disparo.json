@@ -1,0 +1,22 @@
+{
+  "_id": "eJ87QxC9eF8JolgP",
+  "name": "El Disparo",
+  "type": "Item",
+  "description": "",
+  "folder": "wN8FuxwzAPoX2byx",
+  "sorting": "a",
+  "sort": 200,
+  "color": "#5c3d6e",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774929356053,
+    "modifiedTime": 1774929356053,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!eJ87QxC9eF8JolgP"
+}

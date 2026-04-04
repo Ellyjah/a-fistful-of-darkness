@@ -1,0 +1,88 @@
+<div id="posse-{{_id}}-claims-list" class="claims-list {{#if can_edit}}section-editable{{else}}section-non-editable{{/if}}">
+
+  <div class="label-stripe">
+    <span>{{localize "AFOD.HellstoneClaims"}}</span>
+    {{#if can_edit}}
+      <a class="claim-add" data-tooltip="{{localize 'AFOD.AddClaim'}}"><i class="fas fa-plus-square"></i></a>
+    {{/if}}
+  </div>
+
+  <div class="claims-table">
+
+    {{!-- Cabecera de columnas --}}
+    <div class="claims-header flex-horizontal">
+      <span class="claim-col-name">{{localize "AFOD.ClaimName"}}</span>
+      <span class="claim-col-level">{{localize "AFOD.ClaimLevel"}}</span>
+      <span class="claim-col-crew">{{localize "AFOD.ClaimCrew"}}</span>
+      <span class="claim-col-equipment">{{localize "AFOD.ClaimEquipment"}}</span>
+      {{#if can_edit}}<span class="claim-col-actions"></span>{{/if}}
+    </div>
+
+    {{!-- Filas de concesiones --}}
+    {{#each system.hellstoneClaims as |claim id|}}
+      <div class="claim-row flex-horizontal" data-claim-id="{{id}}">
+
+        {{#if ../can_edit}}
+          <input class="claim-col-name" type="text"
+            name="system.hellstoneClaims.{{id}}.name"
+            value="{{claim.name}}"
+            placeholder="{{localize 'AFOD.ClaimName'}}" />
+        {{else}}
+          <span class="claim-col-name">{{claim.name}}</span>
+        {{/if}}
+
+        {{!-- Nivel (0-4): determina producción y tripulación mínima --}}
+        {{#if ../can_edit}}
+          <input class="claim-col-level" type="number"
+            name="system.hellstoneClaims.{{id}}.level"
+            value="{{claim.level}}" min="0" max="4" />
+        {{else}}
+          <span class="claim-col-level">{{claim.level}}</span>
+        {{/if}}
+
+        {{!-- Tripulación actual --}}
+        {{#if ../can_edit}}
+          <input class="claim-col-crew" type="number"
+            name="system.hellstoneClaims.{{id}}.crew"
+            value="{{claim.crew}}" min="0" />
+        {{else}}
+          <span class="claim-col-crew">{{claim.crew}}</span>
+        {{/if}}
+
+        {{!-- Equipado --}}
+        <div class="claim-col-equipment">
+          <input type="checkbox"
+            name="system.hellstoneClaims.{{id}}.equipment"
+            {{checked claim.equipment}}
+            {{#unless ../can_edit}}disabled{{/unless}} />
+        </div>
+
+        {{#if ../can_edit}}
+          <div class="claim-col-actions">
+            <a class="claim-control claim-delete" data-claim-id="{{id}}"
+               data-tooltip="{{localize 'AFOD.TitleDeleteItem'}}">
+              <i class="fas fa-trash"></i>
+            </a>
+            <a class="claim-control claim-post" data-claim-id="{{id}}"
+               data-tooltip="{{localize 'AFOD.TitlePostItem'}}">
+              <i class="fas fa-comment"></i>
+            </a>
+          </div>
+        {{/if}}
+
+      </div>
+    {{/each}}
+
+    {{!-- Fila de totales --}}
+    {{#if system.hellstoneClaims.length}}
+      <div class="claims-footer flex-horizontal">
+        <span class="claim-col-name">{{localize "AFOD.ClaimTotal"}}</span>
+        <span class="claim-col-level">
+          {{localize "AFOD.ClaimProduction"}}: {{hellstone_production}} HS/{{localize "AFOD.Downtime"}}
+        </span>
+      </div>
+    {{/if}}
+
+  </div>
+
+</div>

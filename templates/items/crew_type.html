@@ -1,0 +1,93 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet item {{itemType}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+      <h1 class="item-name-h1"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'AFOD.Name'}}" /></h1>
+      <span class="item-type-label">{{localize "TYPES.Item.crew_type"}}</span>
+    </div>
+  </header>
+
+  <nav class="tabs" data-group="primary">
+    <a class="item active" data-tab="description">{{localize "AFOD.Description"}}</a>
+    <a class="item" data-tab="abilities">{{localize "AFOD.Abilities"}}</a>
+    <a class="item" data-tab="achievements">{{localize "AFOD.Achievements"}}</a>
+    <a class="item" data-tab="information">{{localize "AFOD.Information"}}</a>
+  </nav>
+
+  <div class="tab-content">
+
+    {{!-- ── Descripción ── --}}
+    <div class="tab active" data-tab="description">
+      <div class="form-group">
+        {{#if isEditable}}
+          <textarea name="system.description" class="notes-textarea">{{system.description}}</textarea>
+        {{else}}
+          <div class="notes-view">{{{enrichedDescription}}}</div>
+        {{/if}}
+      </div>
+    </div>
+
+    {{!-- ── Habilidades ── --}}
+    <div class="tab" data-tab="abilities">
+      {{#if crewAbilities.length}}
+        {{#each crewAbilities}}
+          <div class="crew-ability-entry {{#if system.class_default}}is-default{{/if}}">
+            <div class="ability-name">{{name}}</div>
+            <div class="ability-desc">{{{system.description}}}</div>
+          </div>
+        {{/each}}
+      {{else}}
+        <p class="notice">Sin habilidades de cuadrilla en el compendio para este tipo.</p>
+      {{/if}}
+    </div>
+
+    {{!-- ── Logros ── --}}
+    <div class="tab" data-tab="achievements">
+      <div class="ach-map-grid">
+        {{#each achievementCells}}
+          <div class="ach-map-cell {{achType}}{{#if fixed}} fixed{{/if}}"
+               style="grid-column:{{gridCol}};grid-row:{{gridRow}}">
+            <span class="ach-map-label">{{typeLabel}}</span>
+            {{#if fixed}}
+              <span class="ach-map-name">EQUILIBRIO</span>
+            {{else}}
+              <input class="ach-map-input" type="text"
+                     name="{{fieldName}}"
+                     value="{{name}}"
+                     placeholder="—" />
+            {{/if}}
+          </div>
+        {{/each}}
+        {{#each achievementCrosses}}
+          <div class="ach-map-cross {{dir}}"
+               style="grid-column:{{gridCol}};grid-row:{{gridRow}}"></div>
+        {{/each}}
+      </div>
+    </div>
+
+    {{!-- ── Contactos + Mecánica ── --}}
+    <div class="tab" data-tab="information">
+      <div class="form-group">
+        <label>{{localize "AFOD.Contacts"}}</label>
+        {{#if isEditable}}
+          <textarea name="system.contacts" class="notes-textarea" rows="5">{{system.contacts}}</textarea>
+        {{else}}
+          <div class="notes-view">{{{system.contacts}}}</div>
+        {{/if}}
+      </div>
+      <div class="form-group">
+        <label>{{localize "AFOD.ExpClues"}}</label>
+        <textarea name="system.experience_clues" class="notes-textarea" rows="3">{{system.experience_clues}}</textarea>
+      </div>
+      <div class="form-group">
+        <label>{{localize "AFOD.ModusOptions"}}</label>
+        <div class="notes-view modus-list">
+          {{#each system.modus_options}}
+            <div class="modus-row">— {{this}}</div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+  </div>{{!-- /tab-content --}}
+</form>

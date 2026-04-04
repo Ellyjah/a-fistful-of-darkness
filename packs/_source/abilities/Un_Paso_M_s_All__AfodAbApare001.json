@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbApare001",
+  "name": "Un Paso Más Allá",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Los sellos espirituales te afectan (pierde 2 Pasión para superarlos). Pierdes Pasión en lugar de Aguante. Recibes Decadencia en lugar de Estigma.</p>",
+    "class": "El Aparecido",
+    "price": 1,
+    "purchased": false,
+    "class_default": true
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbApare001",
+  "effects": [],
+  "folder": "Wx2nmL6XAFOVkfYF"
+}

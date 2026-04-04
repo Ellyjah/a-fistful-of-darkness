@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacHouseRose",
+  "name": "The House of Roses",
+  "type": "faction",
+  "img": "icons/svg/house.svg",
+  "system": {
+    "description": "<p>Aunt Polly posee la mejor casa de tolerancia del pueblo. ¿Jóvenes, viejos, chicos, chicas? Tú pídelo, ella lo tiene. No solo comercia con placeres pecaminosos de la carne sino que tiene un sólido negocio secundario de tráfico de secretos. Muchos de ellos se revelan, comercian, blanquean y olvidan en la casa de Polly, por una tarifa razonable, por supuesto.</p><p>Últimamente, evitó un intento de toma hostil ejecutado por la Familia Wong. Tras cierta lucha ambas partes acordaron una cooperación pacífica… por ahora.</p>",
+    "type": "",
+    "tier": 2,
+    "hold": {
+      "value": [
+        1
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Usar secretos para proteger prostitutas",
+    "goal_1_clock_max": 8,
+    "goal_2": "Apoderarse de una instalación de los Wong",
+    "goal_2_clock_max": 6,
+    "goal_clock": 0,
+    "assets": "Casa de tolerancia premium. Red de información de primera clase. Chantaje estratégico.",
+    "quirks": "Discreción absoluta. Neutralidad táctica. Todo tiene precio.",
+    "notables": "Aunt Polly (propietaria)",
+    "allies": "New Horizon Credit Union",
+    "enemies": "Mr. Wong's Family Business",
+    "situation": "Tensa tregua con los Wong tras intento de absorción fallido.",
+    "notes": "Reloj 1: -1 Perdición al completarse. Reloj 2: +1 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacHouseRose",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

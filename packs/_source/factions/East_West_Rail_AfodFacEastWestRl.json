@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacEastWestRl",
+  "name": "East-West Rail",
+  "type": "faction",
+  "img": "icons/environment/settlement/stable.webp",
+  "system": {
+    "description": "<p>Compañía ferroviaria más pequeña y agresiva en Mudwater. A veces parece que les importa más sabotear a Northern Rail & Transport que avanzar con sus propias vías.</p><p>También luchando por el contrato gubernamental exclusivo. Dirigida por Ruth McCoy y también traficando con contrabando.</p>",
+    "type": "",
+    "tier": 2,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Subir de Rango",
+    "goal_1_clock_max": 8,
+    "goal_2": "Establecer ruta estable de Hellstone",
+    "goal_2_clock_max": 8,
+    "goal_clock": 0,
+    "assets": "Empresa ferroviaria ágil. Red de contrabando. Disposición al sabotaje.",
+    "quirks": "Más interesados en hundir a Northern Rail que en crecer. Tráfico de contrabando activo.",
+    "notables": "Ruth McCoy (directora)",
+    "allies": "Desconocidos",
+    "enemies": "Northern Rail & Transport (sabotaje activo)",
+    "situation": "Empresa menor apostando todo al sabotaje del competidor y al contrabando de Hellstone.",
+    "notes": "Reloj 1: +1 Perdición al completarse. Reloj 2: +1 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacEastWestRl",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

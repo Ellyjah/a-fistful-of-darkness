@@ -1,0 +1,24 @@
+{
+  "_id": "qlOneFM30X8983iF",
+  "name": "Lejano Oriente",
+  "type": "heritage",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>Procedes de las comunidades asiáticas que llegaron al Oeste como trabajadores, comerciantes o refugiados. Tu herencia combina tradiciones antiguas con la dura realidad de ser extranjero en tierra ajena.</p><p><em>Pista de XP: Expresaste tu herencia o trasfondo del Lejano Oriente durante la sesión.</em></p>"
+  },
+  "folder": "obsxk7MVOBexe5Kv",
+  "sort": 100,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774931069946,
+    "modifiedTime": 1774931069946,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!qlOneFM30X8983iF",
+  "effects": []
+}

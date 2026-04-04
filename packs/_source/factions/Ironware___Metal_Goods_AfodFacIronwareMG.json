@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacIronwareMG",
+  "name": "Ironware & Metal Goods",
+  "type": "faction",
+  "img": "icons/svg/tower.svg",
+  "system": {
+    "description": "<p>El pez gordo de las compañías mineras de Hellstone con licencia en Mudwater. Creció muy rápido gracias al nuevo comercio. Algunos rumores sobre miembros del personal corruptos y grandes cantidades de Hellstone escapando por las grietas.</p><p>Dirigida por Philomena Standish, esposa del director del banco Barnabas Standish.</p>",
+    "type": "",
+    "tier": 4,
+    "hold": {
+      "value": [
+        1
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Subir de Rango",
+    "goal_1_clock_max": 10,
+    "goal_2": "Construir refinería de Hellstone",
+    "goal_2_clock_max": 10,
+    "goal_clock": 0,
+    "assets": "Mayor compañía minera licenciada. Infraestructura extensa. Conexiones gubernamentales y bancarias.",
+    "quirks": "Personal corrupto. Hellstone desapareciendo. Ambiciones de expansión masiva.",
+    "notables": "Philomena Standish (directora, esposa de Barnabas)",
+    "allies": "New Horizon Credit Union (Barnabas Standish). Gobierno local.",
+    "enemies": "Fine Energy Enterprise (espionaje industrial). Thunder Raven Tribe (ataques a minas).",
+    "situation": "Empresa dominante buscando monopolio total de extracción y refinería de Hellstone.",
+    "notes": "Reloj 1: +2 Perdición al completarse. Reloj 2: +2 Perdición al completarse. Mayor contribuidor potencial a la Perdición."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacIronwareMG",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

@@ -1,0 +1,25 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet actor faction" autocomplete="off">
+  <header class="sheet-header">
+    <img class="portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Nombre de la Facción" /></h1>
+      <div class="header-details">
+        <span class="tag">{{localize "AFOD.Tier"}}: <input type="number" name="system.tier" value="{{system.tier}}" min="0" max="6" /></span>
+      </div>
+    </div>
+  </header>
+  <section class="sheet-body">
+    <div class="form-group">
+      <label>{{localize "AFOD.Description"}}</label>
+      {{#if isEditable}}
+        <textarea name="system.description" class="notes-textarea" rows="8">{{system.description}}</textarea>
+      {{else}}
+        <div class="notes-view">{{{enrichedDescription}}}</div>
+      {{/if}}
+    </div>
+    <div class="form-group">
+      <label>{{localize "AFOD.Notes"}}</label>
+      <textarea name="system.notes">{{system.notes}}</textarea>
+    </div>
+  </section>
+</form>

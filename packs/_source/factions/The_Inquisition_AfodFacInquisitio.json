@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacInquisitio",
+  "name": "The Inquisition",
+  "type": "faction",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "description": "<p>Afirman ser enviados por Su Santidad el Papa en persona para la salvación de los verdaderos creyentes. Y tienen un elegante certificado oficial para demostrarlo.</p><p>Solo el Inquisidor Jefe Michael es conocido por cara y nombre, todos los demás Inquisidores van siempre encapuchados. ¿Hay un terrible secreto oculto bajo esas capuchas? Las relaciones con los funcionarios del pueblo, la iglesia local y casi todos los demás en Mudwater son tensas. Michael puede pagar recompensas por demonios muertos.</p>",
+    "type": "",
+    "tier": 3,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        3
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Proteger a los dignos (Repetir)",
+    "goal_1_clock_max": 6,
+    "goal_2": "Invocar a Arael",
+    "goal_2_clock_max": 10,
+    "goal_clock": 0,
+    "assets": "Autoridad papal. Recompensas por demonios. Inquisidores encapuchados de identidad desconocida.",
+    "quirks": "Relaciones tensas con todos. Secreto absoluto bajo las capuchas. Agenda propia.",
+    "notables": "Inquisidor Jefe Michael",
+    "allies": "Ninguno conocido",
+    "enemies": "First Church of Saint Michael. Gobierno local (relaciones tensas). Todos los demás.",
+    "situation": "Recién llegados con agenda propia. Su objetivo real — invocar a Arael — es potencialmente apocalíptico.",
+    "notes": "Reloj 1 (Repetir): -1 Perdición al completarse. Reloj 2: +2 Perdición al completarse. Arael es una entidad sobrenatural de naturaleza desconocida."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacInquisitio",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

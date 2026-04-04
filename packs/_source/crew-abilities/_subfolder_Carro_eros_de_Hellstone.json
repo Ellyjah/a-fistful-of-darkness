@@ -1,0 +1,22 @@
+{
+  "_id": "LAFSZcT03Y9wBYV8",
+  "name": "Carroñeros de Hellstone",
+  "type": "Item",
+  "description": "",
+  "folder": "cvy9IzGJMTuv8D0z",
+  "sorting": "a",
+  "sort": 0,
+  "color": "#5c3d1c",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774929356053,
+    "modifiedTime": 1774929356053,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!LAFSZcT03Y9wBYV8"
+}

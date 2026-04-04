@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacNorthernRl",
+  "name": "Northern Rail & Transport",
+  "type": "faction",
+  "img": "icons/environment/settlement/stable.webp",
+  "system": {
+    "description": "<p>La compañía ferroviaria más grande de Mudwater intentando avanzar con su conexión ferroviaria. Luchando por el contrato gubernamental exclusivo y rápida en quejarse en Fort Hubert si sus trenes o trabajadores son atacados.</p>",
+    "type": "",
+    "tier": 3,
+    "hold": {
+      "value": [
+        1
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Completar siguiente sección (Repetir)",
+    "goal_1_clock_max": 8,
+    "goal_2": "Asegurar contrato gubernamental",
+    "goal_2_clock_max": 10,
+    "goal_clock": 0,
+    "assets": "Mayor compañía ferroviaria. Conexiones gubernamentales. Flota de trenes.",
+    "quirks": "Agresivamente protegen sus líneas. Usan el ejército como herramienta política.",
+    "notables": "Directiva desconocida",
+    "allies": "The 8th Cavalry. Gobierno.",
+    "enemies": "East-West Rail (sabotaje mutuo). Thunder Raven Tribe (ataques a trenes).",
+    "situation": "Carrera para completar la línea ferroviaria y asegurar el contrato gubernamental exclusivo.",
+    "notes": "Reloj 1 (Repetir): +1 Perdición al completarse. Reloj 2: +1 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacNorthernRl",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

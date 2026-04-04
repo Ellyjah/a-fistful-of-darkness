@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbLey005",
+  "name": "Solo Es Un Rasguño",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Las penalizaciones por daño son un nivel menos graves (excepto el nivel 4 que sigue siendo fatal). Puedes aceptar el daño en vez de resistirlo para limpiar 1 Aguante.</p>",
+    "class": "La Ley",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbLey005",
+  "effects": [],
+  "folder": "Sx8RUbAzmdolW3g5"
+}

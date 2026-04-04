@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacWongFamily",
+  "name": "Mr. Wong's Family Business",
+  "type": "faction",
+  "img": "icons/svg/net.svg",
+  "system": {
+    "description": "<p>No solo la clásica lavandería sino otros negocios también. Al menos tres generaciones de Wongs haciendo su deber en este negocio familiar. El cabeza de familia es Wong Cheng, de más de 80 años, que vino con sus tres hijos — Fan, Hai y Huang — y sus esposas al país.</p><p>Se han oído rumores sobre formas misteriosas como clavar agujas en cuerpos y otra magia de sangre.</p>",
+    "type": "",
+    "tier": 2,
+    "hold": {
+      "value": [
+        1
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Subir de Rango",
+    "goal_1_clock_max": 6,
+    "goal_2": "Apoderarse de la House of Roses",
+    "goal_2_clock_max": 10,
+    "goal_clock": 0,
+    "assets": "Red familiar extendida. Tres generaciones de lealtad. Posibles prácticas de magia de sangre/acupuntura sobrenatural.",
+    "quirks": "Familia por encima de todo. Métodos misteriosos. Tregua forzada con House of Roses.",
+    "notables": "Wong Cheng (patriarca, 80+ años). Fan, Hai, Huang (hijos).",
+    "allies": "Desconocidos",
+    "enemies": "House of Roses (tregua tensa tras intento de absorción fallido)",
+    "situation": "Familia criminal consolidada buscando expandir su influencia sobre los negocios de Aunt Polly.",
+    "notes": "Reloj 1: +/- Perdición al completarse. Reloj 2: +1 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacWongFamily",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

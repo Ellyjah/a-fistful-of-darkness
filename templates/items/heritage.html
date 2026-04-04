@@ -1,0 +1,19 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet item heritage" autocomplete="off">
+  <header class="sheet-header">
+    <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+      <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'AFOD.Name'}}" /></h1>
+      <span class="item-type-label">{{localize "TYPES.Item.heritage"}}</span>
+    </div>
+  </header>
+  <section class="sheet-body">
+    <div class="form-group">
+      <label>{{localize "AFOD.Description"}}</label>
+      {{#if isEditable}}
+          <textarea name="system.description" class="notes-textarea">{{system.description}}</textarea>
+        {{else}}
+          <div class="notes-view">{{{enrichedDescription}}}</div>
+        {{/if}}
+    </div>
+  </section>
+</form>

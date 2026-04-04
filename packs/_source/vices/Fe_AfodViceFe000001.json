@@ -1,0 +1,28 @@
+{
+  "_id": "AfodViceFe000001",
+  "name": "Fe",
+  "type": "vice",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+  "system": {
+    "description": "<p>Estás dedicado a un poder invisible, ser espiritual, dios, ancestro, etc.</p><p>Detalla tu fe específica e indica el nombre y ubicación de tu proveedor de vicio (predicador, chamán, altar secreto, etc.).</p>"
+  },
+  "effects": [],
+  "folder": "E5e5a30VY1ilC3gD",
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodViceFe000001"
+}

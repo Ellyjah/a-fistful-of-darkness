@@ -1,0 +1,22 @@
+{
+  "_id": "jux23CDkvmJYZq9G",
+  "name": "La Apuesta",
+  "type": "Item",
+  "description": "",
+  "folder": "AlStyhIvW3yp81WH",
+  "sorting": "a",
+  "sort": 800,
+  "color": "#6e5c2d",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774929356053,
+    "modifiedTime": 1774929356053,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!jux23CDkvmJYZq9G"
+}

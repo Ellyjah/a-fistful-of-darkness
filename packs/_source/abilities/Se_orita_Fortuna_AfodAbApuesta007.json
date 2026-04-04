@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbApuesta007",
+  "name": "Señorita Fortuna",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Ganas cualquier partida de juego. Gasta 1 Aguante por un accidente menor, 2 por uno mayor, 3 por una catástrofe. Gana +Perdición por pago igual al Aguante gastado.</p>",
+    "class": "La Apuesta",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbApuesta007",
+  "effects": [],
+  "folder": "ba5EPytcNujEnqf6"
+}

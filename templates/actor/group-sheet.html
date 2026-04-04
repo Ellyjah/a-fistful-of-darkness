@@ -1,0 +1,67 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet actor group" autocomplete="off">
+
+  {{!-- ── Cabecera: cuadrilla y tipo ── --}}
+  <div class="group-header">
+    {{#if posseActor}}
+      <div class="group-posse-info">
+        <a class="posse-link group-link">
+          <i class="fas fa-users"></i> {{posseActor.name}}
+        </a>
+        {{#if crewTypeItem}}
+          <span class="group-sep">—</span>
+          <a class="crew-type-link group-link">{{crewTypeItem.name}}</a>
+        {{/if}}
+        <a class="posse-unlink group-unlink" title="Desvincular cuadrilla">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+    {{else}}
+      <div class="group-drop-hint">
+        <i class="fas fa-users"></i> {{localize "AFOD.GroupNoPosse"}}
+        <span class="group-hint-sub">— {{localize "AFOD.GroupDragHint"}}</span>
+      </div>
+    {{/if}}
+  </div>
+
+  {{!-- ── Tabla de miembros ── --}}
+  <table class="group-table">
+    <thead>
+      <tr>
+        <th class="col-name">Personaje</th>
+        <th class="col-attr" title="Ingenio">Ing</th>
+        <th class="col-attr" title="Destreza">Des</th>
+        <th class="col-attr" title="Agallas">Aga</th>
+        <th class="col-load">Carga</th>
+        <th class="col-abilities">{{localize "AFOD.Abilities"}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each members}}
+      <tr class="group-member-row">
+        <td class="col-name">
+          <a class="member-open group-link" data-actor-id="{{id}}">{{name}}</a>
+          <a class="member-remove group-remove" data-actor-id="{{id}}" title="Eliminar del grupo">
+            <i class="fas fa-times"></i>
+          </a>
+        </td>
+        <td class="col-attr" title="{{skillTooltips.wits}}">{{attributeDice.wits}}</td>
+        <td class="col-attr" title="{{skillTooltips.prowess}}">{{attributeDice.prowess}}</td>
+        <td class="col-attr" title="{{skillTooltips.guts}}">{{attributeDice.guts}}</td>
+        <td class="col-load">{{loadCurrent}}/{{loadMax}}</td>
+        <td class="col-abilities">
+          {{#each abilities}}
+            <a class="ability-link group-link"
+               data-actor-id="{{actorId}}"
+               data-item-id="{{id}}">{{name}}</a>
+          {{/each}}
+        </td>
+      </tr>
+      {{else}}
+      <tr class="group-empty-row">
+        <td colspan="6">{{localize "AFOD.GroupDragHint"}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+</form>

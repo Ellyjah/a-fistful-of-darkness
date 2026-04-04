@@ -1,0 +1,51 @@
+<div id="character-{{_id}}-currency" class="flex-horizontal afod-currency">
+
+  {{!-- Slots de Moneda (Coin) --}}
+  <div id="character-{{_id}}-coin">
+    <div class="stripe">
+      <b>{{localize "AFOD.Coin"}}</b>
+    </div>
+    <div class="coins coins-hands">
+      {{#multiboxes system.coin}}
+      <input type="radio" id="coin-{{_id}}-0" name="system.coin" value="0" checked="checked">
+      {{#times_from 1 system.coin_max.hand}}
+        <input type="radio" id="coin-{{../_id}}-{{this}}" name="system.coin" value="{{this}}">
+        <label class="radio-toggle coin-slot" for="coin-{{../_id}}-{{this}}"></label>
+      {{/times_from}}
+      {{/multiboxes}}
+    </div>
+  </div>
+
+  {{!-- Slots de Hellstone --}}
+  <div id="character-{{_id}}-hellstone">
+    <div class="stripe">
+      <b>{{localize "AFOD.Hellstone"}}</b>
+    </div>
+    <div class="coins hellstone-slots">
+      {{#multiboxes system.hellstone}}
+      <input type="radio" id="hellstone-{{_id}}-0" name="system.hellstone" value="0" checked="checked">
+      {{#times_from 1 system.hellstone_max.hand}}
+        <input type="radio" id="hellstone-{{../_id}}-{{this}}" name="system.hellstone" value="{{this}}">
+        <label class="radio-toggle hellstone-slot" for="hellstone-{{../_id}}-{{this}}"></label>
+      {{/times_from}}
+      {{/multiboxes}}
+    </div>
+  </div>
+
+  {{!-- Indulgencia --}}
+  <div id="character-{{_id}}-indulgence">
+    <div class="stripe">
+      <b>{{localize "AFOD.Indulgence"}}</b>
+    </div>
+    <div class="coins indulgence-slots">
+      {{#multiboxes system.indulgence}}
+      <input type="radio" id="indulgence-{{_id}}-0" name="system.indulgence" value="0" checked="checked">
+      {{#times_from 1 system.indulgence_max}}
+        <input type="radio" id="indulgence-{{../_id}}-{{this}}" name="system.indulgence" value="{{this}}">
+        <label class="radio-toggle" for="indulgence-{{../_id}}-{{this}}"></label>
+      {{/times_from}}
+      {{/multiboxes}}
+    </div>
+  </div>
+
+</div>

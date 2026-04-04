@@ -1,0 +1,22 @@
+{
+  "_id": "CNuPuhsn2vIvYZ8z",
+  "name": "El Forajido",
+  "type": "Item",
+  "description": "",
+  "folder": "wN8FuxwzAPoX2byx",
+  "sorting": "a",
+  "sort": 400,
+  "color": "#6e4d2d",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774929356053,
+    "modifiedTime": 1774929356053,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!CNuPuhsn2vIvYZ8z"
+}

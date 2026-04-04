@@ -1,0 +1,26 @@
+{
+  "_id": "AfodCAbCaza004",
+  "name": "Ojo Experto",
+  "type": "crew_ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>+1 efecto al evaluar el valor o peligrosidad de un objetivo. Nunca sois sorprendidos por el nivel de dificultad de un contrato antes de aceptarlo.</p>",
+    "class": "Cazarrecompensas",
+    "price": 1,
+    "purchased": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodCAbCaza004",
+  "effects": [],
+  "folder": "M3EDqXOHw7gJQfAr"
+}

@@ -1,0 +1,107 @@
+{
+  "_id": "AfodRTHabi000001",
+  "name": "Habilidades Especiales de Monstruos",
+  "img": "icons/svg/terror.svg",
+  "description": "",
+  "results": [
+    {
+      "_id": "AfodRRHabi000001",
+      "type": 0,
+      "text": "Naturaleza — Tira en subtabla Habilidades: Naturaleza",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRHabi000002",
+      "type": 0,
+      "text": "Demonios — Tira en subtabla Habilidades: Demonios",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRHabi000003",
+      "type": 0,
+      "text": "Fantasmas — Tira en subtabla Habilidades: Fantasmas",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRHabi000004",
+      "type": 0,
+      "text": "Espíritus — Tira en subtabla Habilidades: Espíritus",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRHabi000005",
+      "type": 0,
+      "text": "Fisura Dimensional — Tira en subtabla Habilidades: Fisura Dimensional",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRHabi000006",
+      "type": 0,
+      "text": "Mixto — Elige libremente de cualquiera de las subtablas anteriores",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "flags": {}
+    }
+  ],
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "AfodFldAnta00001",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!tables!AfodRTHabi000001",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774957688762,
+    "modifiedTime": 1774957688762,
+    "lastModifiedBy": null
+  }
+}

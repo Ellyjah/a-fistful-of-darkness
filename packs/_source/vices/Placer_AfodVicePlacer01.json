@@ -1,0 +1,28 @@
+{
+  "_id": "AfodVicePlacer01",
+  "name": "Placer",
+  "type": "vice",
+  "img": "icons/consumables/food/preserves-jam-jelly-jar-brown-red.webp",
+  "system": {
+    "description": "<p>Gratificación de amantes, comida, bebida, drogas, arte, teatro, etc.</p><p>Detalla tu placer específico e indica el nombre y ubicación de tu proveedor de vicio (taberna, madama, artista, traficante, etc.).</p>"
+  },
+  "effects": [],
+  "folder": "E5e5a30VY1ilC3gD",
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodVicePlacer01"
+}

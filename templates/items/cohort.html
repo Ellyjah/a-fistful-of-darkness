@@ -1,0 +1,112 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet item {{itemType}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+      <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'AFOD.Name'}}" /></h1>
+      <span class="item-type-label">{{localize "TYPES.Item.cohort"}}</span>
+    </div>
+  </header>
+  <section class="sheet-body">
+
+    {{!-- Tipo de Cohorte --}}
+    <div class="form-group">
+      <label class="label-stripe">{{localize "AFOD.CohortType"}}</label>
+      <div class="cohort-type-list">
+        {{#each system.cohort_list as |cohort key|}}
+          <label>
+            <input type="radio" name="system.cohort" value="{{key}}"
+                   {{#if (includes ../system.cohort key)}}checked{{/if}} />
+            {{localize cohort.label}}
+          </label>
+        {{/each}}
+      </div>
+    </div>
+
+    {{!-- Tipo de Banda o Experto --}}
+    {{#if (eq system.cohort.[0] "Gang")}}
+      <div class="form-group">
+        <label class="label-stripe">{{localize "AFOD.GangType"}}</label>
+        <select name="system.gang_type" multiple>
+          {{#each system.gang_type_list as |gang key|}}
+            <option value="{{key}}"
+              {{#if (includes ../system.gang_type key)}}selected{{/if}}>
+              {{localize gang.label}}
+            </option>
+          {{/each}}
+        </select>
+      </div>
+    {{/if}}
+
+    {{#if (eq system.cohort.[0] "Expert")}}
+      <div class="form-group">
+        <label class="label-stripe">{{localize "AFOD.ExpertType"}}</label>
+        <input type="text" name="system.expert_type" value="{{system.expert_type}}" />
+      </div>
+    {{/if}}
+
+    {{!-- Calidad y Escala (cuando está en un Actor) --}}
+    {{#if document.parent}}
+      <div class="form-fields">
+        <div class="form-group">
+          <label>{{localize "AFOD.Quality"}}</label>
+          <span>{{system.quality}}</span>
+        </div>
+        <div class="form-group">
+          <label>{{localize "AFOD.Scale"}}</label>
+          <span>{{system.scale}}</span>
+        </div>
+      </div>
+    {{/if}}
+
+    {{!-- Ventajas y Defectos --}}
+    <div class="form-group edges-flaws">
+      <div class="edges-column">
+        <label class="label-stripe">{{localize "AFOD.Edges"}}</label>
+        {{#each system.edges_list as |edge key|}}
+          <div class="edgeflaw-row">
+            <input type="checkbox" id="edge-{{key}}" name="system.edges_list.{{key}}.selected"
+                   {{checked edge.selected}} />
+            <label for="edge-{{key}}">{{localize edge.label}}</label>
+          </div>
+        {{/each}}
+      </div>
+      <div class="flaws-column">
+        <label class="label-stripe">{{localize "AFOD.Flaws"}}</label>
+        {{#each system.flaws_list as |flaw key|}}
+          <div class="edgeflaw-row">
+            <input type="checkbox" id="flaw-{{key}}" name="system.flaws_list.{{key}}.selected"
+                   {{checked flaw.selected}} />
+            <label for="flaw-{{key}}">{{localize flaw.label}}</label>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    {{!-- Daño --}}
+    <div class="form-group">
+      <label class="label-stripe">{{localize "AFOD.Harm"}}</label>
+      <div class="harm-list">
+        {{#each system.harm_list as |harm key|}}
+          <label>
+            <input type="radio" name="system.harm" value="{{key}}"
+                   {{#if (includes ../system.harm key)}}checked{{/if}} />
+            {{localize harm.label}}
+          </label>
+        {{/each}}
+      </div>
+    </div>
+
+    {{!-- Armadura --}}
+    <div class="form-group">
+      <label>{{localize "AFOD.Armor"}}</label>
+      <input type="checkbox" name="system.armor" {{checked system.armor}} />
+    </div>
+
+    {{!-- Descripción --}}
+    <div class="form-group">
+      <label>{{localize "AFOD.Description"}}</label>
+      <textarea name="system.description" rows="3">{{system.description}}</textarea>
+    </div>
+
+  </section>
+</form>

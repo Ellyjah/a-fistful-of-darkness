@@ -1,0 +1,22 @@
+{
+  "_id": "obsxk7MVOBexe5Kv",
+  "name": "Herencias",
+  "type": "Item",
+  "description": "",
+  "folder": null,
+  "sorting": "a",
+  "sort": 0,
+  "color": "#7a6520",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774931069946,
+    "modifiedTime": 1774931069946,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!obsxk7MVOBexe5Kv"
+}

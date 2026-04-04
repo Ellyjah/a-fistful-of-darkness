@@ -1,0 +1,26 @@
+{
+  "_id": "AfodCAbCaza002",
+  "name": "Galería de Forajidos Andante",
+  "type": "crew_ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>La cuadrilla mantiene una red de información sobre objetivos. +1d al reunir información sobre cualquier objetivo con precio sobre su cabeza.</p>",
+    "class": "Cazarrecompensas",
+    "price": 1,
+    "purchased": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodCAbCaza002",
+  "effects": [],
+  "folder": "M3EDqXOHw7gJQfAr"
+}

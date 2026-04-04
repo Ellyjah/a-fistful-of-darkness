@@ -1,0 +1,24 @@
+{
+  "_id": "iLoJM70ZMjo7ezYN",
+  "name": "Nativa",
+  "type": "heritage",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>Desciendes de los pueblos originarios de estas tierras. Tu herencia te conecta con una relación profunda con la tierra, tradiciones espirituales y la resistencia ante quienes pretenden borrar tu existencia.</p><p><em>Pista de XP: Expresaste tu herencia o trasfondo nativo durante la sesión.</em></p>"
+  },
+  "folder": "obsxk7MVOBexe5Kv",
+  "sort": 400,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774931069946,
+    "modifiedTime": 1774931069946,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!iLoJM70ZMjo7ezYN",
+  "effects": []
+}

@@ -1,0 +1,22 @@
+{
+  "_id": "2Ls9KFCfOX83C10b",
+  "name": "El Corazón de Trueno",
+  "type": "Item",
+  "description": "",
+  "folder": "wN8FuxwzAPoX2byx",
+  "sorting": "a",
+  "sort": 100,
+  "color": "#3d6e2d",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774929356053,
+    "modifiedTime": 1774929356053,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!2Ls9KFCfOX83C10b"
+}

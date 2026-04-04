@@ -1,0 +1,107 @@
+{
+  "_id": "AfodRTMuta000001",
+  "name": "Mutaciones",
+  "img": "icons/svg/aura.svg",
+  "description": "",
+  "results": [
+    {
+      "_id": "AfodRRMuta000001",
+      "type": 0,
+      "text": "Boca — Tira en subtabla Mutaciones: Boca",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRMuta000002",
+      "type": 0,
+      "text": "Tentáculos — Tira en subtabla Mutaciones: Tentáculos",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRMuta000003",
+      "type": 0,
+      "text": "Ojos — Tira en subtabla Mutaciones: Ojos",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRMuta000004",
+      "type": 0,
+      "text": "Piel — Tira en subtabla Mutaciones: Piel",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRMuta000005",
+      "type": 0,
+      "text": "Extremidad — Tira en subtabla Mutaciones: Extremidad",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRMuta000006",
+      "type": 0,
+      "text": "Varios — Tira en subtabla Mutaciones: Varios",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "flags": {}
+    }
+  ],
+  "formula": "1d6",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "AfodFldMuta00001",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!tables!AfodRTMuta000001",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774957688762,
+    "modifiedTime": 1774957688762,
+    "lastModifiedBy": null
+  }
+}

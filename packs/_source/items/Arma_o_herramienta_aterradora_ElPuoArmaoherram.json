@@ -1,0 +1,34 @@
+{
+  "_id": "ElPuoArmaoherram",
+  "name": "Arma o herramienta aterradora",
+  "type": "item",
+  "img": "icons/weapons/hammers/hammer-double-simple.webp",
+  "system": {
+    "description": "<p>Algo diseñado para intimidar tanto como para dañar. Puede ser un arma inusual o una herramienta repropuesta.</p>",
+    "class": "El Puño",
+    "load": 1,
+    "uses": 1,
+    "additional_info": "",
+    "equipped": false,
+    "num_available": 1
+  },
+  "effects": [],
+  "folder": "1ofGFOzojo1ajCdW",
+  "sort": 1900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!ElPuoArmaoherram"
+}

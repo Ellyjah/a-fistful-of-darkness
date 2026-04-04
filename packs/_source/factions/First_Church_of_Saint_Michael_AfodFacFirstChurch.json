@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacFirstChurch",
+  "name": "First Church of Saint Michael",
+  "type": "faction",
+  "img": "icons/svg/holy-shield.svg",
+  "system": {
+    "description": "<p>Father Ike solía ser la voluntad del Señor hasta que la Inquisición apareció. Aún tiene cierta influencia con la gente pero su control se ha debilitado. Un borracho notorio.</p><p>Al principio no parece importarle pero últimamente sus sermones tienden a centrarse en falsos profetas y fanáticos religiosos camino al infierno. Especialmente los que se hacen llamar Michael.</p>",
+    "type": "",
+    "tier": 1,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Descubrir el secreto del fanático",
+    "goal_1_clock_max": 8,
+    "goal_2": "Predicar por la salvación (Repetir)",
+    "goal_2_clock_max": 4,
+    "goal_clock": 0,
+    "assets": "Influencia residual con la congregación local. Conocimiento de los secretos de la comunidad.",
+    "quirks": "Alcoholismo. Rivalidad con la Inquisición. Sermones cada vez más incendiarios.",
+    "notables": "Father Ike (sacerdote local, borracho notorio)",
+    "allies": "Población local. Southern Refugees (base de fieles).",
+    "enemies": "The Inquisition (usurpó su autoridad espiritual)",
+    "situation": "Iglesia local debilitada luchando por recuperar influencia. Father Ike sospecha algo oscuro sobre la Inquisición.",
+    "notes": "Reloj 1: +1 Perdición al completarse. Reloj 2 (Repetir): -1 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacFirstChurch",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

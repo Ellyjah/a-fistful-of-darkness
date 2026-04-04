@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacBlackRider",
+  "name": "The Black Rider",
+  "type": "faction",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>Supuestamente un agente de la ley no-muerto devuelto del Infierno para tomar venganza. Quién le hizo daño es desconocido, otros objetivos o motivos también desconocidos.</p><p>A menudo acompañado por un chamán nativo y no siempre está claro si el Black Rider mismo o el chamán es la fuerza motriz de esta vendetta.</p>",
+    "type": "",
+    "tier": 2,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        3
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Encontrar Recuerdo",
+    "goal_1_clock_max": 10,
+    "goal_2": "Tomar venganza (Repetir)",
+    "goal_2_clock_max": 6,
+    "goal_clock": 0,
+    "assets": "Naturaleza sobrenatural. Conexión chamánica. Motivación implacable de venganza.",
+    "quirks": "Motivaciones opacas. Identidad real desconocida. Alianza ambigua con chamán nativo.",
+    "notables": "Black Rider (ex-agente de la ley, no-muerto). Chamán nativo desconocido.",
+    "allies": "Chamán nativo (alianza incierta)",
+    "enemies": "Los que le hicieron daño (desconocidos actualmente)",
+    "situation": "Entidad misteriosa buscando venganza. El Recuerdo que busca puede revelar su verdadera identidad e historia.",
+    "notes": "Reloj 1: -2 Perdición al completarse (encontrar el Recuerdo trae esperanza/cierre). Reloj 2 (Repetir): +1 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacBlackRider",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

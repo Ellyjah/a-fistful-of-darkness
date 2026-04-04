@@ -1,0 +1,73 @@
+{
+  "_id": "AfodToqueSutil01",
+  "name": "El Toque Sutil",
+  "type": "class",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Una luz empática en un mundo oscuro. El Toque Sutil es un sanador y viajero que entiende a la gente y sabe cuándo y cómo ayudar.</p><h3>Habilidades Especiales</h3><ul><li><strong>MILAGROS DE FERIANTE</strong> Cuando asistes o participas en una acción de grupo con alguien, también pueden ignorar una penalización por daño.</li><li><strong>INFLUYENTE</strong> Proporcionas un servicio valioso al pueblo y eres bienvenido incluso en lugares peligrosos. Obtén +1 nivel de resultado cuando hablas en nombre de una comunidad local, adquieres un recurso o reduces perdición.</li><li><strong>PEQUEÑOS BUITRES</strong> Las cohortes que comandas ganan potencia para recopilar información y tienen armadura especial para resistir una consecuencia de detección o engaño.</li><li><strong>MUY VIAJADO</strong> Hablas multitud de idiomas y tienes una educación amplia. Cuando recopilas Información en un lugar extraño o foráneo, toma +1d a tu tirada.</li><li><strong>FANDANGO</strong> Cuando te das al vicio, puedes ajustar el resultado de los dados en 1 o 2 (arriba o abajo). Un aliado que se una a tu vicio puede hacer lo mismo.</li><li><strong>AGUDEZA</strong> Puedes gastar tu armadura especial para resistir una consecuencia de persuasión o sospecha. Cuando resistes con Agallas, toma +1d.</li><li><strong>VÍBORA</strong> Cuando inventas, fabricas o intentas aplicar un veneno o narcótico, toma +1d. Comienzas el juego con una fórmula adicional ya conocida.</li><li><strong>EN BUENAS MANOS</strong> Cuando proporcionas una perspectiva significativa o un consejo sincero, ambos limpiáis 1 Aguante. Todos en tu cuadrilla obtienen +1d a sus tiradas de tratamiento de curación.</li><li><strong>VETERANO</strong> Elige una habilidad especial de otra fuente.</li></ul><h3>Contactos</h3><ul><li>Mitch Cochran, un empresario</li><li>Janet Irsinghausen, una erudita</li><li>Mr. Rosenberg, un comisario</li><li>Joe Sawyer, un granjero</li><li>Ron Maddox, un cirujano</li></ul>",
+    "subtitle": "Una luz empática en un mundo oscuro",
+    "experience_clues": [
+      "Afrontaste un desafío con influencia o empatía.",
+      "Expresaste tus creencias, impulsos, herencia o trasfondo.",
+      "Luchaste con problemas de tu vicio, mutación o estigma durante la sesión."
+    ],
+    "base_skills": {
+      "hunt": [
+        0
+      ],
+      "read": [
+        1
+      ],
+      "survey": [
+        1
+      ],
+      "craft": [
+        0
+      ],
+      "sling": [
+        0
+      ],
+      "prowl": [
+        0
+      ],
+      "brawl": [
+        0
+      ],
+      "disable": [
+        0
+      ],
+      "attune": [
+        0
+      ],
+      "command": [
+        0
+      ],
+      "consort": [
+        1
+      ],
+      "sway": [
+        2
+      ]
+    },
+    "contacts": "<ul><li><strong>Mitch Cochran</strong> — Empresario</li><li><strong>Janet Irsinghausen</strong> — Erudita</li><li><strong>Mr. Rosenberg</strong> — Comisario</li><li><strong>Joe Sawyer</strong> — Granjero</li><li><strong>Ron Maddox</strong> — Cirujano</li></ul>"
+  },
+  "effects": [],
+  "folder": "mdKzmXUhAbEnUzo1",
+  "sort": 1000000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodToqueSutil01"
+}

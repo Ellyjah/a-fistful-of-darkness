@@ -1,0 +1,65 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet item {{itemType}}" autocomplete="off">
+  <header class="sheet-header">
+    <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+    <div class="header-fields">
+      <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'AFOD.Name'}}" /></h1>
+      <span class="item-type-label">{{localize "TYPES.Item.class"}}</span>
+    </div>
+  </header>
+  <section class="sheet-body">
+    <div class="form-group">
+      <label>{{localize "AFOD.Description"}}</label>
+      {{#if isEditable}}
+          <textarea name="system.description" class="notes-textarea">{{system.description}}</textarea>
+        {{else}}
+          <div class="notes-view">{{{enrichedDescription}}}</div>
+        {{/if}}
+    </div>
+    <div class="form-group">
+      <label>{{localize "AFOD.ExpClues"}}</label>
+      <div class="experience-clues">
+        {{#each system.experience_clues}}
+          <div class="exp-clue-row">
+            <span>— {{this}}</span>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label>{{localize "AFOD.BaseSkills"}}</label>
+      <div class="base-skills-grid-3col">
+        {{#each baseSkillsList}}
+          <div class="skill-entry" data-skill="{{this.key}}" data-attr="{{this.attr}}">
+            <label class="skill-entry-label">{{localize this.label}}</label>
+            <input type="number" name="system.base_skills.{{this.key}}.0"
+                   value="{{this.value}}" min="0" max="4" />
+          </div>
+        {{/each}}
+      </div>
+    </div>
+    {{!-- Objetos propios del libreto (solo lectura, provienen del compendio) --}}
+    {{#if playbookItems.length}}
+      <div class="form-group">
+        <label>{{localize "AFOD.PlaybookItems"}}</label>
+        <ul class="playbook-items-list">
+          {{#each playbookItems}}
+            <li class="playbook-item-row">
+              <span class="playbook-item-name">{{this.name}}</span>
+              {{#if this.load}}
+                <span class="playbook-item-load" data-tooltip="{{localize 'AFOD.Load'}}">{{this.load}}</span>
+              {{/if}}
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/if}}
+    <div class="form-group">
+      <label>{{localize "AFOD.Contacts"}}</label>
+      {{#if isEditable}}
+          <textarea name="system.contacts" class="notes-textarea" rows="5">{{system.contacts}}</textarea>
+        {{else}}
+          <div class="notes-view">{{{system.contacts}}}</div>
+        {{/if}}
+    </div>
+  </section>
+</form>

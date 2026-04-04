@@ -1,0 +1,73 @@
+{
+  "_id": "AfodTrueno00001",
+  "name": "El Corazón de Trueno",
+  "type": "class",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Un guerrero totémico nacido de la tierra. El Corazón de Trueno canaliza el poder de su tótem animal para combatir y sobrevivir.</p><h3>Habilidades Especiales</h3><ul><li><strong>GUIADO POR EL TÓTEM</strong> Puedes gastar tu armadura especial para resistir una consecuencia sobrenatural, o para esforzarte en una hazaña de atletismo o caza.</li><li><strong>RECÉPTACULO DEL TÓTEM</strong> Cuando te esfuerzas y abres cuerpo y alma como conducto para tu tótem, elige un beneficio adicional: realizar una hazaña de atletismo o sigilo casi sobrehumana — maniobrar para confundir a tus enemigos haciéndoles atacarse entre sí — sentir a tu presa esté donde esté.</li><li><strong>PROTECTOR DEL PUEBLO</strong> Cuando proteges a un compañero o a tu pueblo, toma +1d a tu tirada de resistencia. Cuando recopilas información para anticipar posibles amenazas, obtienes +1 efecto.</li><li><strong>UN DIABLO CON UNA HOJA</strong> Eres muy efectivo encontrando órganos vitales con tu hoja. Cuando usas Lanzar para arrojar o luchar con una hoja, ganas potencia y puedes hacerlo en absoluto silencio.</li><li><strong>PINTURA DE GUERRA MACABRA</strong> Los enemigos vacilan, dudan o se estremecen cuando les atacas en combate cuerpo a cuerpo. Tienes un aura de amenaza y peligro. Ganas potencia al intentar intimidar.</li><li><strong>SENTIDO TOTÉMICO</strong> Elige un sentido animal acorde a tu tótem. Este sentido se agudiza hasta sensibilidad animal.</li><li><strong>LOBO SOLITARIO</strong> Ganas un disparador de px adicional: Complicaste las cosas al actuar solo. Si tu cuadrilla tiene problemas por esto, también marca px de cuadrilla.</li><li><strong>VETERANO</strong> Elige una habilidad especial de otra fuente.</li></ul><h3>Contactos</h3><ul><li>The Petrified Tree</li><li>Maxwell, un Explorador</li><li>Black Hoof, un Jefe Nativo / Cazador</li><li>Red Horse, un hombre medicina</li><li>Hunter, un Espíritu de la Tierra</li></ul>",
+    "subtitle": "Un guerrero totémico nacido de la tierra",
+    "experience_clues": [
+      "Afrontaste un desafío con atletismo o poder espiritual.",
+      "Expresaste tus creencias, impulsos, herencia o trasfondo.",
+      "Luchaste con problemas de tu vicio, mutación o estigma durante la sesión."
+    ],
+    "base_skills": {
+      "hunt": [
+        1
+      ],
+      "read": [
+        0
+      ],
+      "survey": [
+        0
+      ],
+      "craft": [
+        0
+      ],
+      "sling": [
+        1
+      ],
+      "prowl": [
+        1
+      ],
+      "brawl": [
+        2
+      ],
+      "disable": [
+        0
+      ],
+      "attune": [
+        1
+      ],
+      "command": [
+        0
+      ],
+      "consort": [
+        0
+      ],
+      "sway": [
+        0
+      ]
+    },
+    "contacts": "<ul><li><strong>El Árbol Petrificado</strong> — Espíritu antiguo</li><li><strong>Maxwell</strong> — Explorador</li><li><strong>Pezuña Negra</strong> — Jefe nativo / Cazador</li><li><strong>Caballo Rojo</strong> — Hombre de medicina</li><li><strong>El Cazador</strong> — Espíritu de la tierra</li></ul>"
+  },
+  "effects": [],
+  "folder": "mdKzmXUhAbEnUzo1",
+  "sort": 700000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodTrueno00001"
+}

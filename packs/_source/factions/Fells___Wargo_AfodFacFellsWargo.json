@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacFellsWargo",
+  "name": "Fells & Wargo",
+  "type": "faction",
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "system": {
+    "description": "<p>Similar al Pony Express, todos los carruajes de Fells & Wargo tienen licencia para entregas en territorio nativo y Mudwater. Actualmente una feroz competencia con The Express resulta en varios carruajes emboscados, desaparecidos o perdidos.</p><p>La gente dice que la Thunder Raven Tribe es responsable de esos incidentes con el Pony Express como beneficiario.</p>",
+    "type": "",
+    "tier": 2,
+    "hold": {
+      "value": [
+        1
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Contraatacar al Pony Express",
+    "goal_1_clock_max": 6,
+    "goal_2": "Construir carruaje de Hellstone",
+    "goal_2_clock_max": 10,
+    "goal_clock": 0,
+    "assets": "Flota de carruajes. Licencias de transporte. Mayor capacidad de carga que el Express.",
+    "quirks": "Carruajes emboscados regularmente. Competencia agresiva.",
+    "notables": "Fells y Wargo (dueños)",
+    "allies": "Desconocidos",
+    "enemies": "The Pony Express. Thunder Raven Tribe.",
+    "situation": "Intentando superar al Pony Express. Carruajes desapareciendo en ataques tribales.",
+    "notes": "Reloj 1: +1 Perdición al completarse. Reloj 2: +2 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacFellsWargo",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

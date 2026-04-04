@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbLlave005",
+  "name": "Escuchar Sus Voces",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Toca máquinas para Alternar con ellas y recopilar información a +1 nivel de resultado. Esfuérzate para darles una característica o tarea no prevista.</p>",
+    "class": "La Llave y la Sierra",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbLlave005",
+  "effects": [],
+  "folder": "iF6h0nwbkJAb0XoD"
+}

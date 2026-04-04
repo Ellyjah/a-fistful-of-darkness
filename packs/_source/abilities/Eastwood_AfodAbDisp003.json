@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbDisp003",
+  "name": "Eastwood",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Mira fijamente a alguien antes de un duelo para sembrar la duda; ambos saben que puedes interrumpir lo que haga a continuación. +1d a tu siguiente acción contra esa persona.</p>",
+    "class": "El Disparo",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbDisp003",
+  "effects": [],
+  "folder": "eJ87QxC9eF8JolgP"
+}

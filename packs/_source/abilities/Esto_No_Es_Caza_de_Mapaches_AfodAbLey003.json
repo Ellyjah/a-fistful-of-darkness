@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbLey003",
+  "name": "Esto No Es Caza de Mapaches",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Los cohortes que comandas continúan luchando cuando normalmente se retirarían. Ganan +1 efecto y 1 armadura.</p>",
+    "class": "La Ley",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbLey003",
+  "effects": [],
+  "folder": "Sx8RUbAzmdolW3g5"
+}

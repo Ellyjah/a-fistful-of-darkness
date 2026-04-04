@@ -1,0 +1,73 @@
+{
+  "_id": "AfodElPlan00001",
+  "name": "El Plan",
+  "type": "class",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Un cerebro bien conectado. El Plan siempre tiene un as en la manga y sabe mover los hilos desde las sombras.</p><h3>Habilidades Especiales</h3><ul><li><strong>DIOS ME LIBRE DE LOS AMIGOS</strong> Puedes gastar tu armadura especial para proteger a un compañero, o para esforzarte cuando recopilas información o trabajas en un proyecto a largo plazo.</li><li><strong>PREVISIÓN</strong> Dos veces por misión puedes asistir a un compañero sin pagar Aguante. Cuando te quedas sin Aguante, en lugar de un Estigma puedes elegir volver con 1 Aguante.</li><li><strong>PLANIFICAR LO ES TODO</strong> Debido a tu planificación cuidadosa, durante el descanso puedes darte a ti mismo o a otro miembro de la cuadrilla +1 acción de descanso.</li><li><strong>ASUNTO DE FAMILIA</strong> Durante el descanso, obtienes +1 nivel de resultado cuando adquieres un recurso o reduces perdición. Puedes elegir un primo lejano como recurso que llega en tren.</li><li><strong>TEJER LA TELA</strong> Ganas +1d a Alternar cuando recopilas información sobre un objetivo para una misión. Obtienes +1d a la tirada de entrada en escena para esa operación.</li><li><strong>VIEJOS AMIGOS EN TODAS PARTES</strong> Cuando llegas a un nuevo pueblo o asentamiento, nombra a un Amigo, Conexión, Proveedor de Vicio o Enemigo que tengas aquí.</li><li><strong>DEDOS EN CADA PASTEL</strong> Al final de cada fase de descanso, ganas +2 Indulgencia.</li><li><strong>VETERANO</strong> Elige una habilidad especial de otra fuente.</li></ul><h3>Contactos</h3><ul><li>John P. Little, un Barón Ganadero</li><li>The Dutch, un Ejecutor</li><li>Pepper, un Amuleto de la Suerte</li><li>Capitán Hodgens, Fort Hubert</li><li>Horatio Freeman, un Sheriff</li><li>Sylvester Stubbs, un Funcionario</li></ul>",
+    "subtitle": "Un cerebro bien conectado",
+    "experience_clues": [
+      "Afrontaste un desafío con cálculo o negociación.",
+      "Expresaste tus creencias, impulsos, herencia o trasfondo.",
+      "Luchaste con problemas de tu vicio, mutación o estigma durante la sesión."
+    ],
+    "base_skills": {
+      "hunt": [
+        0
+      ],
+      "read": [
+        1
+      ],
+      "survey": [
+        1
+      ],
+      "craft": [
+        0
+      ],
+      "sling": [
+        0
+      ],
+      "prowl": [
+        0
+      ],
+      "brawl": [
+        0
+      ],
+      "disable": [
+        0
+      ],
+      "attune": [
+        0
+      ],
+      "command": [
+        0
+      ],
+      "consort": [
+        2
+      ],
+      "sway": [
+        1
+      ]
+    },
+    "contacts": "<ul><li><strong>John P. Little</strong> — Magnate ganadero</li><li><strong>\"El Holandés\"</strong> — Ejecutor</li><li><strong>Pimienta</strong> — Mascota de la suerte</li><li><strong>Capitán Hodgens</strong> — Fort Hubert</li><li><strong>Horatio Freeman</strong> — Sheriff</li><li><strong>Sylvester Stubbs</strong> — Funcionario</li></ul>"
+  },
+  "effects": [],
+  "folder": "mdKzmXUhAbEnUzo1",
+  "sort": 900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodElPlan00001"
+}

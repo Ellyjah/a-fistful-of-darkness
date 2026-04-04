@@ -1,0 +1,24 @@
+{
+  "_id": "0nmfuf8DQF4viRib",
+  "name": "Europea",
+  "type": "heritage",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>Tu familia emigró desde Europa, trayendo consigo idiomas, costumbres y ambiciones. En el Oeste, la herencia europea puede abrir puertas o cerrarlas según el apellido y el acento.</p><p><em>Pista de XP: Expresaste tu herencia o trasfondo europeo durante la sesión.</em></p>"
+  },
+  "folder": "obsxk7MVOBexe5Kv",
+  "sort": 200,
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774931069946,
+    "modifiedTime": 1774931069946,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!0nmfuf8DQF4viRib",
+  "effects": []
+}

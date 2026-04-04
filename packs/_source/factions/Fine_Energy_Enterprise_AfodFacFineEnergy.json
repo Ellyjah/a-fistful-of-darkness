@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacFineEnergy",
+  "name": "Fine Energy Enterprise",
+  "type": "faction",
+  "img": "icons/svg/lightning.svg",
+  "system": {
+    "description": "<p>El segundo mayor comprador de Hellstone en Mudwater — dirigida por John Cusack, hermano de Philomena Standish — intentando proporcionar lo que ellos creen que es energía limpia para nueva tecnología.</p><p>Muy curiosos sobre el plan de I&MG sobre una Refinería de Hellstone y más que dispuestos a pagar por esa información. Invirtiendo en nuevas concesiones y sabotaje.</p>",
+    "type": "",
+    "tier": 3,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Subir de Rango",
+    "goal_1_clock_max": 8,
+    "goal_2": "Encontrar refinería de Hellstone",
+    "goal_2_clock_max": 6,
+    "goal_clock": 0,
+    "assets": "Capital de inversión. Tecnología de Hellstone. Acceso a información familiar (Cusack/Standish).",
+    "quirks": "Sabotaje activo de competidores. Cree en energía limpia de Hellstone.",
+    "notables": "John Cusack (director, hermano de Philomena Standish)",
+    "allies": "Desconocidos",
+    "enemies": "Ironware & Metal Goods (competencia directa y espionaje)",
+    "situation": "Segunda empresa en importancia, activamente saboteando a I&MG para obtener ventaja.",
+    "notes": "Reloj 1: +1 Perdición al completarse. Reloj 2: +1 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacFineEnergy",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

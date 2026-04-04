@@ -1,0 +1,34 @@
+{
+  "_id": "LaLeyPardepistol",
+  "name": "Par de pistolas refinadas",
+  "type": "item",
+  "img": "icons/weapons/guns/gun-pistol-brown.webp",
+  "system": {
+    "description": "<p>Dos revólveres de servicio en perfectas condiciones. La herramienta del oficio.</p>",
+    "class": "La Ley",
+    "load": 1,
+    "uses": 1,
+    "additional_info": "",
+    "equipped": false,
+    "num_available": 1
+  },
+  "effects": [],
+  "folder": "4V6FoxI5G1g10DMV",
+  "sort": 2900000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!LaLeyPardepistol"
+}

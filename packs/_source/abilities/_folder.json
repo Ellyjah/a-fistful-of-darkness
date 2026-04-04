@@ -1,0 +1,22 @@
+{
+  "_id": "wN8FuxwzAPoX2byx",
+  "name": "Habilidades",
+  "type": "Item",
+  "description": "",
+  "folder": null,
+  "sorting": "a",
+  "sort": 0,
+  "color": "#7a3b1e",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774664163071,
+    "modifiedTime": 1774664163071,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!wN8FuxwzAPoX2byx"
+}

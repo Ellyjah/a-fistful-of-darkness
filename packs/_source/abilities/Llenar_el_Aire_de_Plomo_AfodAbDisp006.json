@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbDisp006",
+  "name": "Llenar el Aire de Plomo",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Gasta munición especial para desatar un fuego de supresión rápido o atacar a un grupo con +1 escala.</p>",
+    "class": "El Disparo",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbDisp006",
+  "effects": [],
+  "folder": "eJ87QxC9eF8JolgP"
+}

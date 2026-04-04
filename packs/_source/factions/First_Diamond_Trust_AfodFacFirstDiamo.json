@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacFirstDiamo",
+  "name": "First Diamond Trust",
+  "type": "faction",
+  "img": "icons/svg/coins.svg",
+  "system": {
+    "description": "<p>Tocando el segundo violín como banco local, The Trust queda en segundo plano financiando los negocios secundarios como minas de diamantes u oro. Es solo cuestión de tiempo antes de que el Director Arthur Peabody recurra a su turbio pasado y algunos métodos poco convencionales para perturbar los lazos familiares entre la ciudad y su competencia.</p>",
+    "type": "",
+    "tier": 2,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Robar a la Union",
+    "goal_1_clock_max": 8,
+    "goal_2": "Fuga de Sam Peabody",
+    "goal_2_clock_max": 6,
+    "goal_clock": 0,
+    "assets": "Banco secundario. Financiación de minas de diamantes y oro. Pasado turbio aprovechable.",
+    "quirks": "Dispuesto a métodos poco convencionales. Intentando romper el monopolio de New Horizon.",
+    "notables": "Arthur Peabody (director). Sam Peabody (familiar encarcelado).",
+    "allies": "Desconocidos",
+    "enemies": "New Horizon Credit Union (competencia dominante)",
+    "situation": "Banco menor buscando ventaja desesperadamente. Sam Peabody en prisión es palanca clave.",
+    "notes": "Reloj 1: +1 Perdición al completarse. Reloj 2: -1 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacFirstDiamo",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

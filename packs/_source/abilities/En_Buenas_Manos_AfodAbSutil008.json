@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbSutil008",
+  "name": "En Buenas Manos",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Cuando ofreces perspectiva significativa o consejo sincero, ambos limpian 1 Aguante. Todos los miembros de la cuadrilla +1d a tiradas de curación.</p>",
+    "class": "El Toque Sutil",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbSutil008",
+  "effects": [],
+  "folder": "1eFc5CvghmDiH8h4"
+}

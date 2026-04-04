@@ -1,0 +1,114 @@
+{
+  "name": "Carroñeros de Hellstone",
+  "type": "crew_type",
+  "img": "icons/svg/castle.svg",
+  "system": {
+    "activation": {
+      "type": "",
+      "cost": 0,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 0,
+      "max": 0,
+      "per": null
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "description": "<p>Buscadores, mineros y comerciantes de Hellstone. Los Carroñeros conocen las minas mejor que nadie y saben cómo sobrevivir bajo tierra y sacar el máximo partido a la piedra infernal sin (demasiada) perdición.</p><h3>Habilidades Especiales de Cuadrilla</h3><ul><li><strong>HEIGH-HO</strong> Cada PJ puede añadir +1 en una acción de Sintonizar, Sabotear o Acechar (máximo 3).</li><li><strong>TRANSPORTISTA</strong> Cuando ejecutáis un Plan de Viaje para iniciar vuestra misión o Rapiña de Hellstone, tomáis +1d a la tirada de Entrada en Escena.</li><li><strong>EXCAVAR PROFUNDO</strong> Nadie puede estafaros. Cuando adquirís equipo de minería o explosivos, obtenéis +1 nivel de resultado en vuestra tirada.</li><li><strong>PALANCA</strong> Vuestra cuadrilla provee materiales encontrados a otras facciones. Vuestro éxito les beneficia. Siempre que ganéis Reputación, ganáis +1 Reputación adicional. ¿Qué facciones? ¿Quién está molesto con el acuerdo? ¿Qué nivel de calidad de qué lugar queda afectado?</li><li><strong>ACOSTUMBRADOS A LA VIDA EXTRAÑA</strong> Obtenéis +1d a las tiradas de Resistencia contra amenazas sobrenaturales, incluido excavar demasiado profundo. Obtenéis +1d a las tiradas de Curación cuando sufrís daño sobrenatural.</li><li><strong>CONFIANZA INFERNAL INJUSTIFICADA</strong> Nadie puede con vuestra cuadrilla mientras tengáis Hellstone cerca (al menos eso sentís). Una vez por misión podéis recuperar 1 Tesón si realizáis una Tirada de Mutación.</li><li><strong>PATRÓN</strong> Cuando avanzáis vuestro Rango, cuesta la mitad de Monedas. ¿Quién es vuestro patrón? ¿Por qué os ayuda?</li><li><strong>VETERANO</strong> Elegid una habilidad especial de otra cuadrilla.</li></ul><h3>Contactos</h3><ul><li>Philomena Standish, directora de Ironware and Metal Goods</li><li>Un ex-minero que conoce un filón secreto</li><li>Ignaz Toodlebrock, inventor de dispositivos de Hellstone</li><li>Un oficial de la Oficina de Ensayo local</li><li>Un comerciante del mercado negro de Hellstone</li></ul>",
+    "experience_clues": "Al final de cada sesión marca 1 px de cuadrilla por:\n- Adquiristeis o procesasteis Hellstone con éxito.\n- Defendisteis o ampliásteis una Concesión de Hellstone.\n- Un miembro avanzó o resistió una mutación por el bien del grupo.",
+    "modus_options": [
+      "Rapiña (Scavenge, búsqueda y recuperación de Hellstone)",
+      "Minería (extracción directa en minas)",
+      "Suministro (provisión de materiales a facciones)",
+      "Venta (comercio y distribución de Hellstone)"
+    ],
+    "contacts": "<ul>\n    <li><strong>Bill 'Scar' Morgan</strong>, juez</li>\n    <li><strong>'Railroad' Gilliam</strong>, alguacil</li>\n    <li><strong>Sweet Dave</strong>, pianista</li>\n    <li><strong>Grover McIntyre</strong>, dueño de la ferretería</li>\n    <li><strong>Ling Lee</strong>, coleccionista</li>\n    <li><strong>Old Man Bruford</strong>, dueño de la tasca</li>\n  </ul>",
+    "achievements": [
+      {
+        "name": "LA RED ENREDADA"
+      },
+      {
+        "name": "LA CACERÍA SALVAJE"
+      },
+      {
+        "name": "SOPLONES DEL BARRO"
+      },
+      {
+        "name": "PASO SEGURO"
+      },
+      {
+        "name": "ENTERRADOR"
+      },
+      {
+        "name": "SOMBRAS MORDEDORAS"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "EQUILIBRIO"
+      },
+      {
+        "name": "ARMA SAGRADA"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "SIERVO DE LA MUERTE"
+      },
+      {
+        "name": "ARMA PROFANA"
+      },
+      {
+        "name": "ALIJO SECRETO"
+      },
+      {
+        "name": "CONCESIÓN DE HELLSTONE"
+      },
+      {
+        "name": "BALA PERDIDA"
+      }
+    ]
+  },
+  "effects": [],
+  "folder": "fqnmpYNEZM7GFKpA",
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Compendium.a-fistful-of-darkness.crew-types.Item.AfodCrewCarron01",
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774615631899,
+    "modifiedTime": 1774615631899,
+    "lastModifiedBy": "ejITwgjzWo4BaC5z"
+  },
+  "ownership": {
+    "default": 0,
+    "ejITwgjzWo4BaC5z": 3
+  },
+  "_id": "yDHC1bXuznjS1S1f",
+  "sort": 0,
+  "_key": "!items!yDHC1bXuznjS1S1f"
+}

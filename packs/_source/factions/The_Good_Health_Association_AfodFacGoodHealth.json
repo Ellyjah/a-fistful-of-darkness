@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacGoodHealth",
+  "name": "The Good Health Association",
+  "type": "faction",
+  "img": "icons/svg/eye.svg",
+  "system": {
+    "description": "<p>Organización privada discreta con una sólida membresía entre los ciudadanos prestigiosos de la ciudad. El objetivo público es el avance del bien común.</p><p>Solo el círculo interno — que se autodenomina los Knights of Solomon — conoce el verdadero objetivo. Algunos rumores sobre lugares secretos y rituales en la naturaleza, propósito desconocido. Invirtiendo en investigación nueva, extraña y poco convencional.</p>",
+    "type": "",
+    "tier": 2,
+    "hold": {
+      "value": [
+        1
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Realizar ritual (Repetir)",
+    "goal_1_clock_max": 6,
+    "goal_2": "Capturar un Demonio",
+    "goal_2_clock_max": 8,
+    "goal_clock": 0,
+    "assets": "Membresía influyente. Recursos económicos. Conocimiento oculto. Red secreta.",
+    "quirks": "Agenda oculta desconocida. Fachada de beneficencia pública. Círculo interno hermético.",
+    "notables": "Miembros del círculo interno desconocidos",
+    "allies": "New Horizon Credit Union (miembros comunes)",
+    "enemies": "Lord Dorian Lockwood-Tate (enfrentamiento reciente). Inquisition (sospechas mutuas).",
+    "situation": "Operando en las sombras. Su verdadero propósito es un misterio activo para el DJ.",
+    "notes": "Reloj 1 (Repetir): +1 Perdición al completarse. Reloj 2: +1 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacGoodHealth",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

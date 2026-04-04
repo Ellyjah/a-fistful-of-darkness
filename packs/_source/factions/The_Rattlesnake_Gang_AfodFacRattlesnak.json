@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacRattlesnak",
+  "name": "The Rattlesnake Gang",
+  "type": "faction",
+  "img": "icons/svg/skull.svg",
+  "system": {
+    "description": "<p>El círculo interno de la banda consiste en la familia Burns, encabezada por Edwina Burns desde que su marido Rufus murió hace aproximadamente un año. Edwina está convencida de que su marido volverá, no solo pronto sino también vivo.</p><p>Eso puede explicar por qué siempre va acompañada de un ataúd en el que deberían descansar los restos mortales de Rufus. El medio principal de la banda para ganar dinero son los robos.</p>",
+    "type": "",
+    "tier": 1,
+    "hold": {
+      "value": [
+        1
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        3
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Subir de Rango",
+    "goal_1_clock_max": 8,
+    "goal_2": "Realizar ritual por Rufus",
+    "goal_2_clock_max": 8,
+    "goal_clock": 0,
+    "assets": "Banda de forajidos leal. Especialistas en robos.",
+    "quirks": "Obsesión de Edwina con resucitar a Rufus. Ataúd siempre presente.",
+    "notables": "Edwina Burns (líder), Rufus Burns (fallecido/ataúd)",
+    "allies": "Desconocidos",
+    "enemies": "Las fuerzas del orden",
+    "situation": "Banda en crecimiento. Edwina buscando activamente forma de resucitar a su marido.",
+    "notes": "Reloj 1: +1 Perdición al completarse. Reloj 2: +2 Perdición al completarse."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacRattlesnak",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

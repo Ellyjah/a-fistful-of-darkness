@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbPlan006",
+  "name": "Viejos Amigos en Todas Partes",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Al llegar a una nueva ciudad, nombra un Amigo, Contacto, Proveedor de Vicio o Enemigo que tengas allí. Cuenta la historia de cómo os conocisteis.</p>",
+    "class": "El Plan",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbPlan006",
+  "effects": [],
+  "folder": "nCv89eHovuRoDoVg"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbLey004",
+  "name": "Pregunta Qué Puede Hacer Tu País Por Ti",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Tienes acceso a recursos de las fuerzas del orden. +1d para adquirir activos durante el tiempo libre. Todos los recursos tienen calidad mínima 1.</p>",
+    "class": "La Ley",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbLey004",
+  "effects": [],
+  "folder": "Sx8RUbAzmdolW3g5"
+}

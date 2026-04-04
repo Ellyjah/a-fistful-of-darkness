@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbApare006",
+  "name": "Como Johan",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Gasta 1 Pasión para dispersarte en nube de vapor. Flotas y vuelas sin fatiga. Fluyes lentamente por pequeñas aberturas. +1 Pasión para enfriar el área y aterrorizar a los vivos.</p>",
+    "class": "El Aparecido",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbApare006",
+  "effects": [],
+  "folder": "Wx2nmL6XAFOVkfYF"
+}

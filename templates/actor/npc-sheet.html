@@ -1,0 +1,23 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet actor npc" autocomplete="off">
+  <header class="sheet-header">
+    <img class="portrait" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    <div class="header-fields">
+      <h1><input name="name" type="text" value="{{actor.name}}" placeholder="Nombre del PNJ" /></h1>
+      <input type="text" name="system.description_short" value="{{system.description_short}}" placeholder="Descripción corta..." />
+    </div>
+  </header>
+  <section class="sheet-body">
+    <div class="form-group">
+      <label>{{localize "AFOD.AssociatedFaction"}}</label>
+      <input type="text" name="system.associated_faction" value="{{system.associated_faction}}" />
+    </div>
+    <div class="form-group">
+      <label>{{localize "AFOD.Description"}}</label>
+      <textarea name="system.description" class="notes-textarea" rows="8">{{system.description}}</textarea>
+    </div>
+    <div class="form-group">
+      <label>{{localize "AFOD.Notes"}}</label>
+      <textarea name="system.notes">{{system.notes}}</textarea>
+    </div>
+  </section>
+</form>

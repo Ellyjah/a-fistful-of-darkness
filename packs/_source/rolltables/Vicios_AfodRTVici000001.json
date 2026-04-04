@@ -1,0 +1,120 @@
+{
+  "_id": "AfodRTVici000001",
+  "name": "Vicios",
+  "img": "icons/consumables/potions/bottle-corked-empty.webp",
+  "description": "",
+  "results": [
+    {
+      "_id": "AfodRRVici000001",
+      "type": 0,
+      "text": "Fe — Dedicado a un poder invisible, ser espiritual, dios, ancestro, etc.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRVici000002",
+      "type": 0,
+      "text": "Juego — Ansias los juegos de azar, póquer, carreras, peleas de gallos, etc.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRVici000003",
+      "type": 0,
+      "text": "Lujo — Exhibiciones costosas y/u ostentosas de opulencia",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRVici000004",
+      "type": 0,
+      "text": "Obligación — Devoto a una familia, causa, caridad, etc.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRVici000005",
+      "type": 0,
+      "text": "Placer — Gratificación de amantes, comida, bebida, drogas, arte, teatro, etc.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRVici000006",
+      "type": 0,
+      "text": "Estupor — Buscas el olvido en drogas, alcohol, peleas de salón, etc.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "flags": {}
+    },
+    {
+      "_id": "AfodRRVici000007",
+      "type": 0,
+      "text": "Extraño — Experimentas con esencias extrañas, tratas con espíritus o demonios, rituales bizarros, etc.",
+      "img": "icons/svg/d20-black.svg",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "flags": {}
+    }
+  ],
+  "formula": "1d7",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "AfodFldPers00001",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_key": "!tables!AfodRTVici000001",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774957688762,
+    "modifiedTime": 1774957688762,
+    "lastModifiedBy": null
+  }
+}

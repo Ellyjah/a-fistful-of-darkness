@@ -1,0 +1,24 @@
+{
+  "_id": "AfodFldEncu00001",
+  "name": "Encuentros",
+  "type": "RollTable",
+  "description": "",
+  "folder": "AfodFldRoot00001",
+  "sort": 0,
+  "sorting": "a",
+  "color": "#1c3c5c",
+  "flags": {},
+  "img": "icons/svg/sword.svg",
+  "_key": "!folders!AfodFldEncu00001",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774957688762,
+    "modifiedTime": 1774957688762,
+    "lastModifiedBy": null
+  }
+}

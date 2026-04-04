@@ -1,0 +1,26 @@
+{
+  "_id": "AfodCAbTribu005",
+  "name": "Cazadores de Demonios",
+  "type": "crew_ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>+1 efecto contra demonios y criaturas del Más Allá Ardiente. Una vez por misión, niega el escudo sobrenatural de un enemigo.</p>",
+    "class": "Tribu",
+    "price": 1,
+    "purchased": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodCAbTribu005",
+  "effects": [],
+  "folder": "Vo7mP8xe5q32ZkJC"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbPlan002",
+  "name": "Previsión",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Dos veces por misión puedes ayudar a un aliado sin gastar Aguante. Cuando te quedas sin Aguante, en lugar de tomar un Estigma, puedes volver con 1 Aguante (explica tu preparación).</p>",
+    "class": "El Plan",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbPlan002",
+  "effects": [],
+  "folder": "nCv89eHovuRoDoVg"
+}

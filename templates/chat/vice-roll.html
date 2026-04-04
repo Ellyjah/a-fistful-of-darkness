@@ -1,0 +1,48 @@
+<div class="dice-tooltip afod-die-tooltip">
+
+  <div class="chat-label label-stripe-chat">{{localize "AFOD.IndulgeViceLabel"}}</div>
+  {{#if zeromode}}
+    <div class="chat-label-small label-stripe-chat-small">0d</div>
+  {{/if}}
+
+  {{!-- Éxito: limpias Aguante --}}
+  {{#if (eq roll_status "success")}}
+    <div class="die success">{{localize "AFOD.RollSuccess"}}</div>
+    <div class="description">
+      <p>{{localize "AFOD.RollViceSuccess"}}: <strong>+{{clear_grit}} {{localize "AFOD.Grit"}}</strong></p>
+    </div>
+  {{/if}}
+
+  {{!-- Fracaso: ya estabas al máximo, te "sobre-indulgas" --}}
+  {{#if (eq roll_status "failure")}}
+    <div class="die failure">{{localize "AFOD.RollFailure"}}</div>
+    <div class="description">
+      <p>{{localize "AFOD.RollViceOverindulge"}}: <strong>+{{clear_grit}} {{localize "AFOD.Grit"}}</strong></p>
+    </div>
+  {{/if}}
+
+  {{#if note}}
+    <em class="roll-note">{{note}}</em>
+  {{/if}}
+
+  <ol class="dice-rolls">
+    {{#each this.rolls}}
+      {{#if this.result}}
+        <li class="roll die d6"
+          {{#if (eq this.result 6)}} style="color: #5a7a4a; font-weight:bold;"
+          {{else if (lteq this.result 3)}} style="color: #8b2c1a;"
+          {{/if}}>
+          {{this.result}}
+        </li>
+      {{else}}
+        <li class="roll die d6">{{this.roll}}</li>
+      {{/if}}
+    {{/each}}
+    {{#if @root.method}}
+      {{#unless (eq @root.method.type "mersenne")}}
+        <li class="roll method" data-tooltip="{{localize @root.method.label}}">{{{@root.method.icon}}}</li>
+      {{/unless}}
+    {{/if}}
+  </ol>
+
+</div>

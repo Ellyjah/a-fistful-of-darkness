@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbSutil001",
+  "name": "Milagros de Feriante",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Ayuda o participa en una acción de grupo con alguien; puede ignorar una penalización por daño.</p>",
+    "class": "El Toque Sutil",
+    "price": 1,
+    "purchased": false,
+    "class_default": true
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbSutil001",
+  "effects": [],
+  "folder": "1eFc5CvghmDiH8h4"
+}

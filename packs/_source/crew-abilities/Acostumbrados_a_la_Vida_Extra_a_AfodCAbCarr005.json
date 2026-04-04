@@ -1,0 +1,26 @@
+{
+  "_id": "AfodCAbCarr005",
+  "name": "Acostumbrados a la Vida Extraña",
+  "type": "crew_ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Los miembros de la cuadrilla reducen las consecuencias de mutación en 1 nivel. +1d a tiradas de curación relacionadas con Hellstone.</p>",
+    "class": "Carroñeros de Hellstone",
+    "price": 1,
+    "purchased": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodCAbCarr005",
+  "effects": [],
+  "folder": "LAFSZcT03Y9wBYV8"
+}

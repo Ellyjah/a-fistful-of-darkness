@@ -1,0 +1,22 @@
+{
+  "_id": "Wx2nmL6XAFOVkfYF",
+  "name": "El Aparecido",
+  "type": "Item",
+  "description": "",
+  "folder": "wN8FuxwzAPoX2byx",
+  "sorting": "a",
+  "sort": 0,
+  "color": "#2d5c6e",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774929356053,
+    "modifiedTime": 1774929356053,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!Wx2nmL6XAFOVkfYF"
+}

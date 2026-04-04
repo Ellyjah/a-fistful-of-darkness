@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacTheTwins1",
+  "name": "The Twins",
+  "type": "faction",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Horatio y Ulysses Jones escaparon de la prisión estatal recientemente y son recién llegados al pueblo. A pesar de su corta presencia ya han construido cierta influencia real debido a sus métodos muy agresivos.</p><p>Los rumores sobre ellos siendo una banda con obligación profana y deuda en el infierno seguramente están exagerados.</p>",
+    "type": "",
+    "tier": 1,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        3
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Obligación de alimentación (Repetir)",
+    "goal_1_clock_max": 6,
+    "goal_2": "Destruir la corona",
+    "goal_2_clock_max": 10,
+    "goal_clock": 0,
+    "assets": "Violencia directa. Llegada reciente con agenda desconocida.",
+    "quirks": "Métodos extremadamente agresivos. Posible deuda sobrenatural.",
+    "notables": "Horatio Jones, Ulysses Jones (gemelos, ex-presos)",
+    "allies": "Desconocidos",
+    "enemies": "Las fuerzas del orden",
+    "situation": "Recién llegados, construyendo influencia rápidamente mediante violencia.",
+    "notes": "Reloj 1 (Repetir): +2 Perdición al completarse. Reloj 2: +4 Perdición al completarse. ADVERTENCIA: reloj 2 es señal de amenaza apocalíptica."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacTheTwins1",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

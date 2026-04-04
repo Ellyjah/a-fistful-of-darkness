@@ -1,0 +1,22 @@
+{
+  "_id": "0J0b4TadCRCxGRUh",
+  "name": "Cuadrilla de Forajidos",
+  "type": "Item",
+  "description": "",
+  "folder": "cvy9IzGJMTuv8D0z",
+  "sorting": "a",
+  "sort": 200,
+  "color": "#5c1c3d",
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774929356053,
+    "modifiedTime": 1774929356053,
+    "lastModifiedBy": null
+  },
+  "_key": "!folders!0J0b4TadCRCxGRUh"
+}

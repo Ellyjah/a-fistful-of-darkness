@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacSouthernRef",
+  "name": "Southern Refugees",
+  "type": "faction",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Muchas familias intentando tener una vida mejor aquí que abajo en el Sur. Poca suerte con todos esos demonios y los vecinos del pueblo mirándolos con suspicacia. Muy religiosos y supersticiosos.</p><p>A menudo divididos sobre lo correcto y lo incorrecto, mucha charla y esfuerzos en solitario por personas o familias individuales.</p>",
+    "type": "",
+    "tier": 0,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        5
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Establecer líder respetado",
+    "goal_1_clock_max": 12,
+    "goal_2": "Subir de Rango",
+    "goal_2_clock_max": 8,
+    "goal_clock": 0,
+    "assets": "Números. Fe y comunidad. Conocimiento cultural del Sur. Superstición práctica.",
+    "quirks": "Muy religiosos y supersticiosos. Fragmentados: sin liderazgo unificado. Mirando con suspicacia por el pueblo.",
+    "notables": "Ningún líder establecido aún",
+    "allies": "First Church of Saint Michael. Miner's Union (intereses comunes).",
+    "enemies": "Prejuicio del pueblo. Demonios y amenazas sobrenaturales frecuentes.",
+    "situation": "Comunidad vulnerable buscando establecerse. Si encuentran un líder fuerte, podrían convertirse en fuerza política significativa.",
+    "notes": "Reloj 1: -1 Perdición al completarse. Reloj 2: -1 Perdición al completarse. Única facción con ambos relojes reduciendo la Perdición."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacSouthernRef",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

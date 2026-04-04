@@ -1,0 +1,26 @@
+{
+  "_id": "AfodCAbTribu002",
+  "name": "Hacia el Más Allá Ardiente",
+  "type": "crew_ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>La cuadrilla puede Sintonizar con el Más Allá Ardiente sin riesgo de mutación la primera vez por misión. +1d a rituales chamánicos.</p>",
+    "class": "Tribu",
+    "price": 1,
+    "purchased": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodCAbTribu002",
+  "effects": [],
+  "folder": "Vo7mP8xe5q32ZkJC"
+}

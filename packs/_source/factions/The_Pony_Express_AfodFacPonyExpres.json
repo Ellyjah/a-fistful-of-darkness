@@ -1,0 +1,52 @@
+{
+  "_id": "AfodFacPonyExpres",
+  "name": "The Pony Express",
+  "type": "faction",
+  "img": "icons/environment/creatures/horse-brown.webp",
+  "system": {
+    "description": "<p>The Express tiene licencia para entregas en el territorio nativo y Mudwater. Últimamente bajo mucha presión del competidor Fells & Wargo, porque un jinete solitario solo puede transportar una pequeña cantidad de Hellstone a la vez.</p><p>Suelen ser mucho más rápidos, si el jinete no desaparece o muere por mutación u otra causa.</p>",
+    "type": "",
+    "tier": 2,
+    "hold": {
+      "value": [
+        0
+      ],
+      "max": 2,
+      "max_default": 2
+    },
+    "status": {
+      "value": [
+        4
+      ],
+      "max": 7,
+      "max_default": 7
+    },
+    "goal_1": "Construir dispositivo anti-mutación",
+    "goal_1_clock_max": 8,
+    "goal_2": "Subir de Rango",
+    "goal_2_clock_max": 10,
+    "goal_clock": 0,
+    "assets": "Red de entregas licenciada. Velocidad. Acceso a territorio nativo.",
+    "quirks": "Jinetes individuales vulnerables. Pérdidas frecuentes por mutación.",
+    "notables": "Dirección desconocida",
+    "allies": "Desconocidos",
+    "enemies": "Fells & Wargo (competencia feroz). Thunder Raven Tribe (responsable de ataques).",
+    "situation": "Empresa bajo presión. Sus jinetes son blanco frecuente. Necesitan solución anti-mutación urgentemente.",
+    "notes": "Reloj 1: +1 Perdición al completarse. Reloj 2: +/- Perdición al completarse (depende del método)."
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!actors!AfodFacPonyExpres",
+  "items": [],
+  "effects": [],
+  "folder": "lQvIjonEN8tszIxS"
+}

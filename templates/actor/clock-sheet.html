@@ -1,0 +1,22 @@
+<form class="{{cssClass}} a-fistful-of-darkness sheet actor clock" autocomplete="off">
+  <header class="sheet-header">
+    <h1><input name="name" type="text" value="{{actor.name}}" placeholder="Nombre del Reloj" /></h1>
+  </header>
+  <section class="sheet-body clock-body">
+    <div class="form-group">
+      <label>{{localize "AFOD.ClockOwner"}}</label>
+      <input type="text" name="system.owner" value="{{system.owner}}" />
+    </div>
+    <div class="form-group">
+      <label>{{localize "AFOD.ClockType"}}</label>
+      <select name="system.type">
+        {{#each clockSizes}}
+          <option value="{{this}}" {{#if (eqStr this ../system.type)}}selected{{/if}}>{{this}}</option>
+        {{/each}}
+      </select>
+    </div>
+    <div class="clock-display">
+      {{{afod-clock-color "system.value" system.type "black" system.value actor._id}}}
+    </div>
+  </section>
+</form>

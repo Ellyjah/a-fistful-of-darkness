@@ -1,0 +1,73 @@
+{
+  "_id": "AfodExplorador001",
+  "name": "El Explorador",
+  "type": "class",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "<p>Un rastreador sigiloso y cazador. El Explorador sobrevive en las tierras salvajes y localiza cualquier presa.</p><h3>Habilidades Especiales</h3><ul><li><strong>MÁS OSCURO QUE LAS SOMBRAS</strong> Puedes gastar tu armadura especial para resistir una consecuencia de detección, o para esforzarte para una hazaña de caza o sigilo.</li><li><strong>CAZADOR SILENCIOSO</strong> Cuando recopilas información para localizar un objetivo, obtienes +1 efecto. Cuando te escondes en una posición preparada o usas camuflaje, obtienes +1d a tiradas para evitar detección.</li><li><strong>SUPERVIVIENTE</strong> Por experiencia dura o entrenamiento especializado, puedes subsistir con lo que cualquier entorno proporcione. Obtienes +1 casilla de Aguante.</li><li><strong>APRENDÍ MI OFICIO DEL MEJOR</strong> Cuando atacas desde un escondite o activas una trampa, obtienes +1d.</li><li><strong>ERES MI PRESA</strong> Puedes oler su sangre. Cuando cazas un objetivo que has rastreado o herido previamente, ganas +1 nivel de efecto. Cuando recopilas información sobre una debilidad, lo peor que obtienes siempre son buenos detalles.</li><li><strong>COMO UN HERMANO</strong> Explica cómo tu montura es útil en lo que intentas lograr y gana +1 nivel de efecto o +1d. Tu montura siempre conoce el camino a casa.</li><li><strong>VER OTRO DÍA</strong> Ganas un disparador de px adicional: Dejaste escapar a tu presa porque merecía ver otro día. Si tu cuadrilla tiene problemas por esto, también marca px de cuadrilla.</li><li><strong>ESCUCHAR LA TIERRA</strong> Fuera de la civilización siempre sabes dónde estás y cómo cuidar de ti y tu montura. Puedes sentir un cambio de clima con antelación.</li><li><strong>VETERANO</strong> Elige una habilidad especial de otra fuente.</li></ul><h3>Contactos</h3><ul><li>Sherman Townsend, un Dueño de Tienda</li><li>He-who-talks, un Espíritu libre</li><li>Small-Fox-Hunting, un Tribal</li><li>Bullettooth Jackson, un Ranger</li><li>Trouble, una Chica o Chico</li></ul>",
+    "subtitle": "Un rastreador sigiloso y cazador",
+    "experience_clues": [
+      "Afrontaste un desafío con rastreo o sigilo.",
+      "Expresaste tus creencias, impulsos, herencia o trasfondo.",
+      "Luchaste con problemas de tu vicio, mutación o estigma durante la sesión."
+    ],
+    "base_skills": {
+      "hunt": [
+        1
+      ],
+      "read": [
+        0
+      ],
+      "survey": [
+        1
+      ],
+      "craft": [
+        0
+      ],
+      "sling": [
+        0
+      ],
+      "prowl": [
+        2
+      ],
+      "brawl": [
+        0
+      ],
+      "disable": [
+        1
+      ],
+      "attune": [
+        0
+      ],
+      "command": [
+        0
+      ],
+      "consort": [
+        0
+      ],
+      "sway": [
+        0
+      ]
+    },
+    "contacts": "<ul><li><strong>Sherman Townsend</strong> — Dueño de tienda</li><li><strong>El-que-habla</strong> — Espíritu libre</li><li><strong>Pequeña-Zorra-Cazando</strong> — Guerrero tribal</li><li><strong>\"Diente de Bala\" Jackson</strong> — Ranger</li><li><strong>\"Problema\"</strong> — Chico/Chica misterioso/a</li></ul>"
+  },
+  "effects": [],
+  "folder": "mdKzmXUhAbEnUzo1",
+  "sort": 500000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodExplorador001"
+}

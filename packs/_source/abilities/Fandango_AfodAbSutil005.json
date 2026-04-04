@@ -1,0 +1,27 @@
+{
+  "_id": "AfodAbSutil005",
+  "name": "Fandango",
+  "type": "ability",
+  "img": "icons/svg/upgrade.svg",
+  "system": {
+    "description": "<p>Al indulgar en tu vicio, ajusta el resultado de los dados en 1 o 2 (arriba o abajo). Un aliado que se una puede hacer lo mismo.</p>",
+    "class": "El Toque Sutil",
+    "price": 1,
+    "purchased": false,
+    "class_default": false
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "a-fistful-of-darkness",
+    "systemVersion": "0.1.0",
+    "createdTime": 1774374325584,
+    "modifiedTime": 1774374325584,
+    "lastModifiedBy": null
+  },
+  "_key": "!items!AfodAbSutil005",
+  "effects": [],
+  "folder": "1eFc5CvghmDiH8h4"
+}
