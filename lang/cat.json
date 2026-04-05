@@ -61,7 +61,8 @@
       "Abilities": "Habilitats",
       "CrewAbilities": "Habilitats de Colla",
       "Heritages": "Herències",
-      "Rolltables": "Taules de Tirada"
+      "Rolltables": "Taules de Tirada",
+      "Journals": "Guia del Sistema"
     },
     "Chat": {
       "DrawsResultFromTable": "Treu un resultat de la taula {table}"

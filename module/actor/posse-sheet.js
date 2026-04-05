@@ -230,6 +230,11 @@ export class PosseSheet extends AfodSheet {
       const idx = parseInt(ev.currentTarget.closest("[data-claim-index]").dataset.claimIndex);
       this._updateClaim(idx, "equipment", ev.currentTarget.checked);
     });
+
+    html.find(".riders-block input[type='checkbox']").change(ev => {
+      const name = ev.currentTarget.name; // "system.riders.white" etc.
+      this.actor.update({ [name]: ev.currentTarget.checked });
+    });
   }
 
   /* -------------------------------------------- */

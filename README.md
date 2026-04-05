@@ -8,8 +8,8 @@ AFoD es un hack de *Blades in the Dark* ambientado en el **Weird West**: pistole
 
 ---
 
-<img width="1917" height="1079" alt="image" src="https://github.com/user-attachments/assets/8c7f6b9d-53f0-41b7-b01d-3fe9585b9008" />
-
+<!-- CAPTURA 1: Pantalla general de Foundry con el mundo AFoD abierto, mostrando el fondo sepia/western y la barra lateral con los compendios visibles -->
+> 📸 *Captura sugerida: vista general del mundo con el fondo western y los compendios en la barra lateral*
 
 ---
 
@@ -48,8 +48,8 @@ Descarga el zip de la [última release](https://github.com/Ellyjah/a-fistful-of-
 
 ### Personaje (PC)
 
-<img width="1024" height="906" alt="image" src="https://github.com/user-attachments/assets/eb745393-3c2a-49c2-9048-49223643cb75" />
-
+<!-- CAPTURA 2: Ficha de personaje abierta, mostrando las pestañas principales (Stats/Acciones, Inventario, Notas). Idealmente con algún campo rellenado para que se vea el estilo visual -->
+> 📸 *Captura sugerida: ficha de personaje con las pestañas de acciones y el tracker de Grit visible*
 
 La ficha de personaje incluye:
 
@@ -63,8 +63,8 @@ La ficha de personaje incluye:
 
 ### Posse (Cuadrilla)
 
-<img width="1024" height="979" alt="image" src="https://github.com/user-attachments/assets/dbfbfe4f-d534-4a19-9220-cbb7a6ffcd47" />
-
+<!-- CAPTURA 3: Ficha de Posse abierta, mostrando Tier, Hold, REP, el Doom Tracker y los logros -->
+> 📸 *Captura sugerida: ficha de Posse con el Doom Tracker y la sección de logros visible*
 
 - **Tier y Hold** con display visual
 - **REP y Coin / Hellstone** — gestión de recursos con conversión entre monedas
@@ -77,8 +77,8 @@ La ficha de personaje incluye:
 
 ## Sistema de tiradas
 
-<img width="331" height="509" alt="image" src="https://github.com/user-attachments/assets/721febc2-93b0-4e0f-a89d-c516f61f0354" />
-
+<!-- CAPTURA 4: Diálogo de tirada de acción abierto, mostrando el selector de dados, posición y efecto -->
+> 📸 *Captura sugerida: diálogo de Tirada de Acción con el pool configurado y los botones de resultado*
 
 Las tiradas se lanzan desde la ficha o desde el botón **Dado** en la barra de controles. El diálogo permite configurar:
 
@@ -101,8 +101,8 @@ Los resultados se publican en el chat con el desglose completo: resultado, posic
 
 ## Relojes
 
-<img width="452" height="691" alt="image" src="https://github.com/user-attachments/assets/1fda3841-ce18-4b1a-80e6-1549b46eaaa2" />
-
+<!-- CAPTURA 5: Varios relojes en el canvas o en fichas, mostrando los diferentes tamaños y colores -->
+> 📸 *Captura sugerida: ficha de reloj pública en el canvas, mostrando un reloj de 8 segmentos parcialmente completado*
 
 Los relojes son Actores de tipo especial que pueden colocarse en el canvas. Soportan tamaños de 4, 6, 8, 10 y 12 segmentos. Pueden configurarse como **públicos** (visibles para todos los jugadores) o privados.
 
@@ -127,8 +127,8 @@ El sistema incluye los siguientes compendios:
 
 ### Guía del Sistema
 
-<img width="1670" height="905" alt="image" src="https://github.com/user-attachments/assets/bbca9efc-713d-409e-b257-7c75d294dbae" />
-
+<!-- CAPTURA 6: Compendio de journals abierto mostrando la carpeta "Guía del Sistema" con las dos entradas -->
+> 📸 *Captura sugerida: compendio de Guía del Sistema con las dos entradas de journal visibles*
 
 El compendio **Guía del Sistema** incluye dos journals de referencia con todas las reglas:
 
@@ -147,6 +147,9 @@ El compendio **Guía del Sistema** incluye dos journals de referencia con todas 
 - Mutaciones, Reparto y Descanso
 - Misiones Subterráneas (Underworld Runs)
 - Logros, Indulgencia y Final de Partida
+
+<!-- CAPTURA 7: Una página de journal abierta mostrando el contenido con SVG inline, por ejemplo el diagrama de la tirada de acción o el ciclo de juego -->
+> 📸 *Captura sugerida: página del journal abierta mostrando el contenido con el estilo sepia y algún diagrama SVG*
 
 ---
 
@@ -174,3 +177,9 @@ Cuando el idioma es catalán, el contenido de los journals del compendio cambia 
 - **Stefan Struck** — *A Fistful of Darkness* (hack original)
 - **Dez384** — sistema Foundry VTT de *Blades in the Dark* (base de código)
 - **Ellyjah** — implementación de este sistema para Foundry VTT
+
+---
+
+## Licencia
+
+Este sistema de Foundry VTT se distribuye bajo la licencia [MIT](LICENSE). El contenido de las reglas de *A Fistful of Darkness* pertenece a Stefan Struck.

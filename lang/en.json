@@ -61,7 +61,8 @@
       "Abilities": "Abilities",
       "CrewAbilities": "Crew Abilities",
       "Heritages": "Heritages",
-      "Rolltables": "Roll Tables"
+      "Rolltables": "Roll Tables",
+      "Journals": "System Guide"
     },
     "Chat": {
       "DrawsResultFromTable": "Draws a result from the {table} table"

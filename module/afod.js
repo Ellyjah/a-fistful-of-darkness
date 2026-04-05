@@ -49,7 +49,8 @@ const _COMPENDIUM_LABEL_KEYS = {
   abilities: "AFOD.Compendium.Abilities",
   "crew-abilities": "AFOD.Compendium.CrewAbilities",
   heritages: "AFOD.Compendium.Heritages",
-  rolltables: "AFOD.Compendium.Rolltables"
+  rolltables: "AFOD.Compendium.Rolltables",
+  journals: "AFOD.Compendium.Journals"
 };
 const _CHAT_LOCALIZATION_RULES = [
   {

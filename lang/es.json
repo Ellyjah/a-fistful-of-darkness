@@ -61,7 +61,8 @@
       "Abilities": "Habilidades",
       "CrewAbilities": "Habilidades de Cuadrilla",
       "Heritages": "Herencias",
-      "Rolltables": "Tablas de Tirada"
+      "Rolltables": "Tablas de Tirada",
+      "Journals": "Guía del Sistema"
     },
     "Chat": {
       "DrawsResultFromTable": "Saca un resultado de la tabla {table}"
