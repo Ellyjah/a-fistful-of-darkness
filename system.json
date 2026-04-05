@@ -2,14 +2,14 @@
   "id": "a-fistful-of-darkness",
   "title": "A Fistful of Darkness",
   "description": "Sistema para A Fistful of Darkness, un hack de Blades in the Dark ambientado en el Weird West.",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "compatibility": {
     "minimum": 13,
     "verified": "13.351"
   },
   "url": "https://github.com/Ellyjah/a-fistful-of-darkness",
   "manifest": "https://raw.githubusercontent.com/Ellyjah/a-fistful-of-darkness/main/system.json",
-  "download": "https://github.com/Ellyjah/a-fistful-of-darkness/releases/download/v0.1.0/a-fistful-of-darkness.zip",
+  "download": "https://github.com/Ellyjah/a-fistful-of-darkness/releases/download/v0.5.0/a-fistful-of-darkness.zip",
   "authors": [
     { "name": "John Harper", "url": "", "roles": ["Original: Blades in the Dark"] },
     { "name": "Stefan Struck", "url": "", "roles": ["Original: A Fistful of Darkness"] },

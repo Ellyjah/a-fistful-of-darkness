@@ -11,52 +11,10 @@
 }
 
 @font-face {
-  font-family: "Zilla Slab";
-  src: url("fonts/ZillaSlab-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Podkova";
+  src: url("fonts/Podkova-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 800;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Zilla Slab";
-  src: url("fonts/ZillaSlab-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Zilla Slab";
-  src: url("fonts/ZillaSlab-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Zilla Slab";
-  src: url("fonts/ZillaSlab-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Zilla Slab";
-  src: url("fonts/ZillaSlab-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Zilla Slab";
-  src: url("fonts/ZillaSlab-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Zilla Slab";
-  src: url("fonts/ZillaSlab-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
 }
 
 /* ---------------------------------------- */
@@ -64,8 +22,8 @@
 /* ---------------------------------------- */
 
 .a-fistful-of-darkness.sheet {
-  font-family: "Zilla Slab", serif;
-  font-size: 17px;
+  font-family: "Podkova", serif;
+  font-size: 21px;
   font-weight: 500;
   background: none;
   color: #2a1408;
@@ -217,7 +175,7 @@
   line-height: 18px !important;
   color: #2a1408 !important;
   font-size: 0.85em !important;
-  font-family: "Zilla Slab", serif !important;
+  font-family: "Podkova", serif !important;
   min-width: 0;
   box-sizing: border-box !important;
 }
@@ -266,7 +224,7 @@
 .a-fistful-of-darkness.sheet .tab-content {
   padding: 8px;
   overflow-y: auto;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .a-fistful-of-darkness.sheet .tab-content .tab {
@@ -303,8 +261,8 @@
   border-radius: 3px;
   padding: 4px 6px;
   color: #2a1408;
-  font-family: "Zilla Slab", serif;
-  font-size: 13px;
+  font-family: "Podkova", serif;
+  font-size: 15px;
 }
 
 .a-fistful-of-darkness.sheet .form-group textarea {
@@ -314,8 +272,8 @@
   padding: 6px 8px;
   color: #2a1408;
   resize: vertical;
-  font-family: "Zilla Slab", serif;
-  font-size: 13px;
+  font-family: "Podkova", serif;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -629,7 +587,6 @@
 }
 
 .a-fistful-of-darkness.sheet.character .skill-name {
-  font-size: 0.89em;
   color: #452810;
   cursor: pointer;
   flex: 1;
@@ -732,13 +689,13 @@ form.a-fistful-of-darkness.sheet.item {
 
 .a-fistful-of-darkness.sheet.item .ability-name {
   font-weight: bold;
-  font-size: 12px;
+  font-size: 15px;
   color: #2a1408;
   margin-bottom: 3px;
 }
 
 .a-fistful-of-darkness.sheet.item .ability-desc {
-  font-size: 12px;
+  font-size: 15px;
   color: #2a1408;
   line-height: 1.4;
 }
@@ -2490,7 +2447,7 @@ form.a-fistful-of-darkness.sheet.posse {
 .a-fistful-of-darkness.sheet span,
 .a-fistful-of-darkness.sheet a,
 .a-fistful-of-darkness.sheet p {
-  font-family: "Zilla Slab", serif;
+  font-family: "Podkova", serif;
 }
 
 .a-fistful-of-darkness.sheet .sheet-header,
@@ -2626,7 +2583,7 @@ form.a-fistful-of-darkness.sheet.posse {
 .window-app.a-fistful-of-darkness.sheet .window-header .window-title {
   color: #c4955a;
   font-family: "Docktrin", serif;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .window-app.a-fistful-of-darkness.sheet .window-header a {
@@ -2660,7 +2617,7 @@ form.a-fistful-of-darkness.sheet.posse {
   --chat-message-background: url("assets/fondo-chat.png") center / cover no-repeat;
   background: url("assets/fondo-chat.png") center / cover no-repeat !important;
   color: #2a1408 !important;
-  font-family: "Zilla Slab", serif !important;
+  font-family: "Podkova", serif !important;
   border: 1px solid rgba(106, 58, 20, 0.5) !important;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
@@ -2673,8 +2630,8 @@ form.a-fistful-of-darkness.sheet.posse {
 #chat-log .chat-message .message-content {
   background: transparent !important;
   color: #2a1408 !important;
-  font-family: "Zilla Slab", serif;
-  font-size: 12px !important;
+  font-family: "Podkova", serif;
+  font-size: 15px !important;
 }
 
 .chat-log .chat-message .message-header h4,
@@ -2765,7 +2722,7 @@ form.a-fistful-of-darkness.sheet.posse {
 }
 
 .journal-sheet {
-  font-family: "Zilla Slab", serif !important;
+  font-family: "Podkova", serif !important;
   color: #2a1408 !important;
 }
 
@@ -2800,14 +2757,14 @@ form.a-fistful-of-darkness.sheet.posse {
 .journal-sheet .editor-content,
 .journal-sheet .journal-entry-content,
 .journal-sheet .page-content {
-  font-family: "Zilla Slab", serif !important;
+  font-family: "Podkova", serif !important;
   color: #2a1408 !important;
   background: transparent !important;
 }
 
 .dialog.a-fistful-of-darkness,
 .app.window-app.a-fistful-of-darkness {
-  font-family: "Zilla Slab", serif;
+  font-family: "Podkova", serif;
   color: #2a1408;
 }
 
@@ -3131,7 +3088,7 @@ form.a-fistful-of-darkness.sheet.posse {
 .a-fistful-of-darkness.sheet.character .tab[data-tab="abilities"],
 .a-fistful-of-darkness.sheet.character .tab[data-tab="items"],
 .a-fistful-of-darkness.sheet.posse .tab[data-tab="abilities"] {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.35;
 }
 
@@ -3146,7 +3103,7 @@ form.a-fistful-of-darkness.sheet.posse {
 }
 
 .a-fistful-of-darkness.sheet.item .sheet-body {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 form.a-fistful-of-darkness.sheet.actor {
@@ -3193,7 +3150,7 @@ form.a-fistful-of-darkness.sheet.item {
   align-items: center;
   gap: 4px;
   padding: 2px 8px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.2;
   border: 1px solid rgba(106, 58, 20, 0.45);
   border-radius: 3px;
@@ -3317,7 +3274,7 @@ form.a-fistful-of-darkness.sheet.item {
 .a-fistful-of-darkness.sheet.character .tab[data-tab="items"] .cohort-type,
 .a-fistful-of-darkness.sheet.character .tab[data-tab="items"] .notice,
 .a-fistful-of-darkness.sheet.posse .tab[data-tab="abilities"] .notice {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.35;
 }
 
@@ -3359,8 +3316,8 @@ form.a-fistful-of-darkness.sheet.item {
   border: 1px solid rgba(106, 58, 20, 0.4);
   border-radius: 3px;
   color: #2a1408;
-  font-family: "Zilla Slab", serif;
-  font-size: 12px;
+  font-family: "Podkova", serif;
+  font-size: 15px;
   line-height: 1.5;
   padding: 6px 8px;
   box-sizing: border-box;
@@ -3380,8 +3337,8 @@ form.a-fistful-of-darkness.sheet.item {
   border: 1px solid rgba(106, 58, 20, 0.4);
   border-radius: 3px;
   color: #2a1408;
-  font-family: "Zilla Slab", serif;
-  font-size: 12px;
+  font-family: "Podkova", serif;
+  font-size: 15px;
   line-height: 1.5;
   padding: 6px 8px;
   box-sizing: border-box;
@@ -3399,8 +3356,8 @@ form.a-fistful-of-darkness.sheet.item {
   border: 1px solid rgba(106, 58, 20, 0.4);
   border-radius: 3px;
   color: #2a1408;
-  font-family: "Zilla Slab", serif;
-  font-size: 12px;
+  font-family: "Podkova", serif;
+  font-size: 15px;
   line-height: 1.5;
   padding: 6px 8px;
   box-sizing: border-box;
@@ -3408,8 +3365,8 @@ form.a-fistful-of-darkness.sheet.item {
 
 .a-fistful-of-darkness.sheet .notes-view :is(p, li, span, div) {
   color: #2a1408;
-  font-family: "Zilla Slab", serif;
-  font-size: 12px;
+  font-family: "Podkova", serif;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -3454,7 +3411,7 @@ form.a-fistful-of-darkness.sheet.item {
 
 .afod-roll-dialog,
 .afod-simple-roll-dialog {
-  font-family: "Zilla Slab", serif !important;
+  font-family: "Podkova", serif !important;
 }
 
 /* 3. Diseño de Botones de Dados (izq y der) */
@@ -3479,7 +3436,7 @@ form.a-fistful-of-darkness.sheet.item {
 }
 
 .dice-tooltip.afod-die-tooltip .chat-label-small.label-stripe-chat-small {
-  font-family: "Zilla Slab", serif;
+  font-family: "Podkova", serif;
   font-size: 14px;
 }
 
@@ -3487,15 +3444,15 @@ form.a-fistful-of-darkness.sheet.item {
 .dice-tooltip.afod-die-tooltip .die.partial-success,
 .dice-tooltip.afod-die-tooltip .die.failure,
 .dice-tooltip.afod-die-tooltip .die.critical-success {
-  font-family: "Zilla Slab", serif;
+  font-family: "Podkova", serif;
   font-weight: bold;
   font-size: 14px;
 }
 
 .dice-tooltip.afod-die-tooltip .description p,
 .dice-tooltip.afod-die-tooltip .description {
-  font-family: "Zilla Slab", serif;
-  font-size: 12px;
+  font-family: "Podkova", serif;
+  font-size: 15px;
   text-align: justify;
 }
 
@@ -4236,4 +4193,56 @@ form.a-fistful-of-darkness.sheet.item {
 
 .a-fistful-of-darkness.sheet.character .indulgence-bar-wrap {
   height: 12px;
+}
+
+/* ---------------------------------------- */
+/*  FONDO SEMITRANSPARENTE EN BLOQUES/TABS   */
+/* ---------------------------------------- */
+
+/* Mismo valor que inputs/textareas (0.35) para uniformidad visual */
+.a-fistful-of-darkness.sheet .tab[data-tab="items"] .equip-row,
+.a-fistful-of-darkness.sheet .tab[data-tab="items"] .section-header,
+.a-fistful-of-darkness.sheet .grit-block,
+.a-fistful-of-darkness.sheet .stigma-block,
+.a-fistful-of-darkness.sheet .mutation-block,
+.a-fistful-of-darkness.sheet .harm-block,
+.a-fistful-of-darkness.sheet .currency-block,
+.a-fistful-of-darkness.sheet .indulgence-block,
+.a-fistful-of-darkness.sheet .load-block,
+.a-fistful-of-darkness.sheet .xp-block,
+.a-fistful-of-darkness.sheet .attribute-block,
+.a-fistful-of-darkness.sheet .abilities-section,
+.a-fistful-of-darkness.sheet .contacts-section,
+.a-fistful-of-darkness.sheet .doom-block,
+.a-fistful-of-darkness.sheet .riders-block,
+.a-fistful-of-darkness.sheet .stat-block,
+.a-fistful-of-darkness.sheet .upgrades-section,
+.a-fistful-of-darkness.sheet .cohorts-section,
+.a-fistful-of-darkness.sheet .claims-list,
+.a-fistful-of-darkness.sheet .vault-grid,
+.a-fistful-of-darkness.sheet .tab[data-tab="notes"] .notes-group {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+/* Inputs y textareas dentro de bloques: fondo ligeramente diferente para distinguirse del panel */
+.a-fistful-of-darkness.sheet .grit-block input,
+.a-fistful-of-darkness.sheet .stigma-block input,
+.a-fistful-of-darkness.sheet .mutation-block input,
+.a-fistful-of-darkness.sheet .harm-block input,
+.a-fistful-of-darkness.sheet .currency-block input,
+.a-fistful-of-darkness.sheet .indulgence-block input,
+.a-fistful-of-darkness.sheet .load-block input,
+.a-fistful-of-darkness.sheet .xp-block input,
+.a-fistful-of-darkness.sheet .attribute-block input,
+.a-fistful-of-darkness.sheet .abilities-section input,
+.a-fistful-of-darkness.sheet .contacts-section input,
+.a-fistful-of-darkness.sheet .doom-block input,
+.a-fistful-of-darkness.sheet .riders-block input,
+.a-fistful-of-darkness.sheet .stat-block input,
+.a-fistful-of-darkness.sheet .upgrades-section input,
+.a-fistful-of-darkness.sheet .cohorts-section input,
+.a-fistful-of-darkness.sheet .tab[data-tab="notes"] .notes-group textarea {
+  background: rgba(255, 255, 255, 0.20);
 }
