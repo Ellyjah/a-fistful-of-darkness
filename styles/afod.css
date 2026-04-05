@@ -4246,3 +4246,56 @@ form.a-fistful-of-darkness.sheet.item {
 .a-fistful-of-darkness.sheet .tab[data-tab="notes"] .notes-group textarea {
   background: rgba(255, 255, 255, 0.20);
 }
+
+/* ============================================================
+   JOURNALS BILINGÜE ES / CA
+   Usa html[lang="ca"] para mostrar/ocultar bloques por idioma.
+   ============================================================ */
+
+/* Por defecto: muestra español, oculta catalán */
+.afod-journal .lang-ca { display: none; }
+.afod-journal .lang-es { display: block; }
+
+/* Cuando Foundry carga en catalán */
+html[lang="ca"] .afod-journal .lang-es { display: none; }
+html[lang="ca"] .afod-journal .lang-ca { display: block; }
+
+/* Elementos inline (span, strong, em...) */
+.afod-journal .lang-es.inline { display: inline; }
+.afod-journal .lang-ca.inline { display: none; }
+html[lang="ca"] .afod-journal .lang-es.inline { display: none; }
+html[lang="ca"] .afod-journal .lang-ca.inline { display: inline; }
+
+/* === JOURNALS — Estilos visuales del contenido ===
+   Garantizan legibilidad con el fondo del tema AFoD. */
+.afod-journal {
+  color: #2a1408;
+  background: rgba(236, 218, 175, 0.88);
+  border-radius: 4px;
+}
+.afod-journal h1, .afod-journal h2, .afod-journal h3, .afod-journal h4 {
+  font-family: "Docktrin", serif;
+  color: #4a1a06;
+  border-color: #9a6832;
+}
+.afod-journal p, .afod-journal li, .afod-journal blockquote {
+  font-family: "Podkova", serif;
+  color: #2a1408;
+}
+.afod-journal td, .afod-journal th {
+  font-family: "Podkova", serif;
+  color: #2a1408;
+  border: 1px solid #9a6832 !important;
+}
+.afod-journal th {
+  background: rgba(106, 58, 20, 0.15);
+}
+.afod-journal blockquote {
+  border-left-color: #6a3a14;
+}
+.afod-journal strong {
+  color: #4a1a06;
+}
+.afod-journal svg text {
+  fill: #2a1408;
+}

@@ -3059,6 +3059,14 @@
           }
         ]
       }
+    },
+    "journals": {
+      "AfodJrnlReglas01": {
+        "name": "Regles Base del Sistema"
+      },
+      "AfodJrnlSistem02": {
+        "name": "A Fistful of Darkness — El Sistema"
+      }
     }
   },
   "folders": {
@@ -3201,6 +3209,11 @@
     "vices": {
       "E5e5a30VY1ilC3gD": {
         "name": "Vicis"
+      }
+    },
+    "journals": {
+      "AfodJrnlFolder01": {
+        "name": "Guia del Sistema"
       }
     }
   }

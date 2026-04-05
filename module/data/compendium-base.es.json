@@ -5665,6 +5665,14 @@
           "description": "<p>Gratificación de amantes, comida, bebida, drogas, arte, teatro, etc.</p><p>Detalla tu placer específico e indica el nombre y ubicación de tu proveedor de vicio (taberna, madama, artista, traficante, etc.).</p>"
         }
       }
+    },
+    "journals": {
+      "AfodJrnlReglas01": {
+        "name": "Reglas Base del Sistema"
+      },
+      "AfodJrnlSistem02": {
+        "name": "A Fistful of Darkness — El Sistema"
+      }
     }
   },
   "folders": {
@@ -5807,6 +5815,11 @@
     "vices": {
       "E5e5a30VY1ilC3gD": {
         "name": "Vicios"
+      }
+    },
+    "journals": {
+      "AfodJrnlFolder01": {
+        "name": "Guía del Sistema"
       }
     }
   }

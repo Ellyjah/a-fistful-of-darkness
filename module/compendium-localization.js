@@ -10,7 +10,8 @@ const PACK_NAMES = [
   "abilities",
   "crew-abilities",
   "heritages",
-  "rolltables"
+  "rolltables",
+  "journals"
 ];
 const LOCALIZED_DOC_PATHS = {
   abilities: ["name", "system.description"],
@@ -19,6 +20,7 @@ const LOCALIZED_DOC_PATHS = {
   factions: ["name", "system.description", "system.goal_1", "system.goal_2", "system.assets", "system.quirks", "system.notables", "system.allies", "system.enemies", "system.situation", "system.notes"],
   heritages: ["name", "system.description"],
   items: ["name", "system.description", "system.additional_info"],
+  journals: ["name"],
   playbooks: ["name", "system.description", "system.subtitle", "system.experience_clues", "system.contacts"],
   rolltables: ["name", "description", "results"],
   vices: ["name", "system.description"]
