@@ -65,7 +65,8 @@
 
 .a-fistful-of-darkness.sheet {
   font-family: "Zilla Slab", serif;
-  font-size: 15px;
+  font-size: 17px;
+  font-weight: 500;
   background: none;
   color: #2a1408;
   flex: 1 1 0;
