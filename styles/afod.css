@@ -11,10 +11,52 @@
 }
 
 @font-face {
-  font-family: "Saloon";
-  src: url("fonts/saloon.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Zilla Slab";
+  src: url("fonts/ZillaSlab-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("fonts/ZillaSlab-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("fonts/ZillaSlab-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("fonts/ZillaSlab-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("fonts/ZillaSlab-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("fonts/ZillaSlab-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("fonts/ZillaSlab-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
 }
 
 /* ---------------------------------------- */
@@ -22,7 +64,7 @@
 /* ---------------------------------------- */
 
 .a-fistful-of-darkness.sheet {
-  font-family: "Saloon", serif;
+  font-family: "Zilla Slab", serif;
   font-size: 15px;
   background: none;
   color: #2a1408;
@@ -174,7 +216,7 @@
   line-height: 18px !important;
   color: #2a1408 !important;
   font-size: 0.85em !important;
-  font-family: "Saloon", serif !important;
+  font-family: "Zilla Slab", serif !important;
   min-width: 0;
   box-sizing: border-box !important;
 }
@@ -260,7 +302,7 @@
   border-radius: 3px;
   padding: 4px 6px;
   color: #2a1408;
-  font-family: "Saloon", serif;
+  font-family: "Zilla Slab", serif;
   font-size: 13px;
 }
 
@@ -271,7 +313,7 @@
   padding: 6px 8px;
   color: #2a1408;
   resize: vertical;
-  font-family: "Saloon", serif;
+  font-family: "Zilla Slab", serif;
   font-size: 13px;
   line-height: 1.5;
 }
@@ -2447,7 +2489,7 @@ form.a-fistful-of-darkness.sheet.posse {
 .a-fistful-of-darkness.sheet span,
 .a-fistful-of-darkness.sheet a,
 .a-fistful-of-darkness.sheet p {
-  font-family: "Saloon", serif;
+  font-family: "Zilla Slab", serif;
 }
 
 .a-fistful-of-darkness.sheet .sheet-header,
@@ -2617,7 +2659,7 @@ form.a-fistful-of-darkness.sheet.posse {
   --chat-message-background: url("assets/fondo-chat.png") center / cover no-repeat;
   background: url("assets/fondo-chat.png") center / cover no-repeat !important;
   color: #2a1408 !important;
-  font-family: "Saloon", serif !important;
+  font-family: "Zilla Slab", serif !important;
   border: 1px solid rgba(106, 58, 20, 0.5) !important;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
@@ -2630,7 +2672,7 @@ form.a-fistful-of-darkness.sheet.posse {
 #chat-log .chat-message .message-content {
   background: transparent !important;
   color: #2a1408 !important;
-  font-family: "Saloon", serif;
+  font-family: "Zilla Slab", serif;
   font-size: 12px !important;
 }
 
@@ -2722,7 +2764,7 @@ form.a-fistful-of-darkness.sheet.posse {
 }
 
 .journal-sheet {
-  font-family: "Saloon", serif !important;
+  font-family: "Zilla Slab", serif !important;
   color: #2a1408 !important;
 }
 
@@ -2757,14 +2799,14 @@ form.a-fistful-of-darkness.sheet.posse {
 .journal-sheet .editor-content,
 .journal-sheet .journal-entry-content,
 .journal-sheet .page-content {
-  font-family: "Saloon", serif !important;
+  font-family: "Zilla Slab", serif !important;
   color: #2a1408 !important;
   background: transparent !important;
 }
 
 .dialog.a-fistful-of-darkness,
 .app.window-app.a-fistful-of-darkness {
-  font-family: "Saloon", serif;
+  font-family: "Zilla Slab", serif;
   color: #2a1408;
 }
 
@@ -3316,7 +3358,7 @@ form.a-fistful-of-darkness.sheet.item {
   border: 1px solid rgba(106, 58, 20, 0.4);
   border-radius: 3px;
   color: #2a1408;
-  font-family: "Saloon", serif;
+  font-family: "Zilla Slab", serif;
   font-size: 12px;
   line-height: 1.5;
   padding: 6px 8px;
@@ -3337,7 +3379,7 @@ form.a-fistful-of-darkness.sheet.item {
   border: 1px solid rgba(106, 58, 20, 0.4);
   border-radius: 3px;
   color: #2a1408;
-  font-family: "Saloon", serif;
+  font-family: "Zilla Slab", serif;
   font-size: 12px;
   line-height: 1.5;
   padding: 6px 8px;
@@ -3356,7 +3398,7 @@ form.a-fistful-of-darkness.sheet.item {
   border: 1px solid rgba(106, 58, 20, 0.4);
   border-radius: 3px;
   color: #2a1408;
-  font-family: "Saloon", serif;
+  font-family: "Zilla Slab", serif;
   font-size: 12px;
   line-height: 1.5;
   padding: 6px 8px;
@@ -3365,7 +3407,7 @@ form.a-fistful-of-darkness.sheet.item {
 
 .a-fistful-of-darkness.sheet .notes-view :is(p, li, span, div) {
   color: #2a1408;
-  font-family: "Saloon", serif;
+  font-family: "Zilla Slab", serif;
   font-size: 12px;
   line-height: 1.5;
 }
@@ -3411,7 +3453,7 @@ form.a-fistful-of-darkness.sheet.item {
 
 .afod-roll-dialog,
 .afod-simple-roll-dialog {
-  font-family: 'Saloon', serif !important;
+  font-family: "Zilla Slab", serif !important;
 }
 
 /* 3. Diseño de Botones de Dados (izq y der) */
@@ -3436,7 +3478,7 @@ form.a-fistful-of-darkness.sheet.item {
 }
 
 .dice-tooltip.afod-die-tooltip .chat-label-small.label-stripe-chat-small {
-  font-family: 'Saloon', serif;
+  font-family: "Zilla Slab", serif;
   font-size: 14px;
 }
 
@@ -3444,14 +3486,14 @@ form.a-fistful-of-darkness.sheet.item {
 .dice-tooltip.afod-die-tooltip .die.partial-success,
 .dice-tooltip.afod-die-tooltip .die.failure,
 .dice-tooltip.afod-die-tooltip .die.critical-success {
-  font-family: 'Saloon', serif;
+  font-family: "Zilla Slab", serif;
   font-weight: bold;
   font-size: 14px;
 }
 
 .dice-tooltip.afod-die-tooltip .description p,
 .dice-tooltip.afod-die-tooltip .description {
-  font-family: 'Saloon', serif;
+  font-family: "Zilla Slab", serif;
   font-size: 12px;
   text-align: justify;
 }
