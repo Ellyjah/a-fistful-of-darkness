@@ -569,3 +569,37 @@ Hooks.once("ready", () => {
       .catch(error => console.error("A Fistful of Darkness | Error sincronizando compendios:", error));
   }
 });
+
+// ── Localización de nombres de página y TOC en journals abiertos ──────────
+Hooks.on("renderJournalSheet", async (app, html) => {
+  const lang = game.i18n?.lang ?? "es";
+  if (lang !== "ca") return;
+
+  let overlay;
+  try {
+    const res = await fetch("systems/a-fistful-of-darkness/module/data/compendium-overlay.ca.json");
+    overlay = await res.json();
+  } catch { return; }
+
+  const pageNames = overlay?.journalPages?.journals ?? {};
+  if (!Object.keys(pageNames).length) return;
+
+  const root = html instanceof jQuery ? html[0] : html;
+
+  // 1. Traducir nombres de página en la barra lateral izquierda
+  root.querySelectorAll(".pages-list .page").forEach(li => {
+    const pageId = li.dataset.pageId;
+    const ca = pageNames[pageId]?.name;
+    if (!ca) return;
+    const titleEl = li.querySelector(".page-title, .title");
+    if (titleEl) titleEl.textContent = ca;
+  });
+
+  // 2. Eliminar entradas del TOC que pertenecen al bloque lang-es oculto
+  root.querySelectorAll(".heading-link[data-anchor], a[data-anchor]").forEach(link => {
+    const anchor = link.dataset.anchor;
+    if (!anchor) return;
+    const heading = root.querySelector(`[id="${anchor}"]`);
+    if (heading?.closest(".lang-es")) link.closest("li")?.remove();
+  });
+});

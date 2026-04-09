@@ -3216,5 +3216,45 @@
         "name": "Guia del Sistema"
       }
     }
+  },
+  "journalPages": {
+    "journals": {
+      "AfodJrnlPg01p001": {
+        "name": "Tirada d'Acció"
+      },
+      "AfodJrnlPg01p002": {
+        "name": "Posició i Efecte"
+      },
+      "AfodJrnlPg01p003": {
+        "name": "Rellotges"
+      },
+      "AfodJrnlPg01p004": {
+        "name": "Resistència i Conseqüències"
+      },
+      "AfodJrnlPg01p005": {
+        "name": "Treball en Equip, Fortuna i Flashbacks"
+      },
+      "AfodJrnlPg02p001": {
+        "name": "Cicle de Joc"
+      },
+      "AfodJrnlPg02p002": {
+        "name": "Perdició i els Quatre Genets"
+      },
+      "AfodJrnlPg02p003": {
+        "name": "Aguant, Dany i Estigmes"
+      },
+      "AfodJrnlPg02p004": {
+        "name": "Moneda Dual i Hellstone"
+      },
+      "AfodJrnlPg02p005": {
+        "name": "Mutacions i Repartiment/Descans"
+      },
+      "AfodJrnlPg02p006": {
+        "name": "Missions Subterrànies"
+      },
+      "AfodJrnlPg02p007": {
+        "name": "Fites, Indulgència i Final de Partida"
+      }
+    }
   }
 }
