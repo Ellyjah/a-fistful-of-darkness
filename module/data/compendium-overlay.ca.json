@@ -3214,6 +3214,15 @@
     "journals": {
       "AfodJrnlFolder01": {
         "name": "Guia del Sistema"
+      },
+      "AfodJrnlReglas01": {
+        "name": "Regles Base del Sistema"
+      },
+      "AfodJrnlSistem02": {
+        "name": "A Fistful of Darkness — El Sistema"
+      },
+      "AfodJrnlAmbie03": {
+        "name": "Ambientació i Personatges"
       }
     }
   },
@@ -3254,6 +3263,21 @@
       },
       "AfodJrnlPg02p007": {
         "name": "Fites, Indulgència i Final de Partida"
+      },
+      "AfodJrnlPg03p001": {
+        "name": "L'Ambientació"
+      },
+      "AfodJrnlPg03p002": {
+        "name": "Els Llibrets"
+      },
+      "AfodJrnlPg03p003": {
+        "name": "Les Quadrilles"
+      },
+      "AfodJrnlPg03p004": {
+        "name": "Les Herències"
+      },
+      "AfodJrnlPg03p005": {
+        "name": "Consells per a Jugadors"
       }
     }
   }

@@ -2727,12 +2727,12 @@ form.a-fistful-of-darkness.sheet.posse {
   color: #2a1408 !important;
 }
 
-.journal-sheet .window-content {
-  background-image: url("systems/a-fistful-of-darkness/styles/assets/background-afod.png") !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-color: transparent !important;
+.journal-sheet .journal-entry-content,
+.journal-sheet .journal-page-content {
+  background-image: url("assets/background-afod.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .journal-sheet .window-header {
@@ -2770,7 +2770,7 @@ form.a-fistful-of-darkness.sheet.posse {
 }
 
 .window-app .window-content.a-fistful-of-darkness {
-  background-image: url("systems/a-fistful-of-darkness/styles/assets/background-afod.png") !important;
+  background-image: url("assets/background-afod.png") !important;
   background-size: cover !important;
 }
 

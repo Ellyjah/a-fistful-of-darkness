@@ -571,35 +571,53 @@ Hooks.once("ready", () => {
 });
 
 // ── Localización de nombres de página y TOC en journals abiertos ──────────
-Hooks.on("renderJournalSheet", async (app, html) => {
-  const lang = game.i18n?.lang ?? "es";
-  if (lang !== "ca") return;
+let _journalOverlayCache = null;
 
-  let overlay;
+async function _getJournalOverlay() {
+  if (_journalOverlayCache) return _journalOverlayCache;
   try {
     const res = await fetch("systems/a-fistful-of-darkness/module/data/compendium-overlay.ca.json");
-    overlay = await res.json();
-  } catch { return; }
+    _journalOverlayCache = await res.json();
+  } catch { _journalOverlayCache = {}; }
+  return _journalOverlayCache;
+}
 
-  const pageNames = overlay?.journalPages?.journals ?? {};
-  if (!Object.keys(pageNames).length) return;
+Hooks.on("renderJournalEntrySheet", async (app, htmlEl) => {
+  const lang = game.i18n?.lang ?? "es";
+  const root = htmlEl instanceof jQuery ? htmlEl[0] : htmlEl;
 
-  const root = html instanceof jQuery ? html[0] : html;
+  // 1. En catalán: traducir nombres de página en la barra lateral
+  if (lang === "ca") {
+    const overlay = await _getJournalOverlay();
+    const pageNames = overlay?.journalPages?.journals ?? {};
+    root.querySelectorAll("li.page[data-page-id]").forEach(li => {
+      const pageId = li.dataset.pageId;
+      const ca = pageNames[pageId]?.name;
+      if (!ca) return;
+      const indexEl = li.querySelector(".page-index");
+      if (indexEl) indexEl.dataset.tooltipText = ca;
+      const titleEl = li.querySelector(".page-heading .title, .page-heading .name, .page-heading span:not(.page-index)");
+      if (titleEl) titleEl.textContent = ca;
+    });
+  }
 
-  // 1. Traducir nombres de página en la barra lateral izquierda
-  root.querySelectorAll(".pages-list .page").forEach(li => {
-    const pageId = li.dataset.pageId;
-    const ca = pageNames[pageId]?.name;
-    if (!ca) return;
-    const titleEl = li.querySelector(".page-title, .title");
-    if (titleEl) titleEl.textContent = ca;
-  });
+  // 2. Eliminar TOC duplicados del idioma inactivo.
+  //    Parsea el HTML de origen y recoge los headings del bloque inactivo.
+  const inactiveLangClass = lang === "ca" ? "lang-es" : "lang-ca";
+  const inactiveHeadings = new Set();
+  for (const page of (app.document?.pages ?? [])) {
+    const content = page.text?.content ?? "";
+    if (!content) continue;
+    const parsed = new DOMParser().parseFromString(content, "text/html");
+    parsed.querySelectorAll(`.${inactiveLangClass} h1, .${inactiveLangClass} h2, .${inactiveLangClass} h3, .${inactiveLangClass} h4`).forEach(h => {
+      const text = h.textContent.trim();
+      if (text) inactiveHeadings.add(text);
+    });
+  }
 
-  // 2. Eliminar entradas del TOC que pertenecen al bloque lang-es oculto
-  root.querySelectorAll(".heading-link[data-anchor], a[data-anchor]").forEach(link => {
-    const anchor = link.dataset.anchor;
-    if (!anchor) return;
-    const heading = root.querySelector(`[id="${anchor}"]`);
-    if (heading?.closest(".lang-es")) link.closest("li")?.remove();
-  });
+  if (inactiveHeadings.size > 0) {
+    root.querySelectorAll("li.page ol li, li.page ul li").forEach(li => {
+      if (inactiveHeadings.has(li.textContent.trim())) li.remove();
+    });
+  }
 });
