@@ -3066,6 +3066,9 @@
       },
       "AfodJrnlSistem02": {
         "name": "A Fistful of Darkness — El Sistema"
+      },
+      "AfodJrnlAmbie03": {
+        "name": "Ambientació i Personatges"
       }
     }
   },
@@ -3220,9 +3223,6 @@
       },
       "AfodJrnlSistem02": {
         "name": "A Fistful of Darkness — El Sistema"
-      },
-      "AfodJrnlAmbie03": {
-        "name": "Ambientació i Personatges"
       }
     }
   },
