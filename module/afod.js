@@ -30,6 +30,9 @@ import { GroupSheet } from "./actor/group-sheet.js";
 // Hoja de item
 import { AfodItemSheet } from "./item/afod-item-sheet.js";
 
+// Escena de referencias (sin MATT)
+import { registerReferenceSceneHooks } from "./reference-scene.mjs";
+
 // Capa de compatibilidad
 import {
   getActorSheetClass,
@@ -365,6 +368,9 @@ Hooks.once("ready", async function() {
   // Precargar plantillas Handlebars
   await preloadHandlebarsTemplates();
   _localizeCompendiumLabels();
+
+  // Registrar hooks de la escena de referencias (sin MATT)
+  registerReferenceSceneHooks();
 
   console.log("A Fistful of Darkness | Sistema cargado correctamente.");
 });

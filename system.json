@@ -109,6 +109,13 @@
       "path": "packs/journals",
       "type": "JournalEntry",
       "system": "a-fistful-of-darkness"
+    },
+    {
+      "name": "scenes",
+      "label": "Escenas",
+      "path": "packs/scenes",
+      "type": "Scene",
+      "system": "a-fistful-of-darkness"
     }
   ],
   "packFolders": [],
