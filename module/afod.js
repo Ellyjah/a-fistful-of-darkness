@@ -339,6 +339,10 @@ Hooks.once("init", async function() {
     html += "</div>";
     return html;
   });
+
+  // Registrar hooks de la escena de referencias (sin MATT)
+  // Debe estar en init (no ready) para capturar el primer canvasReady
+  registerReferenceSceneHooks();
 });
 
 /* -------------------------------------------- */
@@ -368,9 +372,6 @@ Hooks.once("ready", async function() {
   // Precargar plantillas Handlebars
   await preloadHandlebarsTemplates();
   _localizeCompendiumLabels();
-
-  // Registrar hooks de la escena de referencias (sin MATT)
-  registerReferenceSceneHooks();
 
   console.log("A Fistful of Darkness | Sistema cargado correctamente.");
 });
