@@ -4290,6 +4290,7 @@ html[lang="ca"] .afod-journal .lang-ca.inline { display: inline; }
 }
 .afod-journal th {
   background: rgba(106, 58, 20, 0.15);
+  color: #d4a55a;
 }
 .afod-journal blockquote {
   border-left-color: #6a3a14;
