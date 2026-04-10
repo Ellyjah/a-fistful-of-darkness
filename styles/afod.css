@@ -4307,11 +4307,11 @@ html[lang="ca"] .afod-journal .lang-ca.inline { display: inline; }
 /* ---------------------------------------- */
 /* El journal "Ambientación y Personajes" se usa en la escena Mesa de
    Referencias. Lo abren jugadores via tile click y no deben ver la
-   barra lateral de navegación de páginas. */
-.journal-sheet[data-document-id="cbBSc7NZdOM78xBa"] nav.journal-sidebar {
+   barra lateral de navegación de páginas.
+   ID del elemento raíz: JournalEntrySheet-JournalEntry-{docId} */
+#JournalEntrySheet-JournalEntry-cbBSc7NZdOM78xBa aside.journal-sidebar {
   display: none !important;
 }
-.journal-sheet[data-document-id="cbBSc7NZdOM78xBa"] section.journal-entry-content {
-  margin-left: 0 !important;
+#JournalEntrySheet-JournalEntry-cbBSc7NZdOM78xBa section.journal-entry-content {
   width: 100% !important;
 }
