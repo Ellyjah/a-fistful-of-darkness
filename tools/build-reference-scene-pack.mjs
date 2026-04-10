@@ -23,12 +23,12 @@ const SCENE_ID = "AfodSceneRefTable";
 // Datos de las tiles: transcritos del world original, con rutas de sistema
 const SYSTEM_PREFIX = "systems/a-fistful-of-darkness/styles/assets/scenes";
 
+// Una tile por objeto visual (5 en total)
 const TILE_DEFS = [
-  // ── MUDWATER (mapa de Mudwater) → página 1: La Ambientación ─────────────
   {
-    _id: "AfodTile03p001A",
+    _id: "AfodTile03p001",
     texture: `${SYSTEM_PREFIX}/tiles/mudwater.png`,
-    x: 505, y: 378, width: 472, height: 437, rotation: 342, hidden: false,
+    x: 505, y: 378, width: 472, height: 437, rotation: 342,
     flags: { "a-fistful-of-darkness": {
       referenceScene: true,
       journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p001",
@@ -36,28 +36,9 @@ const TILE_DEFS = [
     }}
   },
   {
-    _id: "AfodTile03p001B",
-    texture: `${SYSTEM_PREFIX}/tiles/mudwater.png`,
-    x: 118, y: 82, width: 286, height: 288, rotation: 342, hidden: false,
-    flags: { "a-fistful-of-darkness": {
-      referenceScene: true,
-      journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p001",
-    }}
-  },
-  {
-    _id: "AfodTile03p001C",
-    texture: `${SYSTEM_PREFIX}/tiles/mudwater.png`,
-    x: 575, y: 349, width: 286, height: 288, rotation: 342, hidden: false,
-    flags: { "a-fistful-of-darkness": {
-      referenceScene: true,
-      journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p001",
-    }}
-  },
-  // ── SE BUSCA (cartel de buscado) → página 2: Los Libretos ───────────────
-  {
-    _id: "AfodTile03p002A",
+    _id: "AfodTile03p002",
     texture: `${SYSTEM_PREFIX}/tiles/se-busca.png`,
-    x: 1436, y: 357, width: 351, height: 508, rotation: 13, hidden: false,
+    x: 1436, y: 357, width: 351, height: 508, rotation: 13,
     flags: { "a-fistful-of-darkness": {
       referenceScene: true,
       journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p002",
@@ -65,28 +46,9 @@ const TILE_DEFS = [
     }}
   },
   {
-    _id: "AfodTile03p002B",
-    texture: `${SYSTEM_PREFIX}/tiles/se-busca.png`,
-    x: 1118, y: 110, width: 232, height: 308, rotation: 13, hidden: false,
-    flags: { "a-fistful-of-darkness": {
-      referenceScene: true,
-      journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p002",
-    }}
-  },
-  {
-    _id: "AfodTile03p002C",
-    texture: `${SYSTEM_PREFIX}/tiles/se-busca.png`,
-    x: 1575, y: 377, width: 232, height: 308, rotation: 13, hidden: false,
-    flags: { "a-fistful-of-darkness": {
-      referenceScene: true,
-      journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p002",
-    }}
-  },
-  // ── FOTOS (fotos antiguas) → página 3: Las Cuadrillas ───────────────────
-  {
-    _id: "AfodTile03p003A",
+    _id: "AfodTile03p003",
     texture: `${SYSTEM_PREFIX}/tiles/fotos.png`,
-    x: 557, y: 898, width: 467, height: 337, rotation: 11, hidden: false,
+    x: 557, y: 898, width: 467, height: 337, rotation: 11,
     flags: { "a-fistful-of-darkness": {
       referenceScene: true,
       journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p003",
@@ -94,28 +56,9 @@ const TILE_DEFS = [
     }}
   },
   {
-    _id: "AfodTile03p003B",
-    texture: `${SYSTEM_PREFIX}/tiles/fotos.png`,
-    x: 545, y: 959, width: 334, height: 258, rotation: 11, hidden: false,
-    flags: { "a-fistful-of-darkness": {
-      referenceScene: true,
-      journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p003",
-    }}
-  },
-  {
-    _id: "AfodTile03p003C",
-    texture: `${SYSTEM_PREFIX}/tiles/fotos.png`,
-    x: 88, y: 692, width: 334, height: 258, rotation: 11, hidden: false,
-    flags: { "a-fistful-of-darkness": {
-      referenceScene: true,
-      journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p003",
-    }}
-  },
-  // ── BILLETE (billete de barco) → página 4: Las Herencias ────────────────
-  {
-    _id: "AfodTile03p004A",
+    _id: "AfodTile03p004",
     texture: `${SYSTEM_PREFIX}/tiles/billete-barco.png`,
-    x: 1435, y: 989, width: 306, height: 188, rotation: 351, hidden: false,
+    x: 1441, y: 973, width: 410, height: 273, rotation: 351,
     flags: { "a-fistful-of-darkness": {
       referenceScene: true,
       journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p004",
@@ -123,50 +66,13 @@ const TILE_DEFS = [
     }}
   },
   {
-    _id: "AfodTile03p004B",
-    texture: `${SYSTEM_PREFIX}/tiles/billete-barco.png`,
-    x: 984, y: 706, width: 410, height: 273, rotation: 351, hidden: false,
-    flags: { "a-fistful-of-darkness": {
-      referenceScene: true,
-      journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p004",
-    }}
-  },
-  {
-    _id: "AfodTile03p004C",
-    texture: `${SYSTEM_PREFIX}/tiles/billete-barco.png`,
-    x: 1441, y: 973, width: 410, height: 273, rotation: 351, hidden: false,
-    flags: { "a-fistful-of-darkness": {
-      referenceScene: true,
-      journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p004",
-    }}
-  },
-  // ── ENCICLOPEDIA → página 5: Consejos para Jugadores ────────────────────
-  {
-    _id: "AfodTile03p005A",
+    _id: "AfodTile03p005",
     texture: `${SYSTEM_PREFIX}/tiles/enciclopedia.png`,
-    x: 978, y: 457, width: 432, height: 608, rotation: 6, hidden: false,
+    x: 978, y: 457, width: 432, height: 608, rotation: 6,
     flags: { "a-fistful-of-darkness": {
       referenceScene: true,
       journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p005",
       labelText: "Consejos para Jugadores", labelX: 1054, labelY: 422
-    }}
-  },
-  {
-    _id: "AfodTile03p005B",
-    texture: `${SYSTEM_PREFIX}/tiles/enciclopedia.png`,
-    x: 624, y: 285, width: 296, height: 455, rotation: 6, hidden: false,
-    flags: { "a-fistful-of-darkness": {
-      referenceScene: true,
-      journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p005",
-    }}
-  },
-  {
-    _id: "AfodTile03p005C",
-    texture: `${SYSTEM_PREFIX}/tiles/enciclopedia.png`,
-    x: 1081, y: 552, width: 296, height: 455, rotation: 6, hidden: false,
-    flags: { "a-fistful-of-darkness": {
-      referenceScene: true,
-      journalId: "AfodJrnlAmbie03", journalPageId: "AfodJrnlPg03p005",
     }}
   },
 ];
