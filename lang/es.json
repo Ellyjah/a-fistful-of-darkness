@@ -381,6 +381,14 @@
     "AddContact": "Añadir contacto",
     "ContactName": "Nombre del contacto",
 
+    "RefScene": {
+      "Ambientacion": "La Ambientación",
+      "Libretos": "Los Libretos",
+      "Cuadrillas": "Las Cuadrillas",
+      "Herencias": "Las Herencias",
+      "Consejos": "Consejos para Jugadores"
+    },
+
     "Settings": {
       "Action": {
         "Name": "Tirada de Acción",

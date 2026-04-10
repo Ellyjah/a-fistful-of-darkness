@@ -379,6 +379,14 @@
     "AddContact": "Afegir contacte",
     "ContactName": "Nom del contacte",
 
+    "RefScene": {
+      "Ambientacion": "L'Ambientaci\u00f3",
+      "Libretos": "Els Llibrets",
+      "Cuadrillas": "Les Colles",
+      "Herencias": "Les Her\u00e8ncies",
+      "Consejos": "Consells per a Jugadors"
+    },
+
     "Settings": {
       "Action": {
         "Name": "Tirada d'Acció",

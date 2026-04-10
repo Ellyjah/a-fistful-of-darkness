@@ -379,6 +379,14 @@
     "AddContact": "Add contact",
     "ContactName": "Contact name",
 
+    "RefScene": {
+      "Ambientacion": "The Setting",
+      "Libretos": "The Playbooks",
+      "Cuadrillas": "The Posses",
+      "Herencias": "The Heritages",
+      "Consejos": "Tips for Players"
+    },
+
     "Settings": {
       "Action": {
         "Name": "Action Roll",

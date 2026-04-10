@@ -11,6 +11,15 @@ const SCENE_FLAG = "referenceScene";
 const PACK_ID    = `${SYSTEM_ID}.journals`;
 const LOG        = (...a) => console.log("[AFoD|RefScene]", ...a);
 
+// Claves de localización para las etiquetas de cada página
+const PAGE_LABEL_KEYS = {
+  "AfodJrnlPg03p001": "AFOD.RefScene.Ambientacion",
+  "AfodJrnlPg03p002": "AFOD.RefScene.Libretos",
+  "AfodJrnlPg03p003": "AFOD.RefScene.Cuadrillas",
+  "AfodJrnlPg03p004": "AFOD.RefScene.Herencias",
+  "AfodJrnlPg03p005": "AFOD.RefScene.Consejos",
+};
+
 // ─────────────────────────────────────────────────────────────────────────────
 //  Registro — llamar desde init (no ready) para no perder el primer canvasReady
 // ─────────────────────────────────────────────────────────────────────────────
@@ -170,7 +179,8 @@ function _screenToWorld(ev, view) {
 }
 
 function _hitTest(tile, wp) {
-  const { x, y, width, height, rotation } = tile.document;
+  // Usar el transform original si la tile está en estado hover (ya modificada)
+  const { x, y, width, height, rotation } = tile._afodOriginalTransform ?? tile.document;
   const cx  = x + width  / 2;
   const cy  = y + height / 2;
   const rad = -(rotation ?? 0) * (Math.PI / 180);
@@ -201,7 +211,31 @@ function _restoreUI() {
 }
 
 function _handleHoverIn(tile, data) {
-  if (!data.labelText) return;
+  // Guardar transform original para poder restaurarlo en hoverOut y para hitTest
+  if (!tile._afodOriginalTransform) {
+    const { x, y, width, height, rotation } = tile.document;
+    tile._afodOriginalTransform = { x, y, width, height, rotation };
+    LOG(`HoverIn — original: x=${x} y=${y} w=${width} h=${height} rot=${rotation}`);
+
+    // Escalar ligeramente (8%) y rotar a 0°
+    const S  = 1.08;
+    const nw = width  * S;
+    const nh = height * S;
+    tile.document.updateSource({
+      rotation: 0,
+      width:    nw,
+      height:   nh,
+      x: x - (nw - width)  / 2,
+      y: y - (nh - height) / 2,
+    });
+    tile.renderFlags?.set({ refreshTransform: true, refreshMesh: true });
+  }
+
+  // Resolver etiqueta: preferir clave i18n por journalPageId, fallback a labelText hardcoded
+  const labelText = PAGE_LABEL_KEYS[data.journalPageId]
+    ? game.i18n.localize(PAGE_LABEL_KEYS[data.journalPageId])
+    : (data.labelText ?? "");
+  if (!labelText) return;
   try {
     const style = new PIXI.TextStyle({
       fontFamily: "Docktrin",
@@ -210,7 +244,7 @@ function _handleHoverIn(tile, data) {
     });
     const lx  = data.labelX ?? (tile.document.x + tile.document.width  / 2);
     const ly  = data.labelY ?? (tile.document.y - 30);
-    const txt = new PIXI.Text(data.labelText, style);
+    const txt = new PIXI.Text(labelText, style);
     txt.anchor.set(0.5, 0.5);
     txt.position.set(lx, ly);
     canvas.stage.addChild(txt);
@@ -222,11 +256,50 @@ function _handleHoverIn(tile, data) {
 }
 
 function _handleHoverOut(tile) {
+  // Restaurar transform original
+  if (tile._afodOriginalTransform) {
+    tile.document.updateSource(tile._afodOriginalTransform);
+    tile.renderFlags?.set({ refreshTransform: true, refreshMesh: true });
+    delete tile._afodOriginalTransform;
+    LOG(`HoverOut — transform restaurado`);
+  }
+
   const lbl = canvas._afodLabels?.get(tile.id);
   if (!lbl) return;
   lbl.parent?.removeChild(lbl);
   lbl.destroy();
   canvas._afodLabels.delete(tile.id);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+//  Visor de página sin panel de navegación (para jugadores)
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _AfodPageViewer extends Application {
+  constructor(page, options = {}) {
+    super(options);
+    this._page = page;
+  }
+
+  static get defaultOptions() {
+    return foundry.utils.mergeObject(super.defaultOptions, {
+      width: 740, height: 660,
+      resizable: true,
+      classes: ["afod-page-viewer", "journal-sheet"],
+    });
+  }
+
+  get title() { return this._page.name; }
+
+  async _renderInner(_data) {
+    const raw      = this._page.text?.content ?? "<p>—</p>";
+    const enriched = await TextEditor.enrichHTML(raw, { relativeTo: this._page });
+    const div      = document.createElement("div");
+    div.className  = "journal-entry-content";
+    div.style.cssText = "padding: 12px 16px; overflow-y: auto; height: 100%; box-sizing: border-box;";
+    div.innerHTML  = enriched;
+    return $(div);
+  }
 }
 
 async function _handleClick(data) {
@@ -249,7 +322,23 @@ async function _handleClick(data) {
   if (!journal) { LOG(`ERROR: journal ${journalId} no encontrado en ningún lugar`); return; }
 
   LOG(`Abriendo journal ${journalId}, página ${journalPageId}`);
-  journal.sheet.render(true, { pageId: journalPageId ?? undefined });
+
+  // GM: abre el journal completo con panel de navegación
+  if (game.user.isGM) {
+    journal.sheet.render(true, { pageId: journalPageId ?? undefined });
+    return;
+  }
+
+  // Jugadores: visor de página sin panel de navegación
+  const page = journal.pages.get(journalPageId);
+  if (!page) {
+    LOG(`WARN: página ${journalPageId} no encontrada, abriendo journal normal`);
+    journal.sheet.render(true, { pageId: journalPageId ?? undefined });
+    return;
+  }
+
+  LOG(`Abriendo visor de página: ${page.name}`);
+  new _AfodPageViewer(page).render(true);
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
