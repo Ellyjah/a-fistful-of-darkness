@@ -202,8 +202,31 @@ export class AfodSheet extends HandlebarsApplicationMixin(ActorSheetV2) {
     const { signal } = this._commonEventsAbortController;
     const el = this.element;
 
-    el.addEventListener("click", ev => this._handleCommonClick(ev), { signal });
+    el.addEventListener("click",       ev => this._handleCommonClick(ev),       { signal });
     el.addEventListener("contextmenu", ev => this._handleCommonContextMenu(ev), { signal });
+    el.addEventListener("change",      ev => this._saveFormField(ev),            { signal });
+  }
+
+  /**
+   * Persiste cualquier campo de formulario con atributo `name` que no tenga
+   * ya un handler especializado en una subhoja.
+   */
+  _saveFormField(ev) {
+    const target = ev.target;
+    const name   = target.getAttribute("name");
+    if (!name) return;
+
+    // Excluir los campos cuyos listeners especializados ya llaman a document.update()
+    if (target.matches(
+      ".xp-value-input, .ability-purchased, .item-equipped," +
+      " input[name='system.selected_load_level']," +
+      " .claim-name, .claim-level, .claim-crew, .claim-equipment," +
+      " .riders-block input"
+    )) return;
+
+    const value = target.type === "checkbox" ? target.checked : target.value;
+    console.log(`[AFoD|Sheet] saveFormField → ${name} =`, value);
+    this.document.update({ [name]: value });
   }
 
   _handleCommonClick(ev) {

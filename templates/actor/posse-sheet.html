@@ -187,7 +187,11 @@
       <div class="xp-block">
         <div class="block-label">
           {{localize "AFOD.Experience"}}
-          <span class="xp-counter">{{expValue}} / {{system.max.exp}}</span>
+          <span class="xp-counter">
+            <input type="number" class="xp-value-input" name="system.experience"
+                   value="{{expValue}}" min="0" max="{{system.max.exp}}" />
+            / {{system.max.exp}}
+          </span>
         </div>
         <div class="xp-bar">
           {{#times_from_1 system.max.exp}}

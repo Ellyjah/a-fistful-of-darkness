@@ -151,11 +151,21 @@ export class PosseSheet extends AfodSheet {
       this.actor.update({ "system.doom.value": String(newVal) });
     });
 
-    html.find(".xp-segment").click(ev => {
+    html.find(".xp-segment").click(async ev => {
       const clicked = parseInt(ev.currentTarget.dataset.value);
       const current = parseInt(this.actor.system.experience) || 0;
       const newVal  = current === clicked ? Math.max(0, clicked - 1) : clicked;
-      this.actor.update({ "system.experience": String(newVal) });
+      await this.actor.update({ "system.experience": String(newVal) });
+      const max = parseInt(this.actor.system.max?.exp) || 10;
+      if (newVal >= max) this._showXpSpendingDialog();
+    });
+
+    html.find(".xp-value-input").change(async ev => {
+      const max      = parseInt(this.actor.system.max?.exp) || 10;
+      const newValue = Math.max(0, Math.min(max, parseInt(ev.target.value) || 0));
+      ev.target.value = newValue;
+      await this.actor.update({ "system.experience": String(newValue) });
+      if (newValue >= max) this._showXpSpendingDialog();
     });
 
     html.find(".ability-purchased").change(ev => {
@@ -327,6 +337,110 @@ export class PosseSheet extends AfodSheet {
     }
 
     await this.actor.update({ "system.achievements": foundry.utils.deepClone(defaults) });
+  }
+
+  /* -------------------------------------------- */
+  /*  XP spending dialog                           */
+  /* -------------------------------------------- */
+
+  async _showXpSpendingDialog() {
+    const crewTypeItem = this.actor.items.find(i => i.type === "crew_type");
+    const crewTypeName = crewTypeItem?.name ?? null;
+
+    let availableAbilities = [];
+    if (crewTypeName) {
+      const pack = game.packs.get("a-fistful-of-darkness.crew-abilities");
+      if (pack) {
+        const allDocs = await pack.getDocuments();
+        const purchasedNames = new Set(
+          this.actor.items
+            .filter(i => i.type === "crew_ability" && i.system.purchased)
+            .map(i => i.name)
+        );
+        const typeAbilities = allDocs.filter(
+          a => a.system?.class === crewTypeName && !purchasedNames.has(a.name)
+        );
+        const { getLocalizedPackDocumentData } = await import("../compendium-localization.js");
+        availableAbilities = await Promise.all(typeAbilities.map(a => getLocalizedPackDocumentData(a)));
+      }
+    }
+
+    const optionsHtml = availableAbilities.map((a, i) => {
+      const desc  = (a.system?.description ?? "").replace(/<[^>]*>/g, "");
+      const short = desc.length > 130 ? desc.slice(0, 130) + "…" : desc;
+      return `
+      <label class="xp-choice-option">
+        <input type="checkbox" class="xp-choice-cb" value="${i}" />
+        <span>
+          <strong>${a.name}</strong>
+          ${short ? `<span class="xp-desc">${short}</span>` : ""}
+        </span>
+      </label>`;
+    }).join("") || `<p class="xp-no-options">No hay habilidades de cuadrilla disponibles.</p>`;
+
+    const content = `
+      <style>
+        .xp-choice-option { display:flex; align-items:flex-start; gap:8px; margin:5px 0; cursor:pointer; transition:opacity 0.15s; }
+        .xp-choice-option input[type="checkbox"] { margin-top:3px; flex-shrink:0; }
+        .xp-choice-option span { display:flex; flex-direction:column; }
+        .xp-choice-option.xp-locked { opacity:0.3; pointer-events:none; }
+        .xp-desc { font-size:0.82em; opacity:0.7; margin-top:2px; }
+        .xp-section-title { font-weight:bold; border-bottom:1px solid currentColor; opacity:0.6; margin:12px 0 6px; padding-bottom:3px; font-size:0.9em; letter-spacing:0.03em; }
+        .xp-no-options { font-style:italic; opacity:0.6; margin:4px 0 4px 4px; font-size:0.9em; }
+      </style>
+      <div style="padding:4px 0; max-height:440px; overflow-y:auto;">
+        <p style="margin-bottom:12px">Elige <strong>una habilidad de cuadrilla</strong> con el XP acumulado:</p>
+        <div class="xp-section-title">Habilidades especiales de la cuadrilla</div>
+        ${optionsHtml}
+      </div>`;
+
+    const choice = await new Promise(resolve => {
+      let resolved = false;
+      new Dialog({
+        title: `Gastar XP de Cuadrilla — ${this.actor.name}`,
+        content,
+        buttons: {
+          spend: {
+            icon:  "<i class='fas fa-check'></i>",
+            label: "Confirmar",
+            callback: html => {
+              resolved = true;
+              const checked = html.find("input.xp-choice-cb:checked");
+              resolve(checked.length ? parseInt(checked.val()) : null);
+            }
+          },
+          cancel: {
+            icon:  "<i class='fas fa-times'></i>",
+            label: "Cancelar",
+            callback: () => { resolved = true; resolve(null); }
+          }
+        },
+        default: "spend",
+        close: () => { if (!resolved) resolve(null); },
+        render: html => {
+          html.find("input.xp-choice-cb").on("change", function () {
+            const all = html.find("input.xp-choice-cb");
+            if (this.checked) {
+              all.not(this).closest(".xp-choice-option").addClass("xp-locked");
+            } else {
+              all.closest(".xp-choice-option").removeClass("xp-locked");
+            }
+          });
+        }
+      }).render(true);
+    });
+
+    if (choice === null || choice === undefined) return;
+
+    const abilityData = availableAbilities[choice];
+    if (!abilityData) return;
+    const toCreate = foundry.utils.deepClone(abilityData);
+    delete toCreate._id;
+    toCreate.system           = toCreate.system ?? {};
+    toCreate.system.purchased = true;
+    await this.actor.createEmbeddedDocuments("Item", [toCreate]);
+
+    await this.actor.update({ "system.experience": "0" });
   }
 
   async _offerCrewAbilitiesDialog(crewTypeName) {

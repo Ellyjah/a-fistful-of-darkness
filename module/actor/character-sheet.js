@@ -92,7 +92,7 @@ export class CharacterSheet extends AfodSheet {
     context.attributeDice = {};
     for (const [attrKey, attr] of Object.entries(this.actor.system.attributes)) {
       context.attributeDice[attrKey] = Object.values(attr.skills)
-        .reduce((sum, s) => sum + (parseInt(s.value) || 0), 0);
+        .filter(s => (parseInt(s.value) || 0) > 0).length;
     }
 
     context.system.loadout = loadout;
@@ -262,7 +262,7 @@ export class CharacterSheet extends AfodSheet {
       ev.preventDefault();
       const attrKey = attrRoll.dataset.attribute;
       const diceAmt = Object.values(this.actor.system.attributes[attrKey]?.skills ?? {})
-        .reduce((sum, s) => sum + (parseInt(s.value) || 0), 0);
+        .filter(s => (parseInt(s.value) || 0) > 0).length;
       const { resistanceRollDialog } = await import("../afod-roll.js");
       return resistanceRollDialog(diceAmt, attrKey, this.actor);
     }
@@ -345,47 +345,144 @@ export class CharacterSheet extends AfodSheet {
   /* -------------------------------------------- */
 
   async _showXpSpendingDialog() {
-    const max = parseInt(this.actor.system.experience_max) || 8;
+    // Find actor's playbook
+    const playbookItem = this.actor.items.find(i => i.type === "class");
+    const className    = playbookItem?.name ?? null;
 
-    const availableAbilities = this.actor.items.filter(i => i.type === "ability" && !i.system.purchased);
+    // Fetch compendium abilities for this playbook, excluding already-purchased ones
+    let availableAbilities = [];
+    if (className) {
+      const pack = game.packs.get("a-fistful-of-darkness.abilities");
+      if (pack) {
+        const allDocs = await pack.getDocuments();
+        const purchasedNames = new Set(
+          this.actor.items
+            .filter(i => i.type === "ability" && i.system.purchased)
+            .map(i => i.name)
+        );
+        const classAbilities = allDocs.filter(
+          a => a.system?.class === className && !purchasedNames.has(a.name)
+        );
+        const { getLocalizedPackDocumentData } = await import("../compendium-localization.js");
+        availableAbilities = await Promise.all(classAbilities.map(a => getLocalizedPackDocumentData(a)));
+      }
+    }
 
-    const abilitiesHtml = availableAbilities.length
-      ? availableAbilities.map(a => `
-          <li>
-            <strong>${a.name}</strong>
-            <span style="display:block;font-size:0.85em;color:#666;margin-left:12px">${(a.system.description ?? "").replace(/<[^>]*>/g, "")}</span>
-          </li>`).join("")
-      : `<li style="color:#888;font-style:italic">Sin habilidades pendientes en este libreto.</li>`;
+    // Max dots per skill: 3 without Mastery, 4 with it
+    const hasMastery = this.actor.items.some(
+      i => i.type === "ability" && /mastery/i.test(i.name)
+    );
+    const maxDots = hasMastery ? 4 : 3;
 
+    // Build list of skills that can still be improved
     const improvableSkills = [];
     for (const [attrKey, attr] of Object.entries(this.actor.system.attributes ?? {})) {
       for (const [skillKey, skill] of Object.entries(attr.skills ?? {})) {
-        if ((parseInt(skill.value) || 0) < 4) {
-          improvableSkills.push(
-            game.i18n.localize(`AFOD.Skills${skillKey.charAt(0).toUpperCase()}${skillKey.slice(1)}`)
+        const current = parseInt(skill.value) || 0;
+        if (current < maxDots) {
+          const label = game.i18n.localize(
+            `AFOD.Skills${skillKey.charAt(0).toUpperCase()}${skillKey.slice(1)}`
           );
+          improvableSkills.push({ attrKey, skillKey, current, label });
         }
       }
     }
-    const skillsHtml = improvableSkills.length
-      ? `<p style="margin:8px 0 4px"><em>Habilidades de acción que puedes mejorar:</em></p><p style="color:#555">${improvableSkills.join(", ")}</p>`
-      : "";
+
+    const abilitiesHtml = availableAbilities.map((a, i) => {
+      const desc  = (a.system?.description ?? "").replace(/<[^>]*>/g, "");
+      const short = desc.length > 130 ? desc.slice(0, 130) + "…" : desc;
+      return `
+      <label class="xp-choice-option">
+        <input type="checkbox" class="xp-choice-cb" value="ability:${i}" />
+        <span>
+          <strong>${a.name}</strong>
+          ${short ? `<span class="xp-desc">${short}</span>` : ""}
+        </span>
+      </label>`;
+    }).join("") || `<p class="xp-no-options">No hay habilidades disponibles para este libreto.</p>`;
+
+    const skillsHtml = improvableSkills.map(s => `
+      <label class="xp-choice-option">
+        <input type="checkbox" class="xp-choice-cb" value="skill:${s.attrKey}:${s.skillKey}" />
+        <span>
+          <strong>${s.label}</strong>
+          <span class="xp-desc">${s.current} → ${s.current + 1} punto${s.current + 1 !== 1 ? "s" : ""}</span>
+        </span>
+      </label>`).join("") || `<p class="xp-no-options">Todas las acciones están al máximo permitido.</p>`;
 
     const content = `
-      <div style="padding:4px 0">
-        <p style="margin-bottom:8px">Has alcanzado ${max} puntos de experiencia. Puedes invertirlos en:</p>
-        <p style="font-weight:bold;margin-bottom:4px">Habilidades especiales disponibles:</p>
-        <ul style="margin:0 0 8px 16px;padding:0;list-style:disc">${abilitiesHtml}</ul>
-        ${skillsHtml}
-        <p style="margin-top:8px;font-size:0.85em;color:#888">Recuerda marcar las habilidades como "Comprada" una vez elegidas.</p>
+      <style>
+        .xp-choice-option { display:flex; align-items:flex-start; gap:8px; margin:5px 0; cursor:pointer; transition:opacity 0.15s; }
+        .xp-choice-option input[type="checkbox"] { margin-top:3px; flex-shrink:0; }
+        .xp-choice-option span { display:flex; flex-direction:column; }
+        .xp-choice-option.xp-locked { opacity:0.3; pointer-events:none; }
+        .xp-desc { font-size:0.82em; opacity:0.7; margin-top:2px; }
+        .xp-section-title { font-weight:bold; border-bottom:1px solid currentColor; opacity:0.6; margin:12px 0 6px; padding-bottom:3px; font-size:0.9em; letter-spacing:0.03em; }
+        .xp-no-options { font-style:italic; opacity:0.6; margin:4px 0 4px 4px; font-size:0.9em; }
+      </style>
+      <div style="padding:4px 0; max-height:440px; overflow-y:auto;">
+        <p style="margin-bottom:12px">Elige <strong>una mejora</strong> con tu XP acumulado:</p>
+        ${availableAbilities.length ? `<div class="xp-section-title">Habilidades especiales del libreto</div>${abilitiesHtml}` : ""}
+        <div class="xp-section-title">Mejorar acción (+1 punto)</div>${skillsHtml}
       </div>`;
 
-    new Dialog({
-      title: `Gastar XP — ${this.actor.name}`,
-      content,
-      buttons: { ok: { icon: "<i class='fas fa-check'></i>", label: "Entendido" } },
-      default: "ok"
-    }).render(true);
+    const choice = await new Promise(resolve => {
+      let resolved = false;
+      new Dialog({
+        title: `Gastar XP — ${this.actor.name}`,
+        content,
+        buttons: {
+          spend: {
+            icon:  "<i class='fas fa-check'></i>",
+            label: "Confirmar",
+            callback: html => {
+              resolved = true;
+              const checked = html.find("input.xp-choice-cb:checked");
+              resolve(checked.length ? checked.val() : null);
+            }
+          },
+          cancel: {
+            icon:  "<i class='fas fa-times'></i>",
+            label: "Cancelar",
+            callback: () => { resolved = true; resolve(null); }
+          }
+        },
+        default: "spend",
+        close: () => { if (!resolved) resolve(null); },
+        render: html => {
+          html.find("input.xp-choice-cb").on("change", function () {
+            const all = html.find("input.xp-choice-cb");
+            if (this.checked) {
+              all.not(this).closest(".xp-choice-option").addClass("xp-locked");
+            } else {
+              all.closest(".xp-choice-option").removeClass("xp-locked");
+            }
+          });
+        }
+      }).render(true);
+    });
+
+    if (!choice) return;
+
+    if (choice.startsWith("ability:")) {
+      const idx         = parseInt(choice.slice("ability:".length));
+      const abilityData = availableAbilities[idx];
+      if (!abilityData) return;
+      const toCreate = foundry.utils.deepClone(abilityData);
+      delete toCreate._id;
+      toCreate.system             = toCreate.system ?? {};
+      toCreate.system.purchased   = true;
+      await this.actor.createEmbeddedDocuments("Item", [toCreate]);
+    } else if (choice.startsWith("skill:")) {
+      const [, attrKey, skillKey] = choice.split(":");
+      const current = parseInt(this.actor.system.attributes[attrKey]?.skills[skillKey]?.value) || 0;
+      await this.actor.update({
+        [`system.attributes.${attrKey}.skills.${skillKey}.value`]: current + 1
+      });
+    }
+
+    // Reset XP counter after spending
+    await this.actor.update({ "system.experience": "0" });
   }
 
   /* -------------------------------------------- */
