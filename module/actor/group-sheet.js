@@ -95,6 +95,16 @@ export class GroupSheet extends AfodSheet {
   _onRender(context, options) {
     super._onRender(context, options);
 
+    // Auto-resize: ajustar altura para mostrar todos los miembros sin scroll
+    requestAnimationFrame(() => {
+      const content = this.element?.querySelector(".window-content");
+      if (!content) return;
+      const overflow = content.scrollHeight - content.clientHeight;
+      if (overflow > 0) {
+        this.setPosition({ height: this.position.height + overflow });
+      }
+    });
+
     const html = $(this.element);
 
     html.find(".posse-link").click(() => {
